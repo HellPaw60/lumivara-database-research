@@ -1,13 +1,14 @@
 {
  "_meta": {
-  "version": "v0.6",
+  "version": "v0.7",
   "purpose": "Structured register of unresolved/unknown global mechanics",
   "priority_levels": [
    "HIGH",
    "MEDIUM",
    "LOW"
   ],
-  "generated": "2026-09-28"
+  "generated": "2026-09-28",
+  "note": "Post-V0.7 cleanup: duplicates removed, GAP-001 updated"
  },
  "gaps": [
   {
@@ -17,8 +18,8 @@
    "current_knowledge": "z5 = F0 = floor(Lv/5)+3 = job points per level (NOT EXP table). $0 = floor((Lv-1)/10)+2 = stat points per level. It = Σ F0(2..Lv) = cumulative points. EXP threshold table remains server-side UNKNOWN.",
    "best_evidence": "grep shows z5(i) called at level-up, loops r=JC(this,o) down to 1",
    "confidence": "VERIFIED_FROM_CLIENT_CODE (z5 body) / UNKNOWN (EXP threshold)",
-   "blocking_dependency": "Need to locate z5 function definition in items bundle (likely renamed via minification)",
-   "next_verification_method": "Static extraction of z5 body from bundle, OR run client locally with debugger",
+   "blocking_dependency": null,
+   "next_verification_method": "N/A — z5 reconstructed. Use GAP-011 for remaining EXP threshold research.",
    "priority": "HIGH",
    "status": "PARTIALLY_RESOLVED",
    "evidence": "web-v2/items-CvFgs761.js offset 116487, chain F0→dY→z5"
@@ -140,18 +141,6 @@
    "best_evidence": "grep confirms no EXP table in client bundles",
    "confidence": "UNKNOWN",
    "blocking_dependency": "Server disassembly or large-scale empirical measurement",
-   "next_verification_method": "Track EXP gained vs level-ups over time",
-   "priority": "HIGH",
-   "status": "OPEN"
-  },
-  {
-   "id": "GAP-011",
-   "subsystem": "PROGRESSION",
-   "question": "Exact EXP threshold per level (server-side)",
-   "current_knowledge": "Client has no EXP table. z5=points not EXP. Level-up triggered server-side via M5/JC.",
-   "best_knowledge": "grep confirms no EXP table in client bundles",
-   "confidence": "UNKNOWN",
-   "blocking_dependency": "Server disassembly or empirical measurement",
    "next_verification_method": "Track EXP gained vs level-ups over time",
    "priority": "HIGH",
    "status": "OPEN"

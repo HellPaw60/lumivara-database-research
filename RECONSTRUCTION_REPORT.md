@@ -125,7 +125,7 @@ Diff v1→v2: +2 class, +14 skill, +5 item, +4 pesan protokol,
 4. Quest/mall/pet server state (endpoint butuh login Google)
 5. World Boss spawn schedule
 6. Gold/Premium pack pricing (zf array di-import tapi definisi tidak ditemukan di bundle yang dianalisis)
-7. z5 function (points per level) — ditemukan tapi belum ter-ekstrak penuh
+7. z5 function — RECONSTRUCTED (V0.7): `floor(level/5)+3` = job points per level. EXP threshold table remains UNKNOWN (GAP-011).
 8. Quest harian sepenuhnya server-driven — struktur reward tidak terlihat dari klien
 
 ## 25. Confidence Matrix
