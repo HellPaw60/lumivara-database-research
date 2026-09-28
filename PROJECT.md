@@ -20,15 +20,17 @@
 
 ## Data Sources
 
-| Sumber | Versi | Hash (sha256, 16 char) |
+| Sumber | Versi | Detail |
 |---|---|---|
-| Desktop exe (NSIS) | 0.1.0 | 003862eec2c8c3dc (verified vs GitHub release) |
+| Desktop exe (NSIS) | 0.1.0 | sha256 003862eec2c8c3dc (verified vs GitHub release) |
 | Web bundle v1 | main-BHjIB9U4.js | lihat inventory_manifest.json |
 | Web bundle v2 | main-DEXZ0AP0.js | lihat inventory_manifest.json |
 | WS snapshots | ~50K, 14 area | collect/raw-snapshots.json |
 | Localization | language-Dz8VbPNM.js | 2.547 pasang |
-| Changelog (client bundle) | changelog-notice-BKeFrGHU.js | 650 entries |
-| **Changelog (official web)** | https://lumivaraonline.com/changelog/ | 669 entries — cross-validated 649/649 ID match |
+| Changelog (client bundle) | changelog-notice-BKeFrGHU.js | 650 entries / 649 unique IDs |
+| Changelog (official web) | https://lumivaraonline.com/changelog/ | 669 entries / 668 unique IDs — full content cross-validated 649/649 |
+
+**Catatan terminologi:** changelog *entry* ≠ release/version. Halaman official tidak menyediakan identifier release — semua angka di atas adalah jumlah entri catatan perubahan.
 
 ## Extraction Methodology
 

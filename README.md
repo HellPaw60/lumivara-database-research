@@ -55,7 +55,7 @@ docs/          — Laporan & dokumentasi arsitektur
 | Monster status attacks | 7 | VERIFIED |
 | Drop rate categories | 9 | VERIFIED (client display) |
 | Translations TH→EN | 2,547 | VERIFIED |
-| Changelog entries | 650 | VERIFIED |
+| Changelog entries | Client snapshot: 650 entries / 649 unique IDs · Official snapshot: 669 entries / 668 unique IDs · Cross-validated: 649/649 ID + full content match | VERIFIED |
 | WS event types teramati | lihat protocol/ | VERIFIED |
 
 ## Confidence Model

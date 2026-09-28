@@ -1,0 +1,2696 @@
+{
+ "_meta": {
+  "parser": "canonical v1 (bracket-match) — sama untuk kedua sumber",
+  "previous_613_lines_diff_resolution": "PARSER_ERROR pada parser official lama (regex lazy gagal); raw source identik — terbukti via raw slice comparison"
+ },
+ "counts": {
+  "client_entries": 650,
+  "official_entries": 669,
+  "unique_ids_total": 668,
+  "EXACT_MATCH": 648,
+  "DUPLICATE_UPSTREAM": 1,
+  "OFFICIAL_ONLY": 19
+ },
+ "full_content_matches": 649,
+ "ordering_identical_for_shared": true,
+ "duplicate_ids": {
+  "2026-09-23-skill-rebalance": {
+   "client": 2,
+   "official": 2
+  }
+ },
+ "classification": {
+  "2026-09-22-arrows-removed": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-aura-perf": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-auto-sp-potion-at-zero": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-bag-bigger": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-boost-scrolls": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-boost-scrolls-for-everyone": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-boost-scrolls-stack": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-caster-no-luk": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-changelog-page": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-channel-cap-25": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-channel-follows": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-channel-head-count": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-channel-spread-and-switch": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-chat-box-hide": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-chat-fanout-targeted": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-chat-flood-guard": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-class-guide-fits-phone": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-class-guide-smaller": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-class-vitals-and-mage-mastery": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-crowd-frame-relief": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-exp-event-x2-1200-players": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-first-login-unstuck": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-gear-hover-compare": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-gear-hover-compare-color": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-glacier-aggressive-monsters": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-glacier-sight-range": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-legal-docs": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-login-keyart": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-mail-claim-silver": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-map-window": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-map-window-close-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-market-drop-level-filter": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-menu-keep-class-bot": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-menu-overflow": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-monitor-online-chart": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-monitor-player-stats": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-more-channels-per-map": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-new-home-lumivaraonline": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-novice-class-guide": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-one-machine-three-accounts": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-party-hud-drops-the-roster": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-party-level-gap": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-party-roster-shows-the-map": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-party-sync-targeted": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-patch-notes": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-rebalance-vitals-vigor-frost": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-revive-lands-in-town": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-share-link-preview-card": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-shop-stocks-every-weapon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-sixteen-channels": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-skill-cast-level": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-skill-rebalance-2": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-status-window-bigger": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-support-mail": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-trade-gear-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-two-domains-both-work": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-update-notice-folds-away": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-22-window-open-pop": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-add-friend-from-chat": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-bag-weight-on-hover": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-block-browser-translate": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-bot-defaults-ready-to-run": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-chat-language-rooms": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-chat-room-chip": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-chat-room-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-daily-exp-ranking": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-early-access-gold-is-kept": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-english-item-names": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-fusion-master": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-gear-flee-rebalance": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-gold-delivery-repair": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-gold-donate-open": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-gold-letter-instant": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-google-sans-everywhere": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-google-sans-ui-font": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-hit-matters-monster-balance": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-keep-screen-on": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-launch-wipe": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-linked-guest-payment-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-busy-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-buy-lag": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-no-double-hold": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-sell-instant": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-server-gate": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-take-back-instant": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-tile-premium-only": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-town-lag": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-market-window-stuck": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-no-rolled-back-characters": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-one-layout-every-device": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-operator-details": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-premium-buff-chip": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-premium-market-bot": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-premium-market-menu": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-premium-market-tile": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-profile-card-redesign": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-refine-armor-clarity": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-refund-requests": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-regional-markets": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-revenue-names": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-rollback-cannot-hide-itself": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-shop-confirm": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-shop-opens": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-short-login-announcement": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-skill-rebalance": {
+   "status": "DUPLICATE_UPSTREAM",
+   "detail": "2 instance(s) identical across sources"
+  },
+  "2026-09-23-stale-copy-rollback": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-starter-guide": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-storage-withdraw-all": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-stuck-warp-and-lost-items": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-thirty-two-channels": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-tooltip-drift": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-topup-closed": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-touch-controls-opacity": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-trade-premium-only": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-23-wiki-refresh-premium-tile": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-archer-thief-cleric-skills": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-archer-thief-passive-buff": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-aspd-skill-hold": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-bag-limits-on-mail-and-market": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-bag-stack-count-corner": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-bag-toolbar-weight": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-bag-view-toggle-even": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-boost-scroll-no-waste": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-bot-loot-per-item": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-bot-window-buttons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-bot-window-painted": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-card-overwrite": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-channel-grid": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-chat-moderation": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-class-target-no-seams": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-class-window-frame-hairline": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-classic-exp-table": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-close-button-ring": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-combat-rebalance": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-destroy-item": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-equipment-window-bigger": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-exp-bar-stuck-full": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-exp-event-x2": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-explorer": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-explorer-dressed": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-explorer-level-board": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-faq-fil-id": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-faq-links": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-faq-page": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-far-sight-opening-range": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-five-bosses-per-map": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-friend-request-dialog": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-frost-area-cooldown": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-ground-gear-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-guide-painted-buttons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-hold-to-add-stats": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-hold-to-walk": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-hotbar-potion-count": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-hud-default-70": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-inventory-clean-widgets": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-inventory-filter-labels": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-inventory-painted-v2": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-inventory-v3-art": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-ip-account-limit-back": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-item-card-no-quote-footer": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-item-mall-shop": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-login-queue": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-mail-after-payment": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-mail-partial-claim": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-mali-thai-chat-menu": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-mamushi-class": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-armor-parts": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-buy-confirm": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-buy-tab-no-lag": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-clean-frames": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-hover-stats": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-ledger-trim": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-matches-mockup": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-night-sky": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-one-click-buy": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-painted-v2": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-market-price-keyboard": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-max-level-exp-log": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-menu-drawer-no-scrollbar": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-menu-icons-wiki-friends-market": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-minimap-buttons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-miss-readable": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-monster-sprite-bleed": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-more-menu-site-pages": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-nine-slice-seams": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-no-afk-kick": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-no-ip-account-limit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-no-level-gap-exp-cut": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-no-tap-highlight": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-offline-sandbox": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-overweight-auto-stop-popup": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-overweight-debuff-chip": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-overweight-penalty": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-painted-buttons-no-seams": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-party-bonus-display": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-party-even-share": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-pet-bag-after-respawn": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-pet-loot-skip": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-pet-pickup-toggle-owner-first": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-pet-toolbar-weight": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-pet-wander-offline": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-premium-loot-pet": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-premium-silver-shop-anywhere": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-premium-tooltip-pet": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-pvp-damage-tenth": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-red-potion-sell-price": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-referral-link": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-refine-stone-lv70": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-region-codes": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-remote-bow-arrows": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-ruby-ring-str-vit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-share-item-party": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-shared-item-card-layout": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-site-page-links": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-sixty-four-channels": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-skill-window-real-sp": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-space-button-painted-icons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-stale-copy-rollback": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-stale-copy-same-level": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-starter-pack": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-starter-pack-kunai": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-starter-pack-wording": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-three-month-climb": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-trade-premium-with-anyone": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-24-world-map-keeps-fighting": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-auto-loot-items-always-visible": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-bilingual-changelog": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-bramble-hare-v2": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-card-socket-design": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-changelog-times": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-chat-tabs-single-row": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-combined-production-release": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-completed-session-release": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-consumable-drop-half": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-death-button-countdown": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-death-game-theme-instant-revive": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-desktop-packaging": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-desktop-window-resize-zoom": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-device-hud-defaults": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-directory-repair-paced": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-double-attack-all-melee-weapons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-empty-protection-confirm": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-explorer-hidden-gear-ui": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-explorer-hide-equipped-gear": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-explorer-show-storage-gear": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-forge-size-30-percent": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-gamezxz-level-one": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-gold-buy-now-quote": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-gold-exchange-compact-layout": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-gold-trade-mail-receipts": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-gold-trade-mode": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-google-link-overwrite-guards": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-applications": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-benefits-guide": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-chat": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-chat-translation-coverage": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-contribution-zero-default": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-creation-cost": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-creation-cost-icons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-exp-benefits-restored": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-form-alignment": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-levels": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-load-on-open": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-menu-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-menu-label": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-painted-window": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-shared-upgrade-fund": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-silver-rounded-costs": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-guild-upgrade-silver-and-costs": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-gym-pass-compensation": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-gym-pass-main-restoration": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-gym-pass-surplus-refund": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-home-player-links": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-hub-all-time-peak": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-hub-background-monitor": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-hub-monitor-rps-only": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-hub-peak-rps": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-hub-staged-rollout": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-hub-startup-load-guard": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-joystick-touch-zone": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-keelen-silver-reimbursement": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-keep-protection-on-refine-success": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-login-best-save": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-login-prune-stale": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-login-reconnect-hotfix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-loot-inventory-sync": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-mail-refresh-on-claim": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-mamushi-idle-sit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-market-listing-expiry": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-market-purchase-recovery-hub-reconnect": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-market-restart-sync": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-market-return-gear-mail": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-on-demand-social-sync": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-one-time-google-link": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-open-pvp-arena": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-original-google-recovery": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-benefits-toggle": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-exp-drop-label": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-finder-controls": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-friend-map-channel": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-hud-refresh": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-live-client-overlay": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-manual-location-only": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-panel-width": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-party-presence-events": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-player-silver-history": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-premium-remote-fusion": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-premium-silver-merchant": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-premium-silver-shop-menu": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-profile-card-click-toggle": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-protection-cost-per-attempt": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-pvp-damage-fifth": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-refine-dialog-style": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-refine-ingame-confirm": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-refine-shared-painted-theme": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-regional-chat-sockets": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-release-preserve-production": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-remove-directory-repair": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-remove-gear-salvage": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-restore-gym-pass-protection": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-restore-refine-protection": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-restore-shipped-features": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-save-rollback-guards": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-silver-explorer-live": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-silver-sale-keep-auto": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-silver-shop-size": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-skill-cast-selector-under-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-skill-drag-cleanup": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-stable-window-scale": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-storage-size": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-support-custom-gear": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-support-slot-tier-gear": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-unconscious-window-style": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-unified-skill-rank-controls": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-unknown-inventory-boot-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-whisper-continuation": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-wiki-independent-deploy": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-wiki-source-sync": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-25-world-map-multihop-travel": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-ammo-compare-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-arena-colosseum": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-arena-kill-count": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-arena-lobby-confirm": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-arena-population-entry-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-arena-room-capacity": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-arena-show-all": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-arrow-rain-twin-shot-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-aspd-potion-real-gain": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-aura-left-behind": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-bag-gear-types": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-bag-grid-tiles": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-bot-boss-portrait": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-buff-two-columns": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-card-rules-on-card": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-card-slots-two-handed": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-cart-strike-twin-strike-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-challenging-shadow-burst-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-divine-boon-quake-hammer-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-economy-safety-pass": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-ember-bolt-frost-area-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-emberfall-caldera": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-emotes": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-enemy-status-icons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-explorer-gold-exchange": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-flame-burst-redrawn": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-friend-request-hover-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-fusion-menu-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-gold-exchange-anywhere": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-gold-exchange-confirm": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-gold-exchange-durable-settlement": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-gold-exchange-window": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-gold-order-depth": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-gold-orders-clearer": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-gold-trail-recovery": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-guild-board": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-guild-contribution-reserve": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-guild-leave-button-restyle": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-guild-roster-buttons-restyle": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-haste-keeps-on-death": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-hub-locate-flood": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-iron-will-holy-guard-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-last-ten-skill-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-level-cap-120": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-lingering-buff-auras": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-locked-card-replace-notice": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-locked-gear-card-replace": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-login-finds-latest-copy": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-login-stale-copy-lineage": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-loot-rabbit-faster": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-more-menu-five-columns": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-named-gear-icons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-party-panel-compact-width": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-power-strike-heal-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-power-surge-leap-shot-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-premium-carries-to-launch": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-premium-fusion-translations": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-profile-card-compact": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-protection-stone-bundles": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-pvp-menu-entry": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-pvp-menu-only": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-refined-weapon-aura": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-refund-mail-reminder": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-refused-gear-listing-mailed": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-relic-box-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-shops-more-menu": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-skills-match-tooltips": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-smaller-bag-storage": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-smaller-bag-storage-2": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-solo-party-create": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-stale-directory-login": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-starter-pack-destroy": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-storage-all-tab": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-storage-grid": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-storage-window-redesign": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-storage-withdraw-picker-visible": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-stormbreak-radiant-light-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-three-new-realms": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-topup-confirm-on-return": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-twin-fang-toxin-blink-effects": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-weapon-properties-on-card": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-whisper-unread-badge": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-wiki-guild-pvp": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-26-wiki-opens-in-browser": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-announce-ticker": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-arena-rise-guard": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-arrow-rain-circle": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-arrow-rain-wider-circle": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-basic-attack-momentum": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-blue-potion-drop-equal": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-blue-potion-merchant-back": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-boost-icons-redrawn": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-boost-scroll-icons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-bot-auto-coat": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-bot-buff-only": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-bot-loot-weight-cap": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-bot-order-walk-in": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-bot-skill-delay": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-bot-skill-sp-floor": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-bot-skip-elite": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-bot-sp-floor-overlap": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-camera-zoom": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-camera-zoom-out": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-card-any-piece-again": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-card-weight-tenth": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-card-window-mobile-fit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-channel-grid-count": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-chat-not-sent-reason": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-chat-own-line-echo": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-chat-unsent-retry": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-class-picker": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-coat-exchange": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-daily-login-mall": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-death-cause": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-divine-elements": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-divine-wings": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-divine-wings-finder": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-divine-wings-relic-box": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-durability-sell-budget-off": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-element-coatings": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-elite-monsters": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-elite-twohand-english": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-equipment-tabs-repeat": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-explorer-flow-labels": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-explorer-rare-items": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-explorer-stat-fit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-fatal-sense-atk-back": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-freeze-ice-block": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-frost-area-buff": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-frost-area-on-target": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-frost-area-volley": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-gear-tip-usable-by": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-ground-target-skills": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-exp": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-exp-buff": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-invite-chat": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-lists-fit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-offline-for": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-player-search": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-remove-fit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-search": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-guild-transfer-leader": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-job-outfit-after-class-switch": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-lighter-network": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-live-drop-event": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-longer-chat-history": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-mage-orb": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-mage-pair-cooldown": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-mage-storm-frost-combo": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-mailbox-load-retry": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-mamushi-shuriken": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-action-button-pinned": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-cheapest-price-shown": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-paged-board": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-search-enter": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-sell-panel-fit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-sell-sort": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-sell-unlock": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-stat-filter": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-market-stat-filter-translate": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-melee-ranged-flee": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-merchant-double-tap-stack": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-merchant-drops-potions": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-momentum-10s": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-monster-etc-items": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-monster-idle-animation": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-new-gear-options": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-no-email-name": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-overweight-90-only": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-party-head-two-rows": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-party-panel-fold": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-party-transfer-leader": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-portal-ground-tint": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-profile-card-silver": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-relic-box-cards-1pct": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-relic-box-cards-equal": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-relic-box-coatings": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-relic-box-etc": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-relic-box-gear-5": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-relic-box-no-clip": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-relic-box-no-cotton-shirt": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-relic-box-tier-gear": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-remote-shop-keeps-bot": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-rename-card": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-sell-list-hover": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-share-card-special-option": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-shop-buy-steps": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-gold-coin-icons": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-shop-filter-row": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-shop-half-size": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-shop-icon-toggles": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-shop-landscape": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-shop-no-spinner": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-shop-qty-header": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-shop-sell-filters": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-silver-sinks": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-site-links-new-window": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-skin-mode": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-socket-from-item-card": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-sp-drain-option": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-spawn-guard": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-spawn-guard-30s": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-special-options-translated-again": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-status-name-translate": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-storage-fee-reopen": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-storage-item-tooltip": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-stormbreak-buff": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-top-roll-hover-special": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-top-roll-stat-colour": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-training-gate-forest": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-training-grounds": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-training-grounds-closed": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-training-grounds-load-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-twin-shot-sp": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-two-hand-balance": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-two-hand-left-slot": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-weapon-luk-roll": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-wiki-guild-exp-level": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-wiki-hit-flee": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-wings-bag-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-wings-cash-item": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-27-worn-skin-slot": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-arena-walk-in": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-arrow-buy-1000": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-arrow-buy-100k": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-arrows-return": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-arrows-weightless": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-aura-crash-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-aura-icon-fix": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-auto-caster-distance": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-bag-list-stats": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-bag-rarity-name-contrast": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-bag-rarity-tint": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-bag-refine-badge": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-boost-scroll-pause-offline": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-bot-hp-potion-tiers": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-bot-loot-fold": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-bot-skill-order-only": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-bow-two-cards": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-broken-gear-equip-window": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-broken-weapon-no-fight": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-card-socket-brackets": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-challenging-range-270": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-chat-map-trade-lfg": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-chat-share-full-card": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-checkout-game-name": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-cleric-party-wide-buffs": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-coat-reactions": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-crystal-shield-party": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-dex-matk-1": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-dex-matk-2": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-donation-target-1m": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-drain-effect": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-durability-back": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-effects-setting": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-element-aura-art": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-elemental-reactions": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-equip-refine-badge": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-equip-slot-short-tip": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-etc-price-half": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-forge-refine-badge": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-fusion-auto-pick": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-fusion-odds": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-fusion-socket-remove-lock": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-gear-wear-requirement": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-google-pay": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-guild-hotkey-g": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-guild-notice": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-gym-pass-bundles": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-hub-junk-requests": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-in-game-patch-notes-english": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-inspect-refine-badge": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-kensei-class": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-kensei-head-oboro-guard": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-kensei-no-air-swing": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-kensei-saya": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-kensei-twin-strike": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-legal-short-links": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-loot-protect-longer": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-loot-skip-disconnect": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-mage-freeze-stun-20": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-mage-mastery-buff": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-mall-card-price-wrap": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-market-premium-badge-result": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-market-refine-badge": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-max-level-aura-red": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-megaphone": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-megaphone-mall": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-mentality-dex-matk": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-mob-element-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-nekobaku-class": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-oboro-ranbu-faster": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-overweight-auto-stays": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-party-merge": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-patch-notes-english": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-physical-skill-crit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-premium-menu-drawer": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-premium-storage-anywhere": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-quest-desc-fit": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-quest-journal-exchange": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-ranking-mamushi-icon": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-reactions-every-clash": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-refine-list-right": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-relic-box-open-all": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-rename-card-1700": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-repair-price-table": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-repair-price-tenth": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-revive-here": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-ring-compare-slot": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-rings-either-slot": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-rome-stepped-shadows": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-rude-words-no-mute": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-shard-market-memory": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-skill-only-bot-no-air-throw": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-skill-rebalance-cleric-sword-kensei": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-skill-rush-all-classes": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-skill-sounds": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-skill-tooltip-short": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-sp-drain-like-lifesteal": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-spell-crit-haste": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-spell-total-per-caster": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-storage-refine-badge": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-trade-refine-badge": {
+   "status": "OFFICIAL_ONLY",
+   "detail": "update baru setelah snapshot client"
+  },
+  "2026-09-28-training-reopen": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-twin-fang-rush": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-wiki-crit-pierce": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-world-map-refresh": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-world-map-training": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  },
+  "2026-09-28-worn-card-stays-open": {
+   "status": "EXACT_MATCH",
+   "detail": "1 instance(s) identical across sources"
+  }
+ }
+}
