@@ -3,9 +3,9 @@
 ## Baseline
 | Field | Value |
 |---|---|
-| Commit | `371bf84` (final V0.6 micro-cleanup) |
+| Commit | `c15274d` (final V0.6 validation/provenance commit) |
 | Tag | `v0.6-mechanics-validation` |
-| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (first cleanup) → `371bf84` (final) |
+| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (first cleanup) → `371bf84` (changelog V3B archive) → `c15274d` (final) |
 | v0.5 baseline | `6131965` |
 
 ## Changelog Snapshot
