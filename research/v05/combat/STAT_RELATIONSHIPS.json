@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "title": "Lumivara Online - Stat Relationships",
+    "source_files": [
+      "web-v2/items-CvFgs761.js",
+      "web-v2/main-DEXZ0AP0.js"
+    ],
+    "primary_function": "De(A) - offset 118174 in items-CvFgs761.js",
+    "confidence": "VERIFIED_FROM_CLIENT_CODE",
+    "date_extracted": "2025-09-28"
+  },
+  "constants": {
+    "Q": {"value": 1, "desc": "Minimum stat value", "source": "W0 function", "offset": "~118000"},
+    "Ur": {"value": 99, "desc": "Maximum stat value", "source": "W0 function", "offset": "~118000"},
+    "lA": {"value": ["str","agi","vit","int","dex","luk"], "desc": "Base stat array", "source": "items-CvFgs761.js", "offset": "~118000"},
+    "K0": {"value": 193, "desc": "Maximum ASPD cap", "source": "const K0=193", "offset": "~118000"},
+    "Ye": {"value": 180, "desc": "ASPD soft cap start", "source": "const Ye=180", "offset": "~118000"},
+    "Y0": {"value": 0.5, "desc": "ASPD soft cap multiplier", "source": "const Y0=.5", "offset": "~118000"},
+    "X0": {"value": 0.3, "desc": "AGI contribution to ASPD", "source": "const X0=.3", "offset": "~118000"},
+    "V0": {"value": 0.02, "desc": "DEX contribution to ASPD", "source": "const V0=.02", "offset": "~118000"},
+    "xn": {"value": {"from":170,"perPoint":0.015}, "desc": "Basic attack damage scaling above 170 ASPD", "source": "xn={from:170,perPoint:.015}", "offset": "~118000"},
+    "Vr": {"value": 8, "desc": "Shield ASPD penalty", "source": "Vr=8", "offset": "~118000"},
+    "ce_caps": {"value": {"pierce":60,"mpierce":60,"atkPct":30,"matkPct":30,"lifesteal":8,"freezeHit":15,"resStun":80,"resFreeze":80,"moveSpeed":30,"critDmg":60,"stunHit":15,"bleedHit":15,"crushHit":15,"spDrain":5}, "desc": "Status stat caps", "source": "const ce={...}", "offset": "~1"}
+  },
+  "formulas": {
+    "maxHp": {
+      "expression": "Math.floor((Math.floor((100 + s*5 + a.vit*10) * (1 + c.hp)) + t.hp) * (1 + o.maxHpPct))",
+      "variables": {
+        "s": "A.level - 1 (base level)",
+        "a.vit": "Total VIT (base + equipment + status)",
+        "c.hp": "Class HP multiplier (from ei function: Tn[classId])",
+        "t.hp": "HP from equipment/cards",
+        "o.maxHpPct": "MaxHP% from skills (ironbody)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "HP = ((100 + (Lv-1)*5 + VIT*10) * (1 + classHPmult) + equipHP) * (1 + maxHpPct)"
+    },
+    "maxSp": {
+      "expression": "Math.floor((Math.floor((20 + s + a.int*5) * (1 + c.sp)) + t.sp) * (1 + o.maxSpPct))",
+      "variables": {
+        "s": "A.level - 1",
+        "a.int": "Total INT",
+        "c.sp": "Class SP multiplier",
+        "t.sp": "SP from equipment",
+        "o.maxSpPct": "MaxSP% from skills (mentality)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "SP = ((20 + (Lv-1) + INT*5) * (1 + classSPmult) + equipSP) * (1 + maxSpPct)"
+    },
+    "hit": {
+      "expression": "Math.floor((100 + A.level + a.dex*2 + Math.floor(a.luk/3) + o.hit + t.hit) * (1 + o.hitPct))",
+      "variables": {
+        "A.level": "Character level",
+        "a.dex": "Total DEX",
+        "a.luk": "Total LUK",
+        "o.hit": "HIT from skills (doubleattack, owleye)",
+        "t.hit": "HIT from equipment/cards",
+        "o.hitPct": "HIT% from skills (owleye)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "HIT = (100 + Lv + DEX*2 + LUK/3 + skillHIT + equipHIT) * (1 + hitPct)"
+    },
+    "atkBase": {
+      "expression": "10 + (Ft(i?.template) ? a.dex*2 + Math.floor(a.str/5) : a.str*2 + Math.floor(a.dex/5)) + Math.floor(a.luk/10) + s*.3",
+      "variables": {
+        "Ft(i?.template)": "true if weapon is bow/kunai/flask (ranged)",
+        "a.dex": "Total DEX",
+        "a.str": "Total STR",
+        "a.luk": "Total LUK",
+        "s": "level - 1"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "Melee: 10 + STR*2 + DEX/5 + LUK/10 + (Lv-1)*0.3 | Ranged: 10 + DEX*2 + STR/5 + LUK/10 + (Lv-1)*0.3"
+    },
+    "atk": {
+      "expression": "(M + t.atk*l) * (1 + qA/100)",
+      "variables": {
+        "M": "atkBase + _ (skill bonuses: maxHpAtkPct*HITmax + atkPerHit*HIT + atkPerDex*DEX + atkPerAgi*AGI)",
+        "t.atk": "Flat ATK from equipment/cards",
+        "l": "weaponTypeMultiplier * (1 + atkPct from skills)",
+        "qA": "capped atkPct (max 30%)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "Final ATK = (baseAtk + equipATK * weaponMult) * (1 + atkPct/100). atkPct capped at 30%"
+    },
+    "matkBase": {
+      "expression": "5 + a.int*3 + a.dex + s*.3",
+      "variables": {
+        "a.int": "Total INT",
+        "a.dex": "Total DEX",
+        "s": "level - 1"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "MATK base = 5 + INT*3 + DEX + (Lv-1)*0.3"
+    },
+    "matk": {
+      "expression": "(T + t.matk*k) * (1 + YA/100)",
+      "variables": {
+        "T": "matkBase + Math.floor(P*o.matkPerMaxSp + a.dex*o.matkPerDex + a.agi*o.matkPerAgi)",
+        "t.matk": "Flat MATK from equipment",
+        "k": "1 + matkPct from skills",
+        "YA": "capped matkPct (max 30%)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "MATK = (baseMATK + equipMATK * (1+skillMatkPct)) * (1 + matkPct/100). matkPct capped at 30%"
+    },
+    "def": {
+      "expression": "Math.floor(a.vit/5) + t.def + o.def",
+      "variables": {
+        "a.vit": "Total VIT",
+        "t.def": "DEF from equipment/cards",
+        "o.def": "DEF from skills (divineprotection)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "DEF = VIT/5 + equipDEF + skillDEF"
+    },
+    "mdef": {
+      "expression": "a.int + Math.floor(a.vit/5) + t.mdef + o.mdef",
+      "variables": {
+        "a.int": "Total INT",
+        "a.vit": "Total VIT",
+        "t.mdef": "MDEF from equipment/cards",
+        "o.mdef": "MDEF from skills (divineprotection)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "MDEF = INT + VIT/5 + equipMDEF + skillMDEF"
+    },
+    "flee": {
+      "expression": "Math.floor((A.level + a.agi*2 + Math.floor(a.luk/5) + t.flee) * (1 + o.fleePct))",
+      "variables": {
+        "A.level": "Character level",
+        "a.agi": "Total AGI",
+        "a.luk": "Total LUK",
+        "t.flee": "FLEE from equipment/cards",
+        "o.fleePct": "FLEE% from skills (improvedodge, numbingtoxin, shukuchi)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "FLEE = (Lv + AGI*2 + LUK/5 + equipFLEE) * (1 + fleePct)"
+    },
+    "perfectDodge": {
+      "expression": "Math.min(15, a.luk*.1) + o.perfectDodge",
+      "variables": {
+        "a.luk": "Total LUK",
+        "o.perfectDodge": "Perfect Dodge from skills (improvedodge)"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "Perfect Dodge = min(15, LUK*0.1) + skillBonus. Capped at 15%"
+    },
+    "critical": {
+      "expression": "Math.min(100, (Math.floor(a.luk/3) + s*.1 + t.crit + o.crit + (r.stats.crit ?? 0)) * (wi(i) ? 2 : 1))",
+      "variables": {
+        "a.luk": "Total LUK",
+        "s": "level - 1",
+        "t.crit": "CRIT from equipment/cards",
+        "o.crit": "CRIT from skills (katanamastery)",
+        "r.stats.crit": "CRIT from active statuses (meikyo)",
+        "wi(i)": "true if weapon is knife/dagger_pair/kunai"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "CRIT = min(100, (LUK/3 + (Lv-1)*0.1 + equipCRIT + skillCRIT + statusCRIT) * (2 if knife/dagger/kunai else 1))"
+    },
+    "spellCritical": {
+      "expression": "Math.min(100, Math.floor(a.luk/3) + t.crit)",
+      "variables": {
+        "a.luk": "Total LUK",
+        "t.crit": "CRIT from equipment/cards"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "Spell CRIT = LUK/3 + equipCRIT (no level bonus, no weapon doubling). Matches changenote: 'crit เวท = LUK/3 + CRIT dari equipment'"
+    },
+    "critMultiplier": {
+      "expression": "2 * (1 + o.critDamagePct + S('critDmg')/100)",
+      "variables": {
+        "o.critDamagePct": "Crit damage% from skills (fatalsense, zanshin)",
+        "S('critDmg')": "Crit damage% from equipment/cards"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "Crit damage multiplier = 200% * (1 + critDmgPct/100 + equipCritDmg/100). Base crit is 2x"
+    },
+    "aspd": {
+      "expression": "Math.min(193, Math.max(50, Math.round(Q0(q0(U0(class,weapon,shield), AGI, DEX, statusAspd + o.aspdPercent) + equipAspd + statusAspdFlat) * 10) / 10))",
+      "variables": {
+        "q0(base, agi, dex, aspdPercent)": "r=1-(base-144)/50, a=(agi*0.3+dex*0.02)*r, return 200-(200-(base+a))*(1-aspdPercent)",
+        "U0(class,weapon,shield)": "baseAspd + weaponMod - (shield ? 8 : 0)",
+        "Q0(aspd)": "aspd <= 180 ? aspd : 180 + (aspd-180)*0.5",
+        "statusAspd": "ASPD% from buffs",
+        "o.aspdPercent": "ASPD% from skills",
+        "equipAspd": "Flat ASPD from equipment/cards"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "ASPD soft cap: >180 gives half value. Hard cap: 193. Floor: 50. AGI contributes 0.3/point, DEX contributes 0.02/point. Weapon type modifies base ASPD (knife+2, bow-4, staff-10, shield-8)"
+    },
+    "interval": {
+      "expression": "Math.round((200 - aspd) * 20)",
+      "variables": {
+        "aspd": "Final ASPD value"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "Attack interval in milliseconds. At ASPD 193: 140ms. At ASPD 148: 1040ms"
+    },
+    "basicFactor": {
+      "expression": "1 + Math.max(0, aspd - 170) * 0.015",
+      "variables": {
+        "aspd": "Final ASPD value"
+      },
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "notes": "Basic attack damage scaling. Above 170 ASPD, each point gives +1.5% damage. At 193 ASPD: 1 + 23*0.015 = 1.345x"
+    }
+  },
+  "classBonuses": {
+    "Ai": {
+      "novice": {},
+      "swordman": {"str":3,"vit":2},
+      "mage": {"int":5},
+      "archer": {"dex":5},
+      "acolyte": {"int":3,"vit":2},
+      "merchant": {"str":2,"vit":3},
+      "thief": {"agi":3,"luk":2},
+      "mamushi": {"agi":2,"dex":2,"luk":1},
+      "nekobaku": {"agi":2,"int":3},
+      "kensei": {"agi":2,"str":2,"dex":1}
+    },
+    "source_symbol": "Ai",
+    "source_offset": "~118000",
+    "confidence": "VERIFIED_FROM_CLIENT_CODE"
+  },
+  "weaponAspdModifiers": {
+    "Xr": {
+      "knife":2, "dagger_pair":2, "kunai":2, "flask":0, "katana":1,
+      "sword":0, "falchion":0, "blade":0, "hammer":-2,
+      "rod":-8, "staff":-10, "quarterstaff":-5, "bow":-4
+    },
+    "source_symbol": "Xr",
+    "source_offset": "~118000",
+    "confidence": "VERIFIED_FROM_CLIENT_CODE"
+  }
+}
