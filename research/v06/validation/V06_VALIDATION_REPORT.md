@@ -3,17 +3,25 @@
 ## Baseline
 | Field | Value |
 |---|---|
-| Commit | `1bd5fd6` |
+| Commit | `d797ee1` (final V0.6 cleanup) |
 | Tag | `v0.6-mechanics-validation` |
-| Previous | `6131965` (v0.5) |
+| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (final) |
+| v0.5 baseline | `6131965` |
 
 ## Changelog Snapshot
 | Field | Value |
 |---|---|
-| Bundle | `DY1AbHUd` |
-| Entries | 679 |
-| Status | UNCHANGED from v0.4.2/v0.5/v0.6 snapshot |
-| Check time | 2026-09-28T14:37 |
+| Bundle | `B6x3YIz5` |
+| Entries | 685 |
+| Status | 6 new entries since V0.6 initial — all UI/UX, no mechanics impact |
+| Check time | 2026-09-28T19:55 |
+
+### Historical Progression
+| Version | Bundle | Entries |
+|---|---|---|
+| V0.4.x | `Dk8pLLLq` | 669 |
+| V0.5 | `D0Wscyxj` | 678 |
+| V0.6 | `B6x3YIz5` | 685 |
 
 ## Files Changed (this cleanup)
 | File | Change |
