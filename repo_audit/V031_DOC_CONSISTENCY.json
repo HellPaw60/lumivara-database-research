@@ -1,0 +1,357 @@
+{
+ "_meta": {
+  "docs_checked": [
+   "README.md",
+   "RECONSTRUCTION_REPORT.md",
+   "repo_audit/V03_AUDIT.md"
+  ],
+  "total_checks": 39
+ },
+ "actual_values": {
+  "classes": 10,
+  "skills": 64,
+  "items_consumables": 80,
+  "cards": 49,
+  "statuses": 42,
+  "maps": 19,
+  "monsters": 40,
+  "monster_status_attacks": 7,
+  "translations": 2547,
+  "changelog_entries": 650,
+  "changelog_unique_ids": 649,
+  "ws_events": 26,
+  "formulas": 18,
+  "sqlite_tables": 11,
+  "sqlite_rows": 2881
+ },
+ "checks": [
+  {
+   "doc": "README.md",
+   "claim": "classes=10",
+   "doc_values": [
+    "Classes | 10"
+   ],
+   "actual": 10,
+   "status": "MATCH"
+  },
+  {
+   "doc": "README.md",
+   "claim": "skills=64",
+   "doc_values": [
+    "64 skill"
+   ],
+   "actual": 64,
+   "status": "MATCH"
+  },
+  {
+   "doc": "README.md",
+   "claim": "items=80",
+   "doc_values": [],
+   "actual": 80,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "README.md",
+   "claim": "cards=49",
+   "doc_values": [],
+   "actual": 49,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "README.md",
+   "claim": "monsters=40",
+   "doc_values": [
+    "40 monster"
+   ],
+   "actual": 40,
+   "status": "MATCH"
+  },
+  {
+   "doc": "README.md",
+   "claim": "maps=19",
+   "doc_values": [],
+   "actual": 19,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "README.md",
+   "claim": "statuses=42",
+   "doc_values": [],
+   "actual": 42,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "README.md",
+   "claim": "translations=2547",
+   "doc_values": [
+    "2,547"
+   ],
+   "actual": 2547,
+   "status": "MATCH"
+  },
+  {
+   "doc": "README.md",
+   "claim": "changelog=650",
+   "doc_values": [
+    "650 entri",
+    "650 changelog "
+   ],
+   "actual": 650,
+   "status": "MATCH"
+  },
+  {
+   "doc": "README.md",
+   "claim": "ws_events=26",
+   "doc_values": [],
+   "actual": 26,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "README.md",
+   "claim": "formulas=18",
+   "doc_values": [
+    "18 formula"
+   ],
+   "actual": 18,
+   "status": "MATCH"
+  },
+  {
+   "doc": "README.md",
+   "claim": "sqlite_tables=12",
+   "doc_values": [],
+   "actual": 11,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "README.md",
+   "claim": "sqlite_rows=2891",
+   "doc_values": [],
+   "actual": 2881,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "classes=10",
+   "doc_values": [
+    "Classes | 10"
+   ],
+   "actual": 10,
+   "status": "MATCH"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "skills=64",
+   "doc_values": [
+    "64 skill"
+   ],
+   "actual": 64,
+   "status": "MATCH"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "items=80",
+   "doc_values": [
+    "80 item",
+    "80 consumable"
+   ],
+   "actual": 80,
+   "status": "MATCH"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "cards=49",
+   "doc_values": [
+    "49 kartu"
+   ],
+   "actual": 49,
+   "status": "MATCH"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "monsters=40",
+   "doc_values": [
+    "40 monster"
+   ],
+   "actual": 40,
+   "status": "MATCH"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "maps=19",
+   "doc_values": [
+    "19 map"
+   ],
+   "actual": 19,
+   "status": "MATCH"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "statuses=42",
+   "doc_values": [],
+   "actual": 42,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "translations=2547",
+   "doc_values": [],
+   "actual": 2547,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "changelog=650",
+   "doc_values": [
+    "650 changelog "
+   ],
+   "actual": 650,
+   "status": "MATCH"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "ws_events=26",
+   "doc_values": [
+    "26 event"
+   ],
+   "actual": 26,
+   "status": "MATCH"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "formulas=18",
+   "doc_values": [],
+   "actual": 18,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "sqlite_tables=12",
+   "doc_values": [],
+   "actual": 11,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "RECONSTRUCTION_REPORT.md",
+   "claim": "sqlite_rows=2891",
+   "doc_values": [],
+   "actual": 2881,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "classes=10",
+   "doc_values": [],
+   "actual": 10,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "skills=64",
+   "doc_values": [
+    "64 skill"
+   ],
+   "actual": 64,
+   "status": "MATCH"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "items=80",
+   "doc_values": [
+    "80 item"
+   ],
+   "actual": 80,
+   "status": "MATCH"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "cards=49",
+   "doc_values": [
+    "49 card"
+   ],
+   "actual": 49,
+   "status": "MATCH"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "monsters=40",
+   "doc_values": [
+    "40 monster"
+   ],
+   "actual": 40,
+   "status": "MATCH"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "maps=19",
+   "doc_values": [
+    "19 map"
+   ],
+   "actual": 19,
+   "status": "MATCH"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "statuses=42",
+   "doc_values": [
+    "42 status"
+   ],
+   "actual": 42,
+   "status": "MATCH"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "translations=2547",
+   "doc_values": [],
+   "actual": 2547,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "changelog=650",
+   "doc_values": [],
+   "actual": 650,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "ws_events=26",
+   "doc_values": [],
+   "actual": 26,
+   "status": "NOT_FOUND"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "formulas=18",
+   "doc_values": [
+    "18 formula"
+   ],
+   "actual": 18,
+   "status": "MATCH"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "sqlite_tables=12",
+   "doc_values": [
+    "12 tabel",
+    "12 tabel",
+    "12 tabel"
+   ],
+   "actual": 11,
+   "status": "MISMATCH"
+  },
+  {
+   "doc": "repo_audit/V03_AUDIT.md",
+   "claim": "sqlite_rows=2891",
+   "doc_values": [
+    "2.891"
+   ],
+   "actual": 2881,
+   "status": "MISMATCH"
+  }
+ ],
+ "summary": {
+  "match": 21,
+  "mismatch": 2,
+  "not_found": 16
+ }
+}

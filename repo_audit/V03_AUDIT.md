@@ -10,13 +10,13 @@
 
 | Aspek | database/ | forensics/database/ |
 |---|---|---|
-| Tables | 12 | 11 |
-| Rows | 2.891 | 2.877 |
+| Tables | 12 (11 data + `_prov`) | 11 (10 data + `_prov`) |
+| Rows | 2.891 (2.881 data + 10 prov) | 2.877 |
 | Integrity | ok | ok |
 | FK check | clean | clean |
 | Page size | 4.096 | 4.096 |
 
-Delta = tabel CLIENT_MINING (14 domain mining hasil subagent).
+Delta = tabel data CLIENT_MINING (14 domain mining hasil subagent). Angka "12 tabel/2.891 rows" di dokumentasi v0.3 memakai definisi termasuk tabel metadata `_prov`.
 
 ## SQL Archive (Phase 7-9)
 

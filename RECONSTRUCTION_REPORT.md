@@ -77,11 +77,11 @@ Lihat formulas/combat-analysis.json (3.282 hit event, full coverage):
 
 ## 16-18. Equipment / Refine / Fusion
 
-- Generator: template-based (11 template senjata), random stat +1–3 (75% 1 stat, 25% 2 stat) — **generation sepenuhnya SERVER-SIDE**, klien hanya punya template detection (`Ga=['bow','staff','quarterstaff','dagger_pair','hammer']`)
+- Generator: template-based (11 template senjata), random stat +1–3 (75% 1 stat, 25% 2 stat) — bukti klien yang tersedia mengindikasikan equipment generation diselesaikan server-side (klien hanya berisi template detection/rendering logic, tidak ada formula generation authoritative yang ditemukan)
 - **Refine formula (VERIFIED dari kode KLIEN — server belum tentu identik)**: `failFactor(level) = min(0.3, max(0, (level-20) × 0.0025))`; `successRate(level, refine) = 1 − failFactor × (1 − min(100, refine)/100)` — makin tinggi level & refine stat, makin tinggi success; cap 30% fail factor. Refine stone 1% drop Lv70+ atau daily hunt. 10 bonus stat refine dengan cap masing-masing (pierce 60, atkPct 30, lifesteal 8, moveSpeed 30, dst.)
 - Fusion: `fuse gearIds[] + slot + template` via Fusion Master NPC → forge effects (4 jenis)
 - **Pet system (VERIFIED)**: 10+ pet dengan elemen — dew-bunny(water), thorn-pixie(poison), honey-moth(wind), bramble-hare(earth), frost-puff(ice) — petBag terpisah dari inventory, petLoot dengan filter (consumable/etc/card/equipment), petWithdraw all
-- **World Boss (VERIFIED dari kode)**: Crowned Prism Hopper — `hp:30000, damage:180, reward:9000`, ada respawn timer (`respawn:zi`) dan home area (`home:Ao`)
+- **World Boss (VERIFIED dari kode klien)**: Crowned Prism Hopper — `hp:30000, damage:180, reward:9000` (VERIFIED_FROM_CLIENT_CODE). Ada respawn timer (`respawn:zi`) dan home area (`home:Ao`) — keberadaan field VERIFIED, **nilai numerik timer & koordinat home masih UNKNOWN** (variabel minified belum diekstrak).
 
 ## 19-20. Party & Economy
 
@@ -105,7 +105,7 @@ storage, use — schema lengkap di protocol/NETWORK_PROTOCOL_v3.json
 
 ## 22-23. Changelog & Version Diff
 
-650 entri (7 hari, ~93/hari). Diff v1→v2: +2 class, +14 skill, +5 item, +4 pesan protokol,
+650 changelog entries terekstrak (649 unique ID; 1 duplikat ID `2026-09-23-skill-rebalance` ada di source bundle — dua entri berbeda jam sama dengan judul beda). Entry ≠ release; jumlah patch aktual tidak diketahui. Diff v1→v2: +2 class, +14 skill, +5 item, +4 pesan protokol,
 −1 (enterArena), rebalancing 8 monster. Lihat diffs/DIFF_v1_v2.json.
 
 **Drop orphans**: 4 item teramati sebagai drop tapi belum terasosiasi ke mob di MONSTER_DB —

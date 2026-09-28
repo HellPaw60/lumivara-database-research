@@ -112,8 +112,8 @@ Setiap entity dapat ditelusuri via `provenance/PROVENANCE.json`:
 6. **Monster rebalancing v1→v2**: Vine Lynx HP ×10, Bog Toad ×4, Pebble Golem ÷4
 7. **Boss endgame baru**: Crowned Tempest Drake Lv.280 (11.16M HP), Crowned Grave Knight Lv.230
 8. **Protokol**: handshake `spawnReady` wajib sebelum input diterima; travel divalidasi posisi portal; move max ~90px/120ms
-9. **Guest system**: `POST /api/guest` body kosong, tanpa CAPTCHA — 15+ akun dibuat selama riset tanpa hambatan
-10. **650 changelog entries dalam 7 hari** (~93/hari) — development sangat aktif
+9. **Guest system**: endpoint `POST /api/guest` dengan body kosong teramati (tanpa CAPTCHA di client flow). Selama riset, ±15 guest account dibuat via endpoint publik ini tanpa hambatan yang terlihat. Catatan: ini observasi eksperimen terbatas — bukan security audit server, rate-limit server-side tidak diuji.
+10. **650 changelog entries terekstrak dari bundle klien** yang mencakup periode 7 hari; 649 unique ID teramati, 1 duplikat ID ada di source bundle. Entry ≠ release — jumlah patch/release aktual tidak diketahui.
 
 ## Legal Note
 
