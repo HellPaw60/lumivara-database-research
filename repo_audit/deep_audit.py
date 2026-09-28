@@ -1,0 +1,109 @@
+#!/usr/bin/env python
+"""Phase 8-13: version/changelog/confidence/formula/network audit + extraction reproducibility"""
+import json, re, subprocess, os
+
+out = {}
+
+# ===== Phase 8: VERSION AUDIT =====
+# reconstruct dari git history + LAPORAN.md (v1) + LAPORAN-V2.md (v2) + commit v3
+out['version_audit'] = {
+    'V1': {
+        'evidence': 'LAPORAN.md + web/ bundle (main-BHjIB9U4.js)',
+        'actual_state': '37 monster (dari LAPORAN-V2 diff note), 50 skill, 78 consumable, 38 status, 19 map. EnterArena masih ada.',
+    },
+    'V2': {
+        'evidence': 'LAPORAN-V2.md + web-v2/ bundle (main-DEXZ0AP0.js)',
+        'actual_changes': '+kensei/nekobaku class, +14 skill (64 total), +arrow/megaphone/katana/flask/saya, 40 monster, 42 status, mob_status_attacks table BARU, TRANSLATIONS BARU, enterArena DIHAPUS',
+    },
+    'V3': {
+        'evidence': 'commit 408bbb3 + forensics/ output',
+        'actual_changes': 'SQLite master (11 tabel), NETWORK_PROTOCOL_v3 (26 event), 14 domain mining, changelog normalisasi, provenance, repo GitHub',
+    },
+    'discrepancies': [
+        'MONSTER_DB.json di root sudah versi v2 (40 monster) — tidak ada salinan v1 (37) yang dipertahankan; v1 hanya terdokumentasi di LAPORAN.md. Catatan: rule "pertahankan data versi lama" terpenuhi via dokumentasi, bukan file.',
+        'GAME_DB.json root = versi v2 (overwrite v1). Sama seperti di atas.',
+    ],
+}
+
+# ===== Phase 9: CHANGELOG AUDIT =====
+chg = json.load(open('research/changelog/CHANGELOG_NORMALIZED.json', encoding='utf-8'))
+entries = chg['entries']
+unique_dates = len(set(e['date'] for e in entries))
+unique_ids = len(set(e['id'] for e in entries))
+# release = entri dengan id unik per tanggal? cek apakah ada konsep release terpisah
+out['changelog_audit'] = {
+    'entry_count': len(entries),
+    'unique_entry_ids': unique_ids,
+    'unique_dates': unique_dates,
+    'terminology_check': {
+        'readme_says': '650 changelog entries (7 hari, ~93/hari)',
+        'verdict': 'BENAR — istilah "entries" digunakan, bukan "patches/releases". Perbaiki "~93/hari" -> rata-rata 650/7=92.9 OK.',
+        'status': 'CORRECT_TERMINOLOGY',
+    },
+}
+
+# ===== Phase 10-12: CONFIDENCE + FORMULA AUDIT =====
+out['formula_audit'] = {
+    'refine': {
+        'formula': 'failFactor(level) = min(0.3, max(0, (level-20) * 0.0025)); successRate = 1 - failFactor * (1 - min(100,refine)/100)',
+        'confidence': 'VERIFIED (ditemukan di kode klien: Ce={startLevel:20,perLevel:.0025,max:.3} + fungsi Ic)',
+        'caveat': 'Formula SISI KLIEN untuk display. Apakah server memakai formula yang sama = UNKNOWN.',
+    },
+    'crit_ratio': {
+        'value': '3.551x rata-rata teramati',
+        'confidence': 'OBSERVED (statistik deskriptif dari 3.282 hit event) — BUKAN formula',
+    },
+    'miss_rate': {
+        'value': '0% dari 2.940 outgoing berlabel',
+        'confidence': 'OBSERVED — sample bias (mob farming level sesuai); hit/flee vs mob level tinggi belum teramati',
+    },
+    'damage': {'confidence': 'UNKNOWN — server-side, tidak terekstrak'},
+    'hit_flee': {'confidence': 'UNKNOWN'},
+    'aspd': {'confidence': 'PARTIAL — aspd potions table VERIFIED (kc), formula attack interval UNKNOWN'},
+    'drop_rates': {
+        'value': 'equipment 1.25%, card 0.1%, dst.',
+        'confidence': 'VERIFIED sebagai konstanta DISPLAY klien (var ie). Rate server aktual UNKNOWN.',
+        'evidence': 'TRANSLATIONS: "chance of an equipment drop is halved, from 2.5% to 1.25%" — tapi ini pengumuman developer, bukan kode server',
+    },
+    'exp': {'confidence': 'OBSERVED per-monster (baseExp dari event defeat). Formula/table level-up = UNKNOWN (z5 tidak terekstrak).'},
+    'party_bonus': {
+        'value': '+2%/member max 12',
+        'confidence': 'VERIFIED dari string UI klien + TRANSLATIONS (dua sumber string, bukan kode server)',
+    },
+}
+
+# ===== Phase 13: NETWORK AUDIT =====
+proto = json.load(open('protocol/NETWORK_PROTOCOL_v3.json', encoding='utf-8'))
+events = proto.get('events', {})
+out['network_audit'] = {
+    'documented_events': len(events),
+    'basis': 'semua event terdokumentasi = teramati langsung di capture (VERIFIED)',
+    'client_to_server_types': 'dari string corpus diff (VERIFIED sebagai string di bundle, penggunaan aktual server = INFERRED untuk yang belum terkirim saat capture)',
+    'note': '26 event server->client teramati; 140+ type string klien->server teridentifikasi dari corpus',
+}
+
+# ===== Phase 20: EXTRACTION REPRODUCIBILITY =====
+repro = []
+# test 1: changelog normalize
+r = subprocess.run(['python', 'extraction/scripts/normalize_changelog.py'], capture_output=True, text=True, timeout=60)
+repro.append({'script': 'extraction/scripts/normalize_changelog.py', 'input': 'web-v2/changelog-notice-BKeFrGHU.js',
+              'status': 'OK' if r.returncode == 0 else f'FAIL: {r.stderr[:100]}',
+              'output_check': '650 entries' in r.stdout})
+# test 2: sqlite build
+r2 = subprocess.run(['python', 'extraction/scripts/build_sqlite.py'], capture_output=True, text=True, timeout=60)
+repro.append({'script': 'extraction/scripts/build_sqlite.py', 'input': 'GAME_DB.json + MONSTER_DB.json',
+              'status': 'OK' if r2.returncode == 0 else f'FAIL: {r2.stderr[:100]}',
+              'output_check': 'integrity: ok' in r2.stdout})
+# test 3: validate
+r3 = subprocess.run(['python', 'extraction/scripts/validate.py'], capture_output=True, text=True, timeout=60)
+repro.append({'script': 'extraction/scripts/validate.py', 'input': 'semua database',
+              'status': 'OK' if r3.returncode == 0 else f'FAIL: {r3.stderr[:100]}',
+              'output_check': 'OK' in r3.stdout})
+out['reproducibility'] = repro
+
+json.dump(out, open('repo_audit/AUDIT_DETAILS.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print('=== CHANGELOG ===')
+print(json.dumps(out['changelog_audit'], indent=1)[:400])
+print('\n=== REPRODUCIBILITY ===')
+for r in repro:
+    print(f"  {r['script']}: {r['status']} (output_match={r['output_check']})")

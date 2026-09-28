@@ -1,0 +1,30 @@
+{
+ "issues": [],
+ "checks": [
+  {
+   "check": "skill.classId -> classes",
+   "result": "OK"
+  },
+  {
+   "check": "map.portals.to -> maps",
+   "result": "OK"
+  },
+  {
+   "check": "monster.drops -> items",
+   "result": "2 item tidak ada di ITEMS (material drops \u2014 expected, ITEMS hanya consumable)",
+   "detail": [
+    "golem_card",
+    "gecko_card"
+   ]
+  },
+  {
+   "check": "mob_status_attacks.monster_name -> monsters",
+   "result": "ORPHAN: ['Crowned Prism Hopper']",
+   "note": "Crowned Prism Hopper = World Boss (prism-hopper key ada di MONSTER_DB sebagai Prism Hopper Lv1 elite) \u2014 name variant"
+  },
+  {
+   "check": "CLASS_DB.skills_by_class total vs GAME_DB.skills",
+   "result": "64 vs 64 \u2014 OK"
+  }
+ ]
+}

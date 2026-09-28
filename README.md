@@ -90,6 +90,16 @@ Setiap entity dapat ditelusuri via `provenance/PROVENANCE.json`:
 | Interior areas (inn/cove/grove/ruins/temple/arena) | UNKNOWN (pintu tidak di data portal) |
 | Quest/mall/pet/refine tables | lihat forensics/client/tables/ (hasil mining) |
 
+## Known Limitations
+
+- Combat damage formula: UNKNOWN (hanya statistik observasi)
+- Actual server drop rate: UNKNOWN (konstanta klien = display only)
+- Interior area coordinates (inn/cove/grove/ruins/temple/arena): UNKNOWN
+- Quest server reward schema: UNKNOWN (server-driven)
+- Refine formula: VERIFIED dari kode KLIEN — versi server belum tentu identik
+- Monster drop table: asosiasi posisi (DERIVED), bukan tabel server
+- maxHp: nilai maksimum teramati (variance elite/normal bisa tercampur)
+
 ## Important Findings (VERIFIED)
 
 1. **Class unlock chain**: Kensei = Swordsman 50 + Thief 50 + 120K Silver; Nekobaku = Merchant 50 + Mamushi 50 + 120K Silver

@@ -1,0 +1,101 @@
+{
+ "_meta": {
+  "generated": "2026-09-28T14:51:59",
+  "model": "setiap field penting -> sumber -> metode -> confidence"
+ },
+ "entities": {
+  "classes": {
+   "fields": [
+    "class_id",
+    "name",
+    "unlock_jobs",
+    "unlock_silver"
+   ],
+   "source": "web-v2/items-CvFgs761.js — var z (names), var WA (unlock)",
+   "hash": "b0b0942b556fc813",
+   "method": "node eval module + regex",
+   "confidence": "VERIFIED"
+  },
+  "skills": {
+   "fields": [
+    "skill_id",
+    "name",
+    "class_id",
+    "job_level",
+    "sp_cost",
+    "cooldown_ms",
+    "range_px",
+    "target",
+    "effect",
+    "power",
+    "multiplier",
+    "is_passive"
+   ],
+   "source": "web-v2/items-CvFgs761.js — var x (spread + f() constructor)",
+   "hash": "b0b0942b556fc813",
+   "method": "node eval module (f() helper ter-eksekusi)",
+   "confidence": "VERIFIED"
+  },
+  "items.consumables": {
+   "source": "web-v2/items-CvFgs761.js — var Pc",
+   "hash": "b0b0942b556fc813",
+   "method": "node eval module",
+   "confidence": "VERIFIED"
+  },
+  "cards": {
+   "source": "web-v2/items-CvFgs761.js — var le",
+   "hash": "b0b0942b556fc813",
+   "method": "node eval module",
+   "confidence": "VERIFIED"
+  },
+  "statuses": {
+   "source": "web-v2/items-CvFgs761.js — var N",
+   "method": "node eval module",
+   "confidence": "VERIFIED"
+  },
+  "maps": {
+   "source": "web-v2/items-CvFgs761.js — var Y",
+   "method": "node eval module",
+   "confidence": "VERIFIED"
+  },
+  "monsters": {
+   "fields": [
+    "key",
+    "name",
+    "level",
+    "maxHp",
+    "elite",
+    "areas",
+    "baseExp",
+    "jobExp",
+    "drops"
+   ],
+   "source": "collect/raw-snapshots.json — WS snapshot mobInfo + event defeat/pickup",
+   "hash": "db3089029e01df4c",
+   "method": "passive WS collection (guest account, collector-final.mjs)",
+   "confidence": "VERIFIED (stats/EXP) / DERIVED (drop association via posisi+urutan)"
+  },
+  "translations": {
+   "source": "web-v2/language-Dz8VbPNM.js",
+   "hash": "0afdb0f5d6fd20e3",
+   "method": "regex \"thai\":\"english\" pairs",
+   "confidence": "VERIFIED"
+  },
+  "changelog": {
+   "source": "web-v2/changelog-notice-BKeFrGHU.js",
+   "hash": "c656f3c9dc6b0386",
+   "method": "regex id/date/time/title/lines",
+   "confidence": "VERIFIED (entri) / DERIVED (kategori heuristic)"
+  },
+  "mob_status_attacks": {
+   "source": "web-v2/items-CvFgs761.js — var W1",
+   "method": "bracket-match extraction",
+   "confidence": "VERIFIED"
+  },
+  "drop_rates": {
+   "source": "web-v2/items-CvFgs761.js — var ie",
+   "method": "node eval module",
+   "confidence": "VERIFIED (konstanta display) — INFERRED apakah rate server identik"
+  }
+ }
+}

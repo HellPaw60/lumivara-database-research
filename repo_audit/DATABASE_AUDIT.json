@@ -1,0 +1,374 @@
+{
+ "json": [
+  {
+   "file": "CARD_DB_v3.json",
+   "size": 17759,
+   "sha256": "b605f332f350c7bf",
+   "top_keys": [
+    "_meta",
+    "cards"
+   ],
+   "record_counts": {
+    "cards": 49
+   },
+   "status": "OK"
+  },
+  {
+   "file": "CLASS_DB_v3.json",
+   "size": 2090,
+   "sha256": "a8e09e1869ce12ca",
+   "top_keys": [
+    "_meta",
+    "classes",
+    "skills_by_class"
+   ],
+   "record_counts": {
+    "classes": 10,
+    "skills_by_class": 10
+   },
+   "status": "OK"
+  },
+  {
+   "file": "GAME_DB_v3.json",
+   "size": 98580,
+   "sha256": "c9c7bab2245745de",
+   "top_keys": [
+    "consumables",
+    "cards",
+    "status_effects",
+    "maps",
+    "skills",
+    "drop_rates",
+    "mob_status_attacks",
+    "aspd_potions"
+   ],
+   "record_counts": {
+    "consumables": 80,
+    "cards": 49,
+    "status_effects": 42,
+    "maps": 19,
+    "skills": 64,
+    "drop_rates": 9,
+    "mob_status_attacks": 7,
+    "aspd_potions": 3,
+    "starter_equipment": 18
+   },
+   "status": "OK"
+  },
+  {
+   "file": "ITEM_DB_v3.json",
+   "size": 33727,
+   "sha256": "345528d323455160",
+   "top_keys": [
+    "_meta",
+    "consumables",
+    "starter_equipment",
+    "aspd_potions"
+   ],
+   "record_counts": {
+    "consumables": 80,
+    "starter_equipment": 18,
+    "aspd_potions": 3
+   },
+   "status": "OK"
+  },
+  {
+   "file": "MAP_DB_v3.json",
+   "size": 12277,
+   "sha256": "44ba5ea2914f865f",
+   "top_keys": [
+    "_meta",
+    "maps"
+   ],
+   "record_counts": {
+    "maps": 19
+   },
+   "status": "OK"
+  },
+  {
+   "file": "MONSTER_DB_v3.json",
+   "size": 11972,
+   "sha256": "986b2b6adb57f0dc",
+   "top_keys": [
+    "_meta",
+    "monsters"
+   ],
+   "record_counts": {
+    "monsters": 40
+   },
+   "status": "OK"
+  },
+  {
+   "file": "SKILL_DB_v3.json",
+   "size": 25531,
+   "sha256": "d009f2805932b5bc",
+   "top_keys": [
+    "_meta",
+    "skills"
+   ],
+   "record_counts": {
+    "skills": 64
+   },
+   "status": "OK"
+  },
+  {
+   "file": "STATUS_DB_v3.json",
+   "size": 9487,
+   "sha256": "a62b0a1f1d4522a0",
+   "top_keys": [
+    "_meta",
+    "statuses",
+    "mob_status_attacks"
+   ],
+   "record_counts": {
+    "statuses": 42,
+    "mob_status_attacks": 7
+   },
+   "status": "OK"
+  },
+  {
+   "file": "arena.json",
+   "size": 982,
+   "sha256": "8fa54d105cd04e21",
+   "top_keys": [
+    "arena_map",
+    "training_map",
+    "pvp_actions",
+    "duel_rules",
+    "status"
+   ],
+   "record_counts": {
+    "arena_map": 6,
+    "training_map": 2,
+    "pvp_actions": 3
+   },
+   "status": "OK"
+  },
+  {
+   "file": "death_revive.json",
+   "size": 639,
+   "sha256": "e74fbf709dfbd44e",
+   "top_keys": [
+    "death_mechanics",
+    "revive_here_cost",
+    "revive_atTown",
+    "death_ui",
+    "death_timer",
+    "status"
+   ],
+   "record_counts": {
+    "death_mechanics": 4
+   },
+   "status": "OK"
+  },
+  {
+   "file": "equipment_generator.json",
+   "size": 534,
+   "sha256": "665e104e46df5863",
+   "top_keys": [
+    "templates",
+    "template_detection",
+    "divine_wings",
+    "bonuses_structure",
+    "status"
+   ],
+   "record_counts": {
+    "templates": 11
+   },
+   "status": "OK"
+  },
+  {
+   "file": "exp_table.json",
+   "size": 599,
+   "sha256": "abaf5a9eb27a4f27",
+   "top_keys": [
+    "BA_array",
+    "z5_function",
+    "job_exp_formula",
+    "job_progression",
+    "exp_display",
+    "nextExp_display",
+    "status",
+    "note"
+   ],
+   "record_counts": {},
+   "status": "OK"
+  },
+  {
+   "file": "feature_flags.json",
+   "size": 414,
+   "sha256": "6f115f5e22f54c14",
+   "top_keys": [
+    "experimental",
+    "disabled",
+    "hidden",
+    "comingSoon",
+    "notImplemented",
+    "workInProgress",
+    "status"
+   ],
+   "record_counts": {},
+   "status": "OK"
+  },
+  {
+   "file": "fusion.json",
+   "size": 389,
+   "sha256": "fed6123a08d54492",
+   "top_keys": [
+    "fusion_master_npc",
+    "fusion_mechanic",
+    "forge_effects",
+    "fusion_result_display",
+    "status"
+   ],
+   "record_counts": {
+    "forge_effects": 4
+   },
+   "status": "OK"
+  },
+  {
+   "file": "mall.json",
+   "size": 4303,
+   "sha256": "ee4a878504cc1578",
+   "top_keys": [
+    "starter_pack",
+    "npc_shop_items",
+    "gold_packs",
+    "premium_packs",
+    "status"
+   ],
+   "record_counts": {
+    "starter_pack": 5,
+    "npc_shop_items": 7
+   },
+   "status": "OK"
+  },
+  {
+   "file": "market.json",
+   "size": 658,
+   "sha256": "39cedad406e66348",
+   "top_keys": [
+    "market_actions",
+    "gold_market",
+    "gold_market_field",
+    "status"
+   ],
+   "record_counts": {
+    "market_actions": 5
+   },
+   "status": "OK"
+  },
+  {
+   "file": "npc.json",
+   "size": 1011,
+   "sha256": "844d7c5359d4f0db",
+   "top_keys": [
+    "npcs",
+    "status"
+   ],
+   "record_counts": {
+    "npcs": 6
+   },
+   "status": "OK"
+  },
+  {
+   "file": "pet.json",
+   "size": 909,
+   "sha256": "a8dbe64e4af9d091",
+   "top_keys": [
+    "pet_types",
+    "pet_bag",
+    "pet_loot",
+    "pet_withdraw",
+    "pet_window",
+    "pet_pickup",
+    "pet_first",
+    "status"
+   ],
+   "record_counts": {
+    "pet_types": 10
+   },
+   "status": "OK"
+  },
+  {
+   "file": "quest.json",
+   "size": 927,
+   "sha256": "6268d5063217198e",
+   "top_keys": [
+    "questTick_function",
+    "questTick_events",
+    "claimQuest_function",
+    "claimHunt_function",
+    "claimDaily_function",
+    "exchangeCoat_function",
+    "quest_initializer",
+    "quest_window"
+   ],
+   "record_counts": {
+    "questTick_events": 11
+   },
+   "status": "OK"
+  },
+  {
+   "file": "refine.json",
+   "size": 748,
+   "sha256": "bf3dcf6e7c69be6a",
+   "top_keys": [
+    "refineStone_drop_rate",
+    "refineStone_level_requirement",
+    "refine_formula",
+    "refine_success_rate",
+    "refine_bonuses",
+    "break_protection",
+    "status"
+   ],
+   "record_counts": {
+    "refine_formula": 4,
+    "refine_bonuses": 10
+   },
+   "status": "OK"
+  },
+  {
+   "file": "storage.json",
+   "size": 386,
+   "sha256": "9ccf59683b896646",
+   "top_keys": [
+    "storage_actions",
+    "storage_npc",
+    "storage_premium",
+    "status"
+   ],
+   "record_counts": {
+    "storage_actions": 3
+   },
+   "status": "OK"
+  },
+  {
+   "file": "world_boss.json",
+   "size": 474,
+   "sha256": "296eb5001177da20",
+   "top_keys": [
+    "world_boss",
+    "king_mechanic",
+    "boss_card",
+    "status"
+   ],
+   "record_counts": {
+    "world_boss": 1
+   },
+   "status": "OK"
+  }
+ ],
+ "sqlite": {
+  "file": "database/LUMIVARA_FORENSICS.sqlite",
+  "size": 552960,
+  "sha256": "f1f09bf8c97f05cb",
+  "integrity": "ok",
+  "tables": [
+   {
+    "table": "CLASSES",
+    "rows": 10
+   }
+  ]
+ }
+}

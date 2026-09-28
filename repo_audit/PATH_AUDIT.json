@@ -1,0 +1,86 @@
+[
+ {
+  "document": "README.md",
+  "referenced_path": "provenance/PROVENANCE.json",
+  "exists": false,
+  "status": "BROKEN_REFERENCE"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "collect/raw-snapshots.json",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "extraction/scripts/inventory.py",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "extraction/scripts/normalize_changelog.py",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "extraction/scripts/build_sqlite.py",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "extraction/scripts/validate.py",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "extraction/scripts/diff_provenance.py",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "collect/collector-final.mjs",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "collect/aggregate.py",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "PROJECT.md",
+  "referenced_path": "validation/VALIDATION_REPORT.md",
+  "exists": false,
+  "status": "BROKEN_REFERENCE"
+ },
+ {
+  "document": "RECONSTRUCTION_REPORT.md",
+  "referenced_path": "research/self-state-fields.json",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "RECONSTRUCTION_REPORT.md",
+  "referenced_path": "formulas/combat-analysis.json",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "RECONSTRUCTION_REPORT.md",
+  "referenced_path": "protocol/NETWORK_PROTOCOL_v3.json",
+  "exists": true,
+  "status": "VALID"
+ },
+ {
+  "document": "RECONSTRUCTION_REPORT.md",
+  "referenced_path": "diffs/DIFF_v1_v2.json",
+  "exists": false,
+  "status": "BROKEN_REFERENCE"
+ }
+]

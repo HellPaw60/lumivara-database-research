@@ -1,0 +1,97 @@
+{
+ "_meta": {
+  "comparison": "v1 (2026-09-28 pagi, bundle main-BHjIB9U4) -> v2 (2026-09-28 siang, bundle main-DEXZ0AP0)",
+  "method": "perbandingan hasil ekstraksi dua bundle"
+ },
+ "monsters": {
+  "ADDED": [
+   "straw-dummy (Training)",
+   "crowned-tempest-drake (Lv280 boss)",
+   "crowned-grave-knight (Lv230 boss)"
+  ],
+  "MODIFIED_HP": {
+   "vine-lynx": {
+    "v1": 109328,
+    "v2": 1093280,
+    "factor": "x10"
+   },
+   "bog-toad": {
+    "v1": 9217,
+    "v2": 36868,
+    "factor": "x4"
+   },
+   "ember-antler": {
+    "v1": 20995,
+    "v2": 83980,
+    "factor": "x4"
+   },
+   "pebble-golem": {
+    "v1": 225744,
+    "v2": 56436,
+    "factor": "/4"
+   },
+   "tide-crab": {
+    "v1": 33988,
+    "v2": 8497,
+    "factor": "/4"
+   },
+   "leaf-sprout": {
+    "v1": 244,
+    "v2": 61,
+    "factor": "/4"
+   },
+   "thorn-pixie": {
+    "v1": 788,
+    "v2": 197,
+    "factor": "/4"
+   },
+   "icicle-hare": {
+    "v1": 4476,
+    "v2": 1119,
+    "factor": "/4"
+   }
+  },
+  "confidence": "VERIFIED (WS observation kedua run)"
+ },
+ "classes": {
+  "ADDED": [
+   "kensei",
+   "nekobaku"
+  ],
+  "confidence": "VERIFIED (bundle diff + WA unlock table)"
+ },
+ "skills": {
+  "ADDED_count": 14,
+  "confidence": "VERIFIED (f() extraction)"
+ },
+ "items": {
+  "ADDED": [
+   "arrow (iron_arrow)",
+   "megaphone",
+   "katana",
+   "flask (neko-flask)",
+   "saya"
+  ],
+  "confidence": "VERIFIED"
+ },
+ "protocol": {
+  "ADDED": [
+   "unlockClass",
+   "reviveHere",
+   "guildAnnounce",
+   "megaphone"
+  ],
+  "REMOVED": [
+   "enterArena"
+  ],
+  "confidence": "VERIFIED (string corpus diff)"
+ },
+ "tables": {
+  "ADDED": [
+   "mob_status_attacks (W1)",
+   "aspd_potions (kc)",
+   "TRANSLATIONS (language bundle)"
+  ],
+  "confidence": "VERIFIED"
+ }
+}

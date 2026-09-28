@@ -1,0 +1,449 @@
+{
+ "LOCAL_ONLY": [],
+ "REMOTE_ONLY": [],
+ "BOTH_IDENTICAL": [
+  ".gitignore",
+  "LAPORAN-V2.md",
+  "LAPORAN.md",
+  "PROJECT.md",
+  "README.md",
+  "RECONSTRUCTION_REPORT.md",
+  "collect/adjacency.json",
+  "collect/aggregate.py",
+  "collect/collector-final.mjs",
+  "collect/collector.mjs",
+  "collect/package.json",
+  "collect/probe-interior.mjs",
+  "collect/raw-snapshots.json",
+  "database/LUMIVARA_FORENSICS.sqlite",
+  "extraction/scripts/diff_provenance.py",
+  "extraction/scripts/inventory.py",
+  "extraction/scripts/normalize_changelog.py",
+  "extraction/scripts/validate.py",
+  "forensics/database/LUMIVARA_FORENSICS.sqlite",
+  "web-v2/changelog-notice-BKeFrGHU.js",
+  "web-v2/items-CvFgs761.js",
+  "web-v2/language-Dz8VbPNM.js",
+  "web-v2/main-C2gVT7fU.css",
+  "web-v2/main-DEXZ0AP0.js",
+  "web-v2/modulepreload-polyfill-B5Qt9EMX.js",
+  "web-v2/party-BnJKGOnI.js",
+  "web-v2/rarity-D7SWm6O3.js",
+  "web-v2/starter.js",
+  "web-v2/v2_aspd_potions.json",
+  "web-v2/v2_cards.json",
+  "web-v2/v2_consumables.json",
+  "web-v2/v2_drop_rates.json",
+  "web-v2/v2_maps.json",
+  "web-v2/v2_mob_status_attacks.json",
+  "web-v2/v2_skills.json",
+  "web-v2/v2_status_effects.json",
+  "web/changelog-notice-C0oHFSuO.js",
+  "web/db_De.json",
+  "web/db_K.json",
+  "web/db_O.json",
+  "web/db_T.json",
+  "web/db_ac.json",
+  "web/db_ee.json",
+  "web/db_ne.json",
+  "web/db_te.json",
+  "web/items.js",
+  "web/legal-D2W54pbO.js",
+  "web/main.js",
+  "web/party-DtA8am7a.js",
+  "web/rarity-X-vTmKqH.js",
+  "web/starter.js",
+  "web/table_K.js",
+  "web/table_O.js",
+  "web/table_T.js",
+  "web/table_ac.js",
+  "web/table_ne.js"
+ ],
+ "CONTENT_DIFF": [
+  {
+   "path": "DROP_DB.json",
+   "local_size": 1229,
+   "remote_size": 1170
+  },
+  {
+   "path": "GAME_DB.json",
+   "local_size": 108934,
+   "remote_size": 105629
+  },
+  {
+   "path": "MONSTER_DB.json",
+   "local_size": 14028,
+   "remote_size": 13355
+  },
+  {
+   "path": "TRANSLATIONS.json",
+   "local_size": 402530,
+   "remote_size": 399982
+  },
+  {
+   "path": "database/CARD_DB_v3.json",
+   "local_size": 17759,
+   "remote_size": 17299
+  },
+  {
+   "path": "database/CLASS_DB_v3.json",
+   "local_size": 2090,
+   "remote_size": 1953
+  },
+  {
+   "path": "database/GAME_DB_v3.json",
+   "local_size": 98580,
+   "remote_size": 95275
+  },
+  {
+   "path": "database/ITEM_DB_v3.json",
+   "local_size": 33727,
+   "remote_size": 32968
+  },
+  {
+   "path": "database/MAP_DB_v3.json",
+   "local_size": 12277,
+   "remote_size": 11622
+  },
+  {
+   "path": "database/MONSTER_DB_v3.json",
+   "local_size": 11972,
+   "remote_size": 11299
+  },
+  {
+   "path": "database/SKILL_DB_v3.json",
+   "local_size": 25531,
+   "remote_size": 24521
+  },
+  {
+   "path": "database/STATUS_DB_v3.json",
+   "local_size": 9487,
+   "remote_size": 9053
+  },
+  {
+   "path": "database/arena.json",
+   "local_size": 982,
+   "remote_size": 957
+  },
+  {
+   "path": "database/death_revive.json",
+   "local_size": 639,
+   "remote_size": 627
+  },
+  {
+   "path": "database/equipment_generator.json",
+   "local_size": 534,
+   "remote_size": 516
+  },
+  {
+   "path": "database/exp_table.json",
+   "local_size": 599,
+   "remote_size": 590
+  },
+  {
+   "path": "database/feature_flags.json",
+   "local_size": 414,
+   "remote_size": 406
+  },
+  {
+   "path": "database/fusion.json",
+   "local_size": 389,
+   "remote_size": 378
+  },
+  {
+   "path": "database/mall.json",
+   "local_size": 4303,
+   "remote_size": 4093
+  },
+  {
+   "path": "database/market.json",
+   "local_size": 658,
+   "remote_size": 647
+  },
+  {
+   "path": "database/npc.json",
+   "local_size": 1011,
+   "remote_size": 976
+  },
+  {
+   "path": "database/pet.json",
+   "local_size": 909,
+   "remote_size": 889
+  },
+  {
+   "path": "database/quest.json",
+   "local_size": 927,
+   "remote_size": 904
+  },
+  {
+   "path": "database/refine.json",
+   "local_size": 748,
+   "remote_size": 724
+  },
+  {
+   "path": "database/storage.json",
+   "local_size": 386,
+   "remote_size": 377
+  },
+  {
+   "path": "database/world_boss.json",
+   "local_size": 474,
+   "remote_size": 460
+  },
+  {
+   "path": "extraction/scripts/build_sqlite.py",
+   "local_size": 5581,
+   "remote_size": 5465
+  },
+  {
+   "path": "forensics/CHANGELOG_NORMALIZED.json",
+   "local_size": 880762,
+   "remote_size": 870323
+  },
+  {
+   "path": "forensics/client/MINING_REPORT.md",
+   "local_size": 6640,
+   "remote_size": 6510
+  },
+  {
+   "path": "forensics/client/raw/arena.js",
+   "local_size": 1363,
+   "remote_size": 1357
+  },
+  {
+   "path": "forensics/client/raw/death_revive.js",
+   "local_size": 1703,
+   "remote_size": 1695
+  },
+  {
+   "path": "forensics/client/raw/equipment_generator.js",
+   "local_size": 524,
+   "remote_size": 520
+  },
+  {
+   "path": "forensics/client/raw/exp_table.js",
+   "local_size": 2216,
+   "remote_size": 2206
+  },
+  {
+   "path": "forensics/client/raw/feature_flags.js",
+   "local_size": 416,
+   "remote_size": 414
+  },
+  {
+   "path": "forensics/client/raw/fusion.js",
+   "local_size": 948,
+   "remote_size": 944
+  },
+  {
+   "path": "forensics/client/raw/mall.js",
+   "local_size": 3187,
+   "remote_size": 3176
+  },
+  {
+   "path": "forensics/client/raw/market.js",
+   "local_size": 1276,
+   "remote_size": 1270
+  },
+  {
+   "path": "forensics/client/raw/npc.js",
+   "local_size": 2740,
+   "remote_size": 2726
+  },
+  {
+   "path": "forensics/client/raw/pet.js",
+   "local_size": 1543,
+   "remote_size": 1535
+  },
+  {
+   "path": "forensics/client/raw/quest.js",
+   "local_size": 12491,
+   "remote_size": 12455
+  },
+  {
+   "path": "forensics/client/raw/refine.js",
+   "local_size": 785,
+   "remote_size": 779
+  },
+  {
+   "path": "forensics/client/raw/storage.js",
+   "local_size": 1471,
+   "remote_size": 1465
+  },
+  {
+   "path": "forensics/client/raw/world_boss.js",
+   "local_size": 578,
+   "remote_size": 574
+  },
+  {
+   "path": "forensics/client/tables/arena.json",
+   "local_size": 1097,
+   "remote_size": 1070
+  },
+  {
+   "path": "forensics/client/tables/death_revive.json",
+   "local_size": 847,
+   "remote_size": 833
+  },
+  {
+   "path": "forensics/client/tables/equipment_generator.json",
+   "local_size": 534,
+   "remote_size": 516
+  },
+  {
+   "path": "forensics/client/tables/exp_table.json",
+   "local_size": 599,
+   "remote_size": 590
+  },
+  {
+   "path": "forensics/client/tables/feature_flags.json",
+   "local_size": 414,
+   "remote_size": 406
+  },
+  {
+   "path": "forensics/client/tables/fusion.json",
+   "local_size": 389,
+   "remote_size": 378
+  },
+  {
+   "path": "forensics/client/tables/mall.json",
+   "local_size": 4303,
+   "remote_size": 4093
+  },
+  {
+   "path": "forensics/client/tables/market.json",
+   "local_size": 805,
+   "remote_size": 792
+  },
+  {
+   "path": "forensics/client/tables/npc.json",
+   "local_size": 1102,
+   "remote_size": 1066
+  },
+  {
+   "path": "forensics/client/tables/pet.json",
+   "local_size": 1080,
+   "remote_size": 1058
+  },
+  {
+   "path": "forensics/client/tables/quest.json",
+   "local_size": 1316,
+   "remote_size": 1287
+  },
+  {
+   "path": "forensics/client/tables/refine.json",
+   "local_size": 748,
+   "remote_size": 724
+  },
+  {
+   "path": "forensics/client/tables/storage.json",
+   "local_size": 725,
+   "remote_size": 713
+  },
+  {
+   "path": "forensics/client/tables/world_boss.json",
+   "local_size": 474,
+   "remote_size": 460
+  },
+  {
+   "path": "forensics/diffs/DIFF_v1_v2.json",
+   "local_size": 1816,
+   "remote_size": 1720
+  },
+  {
+   "path": "forensics/inventory_manifest.json",
+   "local_size": 30523,
+   "remote_size": 29430
+  },
+  {
+   "path": "forensics/network/NETWORK_PROTOCOL_v3.json",
+   "local_size": 79652,
+   "remote_size": 76086
+  },
+  {
+   "path": "forensics/network/combat-analysis.json",
+   "local_size": 15338,
+   "remote_size": 14576
+  },
+  {
+   "path": "forensics/network/drop-observation.json",
+   "local_size": 24719,
+   "remote_size": 23540
+  },
+  {
+   "path": "forensics/provenance/PROVENANCE.json",
+   "local_size": 2731,
+   "remote_size": 2631
+  },
+  {
+   "path": "forensics/runtime/player-behavior.json",
+   "local_size": 11854,
+   "remote_size": 11480
+  },
+  {
+   "path": "forensics/runtime/self-state-fields.json",
+   "local_size": 28550,
+   "remote_size": 26893
+  },
+  {
+   "path": "forensics/validation/VALIDATION_REPORT.md",
+   "local_size": 866,
+   "remote_size": 840
+  },
+  {
+   "path": "formulas/combat-analysis.json",
+   "local_size": 15338,
+   "remote_size": 14576
+  },
+  {
+   "path": "protocol/NETWORK_PROTOCOL_v3.json",
+   "local_size": 79652,
+   "remote_size": 76086
+  },
+  {
+   "path": "research/changelog/CHANGELOG_NORMALIZED.json",
+   "local_size": 880762,
+   "remote_size": 870323
+  },
+  {
+   "path": "research/combat/combat-analysis.json",
+   "local_size": 15338,
+   "remote_size": 14576
+  },
+  {
+   "path": "research/economy/player-behavior.json",
+   "local_size": 11854,
+   "remote_size": 11480
+  },
+  {
+   "path": "research/monsters/drop-observation.json",
+   "local_size": 24719,
+   "remote_size": 23540
+  },
+  {
+   "path": "research/self-state-fields.json",
+   "local_size": 28550,
+   "remote_size": 26893
+  },
+  {
+   "path": "web-v2/parse-v2.js",
+   "local_size": 458,
+   "remote_size": 447
+  },
+  {
+   "path": "web-v2/parse-v2b.js",
+   "local_size": 640,
+   "remote_size": 628
+  },
+  {
+   "path": "web/parse.js",
+   "local_size": 376,
+   "remote_size": 366
+  },
+  {
+   "path": "web/parse2.js",
+   "local_size": 699,
+   "remote_size": 684
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "_meta": {
+  "method": "count langsung dari file database final"
+ },
+ "claims": [
+  {
+   "document": "README.md",
+   "claim": "Classes = 10",
+   "claimed_value": 10,
+   "actual_value": 10,
+   "source": "database/classes count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "Skills = 64",
+   "claimed_value": 64,
+   "actual_value": 64,
+   "source": "database/skills count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "Items (consumable) = 80",
+   "claimed_value": 80,
+   "actual_value": 80,
+   "source": "database/items_consumables count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "Cards = 49",
+   "claimed_value": 49,
+   "actual_value": 49,
+   "source": "database/cards count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "Status effects = 42",
+   "claimed_value": 42,
+   "actual_value": 42,
+   "source": "database/statuses count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "Maps = 19",
+   "claimed_value": 19,
+   "actual_value": 19,
+   "source": "database/maps count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "Monsters = 40",
+   "claimed_value": 40,
+   "actual_value": 40,
+   "source": "database/monsters count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "Translations = 2,547",
+   "claimed_value": 2547,
+   "actual_value": 2547,
+   "source": "database/translations count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "Changelog entries = 650",
+   "claimed_value": 650,
+   "actual_value": 650,
+   "source": "database/changelog_entries count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  },
+  {
+   "document": "README.md",
+   "claim": "WS event types = 26",
+   "claimed_value": 26,
+   "actual_value": 26,
+   "source": "database/ws_events count",
+   "confidence": "VERIFIED",
+   "status": "MATCH"
+  }
+ ]
+}
