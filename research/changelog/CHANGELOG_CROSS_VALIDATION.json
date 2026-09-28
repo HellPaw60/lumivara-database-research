@@ -1,0 +1,3123 @@
+{
+ "_meta": {
+  "client_source": "web-v2/changelog-notice-BKeFrGHU.js (dari game client main bundle)",
+  "client_hash": "c656f3c9dc6b03867f70a725cda73f66d00c0b7afe4dea9f62f8e07975b06ed0",
+  "official_source": "https://lumivaraonline.com/changelog/ (SPA) -> assets/changelog-notice-Dk8pLLLq.js",
+  "official_hash": "77346c43266383a6df67cca10e7dbdfa82e3e934ca94e63bf2cd501ef92d32bf",
+  "official_html_hash": "b90f6f9f7d5190802f6608228855fcf65ba6b0e817cbf02ceee9ee84ff687763",
+  "retrieved_at": "2026-09-28T18:23:57",
+  "method": "HTTP retrieval + module import trace + regex parse",
+  "note": "Halaman /changelog/ adalah SPA shell; konten dimuat dari changelog-notice-Dk8pLLLq.js — bundle BERBEDA dari yang dipakai game client (BKeFrGHU). Ini snapshot lebih baru."
+ },
+ "counts": {
+  "client_entries": 650,
+  "official_entries": 669,
+  "client_unique_ids": 649,
+  "official_unique_ids": 668,
+  "matched": 649,
+  "only_in_client": 0,
+  "only_in_official": 19
+ },
+ "differences": {
+  "title_diffs": [],
+  "date_diffs": [],
+  "time_diffs": [],
+  "lines_count_diffs": [
+   {
+    "id": "2026-09-25-guild-upgrade-silver-and-costs",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-gold-delivery-repair",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-inventory-clean-widgets",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-overweight-90-only",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-dex-matk-1",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-guild-roster-buttons-restyle",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-refine-dialog-style",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-lingering-buff-auras",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-party-hud-drops-the-roster",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-element-coatings",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-gym-pass-main-restoration",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-novice-class-guide",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-friend-map-channel",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-protection-stone-bundles",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-hub-startup-load-guard",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-gym-pass-surplus-refund",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-equipment-tabs-repeat",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-profile-card-silver",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-megaphone",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-stale-directory-login",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-skill-window-real-sp",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-silver-rounded-costs",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-repair-price-table",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-guild-contribution-reserve",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-status-name-translate",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-death-button-countdown",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-card-window-mobile-fit",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-explorer-level-board",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-nekobaku-class",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-stable-window-scale",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-mage-pair-cooldown",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-storage-grid",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-explorer",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-storage-withdraw-picker-visible",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-bot-loot-per-item",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-no-ip-account-limit",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-gold-exchange-window",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-relic-box-etc",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-relic-box-tier-gear",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-refine-ingame-confirm",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-google-pay",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-premium-market-bot",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-market-tile-premium-only",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-arena-room-capacity",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-linked-guest-payment-fix",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-kensei-saya",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-explorer-hide-equipped-gear",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-card-socket-brackets",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-fusion-auto-pick",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-arena-rise-guard",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-patch-notes",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-bag-rarity-tint",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-bag-grid-tiles",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-hub-background-monitor",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-sp-drain-option",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-bag-toolbar-weight",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-stormbreak-buff",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-relic-box-cards-equal",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-aspd-potion-real-gain",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-revenue-names",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-keep-protection-on-refine-success",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-shop-filter-row",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-wiki-guild-pvp",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-mailbox-load-retry",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-joystick-touch-zone",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-starter-pack-kunai",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-locked-card-replace-notice",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-boost-icons-redrawn",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-checkout-game-name",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-exp-bar-stuck-full",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-stat-filter",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-login-reconnect-hotfix",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-market-town-lag",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-special-options-translated-again",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-combined-production-release",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-one-click-buy",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-menu-keep-class-bot",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-two-domains-both-work",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-revive-lands-in-town",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-gear-hover-compare",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-red-potion-sell-price",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-ip-account-limit-back",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-hub-staged-rollout",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-bot-defaults-ready-to-run",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-frost-area-on-target",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-exp-benefits-restored",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-relic-box-open-all",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-legal-short-links",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-more-channels-per-map",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-site-links-new-window",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-pvp-menu-only",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-class-window-frame-hairline",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-party-merge",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-bow-two-cards",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-miss-readable",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-fusion-master",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-gold-orders-clearer",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-shop-half-size",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-stale-copy-rollback",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-two-hand-left-slot",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-premium-silver-merchant",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-element-aura-art",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-overweight-auto-stays",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-aura-perf",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-storage-fee-reopen",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-refined-weapon-aura",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-hit-matters-monster-balance",
+    "client_lines": 15,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-chat-fanout-targeted",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-fatal-sense-atk-back",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-enemy-status-icons",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-exp-event-x2",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-party-level-gap",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-load-on-open",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-training-grounds",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-one-time-google-link",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-shop-icon-toggles",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-classic-exp-table",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-skill-rebalance-2",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-first-login-unstuck",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-mall-card-price-wrap",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-mail-refresh-on-claim",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-world-map-keeps-fighting",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-glacier-sight-range",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-google-sans-everywhere",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-tooltip-drift",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-premium-storage-anywhere",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-login-stale-copy-lineage",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-death-cause",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-bag-view-toggle-even",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-remote-shop-keeps-bot",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-broken-weapon-no-fight",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-storage-all-tab",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-pvp-menu-entry",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-new-home-lumivaraonline",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-guild-notice",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-last-ten-skill-effects",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-desktop-packaging",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-silver-sale-keep-auto",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-matches-mockup",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-portal-ground-tint",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-shop-sell-filters",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-bot-skill-delay",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-spawn-guard-30s",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-bramble-hare-v2",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-stuck-warp-and-lost-items",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-divine-wings",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-market-return-gear-mail",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-ledger-trim",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-bot-buff-only",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-aspd-skill-hold",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-no-afk-kick",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-guild-leave-button-restyle",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-glacier-aggressive-monsters",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-market-busy-fix",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-google-sans-ui-font",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-pet-toolbar-weight",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-arena-lobby-confirm",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-flame-burst-redrawn",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-archer-thief-passive-buff",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-quest-journal-exchange",
+    "client_lines": 8,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-ground-target-skills",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-transfer-leader",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-login-queue",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-price-keyboard",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-early-access-gold-is-kept",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-bot-loot-fold",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-wiki-source-sync",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-pet-pickup-toggle-owner-first",
+    "client_lines": 8,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-cleric-party-wide-buffs",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-device-hud-defaults",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-channel-follows",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-bot-skip-elite",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-pet-loot-skip",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-loot-rabbit-faster",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-starter-guide",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-class-guide-smaller",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-explorer-rare-items",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-explorer-flow-labels",
+    "client_lines": 4,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-monitor-online-chart",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-arrow-rain-twin-shot-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-card-rules-on-card",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-gear-wear-requirement",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-market-listing-expiry",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-armor-parts",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-topup-closed",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-bag-limits-on-mail-and-market",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-market-take-back-instant",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-training-gate-forest",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-blue-potion-drop-equal",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-frost-area-buff",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-google-link-overwrite-guards",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-challenging-shadow-burst-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-premium-loot-pet",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-party-bonus-display",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-keep-screen-on",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-unknown-inventory-boot-fix",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-legal-docs",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-player-silver-history",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-mail-partial-claim",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-menu-icons-wiki-friends-market",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-weapon-luk-roll",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-arena-show-all",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-remote-bow-arrows",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-mail-after-payment",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-benefits-toggle",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-boost-scroll-icons",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-party-even-share",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-no-email-name",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-class-vitals-and-mage-mastery",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-unconscious-window-style",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-region-codes",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-ruby-ring-str-vit",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-level-cap-120",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-sp-drain-like-lifesteal",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-announce-ticker",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-protection-cost-per-attempt",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-market-server-gate",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-add-friend-from-chat",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-loot-skip-disconnect",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-bot-sp-floor-overlap",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-refused-gear-listing-mailed",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-top-roll-stat-colour",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-bag-list-stats",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-whisper-unread-badge",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-class-guide-fits-phone",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-benefits-guide",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-item-card-no-quote-footer",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-hud-refresh",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-overweight-penalty",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-storage-item-tooltip",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-panel-width",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-painted-window",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-party-panel-fold",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-chat-language-rooms",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-painted-buttons-no-seams",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-painted-v2",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-twin-fang-toxin-blink-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-premium-silver-shop-anywhere",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-double-attack-all-melee-weapons",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-ammo-compare-fix",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-boost-scrolls-stack",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-gold-exchange-durable-settlement",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-channel-spread-and-switch",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-bot-window-painted",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-hud-default-70",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-training-reopen",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-power-surge-leap-shot-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-gold-trade-mode",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-training-grounds-closed",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-monitor-player-stats",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-arena-population-entry-fix",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-iron-will-holy-guard-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-durability-back",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-search-enter",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-party-sync-targeted",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-no-level-gap-exp-cut",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-market-buy-lag",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-kensei-class",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-chat-unsent-retry",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-sell-unlock",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-hub-peak-rps",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-relic-box-no-cotton-shirt",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-topup-confirm-on-return",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-original-google-recovery",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-daily-exp-ranking",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-shop-stocks-every-weapon",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-stat-filter-translate",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-thirty-two-channels",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-inventory-painted-v2",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-premium-market-menu",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-bot-order-walk-in",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-refine-stone-lv70",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-live-client-overlay",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-premium-carries-to-launch",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-mentality-dex-matk",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-bot-boss-portrait",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-sell-panel-fit",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-market-premium-badge-result",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-five-bosses-per-map",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-guide-painted-buttons",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-card-overwrite",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-shared-item-card-layout",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-party-transfer-leader",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-power-strike-heal-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-boost-scrolls",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-consumable-drop-half",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-aura-icon-fix",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-spawn-guard",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-skill-rush-all-classes",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-gym-pass-compensation",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-divine-elements",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-skill-rebalance",
+    "client_lines": 17,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-economy-safety-pass",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-longer-chat-history",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-weapon-properties-on-card",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-bot-skill-order-only",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-release-preserve-production",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-pet-bag-after-respawn",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-gold-exchange-compact-layout",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-premium-menu-drawer",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-channel-grid-count",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-etc-price-half",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-share-item-party",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-divine-wings-relic-box",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-relic-box-cards-1pct",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-gear-flee-rebalance",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-chat-room-chip",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-wiki-opens-in-browser",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-max-level-aura-red",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-basic-attack-momentum",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-pvp-damage-fifth",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-faq-page",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-wiki-crit-pierce",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-shop-confirm",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-skin-mode",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-gold-exchange-anywhere",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-buy-confirm",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-durability-sell-budget-off",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-one-layout-every-device",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-gear-tip-usable-by",
+    "client_lines": 6,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-offline-for",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-ember-bolt-frost-area-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-creation-cost",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-elite-monsters",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-starter-pack-wording",
+    "client_lines": 4,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-divine-boon-quake-hammer-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-premium-tooltip-pet",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-menu-drawer-no-scrollbar",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-gold-trail-recovery",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-equipment-window-bigger",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-melee-ranged-flee",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-operator-details",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-mob-element-icon",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-chat-share-full-card",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-silver-explorer-live",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-touch-controls-opacity",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-donation-target-1m",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-new-gear-options",
+    "client_lines": 15,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-three-new-realms",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-english-item-names",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-arrow-rain-circle",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-market-no-double-hold",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-login-best-save",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-buff-two-columns",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-chat-flood-guard",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-no-rolled-back-characters",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-socket-from-item-card",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-directory-repair-paced",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-aura-left-behind",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-inventory-v3-art",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-exp-buff",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-block-browser-translate",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-worn-card-stays-open",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-paged-board",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-changelog-page",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-mage-storm-frost-combo",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-close-button-ring",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-rename-card-1700",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-trade-premium-only",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-job-outfit-after-class-switch",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-megaphone-mall",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-pet-wander-offline",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-profile-card-redesign",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-arrows-return",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-space-button-painted-icons",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-desktop-window-resize-zoom",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-skill-sounds",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-world-map-training",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-channel-head-count",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-bot-skill-sp-floor",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-skills-match-tooltips",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-haste-keeps-on-death",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-sell-list-hover",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-shop-buy-steps",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-whisper-continuation",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-monster-sprite-bleed",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-boost-scroll-no-waste",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-camera-zoom-out",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-merchant-drops-potions",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-caster-no-luk",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-emotes",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-card-socket-design",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-lighter-network",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-bot-auto-coat",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-reactions-every-clash",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-presence-events",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-shared-upgrade-fund",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-loot-inventory-sync",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-relic-box-no-clip",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-card-weight-tenth",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-hotbar-potion-count",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-wiki-hit-flee",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-gold-coin-icons",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-shop-qty-header",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-mamushi-class",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-arena-kill-count",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-cart-strike-twin-strike-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-premium-remote-fusion",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-bilingual-changelog",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-auto-caster-distance",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-quest-desc-fit",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-archer-thief-cleric-skills",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-offline-sandbox",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-support-slot-tier-gear",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-sinks",
+    "client_lines": 19,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-arrows-removed",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-rollback-cannot-hide-itself",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-finder-controls",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-restore-shipped-features",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-night-sky",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-hub-junk-requests",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-kensei-twin-strike",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-open-pvp-arena",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-named-gear-icons",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-channel-cap-25",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-hold-to-walk",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-spell-crit-haste",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-referral-link",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-storage-window-redesign",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-unified-skill-rank-controls",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-overweight-debuff-chip",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-no-tap-highlight",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-gold-donate-open",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-premium-buff-chip",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-world-map-refresh",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-faq-links",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-update-notice-folds-away",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-bag-weight-on-hover",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-exp-event-x2-1200-players",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-twin-fang-rush",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-merchant-double-tap-stack",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-in-game-patch-notes-english",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-mail-claim-silver",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-trade-premium-with-anyone",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-remove-directory-repair",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-bag-gear-types",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-restore-refine-protection",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-locked-gear-card-replace",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-boost-scrolls-for-everyone",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-frost-area-volley",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-gear-hover-compare-color",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-shop-opens",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-chat-room-fix",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-refund-mail-reminder",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-gold-letter-instant",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-shop-landscape",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-remove-fit",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-bag-bigger",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-one-machine-three-accounts",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-map-window-close-fix",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-on-demand-social-sync",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-starter-pack-destroy",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-login-finds-latest-copy",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-hover-stats",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-destroy-item",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-share-card-special-option",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-manual-location-only",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-elemental-reactions",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-chat-not-sent-reason",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-market-drop-level-filter",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-relic-box-icon",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-three-month-climb",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-skill-tooltip-short",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-chat-moderation",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-guild-board",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-explorer-dressed",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-profile-card-compact",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-far-sight-opening-range",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-gym-pass-bundles",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-refine-list-right",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-bot-hp-potion-tiers",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-bag-rarity-name-contrast",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-coat-exchange",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-buy-tab-no-lag",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-world-map-multihop-travel",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-mamushi-shuriken",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-emberfall-caldera",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-chat-box-hide",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-completed-session-release",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-relic-box-coatings",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-party-head-two-rows",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-premium-market-tile",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-market-restart-sync",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-market-purchase-recovery-hub-reconnect",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-applications",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-aura-crash-fix",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-window-open-pop",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-rude-words-no-mute",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-chat-translation-coverage",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-party-roster-shows-the-map",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-wings-cash-item",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-rebalance-vitals-vigor-frost",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-gold-exchange-confirm",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-wiki-refresh-premium-tile",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-explorer-gold-exchange",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-status-window-bigger",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-mage-mastery-buff",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-frost-area-cooldown",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-rename-card",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-gold-buy-now-quote",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-rings-either-slot",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-map-window",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-trade-gear-icon",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-mage-freeze-stun-20",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-death-game-theme-instant-revive",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-mage-orb",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-blue-potion-merchant-back",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-support-mail",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-live-drop-event",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-stormbreak-radiant-light-effects",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-sixty-four-channels",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-market-sell-instant",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-silver-shop-no-spinner",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-card-slots-two-handed",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-bag-stack-count-corner",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-menu-overflow",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-exp",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-guild-levels",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-faq-fil-id",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-monster-etc-items",
+    "client_lines": 13,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-refine-shared-painted-theme",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-party-exp-drop-label",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-smaller-bag-storage",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-ground-gear-icon",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-refund-requests",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-solo-party-create",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-refine-armor-clarity",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-bot-window-buttons",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-arrow-rain-wider-circle",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-ring-compare-slot",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-gold-order-depth",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-login-keyart",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-gold-trade-mail-receipts",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-skill-cast-level",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-boost-scroll-pause-offline",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-overweight-auto-stop-popup",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-patch-notes-english",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-momentum-10s",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-equip-slot-short-tip",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-drain-effect",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-cheapest-price-shown",
+    "client_lines": 8,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-storage-withdraw-all",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-arena-colosseum",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-card-any-piece-again",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-divine-wings-finder",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-oboro-ranbu-faster",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-skill-only-bot-no-air-throw",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-wiki-guild-exp-level",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-stale-copy-rollback",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-rome-stepped-shadows",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-bot-loot-weight-cap",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-search",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-freeze-ice-block",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-chat-own-line-echo",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-crowd-frame-relief",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-sixteen-channels",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-explorer-show-storage-gear",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-player-search",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-item-mall-shop",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-starter-pack",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-arena-walk-in",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-explorer-stat-fit",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-sell-sort",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-monster-idle-animation",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-launch-wipe",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-more-menu-site-pages",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-restore-gym-pass-protection",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-class-picker",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-wings-bag-icon",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-mali-thai-chat-menu",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-loot-protect-longer",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-two-hand-balance",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-share-link-preview-card",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-crystal-shield-party",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-skill-drag-cleanup",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-site-page-links",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-invite-chat",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-relic-box-gear-5",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-dex-matk-2",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-regional-chat-sockets",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-physical-skill-crit",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-pvp-damage-tenth",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-minimap-buttons",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-combat-rebalance",
+    "client_lines": 19,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-26-hub-locate-flood",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-friend-request-dialog",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-camera-zoom",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-guild-lists-fit",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-effects-setting",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-regional-markets",
+    "client_lines": 11,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-top-roll-hover-special",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-hold-to-add-stats",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-22-auto-sp-potion-at-zero",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-training-grounds-load-fix",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-twin-shot-sp",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-empty-protection-confirm",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-chat-map-trade-lfg",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-coat-reactions",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-elite-twohand-english",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-23-short-login-announcement",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-inventory-filter-labels",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-revive-here",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-save-rollback-guards",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-25-login-prune-stale",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-max-level-exp-log",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-nine-slice-seams",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-market-clean-frames",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-worn-skin-slot",
+    "client_lines": 3,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-channel-grid",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-market-action-button-pinned",
+    "client_lines": 9,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-24-stale-copy-same-level",
+    "client_lines": 5,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-28-spell-total-per-caster",
+    "client_lines": 7,
+    "official_lines": 0
+   },
+   {
+    "id": "2026-09-27-daily-login-mall",
+    "client_lines": 7,
+    "official_lines": 0
+   }
+  ],
+  "ordering_same_for_shared": true,
+  "client_duplicates": {
+   "2026-09-23-skill-rebalance": 2
+  },
+  "official_duplicates": {
+   "2026-09-23-skill-rebalance": 2
+  },
+  "only_in_client_ids": [],
+  "only_in_official_ids": [
+   "2026-09-28-arrow-buy-1000",
+   "2026-09-28-arrow-buy-100k",
+   "2026-09-28-arrows-weightless",
+   "2026-09-28-bag-refine-badge",
+   "2026-09-28-broken-gear-equip-window",
+   "2026-09-28-challenging-range-270",
+   "2026-09-28-equip-refine-badge",
+   "2026-09-28-forge-refine-badge",
+   "2026-09-28-fusion-odds",
+   "2026-09-28-fusion-socket-remove-lock",
+   "2026-09-28-inspect-refine-badge",
+   "2026-09-28-kensei-head-oboro-guard",
+   "2026-09-28-kensei-no-air-swing",
+   "2026-09-28-market-refine-badge",
+   "2026-09-28-repair-price-tenth",
+   "2026-09-28-shard-market-memory",
+   "2026-09-28-skill-rebalance-cleric-sword-kensei",
+   "2026-09-28-storage-refine-badge",
+   "2026-09-28-trade-refine-badge"
+  ],
+  "only_in_official_count": 19
+ }
+}

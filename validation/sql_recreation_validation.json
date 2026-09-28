@@ -1,0 +1,4 @@
+{
+ "parity_result": "PASS",
+ "detail": "12 tables full parity (schema+cols+rows+values)"
+}

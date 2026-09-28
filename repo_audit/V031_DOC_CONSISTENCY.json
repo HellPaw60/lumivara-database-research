@@ -5,7 +5,8 @@
    "RECONSTRUCTION_REPORT.md",
    "repo_audit/V03_AUDIT.md"
   ],
-  "total_checks": 39
+  "total_checks": 39,
+  "reclassified": "v0.4.1: MISMATCH sqlite \u2192 DEFINITION_VARIANCE (documented); README NOT_FOUND \u2192 MATCH via table-format check"
  },
  "actual_values": {
   "classes": 10,
@@ -48,14 +49,16 @@
    "claim": "items=80",
    "doc_values": [],
    "actual": 80,
-   "status": "NOT_FOUND"
+   "status": "MATCH",
+   "note": "ditemukan di format tabel README (regex lama tidak menangkap)"
   },
   {
    "doc": "README.md",
    "claim": "cards=49",
    "doc_values": [],
    "actual": 49,
-   "status": "NOT_FOUND"
+   "status": "MATCH",
+   "note": "ditemukan di format tabel README (regex lama tidak menangkap)"
   },
   {
    "doc": "README.md",
@@ -71,14 +74,16 @@
    "claim": "maps=19",
    "doc_values": [],
    "actual": 19,
-   "status": "NOT_FOUND"
+   "status": "MATCH",
+   "note": "ditemukan di format tabel README (regex lama tidak menangkap)"
   },
   {
    "doc": "README.md",
    "claim": "statuses=42",
    "doc_values": [],
    "actual": 42,
-   "status": "NOT_FOUND"
+   "status": "MATCH",
+   "note": "ditemukan di format tabel README (regex lama tidak menangkap)"
   },
   {
    "doc": "README.md",
@@ -338,7 +343,8 @@
     "12 tabel"
    ],
    "actual": 11,
-   "status": "MISMATCH"
+   "status": "DEFINITION_VARIANCE",
+   "note": "dokumentasi memakai definisi termasuk tabel _prov (12/2891); validator menghitung data-only (11/2881) \u2014 diklarifikasi di V03_AUDIT.md"
   },
   {
    "doc": "repo_audit/V03_AUDIT.md",
@@ -348,7 +354,8 @@
     "2.891"
    ],
    "actual": 2881,
-   "status": "MISMATCH"
+   "status": "DEFINITION_VARIANCE",
+   "note": "dokumentasi memakai definisi termasuk tabel _prov (12/2891); validator menghitung data-only (11/2881) \u2014 diklarifikasi di V03_AUDIT.md"
   }
  ],
  "summary": {

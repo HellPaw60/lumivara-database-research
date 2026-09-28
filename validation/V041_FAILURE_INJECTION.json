@@ -1,0 +1,50 @@
+{
+ "_meta": {
+  "total": 7,
+  "failed_as_expected": 7
+ },
+ "tests": [
+  {
+   "test": "A: single value modification",
+   "injected": true,
+   "failed_as_expected": true,
+   "detail": "value change detected: True (modified vs dump differ)"
+  },
+  {
+   "test": "B: single row deletion",
+   "injected": true,
+   "failed_as_expected": true,
+   "detail": "row count 63 vs 64 \u2014 detected: True"
+  },
+  {
+   "test": "C: single row addition",
+   "injected": true,
+   "failed_as_expected": true,
+   "detail": "row count 41 vs 40 \u2014 detected: True"
+  },
+  {
+   "test": "D: corrupted JSON",
+   "injected": true,
+   "failed_as_expected": true,
+   "detail": "JSONDecodeError raised: Expecting value: line 1 column 12 (char 11)"
+  },
+  {
+   "test": "E: CSV value modification",
+   "injected": true,
+   "failed_as_expected": true,
+   "detail": "CSV value \"CORRUPTED_NAME\" not in SQL \u2014 detected: True"
+  },
+  {
+   "test": "F: provenance source removal",
+   "injected": true,
+   "failed_as_expected": true,
+   "detail": "missing source detected: ['skills']"
+  },
+  {
+   "test": "G: schema column change",
+   "injected": true,
+   "failed_as_expected": true,
+   "detail": "column diff detected: ['class_id', 'name', 'unlock_jobs', 'unlock_silver', 'confidence'] vs ['class_id', 'extra_col']"
+  }
+ ]
+}

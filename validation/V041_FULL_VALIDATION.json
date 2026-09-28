@@ -1,0 +1,74 @@
+{
+ "_meta": {
+  "version": "v0.4.1",
+  "total": 7,
+  "pass": 7,
+  "fail": 0
+ },
+ "checks": [
+  {
+   "check": "sql_recreation_full_parity",
+   "ok": true,
+   "detail": "12 tables full parity (schema+cols+rows+values)"
+  },
+  {
+   "check": "csv_parity_fail_closed",
+   "ok": true,
+   "detail": "11 CSV full parity"
+  },
+  {
+   "check": "doc_consistency_structured",
+   "ok": true,
+   "detail": {
+    "MATCH": 25,
+    "MISMATCH": 0,
+    "NOT_FOUND": 12,
+    "DEFINITION_VARIANCE": 2
+   }
+  },
+  {
+   "check": "provenance_audit_v04",
+   "ok": true,
+   "detail": "7 v0.4 artifacts + provenance complete"
+  },
+  {
+   "check": "orphan_detection_algorithm",
+   "ok": true,
+   "detail": {
+    "total_drop_items": 48,
+    "resolved": 44,
+    "inferred": 0,
+    "orphan": 4,
+    "monsters_without_drops": 13,
+    "known_orphans_check": {
+     "aurora_tail": {
+      "status": "ORPHAN",
+      "observations": 25
+     },
+     "garment": {
+      "status": "ORPHAN",
+      "observations": 1
+     },
+     "honey_wing_dust": {
+      "status": "ORPHAN",
+      "observations": 3
+     },
+     "magma_scale": {
+      "status": "ORPHAN",
+      "observations": 1
+     }
+    }
+   }
+  },
+  {
+   "check": "db_compare_pk_based",
+   "ok": true,
+   "detail": "PK-based compare clean (only CLIENT_MINING delta)"
+  },
+  {
+   "check": "official_changelog_source",
+   "ok": true,
+   "detail": "official source archived+parsed+cross-validated (669 entries)"
+  }
+ ]
+}

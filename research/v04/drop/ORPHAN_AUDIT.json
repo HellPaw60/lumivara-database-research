@@ -1,0 +1,28 @@
+{
+ "_meta": {
+  "method": "positional association radius 160px + MONSTER_DB cross-check"
+ },
+ "total_drop_items": 48,
+ "resolved": 44,
+ "inferred": 0,
+ "orphan": 4,
+ "monsters_without_drops": 13,
+ "known_orphans_check": {
+  "aurora_tail": {
+   "status": "ORPHAN",
+   "observations": 25
+  },
+  "garment": {
+   "status": "ORPHAN",
+   "observations": 1
+  },
+  "honey_wing_dust": {
+   "status": "ORPHAN",
+   "observations": 3
+  },
+  "magma_scale": {
+   "status": "ORPHAN",
+   "observations": 1
+  }
+ }
+}

@@ -27,7 +27,8 @@
 | Web bundle v2 | main-DEXZ0AP0.js | lihat inventory_manifest.json |
 | WS snapshots | ~50K, 14 area | collect/raw-snapshots.json |
 | Localization | language-Dz8VbPNM.js | 2.547 pasang |
-| Changelog | 650 entri | changelog-notice-BKeFrGHU.js |
+| Changelog (client bundle) | changelog-notice-BKeFrGHU.js | 650 entries |
+| **Changelog (official web)** | https://lumivaraonline.com/changelog/ | 669 entries — cross-validated 649/649 ID match |
 
 ## Extraction Methodology
 

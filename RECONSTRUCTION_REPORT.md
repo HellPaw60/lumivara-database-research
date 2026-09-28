@@ -105,7 +105,13 @@ storage, use — schema lengkap di protocol/NETWORK_PROTOCOL_v3.json
 
 ## 22-23. Changelog & Version Diff
 
-650 changelog entries terekstrak (649 unique ID; 1 duplikat ID `2026-09-23-skill-rebalance` ada di source bundle — dua entri berbeda jam sama dengan judul beda). Entry ≠ release; jumlah patch aktual tidak diketahui. Diff v1→v2: +2 class, +14 skill, +5 item, +4 pesan protokol,
+**Dua sumber changelog, cross-validated:**
+- CLIENT_BUNDLE_CHANGELOG: 650 entries (changelog-notice-BKeFrGHU.js, snapshot 2026-09-28 pagi)
+- OFFICIAL_WEB_CHANGELOG: 669 entries (https://lumivaraonline.com/changelog/ → changelog-notice-Dk8pLLLq.js, retrieved 2026-09-28 18:18)
+- **Cross-validation: 649/649 ID match, 0 title/date/time diff, ordering identik.** 19 entries hanya di official = update baru (12:08–15:52) setelah snapshot client. Duplikat ID `2026-09-23-skill-rebalance` konsisten di kedua sumber (fakta upstream).
+- Lihat research/changelog/CHANGELOG_CROSS_VALIDATION.{json,md}
+
+Diff v1→v2: +2 class, +14 skill, +5 item, +4 pesan protokol,
 −1 (enterArena), rebalancing 8 monster. Lihat diffs/DIFF_v1_v2.json.
 
 **Drop orphans**: 4 item teramati sebagai drop tapi belum terasosiasi ke mob di MONSTER_DB —
