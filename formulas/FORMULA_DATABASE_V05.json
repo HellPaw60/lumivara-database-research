@@ -1,7 +1,7 @@
 {
  "_meta": {
   "version": "v0.5",
-  "formula_count": 33,
+  "formula_count": 36,
   "confidence_legend": [
    "VERIFIED_FROM_CLIENT_CODE",
    "OBSERVED",
@@ -636,6 +636,57 @@
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
    "notes": "sebelum equip/skill bonus"
+  },
+  "skill_cooldown": {
+   "formula_id": "skill_cooldown",
+   "name": "Skill Cooldown",
+   "scope": "SKILL_SPECIFIC",
+   "inputs": [
+    "baseCooldown",
+    "cooldownFromAspd"
+   ],
+   "outputs": [
+    "cooldownMs"
+   ],
+   "expression": "cooldownFromAspd ? cooldownScaledByAspd : baseCooldown (500-30000ms range)",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED",
+   "notes": "field cooldown_ms di skill table; cooldownFromAspd flag pada 4+ skill"
+  },
+  "skill_sp_cost": {
+   "formula_id": "skill_sp_cost",
+   "name": "Skill SP Cost",
+   "scope": "SKILL_SPECIFIC",
+   "inputs": [],
+   "outputs": [
+    "sp"
+   ],
+   "expression": "fixed per skill (2-15 SP range, see skill table)",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED",
+   "notes": "field sp_cost di skill table; tidak ada scaling"
+  },
+  "status_duration": {
+   "formula_id": "status_duration",
+   "name": "Status Effect Duration",
+   "scope": "GLOBAL",
+   "inputs": [],
+   "outputs": [
+    "durationMs"
+   ],
+   "expression": "fixed per status (see STATUS_DB: poison 12000ms, venom 8000ms, meikyo 45000ms, freeze 6000ms...)",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED",
+   "notes": "field duration_ms di status_effects table"
   }
  }
 }
