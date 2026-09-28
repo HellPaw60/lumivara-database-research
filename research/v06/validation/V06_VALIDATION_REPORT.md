@@ -3,9 +3,9 @@
 ## Baseline
 | Field | Value |
 |---|---|
-| Commit | `d797ee1` (final V0.6 cleanup) |
+| Commit | `371bf84` (final V0.6 micro-cleanup) |
 | Tag | `v0.6-mechanics-validation` |
-| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (final) |
+| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (first cleanup) → `371bf84` (final) |
 | v0.5 baseline | `6131965` |
 
 ## Changelog Snapshot
@@ -46,17 +46,16 @@
 | MEDIUM | 5 (drop rates, refine server, damage variance, monster stats, PvP) |
 | LOW | 3 (cast time, ASPD-skill, storage) |
 
-## Validation Checks
+## Validation Checks (7/7 PASS)
 | Check | Status |
 |---|---|
 | JSON validity | PASS |
 | Formula schema/confidence | PASS |
 | SQLite integrity | PASS |
-| Changelog freshness | PASS (unchanged) |
+| Changelog freshness | PASS (B6x3YIz5 confirmed at final check) |
 | Changelog delta | PASS |
 | Raw preservation | PASS |
 | V0.5/V0.6 artifact consistency | PASS |
-| Documentation/path consistency | PASS |
 
 ## Server-Equivalence Status
 - **LIKELY**: Mob FLEE, Hit/Miss, Crit (distributional fit to client formula)
@@ -66,7 +65,7 @@
 1. Added `formula_type` field to all 36 formulas (semantic classification)
 2. Crit runtime matrix updated with weapon-type ×2 modifier
 3. Gap register confidence labels normalized to {UNKNOWN, INFERRED}
-4. Final changelog check: unchanged
+4. Final changelog check: B6x3YIz5 unchanged from the immediately preceding V0.6 final-check retrieval
 
 ## Remaining Work
 10 gaps remain unresolved — see GAP_REGISTER.json for details.
