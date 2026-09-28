@@ -1,0 +1,47 @@
+[
+ {
+  "category": "etc",
+  "rate": 0.3,
+  "confidence": "VERIFIED"
+ },
+ {
+  "category": "consumable",
+  "rate": 0.15,
+  "confidence": "VERIFIED"
+ },
+ {
+  "category": "equipment",
+  "rate": 0.0125,
+  "confidence": "VERIFIED"
+ },
+ {
+  "category": "card",
+  "rate": 0.001,
+  "confidence": "VERIFIED"
+ },
+ {
+  "category": "bossCard",
+  "rate": 0.01,
+  "confidence": "VERIFIED"
+ },
+ {
+  "category": "relicBox",
+  "rate": 0.01,
+  "confidence": "VERIFIED"
+ },
+ {
+  "category": "refineStone",
+  "rate": 0.01,
+  "confidence": "VERIFIED"
+ },
+ {
+  "category": "extraStat",
+  "rate": 0.25,
+  "confidence": "VERIFIED"
+ },
+ {
+  "category": "aspdAccessory",
+  "rate": 0.3,
+  "confidence": "VERIFIED"
+ }
+]

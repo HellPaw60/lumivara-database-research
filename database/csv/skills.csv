@@ -1,0 +1,65 @@
+skill_id,name,class_id,job_level,sp_cost,cooldown_ms,range_px,target,effect,power,multiplier,is_passive,cd_from_aspd,buff_id,confidence
+bash,Power Strike,swordman,1,2,500,64,enemy,damage,atk,1,0,1,,VERIFIED
+magnum,Flame Burst,swordman,3,4,1000,96,area,damage,atk,1,0,0,,VERIFIED
+endure,Iron Will,swordman,5,2,15000,0,self,buff,atk,1,0,0,endure,VERIFIED
+firstaid,First Aid,novice,1,3,6000,0,self,heal,matk,1,0,0,,VERIFIED
+firebolt,Ember Bolt,mage,1,4,100,240,enemy,damage,matk,1,0,0,,VERIFIED
+coldbolt,Frost Area,mage,3,5,850,150,area,damage,matk,1,0,0,,VERIFIED
+thunderstorm,Stormbreak,mage,5,7,550,120,area,damage,matk,1,0,0,,VERIFIED
+doublestrafe,Twin Shot,archer,1,0.7,500,300,enemy,damage,atk,1,0,1,,VERIFIED
+arrowshower,Arrow Rain,archer,3,4,5000,280,area,damage,atk,1,0,0,,VERIFIED
+piercingshot,Piercing Shot,archer,5,10,5000,320,enemy,damage,atk,1,0,0,,VERIFIED
+heal,Heal,acolyte,1,3,1000,160,ally,heal,matk,1,0,0,,VERIFIED
+holylight,Radiant Light,acolyte,3,4,1500,150,area,damage,matk,1,0,0,,VERIFIED
+holyguard,Holy Guard,acolyte,5,3,15000,0,self,buff,matk,1,0,0,holyguard,VERIFIED
+blessing,Divine Boon,acolyte,7,5,15000,150,ally,buff,matk,1,0,0,blessing,VERIFIED
+remedylight,Remedy Light,acolyte,9,20,15000,170,self,buff,matk,1,0,0,remedy,VERIFIED
+mammonite,Gold Strike,merchant,1,2,3500,72,enemy,damage,atk,1,0,1,,VERIFIED
+cartstrike,Cart Strike,merchant,3,3.5,3000,100,area,damage,atk,1,0,0,,VERIFIED
+hammerfall,Quake Hammer,merchant,5,4,4500,150,area,damage,atk,1,0,0,,VERIFIED
+overthrust,Power Surge,merchant,7,15,30000,0,self,buff,atk,1,0,0,overthrust,VERIFIED
+twinfang,Twin Fang,thief,1,4,2500,72,enemy,damage,atk,1,0,1,,VERIFIED
+venomknife,Toxin Blink,thief,3,1,7000,220,enemy,damage,atk,1,0,0,,VERIFIED
+shadowburst,Shadow Burst,thief,5,10,7500,110,area,damage,atk,1,0,0,,VERIFIED
+challenging,Challenging,swordman,7,3,5000,170,area,debuff,atk,1,0,0,,VERIFIED
+tierra,Tierra Sharp Spear,mage,7,4,100,240,enemy,damage,matk,1,0,0,,VERIFIED
+spiritinstinct,Spirit Instinct,archer,7,8,20000,0,self,buff,atk,1,0,0,spirit,VERIFIED
+leapshot,Leap Shot,archer,9,15,7000,170,enemy,damage,atk,1,0,0,,VERIFIED
+vanish,Vanish,thief,7,20,15000,0,self,buff,atk,1,0,0,vanish,VERIFIED
+viperfang,Viper Fang,mamushi,1,4,2500,200,enemy,damage,atk,1,0,1,,VERIFIED
+dokugiri,Dokugiri,mamushi,3,8,6000,110,area,damage,atk,1,0,0,,VERIFIED
+venomrupture,Venom Rupture,mamushi,5,12,8000,200,enemy,damage,atk,1,0,0,,VERIFIED
+dokunuri,Dokunuri,mamushi,7,15,30000,0,self,buff,atk,1,0,0,dokunuri,VERIFIED
+iaigiri,Iaigiri,kensei,1,4,2500,72,enemy,damage,atk,1,0,1,,VERIFIED
+oboro,Oboro Ranbu,kensei,3,12,15000,220,enemy,damage,atk,1,0,0,,VERIFIED
+issen,Issen,kensei,5,10,6000,220,enemy,damage,atk,1,0,0,,VERIFIED
+meikyo,Meikyo Shisui,kensei,7,15,30000,0,self,buff,atk,1,0,0,meikyo,VERIFIED
+nekoflask,Fizz Flask,nekobaku,1,3,500,200,enemy,damage,matk,1,0,1,,VERIFIED
+tarflask,Tar Flask,nekobaku,3,5,3000,80,area,damage,matk,1,0,0,,VERIFIED
+bigkaboom,Big Kaboom,nekobaku,5,9,5000,100,area,damage,matk,1,0,0,,VERIFIED
+catbrew,Catalyst Brew,nekobaku,7,15,30000,0,self,buff,matk,1,0,0,catbrew,VERIFIED
+swordmastery,Blade Mastery,swordman,2,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+hprecovery,Vigor,swordman,4,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+sp_recovery,Meditation,mage,2,0,0,0,self,passive,matk,1,1,0,,VERIFIED
+owleye,Keen Eye,archer,2,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+vultureeye,Far Sight,archer,4,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+divineprotection,Sacred Ward,acolyte,2,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+demonbane,Fiend Slayer,acolyte,4,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+discount,Haggler,merchant,2,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+overcharge,Markup,merchant,4,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+doubleattack,Twin Strike,thief,2,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+improvedodge,Fleet Foot,thief,4,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+ironbody,Iron Body,swordman,9,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+mentality,Mentality,mage,9,0,0,0,self,passive,matk,1,1,0,,VERIFIED
+magemastery,Mage Mastery,mage,11,0,0,0,self,passive,matk,1,1,0,,VERIFIED
+weighttraining,Weight Training,merchant,9,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+venommastery,Venom Mastery,mamushi,2,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+numbingtoxin,Numbing Toxin,mamushi,4,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+predator,Predator's Patience,mamushi,9,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+katanamastery,Katana Mastery,kensei,2,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+shukuchi,Shukuchi,kensei,4,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+zanshin,Zanshin,kensei,9,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+fatalsense,Fatal Sense,thief,9,0,0,0,self,passive,atk,1,1,0,,VERIFIED
+alchemymastery,Alchemy Mastery,nekobaku,2,0,0,0,self,passive,matk,1,1,0,,VERIFIED
+ninelives,Nine Lives,nekobaku,4,0,0,0,self,passive,matk,1,1,0,,VERIFIED
+catreflex,Feline Reflex,nekobaku,9,0,0,0,self,passive,matk,1,1,0,,VERIFIED

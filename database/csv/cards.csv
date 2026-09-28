@@ -1,0 +1,50 @@
+card_id,name,bonuses_json,price,description,confidence
+hopper_card,Prism Hopper Card,"{""luk"": 3}",150,ฝังอุปกรณ์: LUK +3 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+hollow_card,Hollow Card,"{""int"": 2, ""mdef"": 2}",250,ฝังอุปกรณ์: INT +2 · MDEF +2 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+boss_card,Crowned Prism Hopper Card,"{""atk"": 10, ""luk"": 3, ""atkPct"": 5, ""matkPct"": 5}",3000,ฝังอุปกรณ์: ATK +10 · LUK +3 · ATK +5% (รวมสูงสุด 30%) · MATK +5% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้ · การ์ดบอสที่หายากที่สุด,VERIFIED
+mushroom_card,Moss Mushroom Card,"{""vit"": 4}",200,ฝังอุปกรณ์: VIT +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+bat_card,Cave Bat Card,"{""agi"": 4}",220,ฝังอุปกรณ์: AGI +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+beetle_card,Amber Beetle Card,"{""def"": 4}",220,ฝังอุปกรณ์: DEF +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+crab_card,Tide Crab Card,"{""hp"": 80}",250,ฝังอุปกรณ์: HP +80 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+sprout_card,Leaf Sprout Card,"{""sp"": 20}",180,ฝังอุปกรณ์: SP +20 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+bunny_card,Dew Bunny Card,"{""flee"": 4}",190,ฝังอุปกรณ์: FLEE +4 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+pixie_card,Thorn Pixie Card,"{""matk"": 4}",210,ฝังอุปกรณ์: MATK +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+rootling_card,Rootling Card,"{""hp"": 50, ""vit"": 1}",220,ฝังอุปกรณ์: HP +50 · VIT +1 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+moth_card,Honey Moth Card,"{""sp"": 15, ""int"": 2}",220,ฝังอุปกรณ์: SP +15 · INT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+hare_card,Bramble Hare Card,"{""agi"": 2, ""flee"": 3}",230,ฝังอุปกรณ์: AGI +2 · FLEE +3 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+puff_card,Frost Puff Card,"{""mdef"": 5, ""resFreeze"": 25}",300,ฝังอุปกรณ์: MDEF +5 · กันแข็ง +25% (รวมสูงสุด 80%) · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+icicle_card,Icicle Hare Card,"{""agi"": 3, ""crit"": 1, ""freezeHit"": 3}",320,ฝังอุปกรณ์: AGI +3 · CRIT +1 · โจมตีติดแข็ง +3% (รวมสูงสุด 15%) · ติดแข็งเฉพาะการโจมตีปกติ บอสไม่ติด · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+snowowl_card,Snow Owl Card,"{""hit"": 8}",340,ฝังอุปกรณ์: HIT +8 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+fox_card,Aurora Fox Card,"{""int"": 3, ""matk"": 4, ""matkPct"": 3}",360,ฝังอุปกรณ์: INT +3 · MATK +4 · MATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+gecko_card,Dune Gecko Card,"{""flee"": 8}",420,ฝังอุปกรณ์: FLEE +8 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+scarab_card,Scarab Sentinel Card,"{""def"": 5, ""vit"": 2}",450,ฝังอุปกรณ์: DEF +5 · VIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+cobra_card,Sunscale Cobra Card,"{""crit"": 3}",470,ฝังอุปกรณ์: CRIT +3 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+cactus_card,Cactus Imp Card,"{""atk"": 6}",490,ฝังอุปกรณ์: ATK +6 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+toad_card,Bog Toad Card,"{""hp"": 150}",540,ฝังอุปกรณ์: HP +150 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+newt_card,Mud Newt Card,"{""sp"": 40, ""int"": 2}",560,ฝังอุปกรณ์: SP +40 · INT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+mire_card,Mire Jelly Card,"{""mdef"": 6, ""hp"": 60}",580,ฝังอุปกรณ์: MDEF +6 · HP +60 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+mantis_card,Reed Mantis Card,"{""atk"": 6, ""crit"": 2, ""atkPct"": 3}",600,ฝังอุปกรณ์: ATK +6 · CRIT +2 · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+wisp_card,Lantern Wisp Card,"{""matk"": 9, ""mpierce"": 8}",660,ฝังอุปกรณ์: MATK +9 · เจาะเวท +8% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+wolf_card,Forest Wolf Card,"{""str"": 5, ""pierce"": 5}",680,ฝังอุปกรณ์: STR +5 · เจาะกาย +5% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+antler_card,Ember Antler Card,"{""atk"": 5, ""matk"": 5}",700,ฝังอุปกรณ์: ATK +5 · MATK +5 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+moonowl_card,Moon Owl Card,"{""dex"": 5, ""hit"": 6}",720,ฝังอุปกรณ์: DEX +5 · HIT +6 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+lynx_card,Vine Lynx Card,"{""agi"": 5, ""aspd"": 1, ""moveSpeed"": 3}",740,ฝังอุปกรณ์: AGI +5 · ASPD +1 · ความเร็ววิ่ง +3% (รวมสูงสุด 30%) · ASPD จากการ์ดไม่ซ้อนกัน · ความเร็ววิ่งนับรวมกับ Fleet Foot · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+boar_card,Wild Boar Card,"{""str"": 4, ""hp"": 100, ""lifesteal"": 1}",800,ฝังอุปกรณ์: STR +4 · HP +100 · ดูดเลือด +1% (รวมสูงสุด 8%) · ดูดเลือดฟื้นไม่เกิน 10% ของ MaxHP ต่อครั้ง · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+drake_card,Sand Drake Card,"{""atk"": 8, ""def"": 3, ""pierce"": 8}",850,ฝังอุปกรณ์: ATK +8 · DEF +3 · เจาะกาย +8% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+golem_card,Pebble Golem Card,"{""def"": 7, ""hp"": 120, ""resStun"": 25}",900,ฝังอุปกรณ์: DEF +7 · HP +120 · กันสตัน +25% (รวมสูงสุด 80%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+salamander_card,Magma Salamander Card,"{""matk"": 10, ""int"": 3, ""mpierce"": 10}",950,ฝังอุปกรณ์: MATK +10 · INT +3 · เจาะเวท +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+hound_card,Ember Hound Card,"{""atk"": 9, ""agi"": 3, ""crit"": 2}",980,ฝังอุปกรณ์: ATK +9 · AGI +3 · CRIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+tortoise_card,Basalt Tortoise Card,"{""def"": 8, ""mdef"": 5, ""hp"": 150}",1000,ฝังอุปกรณ์: DEF +8 · MDEF +5 · HP +150 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+scorpion_card,Obsidian Scorpion Card,"{""atk"": 10, ""pierce"": 10, ""atkPct"": 3}",1050,ฝังอุปกรณ์: ATK +10 · เจาะกาย +10% (รวมสูงสุด 60%) · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+raven_card,Shade Raven Card,"{""agi"": 4, ""flee"": 6, ""crit"": 2}",1100,ฝังอุปกรณ์: AGI +4 · FLEE +6 · CRIT +2 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+bonehound_card,Bone Hound Card,"{""str"": 5, ""atk"": 8, ""lifesteal"": 1}",1120,ฝังอุปกรณ์: STR +5 · ATK +8 · ดูดเลือด +1% (รวมสูงสุด 8%) · ดูดเลือดฟื้นไม่เกิน 10% ของ MaxHP ต่อครั้ง · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+wraith_card,Bog Wraith Card,"{""int"": 4, ""matk"": 10, ""mdef"": 4}",1150,ฝังอุปกรณ์: INT +4 · MATK +10 · MDEF +4 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+knight_card,Grave Knight Card,"{""def"": 9, ""vit"": 4, ""hp"": 180}",1180,ฝังอุปกรณ์: DEF +9 · VIT +4 · HP +180 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+quartz_card,Quartz Crawler Card,"{""dex"": 5, ""hit"": 8, ""crit"": 2}",1250,ฝังอุปกรณ์: DEX +5 · HIT +8 · CRIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+geode_card,Geode Armadillo Card,"{""def"": 10, ""mdef"": 6, ""resStun"": 20}",1280,ฝังอุปกรณ์: DEF +10 · MDEF +6 · กันสตัน +20% (รวมสูงสุด 80%) · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+prism_card,Prism Serpent Card,"{""int"": 3, ""matk"": 12, ""matkPct"": 3}",1320,ฝังอุปกรณ์: INT +3 · MATK +12 · MATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+wyvern_card,Amethyst Wyvern Card,"{""atk"": 12, ""pierce"": 8, ""atkPct"": 3}",1360,ฝังอุปกรณ์: ATK +12 · เจาะกาย +8% (รวมสูงสุด 60%) · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+ram_card,Thunder Ram Card,"{""str"": 6, ""vit"": 4, ""hp"": 200}",1450,ฝังอุปกรณ์: STR +6 · VIT +4 · HP +200 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+roc_card,Storm Roc Card,"{""agi"": 6, ""flee"": 8, ""moveSpeed"": 4}",1480,ฝังอุปกรณ์: AGI +6 · FLEE +8 · ความเร็ววิ่ง +4% (รวมสูงสุด 30%) · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · ความเร็ววิ่งนับรวมกับ Fleet Foot · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+cloud_card,Cloud Serpent Card,"{""int"": 5, ""sp"": 60, ""mpierce"": 10}",1520,ฝังอุปกรณ์: INT +5 · SP +60 · เจาะเวท +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED
+stormdrake_card,Tempest Drake Card,"{""atk"": 14, ""matk"": 14, ""pierce"": 10}",1600,ฝังอุปกรณ์: ATK +14 · MATK +14 · เจาะกาย +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้,VERIFIED

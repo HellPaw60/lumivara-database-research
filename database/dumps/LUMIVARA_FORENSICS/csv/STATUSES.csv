@@ -1,0 +1,43 @@
+status_id,name,kind,icon,duration_ms,params_json,confidence
+poison,พิษ,debuff,☠,12000,"{""dot"": {""percent"": 0.015, ""interval"": 2000}}",VERIFIED
+slow,ช้า,debuff,🐌,8000,"{""speedFactor"": 0.65, ""aspdPercent"": -0.15}",VERIFIED
+crush,เกราะแตก,debuff,🛡,10000,"{""incomingFactor"": 1.2}",VERIFIED
+bleed,เลือดไหล,debuff,🩸,5000,"{""dot"": {""percent"": 0.008, ""interval"": 1000}}",VERIFIED
+burn,เผาไหม้,debuff,🔥,5000,"{""dot"": {""percent"": 0.007, ""interval"": 1000}}",VERIFIED
+stun,สตัน,debuff,💫,1000,"{""disables"": true}",VERIFIED
+freeze,แช่แข็ง,debuff,❄,1000,"{""disables"": true}",VERIFIED
+blind,ตาพร่า,debuff,🌫,5000,"{""aspdPercent"": -0.25, ""missChance"": 0.25}",VERIFIED
+blessing,Blessing,buff,✨,45000,"{""stats"": {""str"": 2, ""agi"": 2, ""int"": 2, ""dex"": 2}}",VERIFIED
+overthrust,Over Thrust,buff,⚒,25000,"{""atkFactor"": 0.18}",VERIFIED
+endure,Endure,buff,◆,3500,{},VERIFIED
+holyguard,Holy Guard,buff,✚,3500,{},VERIFIED
+haste,เร่งความเร็ว,buff,⚡,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+taunt,ถูกยั่วยุ,debuff,⚑,5000,"{""atkFactor"": -0.1, ""incomingFactor"": 1.1}",VERIFIED
+weaken,อ่อนแรง,debuff,▽,5000,"{""atkFactor"": -0.1}",VERIFIED
+spirit,Spirit Instinct,buff,🜂,55000,{},VERIFIED
+remedy,Remedy Light,buff,✛,5000,"{""wards"": true}",VERIFIED
+expboost,EXP x2,buff,📖,3600000,"{""fromItem"": true, ""keepsOnDeath"": true, ""pausesOffline"": true}",VERIFIED
+dropboost,Drop x2,buff,🎁,3600000,"{""fromItem"": true, ""keepsOnDeath"": true, ""pausesOffline"": true}",VERIFIED
+vanish,Vanish,buff,◌,1000,"{""hidden"": true}",VERIFIED
+venom,พิษงู,debuff,🐍,8000,"{""dot"": {""percent"": 0, ""interval"": 1000}}",VERIFIED
+dokunuri,Dokunuri,buff,🗡,45000,{},VERIFIED
+meikyo,Meikyo Shisui,buff,🌊,45000,{},VERIFIED
+oil,ชุ่มน้ำมัน,debuff,🛢,6000,"{""speedFactor"": 0.7}",VERIFIED
+catbrew,Catalyst Brew,buff,⚗,45000,{},VERIFIED
+ninelives,เก้าชีวิต (พักฟื้น),buff,🐾,600000,"{""keepsOnDeath"": true}",VERIFIED
+crystal,โล่ผลึก,buff,💎,8000,{},VERIFIED
+spawnguard,อมตะ,buff,🛡,30000,"{""wards"": true, ""invulnerable"": true}",VERIFIED
+riseguard,อมตะ,buff,🛡,3000,"{""wards"": true, ""invulnerable"": true, ""pacified"": true}",VERIFIED
+momentum,Momentum,buff,🌀,10000,{},VERIFIED
+wcoat_fire,อาวุธ 🔥ไฟ,buff,🔥,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+wcoat_water,อาวุธ 💧น้ำ,buff,💧,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+wcoat_wind,อาวุธ 🌀ลม,buff,🌀,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+wcoat_earth,อาวุธ 🍃ดิน,buff,🍃,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+wcoat_light,อาวุธ ☀แสง,buff,☀,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+wcoat_dark,อาวุธ ☾มืด,buff,☾,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+acoat_fire,เกราะ 🔥ไฟ,buff,🔥,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+acoat_water,เกราะ 💧น้ำ,buff,💧,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+acoat_wind,เกราะ 🌀ลม,buff,🌀,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+acoat_earth,เกราะ 🍃ดิน,buff,🍃,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+acoat_light,เกราะ ☀แสง,buff,☀,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED
+acoat_dark,เกราะ ☾มืด,buff,☾,1800000,"{""fromItem"": true, ""keepsOnDeath"": true}",VERIFIED

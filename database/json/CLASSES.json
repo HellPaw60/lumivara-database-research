@@ -1,0 +1,72 @@
+[
+ {
+  "class_id": "novice",
+  "name": "Novice",
+  "unlock_jobs": "null",
+  "unlock_silver": null,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "swordman",
+  "name": "Swordsman",
+  "unlock_jobs": "null",
+  "unlock_silver": null,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "mage",
+  "name": "Mage",
+  "unlock_jobs": "null",
+  "unlock_silver": null,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "archer",
+  "name": "Archer",
+  "unlock_jobs": "null",
+  "unlock_silver": null,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "acolyte",
+  "name": "Cleric",
+  "unlock_jobs": "null",
+  "unlock_silver": null,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "merchant",
+  "name": "Merchant",
+  "unlock_jobs": "null",
+  "unlock_silver": null,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "thief",
+  "name": "Thief",
+  "unlock_jobs": "null",
+  "unlock_silver": null,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "mamushi",
+  "name": "Mamushi",
+  "unlock_jobs": "null",
+  "unlock_silver": null,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "nekobaku",
+  "name": "Nekobaku",
+  "unlock_jobs": "{\"merchant\": 50, \"mamushi\": 50}",
+  "unlock_silver": 120000,
+  "confidence": "VERIFIED"
+ },
+ {
+  "class_id": "kensei",
+  "name": "Kensei",
+  "unlock_jobs": "{\"swordman\": 50, \"thief\": 50}",
+  "unlock_silver": 120000,
+  "confidence": "VERIFIED"
+ }
+]

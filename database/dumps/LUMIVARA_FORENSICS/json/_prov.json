@@ -1,0 +1,42 @@
+[
+ {
+  "tbl": "CLASSES",
+  "source": "items-CvFgs761.js var z (names) + WA (unlock)"
+ },
+ {
+  "tbl": "SKILLS",
+  "source": "items-CvFgs761.js var x (skill table)"
+ },
+ {
+  "tbl": "ITEMS",
+  "source": "items-CvFgs761.js var Pc"
+ },
+ {
+  "tbl": "CARDS",
+  "source": "items-CvFgs761.js var le"
+ },
+ {
+  "tbl": "STATUSES",
+  "source": "items-CvFgs761.js var N"
+ },
+ {
+  "tbl": "MAPS",
+  "source": "items-CvFgs761.js var Y"
+ },
+ {
+  "tbl": "MONSTER_STATUS_ATTACKS",
+  "source": "items-CvFgs761.js var W1"
+ },
+ {
+  "tbl": "DROP_RATES",
+  "source": "items-CvFgs761.js var ie"
+ },
+ {
+  "tbl": "MONSTERS",
+  "source": "collect/raw-snapshots.json (WS observation)"
+ },
+ {
+  "tbl": "TRANSLATIONS",
+  "source": "web-v2/language-Dz8VbPNM.js"
+ }
+]

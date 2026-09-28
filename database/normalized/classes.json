@@ -1,0 +1,64 @@
+[
+ {
+  "id": "novice",
+  "name": "Novice",
+  "unlock": null
+ },
+ {
+  "id": "swordman",
+  "name": "Swordsman",
+  "unlock": null
+ },
+ {
+  "id": "mage",
+  "name": "Mage",
+  "unlock": null
+ },
+ {
+  "id": "archer",
+  "name": "Archer",
+  "unlock": null
+ },
+ {
+  "id": "acolyte",
+  "name": "Cleric",
+  "unlock": null
+ },
+ {
+  "id": "merchant",
+  "name": "Merchant",
+  "unlock": null
+ },
+ {
+  "id": "thief",
+  "name": "Thief",
+  "unlock": null
+ },
+ {
+  "id": "mamushi",
+  "name": "Mamushi",
+  "unlock": null
+ },
+ {
+  "id": "nekobaku",
+  "name": "Nekobaku",
+  "unlock": {
+   "jobs": {
+    "merchant": 50,
+    "mamushi": 50
+   },
+   "silver": 120000
+  }
+ },
+ {
+  "id": "kensei",
+  "name": "Kensei",
+  "unlock": {
+   "jobs": {
+    "swordman": 50,
+    "thief": 50
+   },
+   "silver": 120000
+  }
+ }
+]

@@ -1,0 +1,394 @@
+[
+ {
+  "card_id": "hopper_card",
+  "name": "Prism Hopper Card",
+  "bonuses_json": "{\"luk\": 3}",
+  "price": 150,
+  "description": "ฝังอุปกรณ์: LUK +3 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "hollow_card",
+  "name": "Hollow Card",
+  "bonuses_json": "{\"int\": 2, \"mdef\": 2}",
+  "price": 250,
+  "description": "ฝังอุปกรณ์: INT +2 · MDEF +2 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "boss_card",
+  "name": "Crowned Prism Hopper Card",
+  "bonuses_json": "{\"atk\": 10, \"luk\": 3, \"atkPct\": 5, \"matkPct\": 5}",
+  "price": 3000,
+  "description": "ฝังอุปกรณ์: ATK +10 · LUK +3 · ATK +5% (รวมสูงสุด 30%) · MATK +5% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้ · การ์ดบอสที่หายากที่สุด",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "mushroom_card",
+  "name": "Moss Mushroom Card",
+  "bonuses_json": "{\"vit\": 4}",
+  "price": 200,
+  "description": "ฝังอุปกรณ์: VIT +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "bat_card",
+  "name": "Cave Bat Card",
+  "bonuses_json": "{\"agi\": 4}",
+  "price": 220,
+  "description": "ฝังอุปกรณ์: AGI +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "beetle_card",
+  "name": "Amber Beetle Card",
+  "bonuses_json": "{\"def\": 4}",
+  "price": 220,
+  "description": "ฝังอุปกรณ์: DEF +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "crab_card",
+  "name": "Tide Crab Card",
+  "bonuses_json": "{\"hp\": 80}",
+  "price": 250,
+  "description": "ฝังอุปกรณ์: HP +80 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "sprout_card",
+  "name": "Leaf Sprout Card",
+  "bonuses_json": "{\"sp\": 20}",
+  "price": 180,
+  "description": "ฝังอุปกรณ์: SP +20 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "bunny_card",
+  "name": "Dew Bunny Card",
+  "bonuses_json": "{\"flee\": 4}",
+  "price": 190,
+  "description": "ฝังอุปกรณ์: FLEE +4 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "pixie_card",
+  "name": "Thorn Pixie Card",
+  "bonuses_json": "{\"matk\": 4}",
+  "price": 210,
+  "description": "ฝังอุปกรณ์: MATK +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "rootling_card",
+  "name": "Rootling Card",
+  "bonuses_json": "{\"hp\": 50, \"vit\": 1}",
+  "price": 220,
+  "description": "ฝังอุปกรณ์: HP +50 · VIT +1 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "moth_card",
+  "name": "Honey Moth Card",
+  "bonuses_json": "{\"sp\": 15, \"int\": 2}",
+  "price": 220,
+  "description": "ฝังอุปกรณ์: SP +15 · INT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "hare_card",
+  "name": "Bramble Hare Card",
+  "bonuses_json": "{\"agi\": 2, \"flee\": 3}",
+  "price": 230,
+  "description": "ฝังอุปกรณ์: AGI +2 · FLEE +3 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "puff_card",
+  "name": "Frost Puff Card",
+  "bonuses_json": "{\"mdef\": 5, \"resFreeze\": 25}",
+  "price": 300,
+  "description": "ฝังอุปกรณ์: MDEF +5 · กันแข็ง +25% (รวมสูงสุด 80%) · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "icicle_card",
+  "name": "Icicle Hare Card",
+  "bonuses_json": "{\"agi\": 3, \"crit\": 1, \"freezeHit\": 3}",
+  "price": 320,
+  "description": "ฝังอุปกรณ์: AGI +3 · CRIT +1 · โจมตีติดแข็ง +3% (รวมสูงสุด 15%) · ติดแข็งเฉพาะการโจมตีปกติ บอสไม่ติด · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "snowowl_card",
+  "name": "Snow Owl Card",
+  "bonuses_json": "{\"hit\": 8}",
+  "price": 340,
+  "description": "ฝังอุปกรณ์: HIT +8 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "fox_card",
+  "name": "Aurora Fox Card",
+  "bonuses_json": "{\"int\": 3, \"matk\": 4, \"matkPct\": 3}",
+  "price": 360,
+  "description": "ฝังอุปกรณ์: INT +3 · MATK +4 · MATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "gecko_card",
+  "name": "Dune Gecko Card",
+  "bonuses_json": "{\"flee\": 8}",
+  "price": 420,
+  "description": "ฝังอุปกรณ์: FLEE +8 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "scarab_card",
+  "name": "Scarab Sentinel Card",
+  "bonuses_json": "{\"def\": 5, \"vit\": 2}",
+  "price": 450,
+  "description": "ฝังอุปกรณ์: DEF +5 · VIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "cobra_card",
+  "name": "Sunscale Cobra Card",
+  "bonuses_json": "{\"crit\": 3}",
+  "price": 470,
+  "description": "ฝังอุปกรณ์: CRIT +3 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "cactus_card",
+  "name": "Cactus Imp Card",
+  "bonuses_json": "{\"atk\": 6}",
+  "price": 490,
+  "description": "ฝังอุปกรณ์: ATK +6 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "toad_card",
+  "name": "Bog Toad Card",
+  "bonuses_json": "{\"hp\": 150}",
+  "price": 540,
+  "description": "ฝังอุปกรณ์: HP +150 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "newt_card",
+  "name": "Mud Newt Card",
+  "bonuses_json": "{\"sp\": 40, \"int\": 2}",
+  "price": 560,
+  "description": "ฝังอุปกรณ์: SP +40 · INT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "mire_card",
+  "name": "Mire Jelly Card",
+  "bonuses_json": "{\"mdef\": 6, \"hp\": 60}",
+  "price": 580,
+  "description": "ฝังอุปกรณ์: MDEF +6 · HP +60 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "mantis_card",
+  "name": "Reed Mantis Card",
+  "bonuses_json": "{\"atk\": 6, \"crit\": 2, \"atkPct\": 3}",
+  "price": 600,
+  "description": "ฝังอุปกรณ์: ATK +6 · CRIT +2 · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "wisp_card",
+  "name": "Lantern Wisp Card",
+  "bonuses_json": "{\"matk\": 9, \"mpierce\": 8}",
+  "price": 660,
+  "description": "ฝังอุปกรณ์: MATK +9 · เจาะเวท +8% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "wolf_card",
+  "name": "Forest Wolf Card",
+  "bonuses_json": "{\"str\": 5, \"pierce\": 5}",
+  "price": 680,
+  "description": "ฝังอุปกรณ์: STR +5 · เจาะกาย +5% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "antler_card",
+  "name": "Ember Antler Card",
+  "bonuses_json": "{\"atk\": 5, \"matk\": 5}",
+  "price": 700,
+  "description": "ฝังอุปกรณ์: ATK +5 · MATK +5 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "moonowl_card",
+  "name": "Moon Owl Card",
+  "bonuses_json": "{\"dex\": 5, \"hit\": 6}",
+  "price": 720,
+  "description": "ฝังอุปกรณ์: DEX +5 · HIT +6 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "lynx_card",
+  "name": "Vine Lynx Card",
+  "bonuses_json": "{\"agi\": 5, \"aspd\": 1, \"moveSpeed\": 3}",
+  "price": 740,
+  "description": "ฝังอุปกรณ์: AGI +5 · ASPD +1 · ความเร็ววิ่ง +3% (รวมสูงสุด 30%) · ASPD จากการ์ดไม่ซ้อนกัน · ความเร็ววิ่งนับรวมกับ Fleet Foot · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "boar_card",
+  "name": "Wild Boar Card",
+  "bonuses_json": "{\"str\": 4, \"hp\": 100, \"lifesteal\": 1}",
+  "price": 800,
+  "description": "ฝังอุปกรณ์: STR +4 · HP +100 · ดูดเลือด +1% (รวมสูงสุด 8%) · ดูดเลือดฟื้นไม่เกิน 10% ของ MaxHP ต่อครั้ง · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "drake_card",
+  "name": "Sand Drake Card",
+  "bonuses_json": "{\"atk\": 8, \"def\": 3, \"pierce\": 8}",
+  "price": 850,
+  "description": "ฝังอุปกรณ์: ATK +8 · DEF +3 · เจาะกาย +8% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "golem_card",
+  "name": "Pebble Golem Card",
+  "bonuses_json": "{\"def\": 7, \"hp\": 120, \"resStun\": 25}",
+  "price": 900,
+  "description": "ฝังอุปกรณ์: DEF +7 · HP +120 · กันสตัน +25% (รวมสูงสุด 80%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "salamander_card",
+  "name": "Magma Salamander Card",
+  "bonuses_json": "{\"matk\": 10, \"int\": 3, \"mpierce\": 10}",
+  "price": 950,
+  "description": "ฝังอุปกรณ์: MATK +10 · INT +3 · เจาะเวท +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "hound_card",
+  "name": "Ember Hound Card",
+  "bonuses_json": "{\"atk\": 9, \"agi\": 3, \"crit\": 2}",
+  "price": 980,
+  "description": "ฝังอุปกรณ์: ATK +9 · AGI +3 · CRIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "tortoise_card",
+  "name": "Basalt Tortoise Card",
+  "bonuses_json": "{\"def\": 8, \"mdef\": 5, \"hp\": 150}",
+  "price": 1000,
+  "description": "ฝังอุปกรณ์: DEF +8 · MDEF +5 · HP +150 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "scorpion_card",
+  "name": "Obsidian Scorpion Card",
+  "bonuses_json": "{\"atk\": 10, \"pierce\": 10, \"atkPct\": 3}",
+  "price": 1050,
+  "description": "ฝังอุปกรณ์: ATK +10 · เจาะกาย +10% (รวมสูงสุด 60%) · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "raven_card",
+  "name": "Shade Raven Card",
+  "bonuses_json": "{\"agi\": 4, \"flee\": 6, \"crit\": 2}",
+  "price": 1100,
+  "description": "ฝังอุปกรณ์: AGI +4 · FLEE +6 · CRIT +2 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "bonehound_card",
+  "name": "Bone Hound Card",
+  "bonuses_json": "{\"str\": 5, \"atk\": 8, \"lifesteal\": 1}",
+  "price": 1120,
+  "description": "ฝังอุปกรณ์: STR +5 · ATK +8 · ดูดเลือด +1% (รวมสูงสุด 8%) · ดูดเลือดฟื้นไม่เกิน 10% ของ MaxHP ต่อครั้ง · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "wraith_card",
+  "name": "Bog Wraith Card",
+  "bonuses_json": "{\"int\": 4, \"matk\": 10, \"mdef\": 4}",
+  "price": 1150,
+  "description": "ฝังอุปกรณ์: INT +4 · MATK +10 · MDEF +4 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "knight_card",
+  "name": "Grave Knight Card",
+  "bonuses_json": "{\"def\": 9, \"vit\": 4, \"hp\": 180}",
+  "price": 1180,
+  "description": "ฝังอุปกรณ์: DEF +9 · VIT +4 · HP +180 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "quartz_card",
+  "name": "Quartz Crawler Card",
+  "bonuses_json": "{\"dex\": 5, \"hit\": 8, \"crit\": 2}",
+  "price": 1250,
+  "description": "ฝังอุปกรณ์: DEX +5 · HIT +8 · CRIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "geode_card",
+  "name": "Geode Armadillo Card",
+  "bonuses_json": "{\"def\": 10, \"mdef\": 6, \"resStun\": 20}",
+  "price": 1280,
+  "description": "ฝังอุปกรณ์: DEF +10 · MDEF +6 · กันสตัน +20% (รวมสูงสุด 80%) · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "prism_card",
+  "name": "Prism Serpent Card",
+  "bonuses_json": "{\"int\": 3, \"matk\": 12, \"matkPct\": 3}",
+  "price": 1320,
+  "description": "ฝังอุปกรณ์: INT +3 · MATK +12 · MATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "wyvern_card",
+  "name": "Amethyst Wyvern Card",
+  "bonuses_json": "{\"atk\": 12, \"pierce\": 8, \"atkPct\": 3}",
+  "price": 1360,
+  "description": "ฝังอุปกรณ์: ATK +12 · เจาะกาย +8% (รวมสูงสุด 60%) · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "ram_card",
+  "name": "Thunder Ram Card",
+  "bonuses_json": "{\"str\": 6, \"vit\": 4, \"hp\": 200}",
+  "price": 1450,
+  "description": "ฝังอุปกรณ์: STR +6 · VIT +4 · HP +200 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "roc_card",
+  "name": "Storm Roc Card",
+  "bonuses_json": "{\"agi\": 6, \"flee\": 8, \"moveSpeed\": 4}",
+  "price": 1480,
+  "description": "ฝังอุปกรณ์: AGI +6 · FLEE +8 · ความเร็ววิ่ง +4% (รวมสูงสุด 30%) · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · ความเร็ววิ่งนับรวมกับ Fleet Foot · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "cloud_card",
+  "name": "Cloud Serpent Card",
+  "bonuses_json": "{\"int\": 5, \"sp\": 60, \"mpierce\": 10}",
+  "price": 1520,
+  "description": "ฝังอุปกรณ์: INT +5 · SP +60 · เจาะเวท +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ },
+ {
+  "card_id": "stormdrake_card",
+  "name": "Tempest Drake Card",
+  "bonuses_json": "{\"atk\": 14, \"matk\": 14, \"pierce\": 10}",
+  "price": 1600,
+  "description": "ฝังอุปกรณ์: ATK +14 · MATK +14 · เจาะกาย +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+  "confidence": "VERIFIED"
+ }
+]

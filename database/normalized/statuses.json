@@ -1,0 +1,370 @@
+[
+ {
+  "id": "poison",
+  "name": "พิษ",
+  "kind": "debuff",
+  "icon": "☠",
+  "duration": 12000,
+  "dot": {
+   "percent": 0.015,
+   "interval": 2000
+  }
+ },
+ {
+  "id": "slow",
+  "name": "ช้า",
+  "kind": "debuff",
+  "icon": "🐌",
+  "duration": 8000,
+  "speedFactor": 0.65,
+  "aspdPercent": -0.15
+ },
+ {
+  "id": "crush",
+  "name": "เกราะแตก",
+  "kind": "debuff",
+  "icon": "🛡",
+  "duration": 10000,
+  "incomingFactor": 1.2
+ },
+ {
+  "id": "bleed",
+  "name": "เลือดไหล",
+  "kind": "debuff",
+  "icon": "🩸",
+  "duration": 5000,
+  "dot": {
+   "percent": 0.008,
+   "interval": 1000
+  }
+ },
+ {
+  "id": "burn",
+  "name": "เผาไหม้",
+  "kind": "debuff",
+  "icon": "🔥",
+  "duration": 5000,
+  "dot": {
+   "percent": 0.007,
+   "interval": 1000
+  }
+ },
+ {
+  "id": "stun",
+  "name": "สตัน",
+  "kind": "debuff",
+  "icon": "💫",
+  "duration": 1000,
+  "disables": true
+ },
+ {
+  "id": "freeze",
+  "name": "แช่แข็ง",
+  "kind": "debuff",
+  "icon": "❄",
+  "duration": 1000,
+  "disables": true
+ },
+ {
+  "id": "blind",
+  "name": "ตาพร่า",
+  "kind": "debuff",
+  "icon": "🌫",
+  "duration": 5000,
+  "aspdPercent": -0.25,
+  "missChance": 0.25
+ },
+ {
+  "id": "blessing",
+  "name": "Blessing",
+  "kind": "buff",
+  "icon": "✨",
+  "duration": 45000,
+  "stats": {
+   "str": 2,
+   "agi": 2,
+   "int": 2,
+   "dex": 2
+  }
+ },
+ {
+  "id": "overthrust",
+  "name": "Over Thrust",
+  "kind": "buff",
+  "icon": "⚒",
+  "duration": 25000,
+  "atkFactor": 0.18
+ },
+ {
+  "id": "endure",
+  "name": "Endure",
+  "kind": "buff",
+  "icon": "◆",
+  "duration": 3500
+ },
+ {
+  "id": "holyguard",
+  "name": "Holy Guard",
+  "kind": "buff",
+  "icon": "✚",
+  "duration": 3500
+ },
+ {
+  "id": "haste",
+  "name": "เร่งความเร็ว",
+  "kind": "buff",
+  "icon": "⚡",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "taunt",
+  "name": "ถูกยั่วยุ",
+  "kind": "debuff",
+  "icon": "⚑",
+  "duration": 5000,
+  "atkFactor": -0.1,
+  "incomingFactor": 1.1
+ },
+ {
+  "id": "weaken",
+  "name": "อ่อนแรง",
+  "kind": "debuff",
+  "icon": "▽",
+  "duration": 5000,
+  "atkFactor": -0.1
+ },
+ {
+  "id": "spirit",
+  "name": "Spirit Instinct",
+  "kind": "buff",
+  "icon": "🜂",
+  "duration": 55000
+ },
+ {
+  "id": "remedy",
+  "name": "Remedy Light",
+  "kind": "buff",
+  "icon": "✛",
+  "duration": 5000,
+  "wards": true
+ },
+ {
+  "id": "expboost",
+  "name": "EXP x2",
+  "kind": "buff",
+  "icon": "📖",
+  "duration": 3600000,
+  "fromItem": true,
+  "keepsOnDeath": true,
+  "pausesOffline": true
+ },
+ {
+  "id": "dropboost",
+  "name": "Drop x2",
+  "kind": "buff",
+  "icon": "🎁",
+  "duration": 3600000,
+  "fromItem": true,
+  "keepsOnDeath": true,
+  "pausesOffline": true
+ },
+ {
+  "id": "vanish",
+  "name": "Vanish",
+  "kind": "buff",
+  "icon": "◌",
+  "duration": 1000,
+  "hidden": true
+ },
+ {
+  "id": "venom",
+  "name": "พิษงู",
+  "kind": "debuff",
+  "icon": "🐍",
+  "duration": 8000,
+  "dot": {
+   "percent": 0,
+   "interval": 1000
+  }
+ },
+ {
+  "id": "dokunuri",
+  "name": "Dokunuri",
+  "kind": "buff",
+  "icon": "🗡",
+  "duration": 45000
+ },
+ {
+  "id": "meikyo",
+  "name": "Meikyo Shisui",
+  "kind": "buff",
+  "icon": "🌊",
+  "duration": 45000
+ },
+ {
+  "id": "oil",
+  "name": "ชุ่มน้ำมัน",
+  "kind": "debuff",
+  "icon": "🛢",
+  "duration": 6000,
+  "speedFactor": 0.7
+ },
+ {
+  "id": "catbrew",
+  "name": "Catalyst Brew",
+  "kind": "buff",
+  "icon": "⚗",
+  "duration": 45000
+ },
+ {
+  "id": "ninelives",
+  "name": "เก้าชีวิต (พักฟื้น)",
+  "kind": "buff",
+  "icon": "🐾",
+  "duration": 600000,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "crystal",
+  "name": "โล่ผลึก",
+  "kind": "buff",
+  "icon": "💎",
+  "duration": 8000
+ },
+ {
+  "id": "spawnguard",
+  "name": "อมตะ",
+  "kind": "buff",
+  "icon": "🛡",
+  "duration": 30000,
+  "wards": true,
+  "invulnerable": true
+ },
+ {
+  "id": "riseguard",
+  "name": "อมตะ",
+  "kind": "buff",
+  "icon": "🛡",
+  "duration": 3000,
+  "wards": true,
+  "invulnerable": true,
+  "pacified": true
+ },
+ {
+  "id": "momentum",
+  "name": "Momentum",
+  "kind": "buff",
+  "icon": "🌀",
+  "duration": 10000
+ },
+ {
+  "id": "wcoat_fire",
+  "name": "อาวุธ 🔥ไฟ",
+  "kind": "buff",
+  "icon": "🔥",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "wcoat_water",
+  "name": "อาวุธ 💧น้ำ",
+  "kind": "buff",
+  "icon": "💧",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "wcoat_wind",
+  "name": "อาวุธ 🌀ลม",
+  "kind": "buff",
+  "icon": "🌀",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "wcoat_earth",
+  "name": "อาวุธ 🍃ดิน",
+  "kind": "buff",
+  "icon": "🍃",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "wcoat_light",
+  "name": "อาวุธ ☀แสง",
+  "kind": "buff",
+  "icon": "☀",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "wcoat_dark",
+  "name": "อาวุธ ☾มืด",
+  "kind": "buff",
+  "icon": "☾",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "acoat_fire",
+  "name": "เกราะ 🔥ไฟ",
+  "kind": "buff",
+  "icon": "🔥",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "acoat_water",
+  "name": "เกราะ 💧น้ำ",
+  "kind": "buff",
+  "icon": "💧",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "acoat_wind",
+  "name": "เกราะ 🌀ลม",
+  "kind": "buff",
+  "icon": "🌀",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "acoat_earth",
+  "name": "เกราะ 🍃ดิน",
+  "kind": "buff",
+  "icon": "🍃",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "acoat_light",
+  "name": "เกราะ ☀แสง",
+  "kind": "buff",
+  "icon": "☀",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ },
+ {
+  "id": "acoat_dark",
+  "name": "เกราะ ☾มืด",
+  "kind": "buff",
+  "icon": "☾",
+  "duration": 1800000,
+  "fromItem": true,
+  "keepsOnDeath": true
+ }
+]

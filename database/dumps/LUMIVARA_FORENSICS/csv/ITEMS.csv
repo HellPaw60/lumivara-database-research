@@ -1,0 +1,81 @@
+item_id,name,category,kind,weight,sell_price,buy_price,description,confidence
+potion,Red Potion,consumable,usable,10,5,10,ฟื้น HP 50 + 15% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด,VERIFIED
+orange_potion,Orange Potion,consumable,usable,12,20,,ฟื้น HP 120 + 20% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด,VERIFIED
+yellow_potion,Yellow Potion,consumable,usable,15,45,,ฟื้น HP 250 + 25% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด,VERIFIED
+white_potion,White Potion,consumable,usable,20,100,,ฟื้น HP 500 + 30% ของ HP สูงสุด · ดรอปจากบอสเท่านั้น,VERIFIED
+blue_potion,Blue Potion,consumable,usable,15,20,50,ฟื้น SP 60% ของ SP สูงสุด · ใช้คูลดาวน์ยาร่วมกัน,VERIFIED
+concentration_potion,Concentration Potion,consumable,usable,15,40,80,ASPD +3 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ใช้ได้ทุกเลเวล,VERIFIED
+awakening_potion,Awakening Potion,consumable,usable,20,120,240,ASPD +4 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ต้องมี Base Lv.40 ขึ้นไป,VERIFIED
+berserk_potion,Berserk Potion,consumable,usable,25,300,600,ASPD +5 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ต้องมี Base Lv.85 ขึ้นไป,VERIFIED
+fly_wing,Warp Scroll,consumable,usable,3,15,30,เทเลพอร์ตไปยังจุดสุ่มในแมพปัจจุบัน,VERIFIED
+butterfly_wing,Return Scroll,consumable,usable,3,15,30,วาร์ปกลับเมือง Aurelia Forum (ลานน้ำพุที่มี NPC ครบ),VERIFIED
+relic_box,Mystery Relic Box,consumable,usable,20,250,,เปิดเพื่อสุ่มรับไอเท็มหรืออุปกรณ์ · ดรอปจากมอนสเตอร์ 1%,VERIFIED
+iron_arrow,Arrow,consumable,usable,0.01,0,0.1,ลูกธนูสำหรับ Bow · ยิงธรรมดาและใช้สกิลโจมตีใช้ 1 ดอกต่อครั้ง ลูกธนูหมดจะยิงไม่ได้ · ซื้อที่พ่อค้า Silver ดอกละ 0.1 Silver · ขายคืนพ่อค้าไม่ได้,VERIFIED
+shard,Spirit Shard,consumable,material,2,8,,วัตถุดิบรุ่นเก่า มอนสเตอร์เลิกดรอปแล้ว · ขายให้ร้านค้าได้ · น้ำหนัก 2,VERIFIED
+jelly,Prism Crystal,consumable,material,1,1,,ผลึกเรืองแสง · ดรอปจาก Prism Hopper · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+sprout_leaf,Sprout Leaf,consumable,material,1,1,,ใบอ่อนสีเขียวสด · ดรอปจาก Leaf Sprout · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+dewdrop_tuft,Dewdrop Tuft,consumable,material,1,1,,ขนกระต่ายชุ่มน้ำค้าง · ดรอปจาก Dew Bunny · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+moss_spore_cap,Moss Spore Cap,consumable,material,1,1,,หมวกเห็ดคลุมมอส · ดรอปจาก Moss Mushroom · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+pixie_thorn,Pixie Thorn,consumable,material,1,1,,หนามแหลมโรยผงภูต · ดรอปจาก Thorn Pixie · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+bramble_fur,Bramble Fur,consumable,material,1,1,,ขนกระต่ายพันกิ่งหนาม · ดรอปจาก Bramble Hare · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+honey_wing_dust,Honey Wing Dust,consumable,material,1,1,,ผงปีกผีเสื้อกลิ่นน้ำผึ้ง · ดรอปจาก Honey Moth · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+twisted_root,Twisted Root,consumable,material,1,1,,รากไม้บิดเกลียว · ดรอปจาก Rootling · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+amber_shell,Amber Shell,consumable,material,1,1,,ปีกแข็งสีอำพัน · ดรอปจาก Amber Beetle · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+frost_fluff,Frost Fluff,consumable,material,1,1,,ปุยน้ำแข็ง · ดรอปจาก Frost Puff · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+icicle_whisker,Icicle Whisker,consumable,material,1,2,,หนวดน้ำแข็งใส · ดรอปจาก Icicle Hare · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+snow_feather,Snow Feather,consumable,material,1,3,,ขนนกฮูกหิมะ · ดรอปจาก Snow Owl · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+aurora_tail,Aurora Tail,consumable,material,1,3,,หางจิ้งจอกแสงออโรรา · ดรอปจาก Aurora Fox · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+gecko_scale,Gecko Scale,consumable,material,1,4,,เกล็ดตุ๊กแกทะเลทราย · ดรอปจาก Dune Gecko · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+scarab_carapace,Scarab Carapace,consumable,material,1,5,,กระดองด้วงสการับ · ดรอปจาก Scarab Sentinel · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+cobra_fang,Cobra Fang,consumable,material,1,6,,เขี้ยวงูเห่าเกล็ดตะวัน · ดรอปจาก Sunscale Cobra · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+cactus_needle,Cactus Needle,consumable,material,1,7,,หนามกระบองเพชร · ดรอปจาก Cactus Imp · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+crab_claw,Crab Claw,consumable,material,1,7,,ก้ามปู · ดรอปจาก Tide Crab · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+toad_wart,Toad Wart,consumable,material,1,8,,ปุ่มผิวคางคก · ดรอปจาก Bog Toad · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+newt_tail,Newt Tail,consumable,material,1,9,,หางนิวต์โคลน · ดรอปจาก Mud Newt · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+mire_gel,Mire Gel,consumable,material,1,10,,เจลหนองน้ำ · ดรอปจาก Mire Jelly · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+mantis_blade,Mantis Blade,consumable,material,1,10,,ใบมีดตั๊กแตนตำข้าว · ดรอปจาก Reed Mantis · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+wolf_fang,Wolf Fang,consumable,material,1,11,,เขี้ยวหมาป่า · ดรอปจาก Forest Wolf · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+wisp_ember,Wisp Ember,consumable,material,1,12,,ถ่านไฟวิญญาณตะเกียง · ดรอปจาก Lantern Wisp · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+smoldering_antler,Smoldering Antler,consumable,material,1,13,,เขากวางคุไฟ · ดรอปจาก Ember Antler · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+moonlit_plume,Moonlit Plume,consumable,material,1,14,,ขนนกแสงจันทร์ · ดรอปจาก Moon Owl · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+lynx_claw,Lynx Claw,consumable,material,1,15,,กรงเล็บลิงซ์พันเถาวัลย์ · ดรอปจาก Vine Lynx · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+boar_tusk,Boar Tusk,consumable,material,1,16,,งาหมูป่า · ดรอปจาก Wild Boar · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+drake_scale,Drake Scale,consumable,material,1,20,,เกล็ดมังกรทราย · ดรอปจาก Sand Drake · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+bat_wing,Bat Wing,consumable,material,1,21,,ปีกค้างคาว · ดรอปจาก Cave Bat · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+golem_core,Golem Core,consumable,material,1,25,,แกนหินโกเลม · ดรอปจาก Pebble Golem · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+magma_scale,Magma Scale,consumable,material,1,26,,เกล็ดซาลาแมนเดอร์ลาวา · ดรอปจาก Magma Salamander · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+cinder_fang,Cinder Fang,consumable,material,1,28,,เขี้ยวไฟคุ · ดรอปจาก Ember Hound · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+basalt_shell,Basalt Shell,consumable,material,1,29,,แผ่นกระดองหินบะซอลต์ · ดรอปจาก Basalt Tortoise · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+obsidian_stinger,Obsidian Stinger,consumable,material,1,31,,เหล็กในแมงป่องออบซิเดียน · ดรอปจาก Obsidian Scorpion · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+shade_feather,Shade Feather,consumable,material,1,32,,ขนกาเงามืด · ดรอปจาก Shade Raven · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+hound_bone,Hound Bone,consumable,material,1,34,,กระดูกหมาผี · ดรอปจาก Bone Hound · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+wraith_shroud,Wraith Shroud,consumable,material,1,35,,ผ้าคลุมวิญญาณ · ดรอปจาก Bog Wraith · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+grave_crest,Grave Crest,consumable,material,1,37,,ตราอัศวินสุสาน · ดรอปจาก Grave Knight · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+quartz_leg,Quartz Leg,consumable,material,1,38,,ขาผลึกควอตซ์ · ดรอปจาก Quartz Crawler · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+geode_plate,Geode Plate,consumable,material,1,40,,เกราะตัวนิ่มผลึกจีโอด · ดรอปจาก Geode Armadillo · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+prism_scale,Prism Scale,consumable,material,1,41,,เกล็ดงูสีรุ้ง · ดรอปจาก Prism Serpent · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+wyvern_scale,Wyvern Scale,consumable,material,1,43,,เกล็ดไวเวิร์นอเมทิสต์ · ดรอปจาก Amethyst Wyvern · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+thunder_horn,Thunder Horn,consumable,material,1,45,,เขาแกะสายฟ้า · ดรอปจาก Thunder Ram · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+roc_plume,Roc Plume,consumable,material,1,46,,ขนนกร็อกพายุ · ดรอปจาก Storm Roc · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+cloud_pearl,Cloud Pearl,consumable,material,1,48,,ไข่มุกเมฆ · ดรอปจาก Cloud Serpent · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+tempest_dragon_scale,Tempest Dragon Scale,consumable,material,1,50,,เกล็ดมังกรพายุ · ดรอปจาก Tempest Drake · ขายให้ร้านค้าได้ · น้ำหนัก 1,VERIFIED
+exp_scroll,EXP Scroll,consumable,usable,5,0,,EXP x2 ทั้ง Base และ Job นาน 1 ชั่วโมง · ใช้ซ้ำเพื่อต่อเวลาได้สูงสุด 5 ชั่วโมง · ตายแล้วบัฟไม่หาย · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้,VERIFIED
+drop_scroll,Drop Scroll,consumable,usable,5,0,,โอกาสดรอปไอเท็ม x2 นาน 1 ชั่วโมง · ใช้ซ้ำเพื่อต่อเวลาได้สูงสุด 5 ชั่วโมง · ตายแล้วบัฟไม่หาย · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้,VERIFIED
+gym_pass,Gym Pass,consumable,usable,1,0,,"เพิ่มน้ำหนักที่แบกได้ถาวร +1,000 ต่อใบ · ใช้ได้สูงสุด 10 ใบต่อตัวละคร · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",VERIFIED
+break_protection_stone,Protection Stone,consumable,material,1,0,,เลือกใช้ตอนตีบวกแบบไม่ปลอดภัย · ใช้ 1 ก้อนเมื่อตีบวกล้มเหลวเท่านั้น สำเร็จไม่เสียหินกันแตก เพื่อป้องกันอุปกรณ์และการ์ดไม่ให้แตก โดยระดับเดิมไม่ลดเมื่อล้มเหลว · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้,VERIFIED
+divine_wings,Divine Wings,consumable,cash,1,0,,"สกินปีกสีทองกางด้านหลังตัวละคร · ดับเบิลคลิกเพื่อสวมหรือถอด ไม่ใช้ช่องอุปกรณ์และไม่มีผลกับค่าสเตตัส · เทรด ขายในตลาด และฝากคลังได้ แต่ทิ้ง ทำลาย หรือขายให้พ่อค้าไม่ได้ · สุ่มได้จาก Mystery Relic Box 1 ใน 1,000,000 กล่อง",VERIFIED
+megaphone,Megaphone,consumable,cash,1,0,,ประกาศข้อความถึงผู้เล่นทุกคนทุกภูมิภาค 1 ครั้ง ขึ้นจอ 20 วินาที · ดับเบิลคลิกหรือกดปุ่ม 📢 ข้างแชทเพื่อใช้ · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้,VERIFIED
+rename_ticket,Rename Card,consumable,cash,1,0,,เปลี่ยนชื่อตัวละครได้ 1 ครั้ง · ดับเบิลคลิกเพื่อตั้งชื่อใหม่ · ชื่อเดิมจะถูกจองไว้ให้คุณ 30 วัน คนอื่นใช้ไม่ได้ · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้,VERIFIED
+weapon_coat_fire,Fire Weapon Coating,consumable,usable,3,10,,เคลือบอาวุธ 🔥ไฟ (Hephaestus) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+weapon_coat_water,Water Weapon Coating,consumable,usable,3,10,,เคลือบอาวุธ 💧น้ำ (Poseidon) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+weapon_coat_wind,Wind Weapon Coating,consumable,usable,3,10,,เคลือบอาวุธ 🌀ลม (Aeolus) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+weapon_coat_earth,Earth Weapon Coating,consumable,usable,3,10,,เคลือบอาวุธ 🍃ดิน (Gaia) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+weapon_coat_light,Light Weapon Coating,consumable,usable,3,10,,เคลือบอาวุธ ☀แสง (Apollo) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+weapon_coat_dark,Dark Weapon Coating,consumable,usable,3,10,,เคลือบอาวุธ ☾มืด (Chaos) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+armor_coat_fire,Fire Armor Coating,consumable,usable,3,10,,เคลือบเกราะ 🔥ไฟ (Hephaestus) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+armor_coat_water,Water Armor Coating,consumable,usable,3,10,,เคลือบเกราะ 💧น้ำ (Poseidon) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+armor_coat_wind,Wind Armor Coating,consumable,usable,3,10,,เคลือบเกราะ 🌀ลม (Aeolus) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+armor_coat_earth,Earth Armor Coating,consumable,usable,3,10,,เคลือบเกราะ 🍃ดิน (Gaia) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+armor_coat_light,Light Armor Coating,consumable,usable,3,10,,เคลือบเกราะ ☀แสง (Apollo) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+armor_coat_dark,Dark Armor Coating,consumable,usable,3,10,,เคลือบเกราะ ☾มืด (Chaos) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส,VERIFIED
+refine_stone,Refine Stone,consumable,material,1,50,,ช่างตีบวกใช้ 1 ก้อนทุกครั้งที่ตีบวก · ได้จากเควสล่ารายวัน (กำจัดมอนสเตอร์ 100 ตัว) หรือดรอปจากมอนสเตอร์ Lv.70 ขึ้นไป 1%,VERIFIED

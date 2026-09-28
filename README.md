@@ -74,7 +74,9 @@ Setiap entity dapat ditelusuri via `provenance/PROVENANCE.json`:
 
 - **v1** — 2026-09-28 pagi: pembongkaran pertama (exe → NSIS → asar → Electron shell → web bundle). 37 monster, 50 skill.
 - **v2** — 2026-09-28 siang: bundle update (Kensei/Nekobaku/Mamushi class, rebalancing). 40 monster, 64 skill, TRANSLATIONS.
-- **v3** — forensik lengkap: SQLite master, protokol, changelog, provenance, repo ini.
+- **v3** — forensik lengkap: SQLite master, protokol, changelog, provenance, repo GitHub.
+- **v0.2** — integrity audit: 10/10 klaim match, 3 broken path fixed, confidence refined.
+- **v0.3** — full database dump: SQL/CSV/JSON archive ketiga format, reproducibility PASS, schema + ER model, 18 formula terklasifikasi.
 
 ## Research Status
 

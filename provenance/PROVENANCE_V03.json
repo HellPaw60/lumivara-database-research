@@ -1,0 +1,80 @@
+{
+ "_meta": {
+  "version": "v0.3",
+  "generated": "2026-09-28T16:18:20"
+ },
+ "entities": {
+  "classes": {
+   "source": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "method": "node eval (var z + WA)",
+   "confidence": "VERIFIED"
+  },
+  "skills": {
+   "source": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "method": "node eval (var x)",
+   "confidence": "VERIFIED"
+  },
+  "items": {
+   "source": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "method": "node eval (var Pc)",
+   "confidence": "VERIFIED"
+  },
+  "cards": {
+   "source": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "method": "node eval (var le)",
+   "confidence": "VERIFIED"
+  },
+  "statuses": {
+   "source": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "method": "node eval (var N)",
+   "confidence": "VERIFIED"
+  },
+  "maps": {
+   "source": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "method": "node eval (var Y)",
+   "confidence": "VERIFIED"
+  },
+  "monsters": {
+   "source": "collect/raw-snapshots.json",
+   "source_sha256": "db3089029e01df4c",
+   "method": "passive WS collection (collector-final.mjs)",
+   "confidence": "VERIFIED stats/EXP, DERIVED drops"
+  },
+  "translations": {
+   "source": "web-v2/language-Dz8VbPNM.js",
+   "source_sha256": "0afdb0f5d6fd20e3",
+   "method": "regex pairs",
+   "confidence": "VERIFIED"
+  },
+  "changelog": {
+   "source": "web-v2/changelog-notice-BKeFrGHU.js",
+   "source_sha256": "c656f3c9dc6b0386",
+   "method": "regex extraction",
+   "confidence": "VERIFIED entries, DERIVED categories"
+  },
+  "network_protocol": {
+   "source": "collect/raw-snapshots.json",
+   "source_sha256": "db3089029e01df4c",
+   "method": "event union analysis",
+   "confidence": "VERIFIED (26 event types)"
+  },
+  "combat_stats": {
+   "source": "collect/raw-snapshots.json",
+   "source_sha256": "db3089029e01df4c",
+   "method": "descriptive statistics",
+   "confidence": "OBSERVED"
+  },
+  "sql_dump": {
+   "source": "database/LUMIVARA_FORENSICS.sqlite",
+   "source_sha256": "f1f09bf8c97f05cb",
+   "method": "python sqlite3 iterdump-style",
+   "confidence": "VERIFIED + reproducibility PASS"
+  }
+ }
+}

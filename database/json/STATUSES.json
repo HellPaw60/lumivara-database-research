@@ -1,0 +1,380 @@
+[
+ {
+  "status_id": "poison",
+  "name": "พิษ",
+  "kind": "debuff",
+  "icon": "☠",
+  "duration_ms": 12000,
+  "params_json": "{\"dot\": {\"percent\": 0.015, \"interval\": 2000}}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "slow",
+  "name": "ช้า",
+  "kind": "debuff",
+  "icon": "🐌",
+  "duration_ms": 8000,
+  "params_json": "{\"speedFactor\": 0.65, \"aspdPercent\": -0.15}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "crush",
+  "name": "เกราะแตก",
+  "kind": "debuff",
+  "icon": "🛡",
+  "duration_ms": 10000,
+  "params_json": "{\"incomingFactor\": 1.2}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "bleed",
+  "name": "เลือดไหล",
+  "kind": "debuff",
+  "icon": "🩸",
+  "duration_ms": 5000,
+  "params_json": "{\"dot\": {\"percent\": 0.008, \"interval\": 1000}}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "burn",
+  "name": "เผาไหม้",
+  "kind": "debuff",
+  "icon": "🔥",
+  "duration_ms": 5000,
+  "params_json": "{\"dot\": {\"percent\": 0.007, \"interval\": 1000}}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "stun",
+  "name": "สตัน",
+  "kind": "debuff",
+  "icon": "💫",
+  "duration_ms": 1000,
+  "params_json": "{\"disables\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "freeze",
+  "name": "แช่แข็ง",
+  "kind": "debuff",
+  "icon": "❄",
+  "duration_ms": 1000,
+  "params_json": "{\"disables\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "blind",
+  "name": "ตาพร่า",
+  "kind": "debuff",
+  "icon": "🌫",
+  "duration_ms": 5000,
+  "params_json": "{\"aspdPercent\": -0.25, \"missChance\": 0.25}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "blessing",
+  "name": "Blessing",
+  "kind": "buff",
+  "icon": "✨",
+  "duration_ms": 45000,
+  "params_json": "{\"stats\": {\"str\": 2, \"agi\": 2, \"int\": 2, \"dex\": 2}}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "overthrust",
+  "name": "Over Thrust",
+  "kind": "buff",
+  "icon": "⚒",
+  "duration_ms": 25000,
+  "params_json": "{\"atkFactor\": 0.18}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "endure",
+  "name": "Endure",
+  "kind": "buff",
+  "icon": "◆",
+  "duration_ms": 3500,
+  "params_json": "{}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "holyguard",
+  "name": "Holy Guard",
+  "kind": "buff",
+  "icon": "✚",
+  "duration_ms": 3500,
+  "params_json": "{}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "haste",
+  "name": "เร่งความเร็ว",
+  "kind": "buff",
+  "icon": "⚡",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "taunt",
+  "name": "ถูกยั่วยุ",
+  "kind": "debuff",
+  "icon": "⚑",
+  "duration_ms": 5000,
+  "params_json": "{\"atkFactor\": -0.1, \"incomingFactor\": 1.1}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "weaken",
+  "name": "อ่อนแรง",
+  "kind": "debuff",
+  "icon": "▽",
+  "duration_ms": 5000,
+  "params_json": "{\"atkFactor\": -0.1}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "spirit",
+  "name": "Spirit Instinct",
+  "kind": "buff",
+  "icon": "🜂",
+  "duration_ms": 55000,
+  "params_json": "{}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "remedy",
+  "name": "Remedy Light",
+  "kind": "buff",
+  "icon": "✛",
+  "duration_ms": 5000,
+  "params_json": "{\"wards\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "expboost",
+  "name": "EXP x2",
+  "kind": "buff",
+  "icon": "📖",
+  "duration_ms": 3600000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true, \"pausesOffline\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "dropboost",
+  "name": "Drop x2",
+  "kind": "buff",
+  "icon": "🎁",
+  "duration_ms": 3600000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true, \"pausesOffline\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "vanish",
+  "name": "Vanish",
+  "kind": "buff",
+  "icon": "◌",
+  "duration_ms": 1000,
+  "params_json": "{\"hidden\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "venom",
+  "name": "พิษงู",
+  "kind": "debuff",
+  "icon": "🐍",
+  "duration_ms": 8000,
+  "params_json": "{\"dot\": {\"percent\": 0, \"interval\": 1000}}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "dokunuri",
+  "name": "Dokunuri",
+  "kind": "buff",
+  "icon": "🗡",
+  "duration_ms": 45000,
+  "params_json": "{}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "meikyo",
+  "name": "Meikyo Shisui",
+  "kind": "buff",
+  "icon": "🌊",
+  "duration_ms": 45000,
+  "params_json": "{}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "oil",
+  "name": "ชุ่มน้ำมัน",
+  "kind": "debuff",
+  "icon": "🛢",
+  "duration_ms": 6000,
+  "params_json": "{\"speedFactor\": 0.7}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "catbrew",
+  "name": "Catalyst Brew",
+  "kind": "buff",
+  "icon": "⚗",
+  "duration_ms": 45000,
+  "params_json": "{}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "ninelives",
+  "name": "เก้าชีวิต (พักฟื้น)",
+  "kind": "buff",
+  "icon": "🐾",
+  "duration_ms": 600000,
+  "params_json": "{\"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "crystal",
+  "name": "โล่ผลึก",
+  "kind": "buff",
+  "icon": "💎",
+  "duration_ms": 8000,
+  "params_json": "{}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "spawnguard",
+  "name": "อมตะ",
+  "kind": "buff",
+  "icon": "🛡",
+  "duration_ms": 30000,
+  "params_json": "{\"wards\": true, \"invulnerable\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "riseguard",
+  "name": "อมตะ",
+  "kind": "buff",
+  "icon": "🛡",
+  "duration_ms": 3000,
+  "params_json": "{\"wards\": true, \"invulnerable\": true, \"pacified\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "momentum",
+  "name": "Momentum",
+  "kind": "buff",
+  "icon": "🌀",
+  "duration_ms": 10000,
+  "params_json": "{}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "wcoat_fire",
+  "name": "อาวุธ 🔥ไฟ",
+  "kind": "buff",
+  "icon": "🔥",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "wcoat_water",
+  "name": "อาวุธ 💧น้ำ",
+  "kind": "buff",
+  "icon": "💧",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "wcoat_wind",
+  "name": "อาวุธ 🌀ลม",
+  "kind": "buff",
+  "icon": "🌀",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "wcoat_earth",
+  "name": "อาวุธ 🍃ดิน",
+  "kind": "buff",
+  "icon": "🍃",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "wcoat_light",
+  "name": "อาวุธ ☀แสง",
+  "kind": "buff",
+  "icon": "☀",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "wcoat_dark",
+  "name": "อาวุธ ☾มืด",
+  "kind": "buff",
+  "icon": "☾",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "acoat_fire",
+  "name": "เกราะ 🔥ไฟ",
+  "kind": "buff",
+  "icon": "🔥",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "acoat_water",
+  "name": "เกราะ 💧น้ำ",
+  "kind": "buff",
+  "icon": "💧",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "acoat_wind",
+  "name": "เกราะ 🌀ลม",
+  "kind": "buff",
+  "icon": "🌀",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "acoat_earth",
+  "name": "เกราะ 🍃ดิน",
+  "kind": "buff",
+  "icon": "🍃",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "acoat_light",
+  "name": "เกราะ ☀แสง",
+  "kind": "buff",
+  "icon": "☀",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ },
+ {
+  "status_id": "acoat_dark",
+  "name": "เกราะ ☾มืด",
+  "kind": "buff",
+  "icon": "☾",
+  "duration_ms": 1800000,
+  "params_json": "{\"fromItem\": true, \"keepsOnDeath\": true}",
+  "confidence": "VERIFIED"
+ }
+]

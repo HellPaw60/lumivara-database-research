@@ -1,0 +1,44 @@
+[
+ {
+  "monster_name": "Moss Mushroom",
+  "status_id": "poison",
+  "chance": 0.18,
+  "confidence": "VERIFIED"
+ },
+ {
+  "monster_name": "Bog Toad",
+  "status_id": "poison",
+  "chance": 0.15,
+  "confidence": "VERIFIED"
+ },
+ {
+  "monster_name": "Cave Bat",
+  "status_id": "slow",
+  "chance": 0.18,
+  "confidence": "VERIFIED"
+ },
+ {
+  "monster_name": "Sunscale Cobra",
+  "status_id": "slow",
+  "chance": 0.15,
+  "confidence": "VERIFIED"
+ },
+ {
+  "monster_name": "Amber Beetle",
+  "status_id": "crush",
+  "chance": 0.18,
+  "confidence": "VERIFIED"
+ },
+ {
+  "monster_name": "Pebble Golem",
+  "status_id": "crush",
+  "chance": 0.15,
+  "confidence": "VERIFIED"
+ },
+ {
+  "monster_name": "Crowned Prism Hopper",
+  "status_id": "crush",
+  "chance": 0.3,
+  "confidence": "VERIFIED"
+ }
+]

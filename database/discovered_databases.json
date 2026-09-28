@@ -1,0 +1,760 @@
+[
+ {
+  "path": "database/LUMIVARA_FORENSICS.sqlite",
+  "size": 552960,
+  "sha256": "f1f09bf8c97f05cbbea17287df2403f6ca5bd02e306bdb0b3570c08bf451ab71",
+  "integrity": "ok",
+  "page_size": 4096,
+  "page_count": 135,
+  "journal_mode": "delete",
+  "fk_check_clean": true,
+  "tables": [
+   {
+    "table": "_prov",
+    "columns": [
+     {
+      "name": "tbl",
+      "type": "TEXT"
+     },
+     {
+      "name": "source",
+      "type": "TEXT"
+     }
+    ],
+    "rows": 10
+   },
+   {
+    "table": "CLASSES",
+    "columns": [
+     {
+      "name": "class_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "unlock_jobs",
+      "type": ""
+     },
+     {
+      "name": "unlock_silver",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 10
+   },
+   {
+    "table": "SKILLS",
+    "columns": [
+     {
+      "name": "skill_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "class_id",
+      "type": ""
+     },
+     {
+      "name": "job_level",
+      "type": ""
+     },
+     {
+      "name": "sp_cost",
+      "type": ""
+     },
+     {
+      "name": "cooldown_ms",
+      "type": ""
+     },
+     {
+      "name": "range_px",
+      "type": ""
+     },
+     {
+      "name": "target",
+      "type": ""
+     },
+     {
+      "name": "effect",
+      "type": ""
+     },
+     {
+      "name": "power",
+      "type": ""
+     },
+     {
+      "name": "multiplier",
+      "type": ""
+     },
+     {
+      "name": "is_passive",
+      "type": ""
+     },
+     {
+      "name": "cd_from_aspd",
+      "type": ""
+     },
+     {
+      "name": "buff_id",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 64
+   },
+   {
+    "table": "ITEMS",
+    "columns": [
+     {
+      "name": "item_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "category",
+      "type": ""
+     },
+     {
+      "name": "kind",
+      "type": ""
+     },
+     {
+      "name": "weight",
+      "type": ""
+     },
+     {
+      "name": "sell_price",
+      "type": ""
+     },
+     {
+      "name": "buy_price",
+      "type": ""
+     },
+     {
+      "name": "description",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 80
+   },
+   {
+    "table": "CARDS",
+    "columns": [
+     {
+      "name": "card_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "bonuses_json",
+      "type": ""
+     },
+     {
+      "name": "price",
+      "type": ""
+     },
+     {
+      "name": "description",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 49
+   },
+   {
+    "table": "STATUSES",
+    "columns": [
+     {
+      "name": "status_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "kind",
+      "type": ""
+     },
+     {
+      "name": "icon",
+      "type": ""
+     },
+     {
+      "name": "duration_ms",
+      "type": ""
+     },
+     {
+      "name": "params_json",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 42
+   },
+   {
+    "table": "MAPS",
+    "columns": [
+     {
+      "name": "map_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "subtitle",
+      "type": ""
+     },
+     {
+      "name": "width",
+      "type": ""
+     },
+     {
+      "name": "height",
+      "type": ""
+     },
+     {
+      "name": "spawn_json",
+      "type": ""
+     },
+     {
+      "name": "portals_json",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 19
+   },
+   {
+    "table": "MONSTER_STATUS_ATTACKS",
+    "columns": [
+     {
+      "name": "monster_name",
+      "type": ""
+     },
+     {
+      "name": "status_id",
+      "type": ""
+     },
+     {
+      "name": "chance",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 7
+   },
+   {
+    "table": "DROP_RATES",
+    "columns": [
+     {
+      "name": "category",
+      "type": ""
+     },
+     {
+      "name": "rate",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 9
+   },
+   {
+    "table": "MONSTERS",
+    "columns": [
+     {
+      "name": "monster_key",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "level",
+      "type": ""
+     },
+     {
+      "name": "max_hp",
+      "type": ""
+     },
+     {
+      "name": "elite",
+      "type": ""
+     },
+     {
+      "name": "areas_json",
+      "type": ""
+     },
+     {
+      "name": "base_exp",
+      "type": ""
+     },
+     {
+      "name": "job_exp",
+      "type": ""
+     },
+     {
+      "name": "guild_exp",
+      "type": ""
+     },
+     {
+      "name": "drops_json",
+      "type": ""
+     },
+     {
+      "name": "exp_samples",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 40
+   },
+   {
+    "table": "TRANSLATIONS",
+    "columns": [
+     {
+      "name": "thai",
+      "type": ""
+     },
+     {
+      "name": "english",
+      "type": ""
+     }
+    ],
+    "rows": 2547
+   },
+   {
+    "table": "CLIENT_MINING",
+    "columns": [
+     {
+      "name": "domain",
+      "type": "TEXT"
+     },
+     {
+      "name": "finding_json",
+      "type": "TEXT"
+     },
+     {
+      "name": "source",
+      "type": "TEXT"
+     }
+    ],
+    "rows": 14
+   }
+  ]
+ },
+ {
+  "path": "forensics/database/LUMIVARA_FORENSICS.sqlite",
+  "size": 536576,
+  "sha256": "ba22d5e42044cc122958495910a2413800b1ea13bff2b96ecc82e49b4a0f63ac",
+  "integrity": "ok",
+  "page_size": 4096,
+  "page_count": 131,
+  "journal_mode": "delete",
+  "fk_check_clean": true,
+  "tables": [
+   {
+    "table": "_prov",
+    "columns": [
+     {
+      "name": "tbl",
+      "type": "TEXT"
+     },
+     {
+      "name": "source",
+      "type": "TEXT"
+     }
+    ],
+    "rows": 10
+   },
+   {
+    "table": "CLASSES",
+    "columns": [
+     {
+      "name": "class_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "unlock_jobs",
+      "type": ""
+     },
+     {
+      "name": "unlock_silver",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 10
+   },
+   {
+    "table": "SKILLS",
+    "columns": [
+     {
+      "name": "skill_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "class_id",
+      "type": ""
+     },
+     {
+      "name": "job_level",
+      "type": ""
+     },
+     {
+      "name": "sp_cost",
+      "type": ""
+     },
+     {
+      "name": "cooldown_ms",
+      "type": ""
+     },
+     {
+      "name": "range_px",
+      "type": ""
+     },
+     {
+      "name": "target",
+      "type": ""
+     },
+     {
+      "name": "effect",
+      "type": ""
+     },
+     {
+      "name": "power",
+      "type": ""
+     },
+     {
+      "name": "multiplier",
+      "type": ""
+     },
+     {
+      "name": "is_passive",
+      "type": ""
+     },
+     {
+      "name": "cd_from_aspd",
+      "type": ""
+     },
+     {
+      "name": "buff_id",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 64
+   },
+   {
+    "table": "ITEMS",
+    "columns": [
+     {
+      "name": "item_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "category",
+      "type": ""
+     },
+     {
+      "name": "kind",
+      "type": ""
+     },
+     {
+      "name": "weight",
+      "type": ""
+     },
+     {
+      "name": "sell_price",
+      "type": ""
+     },
+     {
+      "name": "buy_price",
+      "type": ""
+     },
+     {
+      "name": "description",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 80
+   },
+   {
+    "table": "CARDS",
+    "columns": [
+     {
+      "name": "card_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "bonuses_json",
+      "type": ""
+     },
+     {
+      "name": "price",
+      "type": ""
+     },
+     {
+      "name": "description",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 49
+   },
+   {
+    "table": "STATUSES",
+    "columns": [
+     {
+      "name": "status_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "kind",
+      "type": ""
+     },
+     {
+      "name": "icon",
+      "type": ""
+     },
+     {
+      "name": "duration_ms",
+      "type": ""
+     },
+     {
+      "name": "params_json",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 42
+   },
+   {
+    "table": "MAPS",
+    "columns": [
+     {
+      "name": "map_id",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "subtitle",
+      "type": ""
+     },
+     {
+      "name": "width",
+      "type": ""
+     },
+     {
+      "name": "height",
+      "type": ""
+     },
+     {
+      "name": "spawn_json",
+      "type": ""
+     },
+     {
+      "name": "portals_json",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 19
+   },
+   {
+    "table": "MONSTER_STATUS_ATTACKS",
+    "columns": [
+     {
+      "name": "monster_name",
+      "type": ""
+     },
+     {
+      "name": "status_id",
+      "type": ""
+     },
+     {
+      "name": "chance",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 7
+   },
+   {
+    "table": "DROP_RATES",
+    "columns": [
+     {
+      "name": "category",
+      "type": ""
+     },
+     {
+      "name": "rate",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 9
+   },
+   {
+    "table": "MONSTERS",
+    "columns": [
+     {
+      "name": "monster_key",
+      "type": ""
+     },
+     {
+      "name": "name",
+      "type": ""
+     },
+     {
+      "name": "level",
+      "type": ""
+     },
+     {
+      "name": "max_hp",
+      "type": ""
+     },
+     {
+      "name": "elite",
+      "type": ""
+     },
+     {
+      "name": "areas_json",
+      "type": ""
+     },
+     {
+      "name": "base_exp",
+      "type": ""
+     },
+     {
+      "name": "job_exp",
+      "type": ""
+     },
+     {
+      "name": "guild_exp",
+      "type": ""
+     },
+     {
+      "name": "drops_json",
+      "type": ""
+     },
+     {
+      "name": "exp_samples",
+      "type": ""
+     },
+     {
+      "name": "confidence",
+      "type": ""
+     }
+    ],
+    "rows": 40
+   },
+   {
+    "table": "TRANSLATIONS",
+    "columns": [
+     {
+      "name": "thai",
+      "type": ""
+     },
+     {
+      "name": "english",
+      "type": ""
+     }
+    ],
+    "rows": 2547
+   }
+  ]
+ }
+]

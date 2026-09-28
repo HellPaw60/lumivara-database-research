@@ -1,0 +1,41 @@
+monster_key,name,level,max_hp,elite,areas_json,base_exp,job_exp,guild_exp,drops_json,exp_samples,confidence
+tempest-drake,Crowned Tempest Drake,280,11162880,0,"[""tempest""]",,,,{},,VERIFIED
+storm-roc,Storm Roc,257,958092,1,"[""tempest""]",,,,{},,VERIFIED
+thunder-ram,Thunder Ram,250,878284,1,"[""tempest""]",42070,4008,4969,"{""thunder_horn"": 3, ""yellow_potion"": 1}",114,VERIFIED
+grave-knight,Crowned Grave Knight,230,5809040,0,"[""moor""]",,,,{},,VERIFIED
+quartz-crawler,Quartz Crawler,225,629324,1,"[""crystal""]",50634,11927,,"{""quartz_leg"": 4, ""orange_potion"": 1, ""accessory2"": 1}",28,VERIFIED
+obsidian-scorpion,Crowned Obsidian Scorpion,205,3797640,0,"[""caldera""]",,,,{},,VERIFIED
+shade-raven,Shade Raven,200,419576,1,"[""moor""]",28086,0,6828,"{""shade_feather"": 11, ""fly_wing"": 1, ""butterfly_wing"": 1, ""orange_potion"": 1}",62,VERIFIED
+ember-hound,Ember Hound,182,74472,0,"[""caldera""]",,,,{},,VERIFIED
+magma-salamander,Magma Salamander,175,260208,1,"[""caldera""]",28004,1911,1062,"{""ammo"": 1, ""butterfly_wing"": 1}",96,VERIFIED
+pebble-golem,Pebble Golem,170,56436,0,"[""glacier""]",39786,19893,3998,"{""yellow_potion"": 2, ""relic_box"": 1, ""blue_potion"": 3, ""golem_core"": 6, ""golem_card"": 1}",68,VERIFIED
+cave-bat,Cave Bat,150,194352,1,"[""glacier""]",31494,15747,528,"{""bat_wing"": 2, ""mouth"": 1}",26,VERIFIED
+sand-drake,Sand Drake,145,1823320,1,"[""dunes""]",19732,9866,,"{""blue_potion"": 1, ""drake_scale"": 3, ""orange_potion"": 1}",66,VERIFIED
+wild-boar,Wild Boar,125,117956,1,"[""dunes""]",15008,7504,,"{""boar_tusk"": 11, ""sword"": 1, ""blue_potion"": 1, ""accessory1"": 1}",332,VERIFIED
+vine-lynx,Vine Lynx,120,1093280,1,"[""wildwood""]",10455,5227,,"{""lynx_claw"": 5, ""refine_stone"": 1, ""fly_wing"": 1, ""shoes"": 1, ""yellow_potion"": 1, ""butterfly_wing"": 1}",34,VERIFIED
+moon-owl,Moon Owl,115,91172,1,"[""wildwood""]",4835,0,,"{""moonlit_plume"": 2, ""blue_potion"": 1, ""relic_box"": 1}",6,VERIFIED
+ember-antler,Ember Antler,110,83980,1,"[""wildwood""]",,,,{},,VERIFIED
+forest-wolf,Forest Wolf,100,15240,0,"[""wildwood""]",,,,{},,VERIFIED
+reed-mantis,Reed Mantis,95,537720,1,"[""swamp""]",9128,4564,92,"{""relic_box"": 1, ""mantis_blade"": 1, ""mire_gel"": 1}",58,VERIFIED
+mire-jelly,Mire Jelly,90,48736,1,"[""swamp""]",4310,2155,83,"{""mire_gel"": 10, ""fly_wing"": 2, ""butterfly_wing"": 1, ""blue_potion"": 1, ""relic_box"": 1, ""yellow_potion"": 1, ""head"": 1, ""orange_potion"": 1}",306,VERIFIED
+mud-newt,Mud Newt,85,41116,1,"[""swamp""]",11226,5613,,"{""newt_tail"": 1, ""accessory2"": 1, ""blue_potion"": 1}",46,VERIFIED
+bog-toad,Bog Toad,80,36868,1,"[""swamp""]",10092,5046,,"{""butterfly_wing"": 1, ""toad_wart"": 1}",72,VERIFIED
+tide-crab,Tide Crab,75,33988,1,"[""swamp""]",9018,4509,,"{""crab_claw"": 7, ""blue_potion"": 1, ""yellow_potion"": 1, ""fly_wing"": 1}",72,VERIFIED
+cactus-imp,Cactus Imp,70,236600,1,"[""desert""]",15984,7992,,"{""cactus_needle"": 9, ""blue_potion"": 2, ""fly_wing"": 1, ""orange_potion"": 1}",66,VERIFIED
+sunscale-cobra,Sunscale Cobra,63,18336,1,"[""desert""]",13344,6672,,"{""cobra_fang"": 6, ""shoes"": 1, ""orange_potion"": 1, ""blue_potion"": 1}",40,VERIFIED
+scarab-sentinel,Scarab Sentinel,57,12896,1,"[""desert""]",3756,1878,,"{""orange_potion"": 2, ""butterfly_wing"": 1, ""armor"": 1, ""blue_potion"": 3, ""scarab_carapace"": 10, ""potion"": 1, ""fly_wing"": 1}",68,VERIFIED
+dune-gecko,Dune Gecko,50,11220,1,"[""desert""]",4518,2259,,"{""gecko_scale"": 11, ""orange_potion"": 1, ""blue_potion"": 1, ""shield"": 1, ""potion"": 1, ""gecko_card"": 1, ""armor"": 1}",54,VERIFIED
+straw-dummy,Straw Dummy,50,104894,0,"[""training""]",,,,{},,VERIFIED
+aurora-fox,Aurora Fox,45,90360,1,"[""snow""]",3804,1902,,{},18,VERIFIED
+snow-owl,Snow Owl,38,5432,1,"[""snow""]",1932,966,,"{""butterfly_wing"": 1, ""snow_feather"": 1}",8,VERIFIED
+icicle-hare,Icicle Hare,32,4476,1,"[""snow""]",555,277,,"{""icicle_whisker"": 2, ""blue_potion"": 1}",12,VERIFIED
+frost-puff,Frost Puff,25,2720,1,"[""snow""]",383,191,,"{""blue_potion"": 1, ""frost_fluff"": 1}",20,VERIFIED
+amber-beetle,Amber Beetle,20,1800,1,"[""field""]",2196,1098,,"{""amber_shell"": 2, ""fly_wing"": 1}",14,VERIFIED
+rootling,Rootling,18,1448,1,"[""field""]",239,119,,"{""twisted_root"": 1}",6,VERIFIED
+honey-moth,Honey Moth,15,1152,1,"[""field""]",126,63,,{},6,VERIFIED
+bramble-hare,Bramble Hare,13,261,0,"[""field""]",428,214,,"{""butterfly_wing"": 1, ""bramble_fur"": 1}",8,VERIFIED
+thorn-pixie,Thorn Pixie,11,788,1,"[""field""]",348,174,,"{""fly_wing"": 1, ""pixie_thorn"": 1}",6,VERIFIED
+moss-mushroom,Moss Mushroom,8,552,1,"[""field""]",118,59,,"{""blue_potion"": 1}",6,VERIFIED
+dew-bunny,Dew Bunny,6,368,1,"[""field""]",,,,{},,VERIFIED
+leaf-sprout,Leaf Sprout,3,61,0,"[""field""]",,,,{},,VERIFIED
+prism-hopper,Prism Hopper,1,30000,1,"[""field""]",,,,{},,VERIFIED

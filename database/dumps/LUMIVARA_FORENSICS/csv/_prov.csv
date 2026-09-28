@@ -1,0 +1,11 @@
+tbl,source
+CLASSES,items-CvFgs761.js var z (names) + WA (unlock)
+SKILLS,items-CvFgs761.js var x (skill table)
+ITEMS,items-CvFgs761.js var Pc
+CARDS,items-CvFgs761.js var le
+STATUSES,items-CvFgs761.js var N
+MAPS,items-CvFgs761.js var Y
+MONSTER_STATUS_ATTACKS,items-CvFgs761.js var W1
+DROP_RATES,items-CvFgs761.js var ie
+MONSTERS,collect/raw-snapshots.json (WS observation)
+TRANSLATIONS,web-v2/language-Dz8VbPNM.js

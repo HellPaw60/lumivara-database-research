@@ -1,0 +1,11 @@
+class_id,name,unlock_jobs,unlock_silver,confidence
+novice,Novice,null,,VERIFIED
+swordman,Swordsman,null,,VERIFIED
+mage,Mage,null,,VERIFIED
+archer,Archer,null,,VERIFIED
+acolyte,Cleric,null,,VERIFIED
+merchant,Merchant,null,,VERIFIED
+thief,Thief,null,,VERIFIED
+mamushi,Mamushi,null,,VERIFIED
+nekobaku,Nekobaku,"{""merchant"": 50, ""mamushi"": 50}",120000,VERIFIED
+kensei,Kensei,"{""swordman"": 50, ""thief"": 50}",120000,VERIFIED

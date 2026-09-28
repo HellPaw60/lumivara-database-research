@@ -1,0 +1,192 @@
+[
+ {
+  "map_id": "arena",
+  "name": "Aurelia Arena",
+  "subtitle": "PVP อิสระ · คลิกผู้เล่นเพื่อสู้ · ปาร์ตี้เดียวกันโจมตีกันไม่ได้",
+  "width": 1536,
+  "height": 1216,
+  "spawn_json": "[768, 928]",
+  "portals_json": "[{\"x\": 768, \"y\": 1096, \"to\": \"field\", \"label\": \"\\u0e1b\\u0e48\\u0e32\\u0e40\\u0e23\\u0e34\\u0e48\\u0e21\\u0e15\\u0e49\\u0e19 Lv.1\\u201320 \\u2193\", \"arrival\": [1328, 436]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "training",
+  "name": "Training Grounds",
+  "subtitle": "ลานฝึก · ทดสอบดาเมจกับหุ่นฟาง · ไม่มี EXP และไอเท็ม",
+  "width": 1344,
+  "height": 960,
+  "spawn_json": "[672, 700]",
+  "portals_json": "[{\"x\": 672, \"y\": 832, \"to\": \"field\", \"label\": \"\\u0e01\\u0e25\\u0e31\\u0e1a\\u0e1b\\u0e48\\u0e32\\u0e40\\u0e23\\u0e34\\u0e48\\u0e21\\u0e15\\u0e49\\u0e19 \\u2193\", \"arrival\": [1470, 290]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "field",
+  "name": "Verdant Forest",
+  "subtitle": "ป่าเริ่มต้น · Lv.1–20 · บอส Lv.35",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[640, 2336]",
+  "portals_json": "[{\"x\": 1456, \"y\": 140, \"to\": \"rome\", \"label\": \"\\u0e40\\u0e21\\u0e37\\u0e2d\\u0e07 Aurelia \\u2191\", \"arrival\": [627, 610]}, {\"x\": 1560, \"y\": 200, \"to\": \"training\", \"label\": \"\\u0e25\\u0e32\\u0e19\\u0e1d\\u0e36\\u0e01\\u0e2b\\u0e38\\u0e48\\u0e19\\u0e1f\\u0e32\\u0e07\", \"arrival\": [672, 700]}, {\"x\": 180, \"y\": 1536, \"to\": \"wildwood\", \"label\": \"\\u2190 \\u0e1b\\u0e48\\u0e32\\u0e25\\u0e36\\u0e01 Lv.100\\u2013120\", \"arrival\": [2892, 1656]}, {\"x\": 2992, \"y\": 2736, \"to\": \"dunes\", \"label\": \"\\u0e17\\u0e30\\u0e40\\u0e25\\u0e17\\u0e23\\u0e32\\u0e22\\u0e2b\\u0e34\\u0e19\\u0e41\\u0e14\\u0e07 Lv.125\\u2013145 \\u2192\", \"arrival\": [140, 1536]}, {\"x\": 1024, \"y\": 2992, \"to\": \"crystal\", \"label\": \"\\u0e42\\u0e1e\\u0e23\\u0e07\\u0e04\\u0e23\\u0e34\\u0e2a\\u0e15\\u0e31\\u0e25 Lv.225\\u2013245 \\u2193\", \"arrival\": [1536, 180]}, {\"x\": 1184, \"y\": 448, \"to\": \"arena\", \"label\": \"\\u0e2a\\u0e19\\u0e32\\u0e21 PVP \\u00b7 \\u0e40\\u0e02\\u0e49\\u0e32\\u0e41\\u0e25\\u0e49\\u0e27\\u0e2a\\u0e39\\u0e49\\u0e44\\u0e14\\u0e49\\u0e17\\u0e31\\u0e19\\u0e17\\u0e35\", \"arrival\": [768, 928]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "rome",
+  "name": "Aurelia Forum",
+  "subtitle": "เมืองโบราณ · ลานฟอรัมและน้ำพุ",
+  "width": 1254,
+  "height": 705.75,
+  "spawn_json": "[627, 490]",
+  "portals_json": "[{\"x\": 627, \"y\": 650, \"to\": \"field\", \"label\": \"\\u0e1b\\u0e48\\u0e32\\u0e40\\u0e23\\u0e34\\u0e48\\u0e21\\u0e15\\u0e49\\u0e19 Lv.1\\u201320 \\u2193\", \"arrival\": [1456, 220]}, {\"x\": 627, \"y\": 43, \"to\": \"snow\", \"label\": \"\\u0e0a\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e02\\u0e32\\u0e2b\\u0e34\\u0e21\\u0e30 Lv.25\\u201345 \\u2191\", \"arrival\": [1536, 2930]}, {\"x\": 1213, \"y\": 377, \"to\": \"desert\", \"label\": \"\\u0e17\\u0e30\\u0e40\\u0e25\\u0e17\\u0e23\\u0e32\\u0e22 Lv.50\\u201370 \\u2192\", \"arrival\": [140, 1536]}, {\"x\": 43, \"y\": 377, \"to\": \"swamp\", \"label\": \"\\u0e2b\\u0e19\\u0e2d\\u0e07\\u0e19\\u0e49\\u0e33 Lv.75\\u201395 \\u2190\", \"arrival\": [2930, 1536]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "grove",
+  "name": "Whispering Grove",
+  "subtitle": "ป่ากระซิบ · Hollow",
+  "width": 1920,
+  "height": 1280,
+  "spawn_json": "[150, 640]",
+  "portals_json": "[{\"x\": 96, \"y\": 640, \"to\": \"field\", \"label\": \"\\u2190 \\u0e01\\u0e25\\u0e31\\u0e1a Verdant Forest\", \"arrival\": [2688, 1120]}, {\"x\": 1800, \"y\": 640, \"to\": \"ruins\", \"label\": \"\\u0e44\\u0e1b Moonfall Ruins \\u2192\", \"arrival\": [150, 640]}, {\"x\": 960, \"y\": 1120, \"to\": \"temple\", \"label\": \"\\u2193 \\u0e27\\u0e34\\u0e2b\\u0e32\\u0e23\\u0e01\\u0e25\\u0e32\\u0e07\\u0e1b\\u0e48\\u0e32\", \"arrival\": [110, 512]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "ruins",
+  "name": "Moonfall Ruins",
+  "subtitle": "ซากลานจันทร์ · Prism Hopper และ Hollow",
+  "width": 1920,
+  "height": 1280,
+  "spawn_json": "[150, 640]",
+  "portals_json": "[{\"x\": 96, \"y\": 640, \"to\": \"grove\", \"label\": \"\\u2190 \\u0e01\\u0e25\\u0e31\\u0e1a Whispering Grove\", \"arrival\": [1728, 640]}, {\"x\": 1800, \"y\": 640, \"to\": \"snow\", \"label\": \"\\u0e44\\u0e1b Frostveil Pass \\u2192\", \"arrival\": [150, 640]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "snow",
+  "name": "Frostveil Pass",
+  "subtitle": "ช่องเขาหิมะ · Lv.25–45",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[256, 1536]",
+  "portals_json": "[{\"x\": 1536, \"y\": 3012, \"to\": \"rome\", \"label\": \"\\u0e40\\u0e21\\u0e37\\u0e2d\\u0e07 Aurelia \\u2193\", \"arrival\": [627, 90]}, {\"x\": 60, \"y\": 1536, \"to\": \"swamp\", \"label\": \"\\u2190 \\u0e2b\\u0e19\\u0e2d\\u0e07\\u0e19\\u0e49\\u0e33 Lv.75\\u201395\", \"arrival\": [1536, 140]}, {\"x\": 3012, \"y\": 1536, \"to\": \"glacier\", \"label\": \"\\u0e18\\u0e32\\u0e23\\u0e19\\u0e49\\u0e33\\u0e41\\u0e02\\u0e47\\u0e07 Lv.150\\u2013170 \\u2192\", \"arrival\": [140, 1536]}, {\"x\": 1536, \"y\": 60, \"to\": \"tempest\", \"label\": \"\\u0e22\\u0e2d\\u0e14\\u0e40\\u0e02\\u0e32\\u0e1e\\u0e32\\u0e22\\u0e38 Lv.250\\u2013270 \\u2191\", \"arrival\": [1536, 2892]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "desert",
+  "name": "Sunscar Desert",
+  "subtitle": "ทะเลทราย · Lv.50–70",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[160, 1536]",
+  "portals_json": "[{\"x\": 60, \"y\": 1536, \"to\": \"rome\", \"label\": \"\\u2190 \\u0e40\\u0e21\\u0e37\\u0e2d\\u0e07 Aurelia\", \"arrival\": [1160, 377]}, {\"x\": 1536, \"y\": 60, \"to\": \"glacier\", \"label\": \"\\u0e18\\u0e32\\u0e23\\u0e19\\u0e49\\u0e33\\u0e41\\u0e02\\u0e47\\u0e07 Lv.150\\u2013170 \\u2191\", \"arrival\": [1616, 2892]}, {\"x\": 1536, \"y\": 3012, \"to\": \"dunes\", \"label\": \"\\u0e17\\u0e30\\u0e40\\u0e25\\u0e17\\u0e23\\u0e32\\u0e22\\u0e2b\\u0e34\\u0e19\\u0e41\\u0e14\\u0e07 Lv.125\\u2013145 \\u2193\", \"arrival\": [1536, 140]}, {\"x\": 3012, \"y\": 1536, \"to\": \"caldera\", \"label\": \"\\u0e1b\\u0e25\\u0e48\\u0e2d\\u0e07\\u0e20\\u0e39\\u0e40\\u0e02\\u0e32\\u0e44\\u0e1f Lv.175\\u2013195 \\u2192\", \"arrival\": [140, 1536]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "swamp",
+  "name": "Mirewillow Marsh",
+  "subtitle": "หนองน้ำ · Lv.75–95",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[256, 1536]",
+  "portals_json": "[{\"x\": 3012, \"y\": 1536, \"to\": \"rome\", \"label\": \"\\u0e40\\u0e21\\u0e37\\u0e2d\\u0e07 Aurelia \\u2192\", \"arrival\": [95, 377]}, {\"x\": 1536, \"y\": 60, \"to\": \"snow\", \"label\": \"\\u0e0a\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e02\\u0e32\\u0e2b\\u0e34\\u0e21\\u0e30 Lv.25\\u201345 \\u2191\", \"arrival\": [140, 1536]}, {\"x\": 1536, \"y\": 3012, \"to\": \"wildwood\", \"label\": \"\\u0e1b\\u0e48\\u0e32\\u0e25\\u0e36\\u0e01 Lv.100\\u2013120 \\u2193\", \"arrival\": [1716, 160]}, {\"x\": 1000, \"y\": 60, \"to\": \"moor\", \"label\": \"\\u0e17\\u0e38\\u0e48\\u0e07\\u0e2b\\u0e21\\u0e2d\\u0e01\\u0e27\\u0e34\\u0e0d\\u0e0d\\u0e32\\u0e13 Lv.200\\u2013220 \\u2191\", \"arrival\": [1536, 2892]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "wildwood",
+  "name": "Elderwood Forest",
+  "subtitle": "ป่าลึก · Lv.100–120",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[256, 1536]",
+  "portals_json": "[{\"x\": 1716, \"y\": 80, \"to\": \"swamp\", \"label\": \"\\u0e2b\\u0e19\\u0e2d\\u0e07\\u0e19\\u0e49\\u0e33 Lv.75\\u201395 \\u2191\", \"arrival\": [1536, 2932]}, {\"x\": 2972, \"y\": 1656, \"to\": \"field\", \"label\": \"\\u0e1b\\u0e48\\u0e32\\u0e40\\u0e23\\u0e34\\u0e48\\u0e21\\u0e15\\u0e49\\u0e19 Lv.1\\u201320 \\u2192\", \"arrival\": [260, 1536]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "dunes",
+  "name": "Crimson Dunes",
+  "subtitle": "ทะเลทรายหินแดง · Lv.125–145",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[256, 1536]",
+  "portals_json": "[{\"x\": 1536, \"y\": 60, \"to\": \"desert\", \"label\": \"\\u0e17\\u0e30\\u0e40\\u0e25\\u0e17\\u0e23\\u0e32\\u0e22 Lv.50\\u201370 \\u2191\", \"arrival\": [1536, 2932]}, {\"x\": 60, \"y\": 1536, \"to\": \"field\", \"label\": \"\\u2190 \\u0e1b\\u0e48\\u0e32\\u0e40\\u0e23\\u0e34\\u0e48\\u0e21\\u0e15\\u0e49\\u0e19 Lv.1\\u201320\", \"arrival\": [2912, 2736]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "glacier",
+  "name": "Frostfang Glacier",
+  "subtitle": "ธารน้ำแข็ง · Lv.150–170",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[256, 1536]",
+  "portals_json": "[{\"x\": 60, \"y\": 1536, \"to\": \"snow\", \"label\": \"\\u2190 \\u0e0a\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e02\\u0e32\\u0e2b\\u0e34\\u0e21\\u0e30 Lv.25\\u201345\", \"arrival\": [2932, 1536]}, {\"x\": 1616, \"y\": 2972, \"to\": \"desert\", \"label\": \"\\u0e17\\u0e30\\u0e40\\u0e25\\u0e17\\u0e23\\u0e32\\u0e22 Lv.50\\u201370 \\u2193\", \"arrival\": [1536, 140]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "caldera",
+  "name": "Emberfall Caldera",
+  "subtitle": "ปล่องภูเขาไฟ · Lv.175–195",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[256, 1536]",
+  "portals_json": "[{\"x\": 60, \"y\": 1536, \"to\": \"desert\", \"label\": \"\\u2190 \\u0e17\\u0e30\\u0e40\\u0e25\\u0e17\\u0e23\\u0e32\\u0e22 Lv.50\\u201370\", \"arrival\": [2872, 1536]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "moor",
+  "name": "Gloomveil Moor",
+  "subtitle": "ทุ่งหมอกวิญญาณ · Lv.200–220",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[1536, 2816]",
+  "portals_json": "[{\"x\": 1536, \"y\": 3012, \"to\": \"swamp\", \"label\": \"\\u0e2b\\u0e19\\u0e2d\\u0e07\\u0e19\\u0e49\\u0e33 Lv.75\\u201395 \\u2193\", \"arrival\": [1000, 190]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "crystal",
+  "name": "Amethyst Hollows",
+  "subtitle": "โพรงคริสตัล · Lv.225–245",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[1536, 256]",
+  "portals_json": "[{\"x\": 1536, \"y\": 60, \"to\": \"field\", \"label\": \"\\u0e1b\\u0e48\\u0e32\\u0e40\\u0e23\\u0e34\\u0e48\\u0e21\\u0e15\\u0e49\\u0e19 Lv.1\\u201320 \\u2191\", \"arrival\": [1024, 2860]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "tempest",
+  "name": "Stormcrest Peaks",
+  "subtitle": "ยอดเขาพายุ · Lv.250–270",
+  "width": 3072,
+  "height": 3072,
+  "spawn_json": "[1536, 2816]",
+  "portals_json": "[{\"x\": 1536, \"y\": 3012, \"to\": \"snow\", \"label\": \"\\u0e0a\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e02\\u0e32\\u0e2b\\u0e34\\u0e21\\u0e30 Lv.25\\u201345 \\u2193\", \"arrival\": [1536, 200]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "cove",
+  "name": "Prism Cove",
+  "subtitle": "อ่าวปริซึม · เกาะลี้ลับกลางสมุทร",
+  "width": 2048,
+  "height": 1152,
+  "spawn_json": "[460, 880]",
+  "portals_json": "[{\"x\": 360, \"y\": 880, \"to\": \"field\", \"label\": \"\\u2190 \\u0e19\\u0e31\\u0e48\\u0e07\\u0e40\\u0e23\\u0e37\\u0e2d\\u0e01\\u0e25\\u0e31\\u0e1a\\u0e1b\\u0e48\\u0e32\\u0e40\\u0e23\\u0e34\\u0e48\\u0e21\\u0e15\\u0e49\\u0e19\", \"arrival\": [640, 2336]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "temple",
+  "name": "Mossheart Sanctuary",
+  "subtitle": "วิหารกลางป่า · Prism Hopper และ Hollow",
+  "width": 1024,
+  "height": 1024,
+  "spawn_json": "[110, 512]",
+  "portals_json": "[{\"x\": 64, \"y\": 512, \"to\": \"grove\", \"label\": \"\\u2190 \\u0e01\\u0e25\\u0e31\\u0e1a Whispering Grove\", \"arrival\": [960, 1050]}]",
+  "confidence": "VERIFIED"
+ },
+ {
+  "map_id": "inn",
+  "name": "The Lantern Inn",
+  "subtitle": "โรงเตี๊ยม · พื้นที่ปลอดภัย",
+  "width": 960,
+  "height": 640,
+  "spawn_json": "[480, 500]",
+  "portals_json": "[{\"x\": 480, \"y\": 534, \"to\": \"field\", \"label\": \"\\u0e01\\u0e25\\u0e31\\u0e1a\\u0e2a\\u0e19\\u0e32\\u0e21\", \"arrival\": [640, 2336]}]",
+  "confidence": "VERIFIED"
+ }
+]

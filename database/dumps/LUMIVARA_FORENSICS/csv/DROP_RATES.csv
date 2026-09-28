@@ -1,0 +1,10 @@
+category,rate,confidence
+etc,0.3,VERIFIED
+consumable,0.15,VERIFIED
+equipment,0.0125,VERIFIED
+card,0.001,VERIFIED
+bossCard,0.01,VERIFIED
+relicBox,0.01,VERIFIED
+refineStone,0.01,VERIFIED
+extraStat,0.25,VERIFIED
+aspdAccessory,0.3,VERIFIED

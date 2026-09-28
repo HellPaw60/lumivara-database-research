@@ -1,0 +1,43 @@
+{
+ "_meta": {
+  "version": "v0.3",
+  "generated": "2026-09-28"
+ },
+ "datasets": {
+  "classes": {
+   "count": 10,
+   "source": "items-CvFgs761.js var z+WA",
+   "confidence": "VERIFIED"
+  },
+  "skills": {
+   "count": 64,
+   "source": "items-CvFgs761.js var x",
+   "confidence": "VERIFIED"
+  },
+  "items": {
+   "count": 80,
+   "source": "items-CvFgs761.js var Pc",
+   "confidence": "VERIFIED"
+  },
+  "cards": {
+   "count": 49,
+   "source": "items-CvFgs761.js var le",
+   "confidence": "VERIFIED"
+  },
+  "monsters": {
+   "count": 40,
+   "source": "WS observation (raw-snapshots.json)",
+   "confidence": "VERIFIED stats/EXP, DERIVED drops"
+  },
+  "maps": {
+   "count": 19,
+   "source": "items-CvFgs761.js var Y",
+   "confidence": "VERIFIED"
+  },
+  "statuses": {
+   "count": 42,
+   "source": "items-CvFgs761.js var N",
+   "confidence": "VERIFIED"
+  }
+ }
+}

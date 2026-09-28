@@ -1,0 +1,135 @@
+[
+ {
+  "id": "arena",
+  "name": "Aurelia Arena",
+  "width": 1536,
+  "height": 1216,
+  "portals": 1
+ },
+ {
+  "id": "training",
+  "name": "Training Grounds",
+  "width": 1344,
+  "height": 960,
+  "portals": 1
+ },
+ {
+  "id": "field",
+  "name": "Verdant Forest",
+  "width": 3072,
+  "height": 3072,
+  "portals": 6
+ },
+ {
+  "id": "rome",
+  "name": "Aurelia Forum",
+  "width": 1254,
+  "height": 705.75,
+  "portals": 4
+ },
+ {
+  "id": "grove",
+  "name": "Whispering Grove",
+  "width": 1920,
+  "height": 1280,
+  "portals": 3
+ },
+ {
+  "id": "ruins",
+  "name": "Moonfall Ruins",
+  "width": 1920,
+  "height": 1280,
+  "portals": 2
+ },
+ {
+  "id": "snow",
+  "name": "Frostveil Pass",
+  "width": 3072,
+  "height": 3072,
+  "portals": 4
+ },
+ {
+  "id": "desert",
+  "name": "Sunscar Desert",
+  "width": 3072,
+  "height": 3072,
+  "portals": 4
+ },
+ {
+  "id": "swamp",
+  "name": "Mirewillow Marsh",
+  "width": 3072,
+  "height": 3072,
+  "portals": 4
+ },
+ {
+  "id": "wildwood",
+  "name": "Elderwood Forest",
+  "width": 3072,
+  "height": 3072,
+  "portals": 2
+ },
+ {
+  "id": "dunes",
+  "name": "Crimson Dunes",
+  "width": 3072,
+  "height": 3072,
+  "portals": 2
+ },
+ {
+  "id": "glacier",
+  "name": "Frostfang Glacier",
+  "width": 3072,
+  "height": 3072,
+  "portals": 2
+ },
+ {
+  "id": "caldera",
+  "name": "Emberfall Caldera",
+  "width": 3072,
+  "height": 3072,
+  "portals": 1
+ },
+ {
+  "id": "moor",
+  "name": "Gloomveil Moor",
+  "width": 3072,
+  "height": 3072,
+  "portals": 1
+ },
+ {
+  "id": "crystal",
+  "name": "Amethyst Hollows",
+  "width": 3072,
+  "height": 3072,
+  "portals": 1
+ },
+ {
+  "id": "tempest",
+  "name": "Stormcrest Peaks",
+  "width": 3072,
+  "height": 3072,
+  "portals": 1
+ },
+ {
+  "id": "cove",
+  "name": "Prism Cove",
+  "width": 2048,
+  "height": 1152,
+  "portals": 1
+ },
+ {
+  "id": "temple",
+  "name": "Mossheart Sanctuary",
+  "width": 1024,
+  "height": 1024,
+  "portals": 1
+ },
+ {
+  "id": "inn",
+  "name": "The Lantern Inn",
+  "width": 960,
+  "height": 640,
+  "portals": 1
+ }
+]

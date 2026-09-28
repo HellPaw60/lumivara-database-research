@@ -1,0 +1,3306 @@
+{
+ "consumables": {
+  "potion": {
+   "name": "Red Potion",
+   "description": "ฟื้น HP 50 + 15% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด",
+   "kind": "usable",
+   "weight": 10,
+   "price": 5,
+   "buy": 10
+  },
+  "orange_potion": {
+   "name": "Orange Potion",
+   "description": "ฟื้น HP 120 + 20% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด",
+   "kind": "usable",
+   "weight": 12,
+   "price": 20
+  },
+  "yellow_potion": {
+   "name": "Yellow Potion",
+   "description": "ฟื้น HP 250 + 25% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด",
+   "kind": "usable",
+   "weight": 15,
+   "price": 45
+  },
+  "white_potion": {
+   "name": "White Potion",
+   "description": "ฟื้น HP 500 + 30% ของ HP สูงสุด · ดรอปจากบอสเท่านั้น",
+   "kind": "usable",
+   "weight": 20,
+   "price": 100
+  },
+  "blue_potion": {
+   "name": "Blue Potion",
+   "description": "ฟื้น SP 60% ของ SP สูงสุด · ใช้คูลดาวน์ยาร่วมกัน",
+   "kind": "usable",
+   "weight": 15,
+   "price": 20,
+   "buy": 50
+  },
+  "concentration_potion": {
+   "name": "Concentration Potion",
+   "description": "ASPD +3 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ใช้ได้ทุกเลเวล",
+   "kind": "usable",
+   "weight": 15,
+   "price": 40,
+   "buy": 80
+  },
+  "awakening_potion": {
+   "name": "Awakening Potion",
+   "description": "ASPD +4 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ต้องมี Base Lv.40 ขึ้นไป",
+   "kind": "usable",
+   "weight": 20,
+   "price": 120,
+   "buy": 240
+  },
+  "berserk_potion": {
+   "name": "Berserk Potion",
+   "description": "ASPD +5 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ต้องมี Base Lv.85 ขึ้นไป",
+   "kind": "usable",
+   "weight": 25,
+   "price": 300,
+   "buy": 600
+  },
+  "fly_wing": {
+   "name": "Warp Scroll",
+   "description": "เทเลพอร์ตไปยังจุดสุ่มในแมพปัจจุบัน",
+   "kind": "usable",
+   "weight": 3,
+   "price": 15,
+   "buy": 30
+  },
+  "butterfly_wing": {
+   "name": "Return Scroll",
+   "description": "วาร์ปกลับเมือง Aurelia Forum (ลานน้ำพุที่มี NPC ครบ)",
+   "kind": "usable",
+   "weight": 3,
+   "price": 15,
+   "buy": 30
+  },
+  "relic_box": {
+   "name": "Mystery Relic Box",
+   "description": "เปิดเพื่อสุ่มรับไอเท็มหรืออุปกรณ์ · ดรอปจากมอนสเตอร์ 1%",
+   "kind": "usable",
+   "weight": 20,
+   "price": 250
+  },
+  "iron_arrow": {
+   "name": "Arrow",
+   "description": "ลูกธนูสำหรับ Bow · ยิงธรรมดาและใช้สกิลโจมตีใช้ 1 ดอกต่อครั้ง ลูกธนูหมดจะยิงไม่ได้ · ซื้อที่พ่อค้า Silver ดอกละ 0.1 Silver · ขายคืนพ่อค้าไม่ได้",
+   "kind": "usable",
+   "weight": 0.01,
+   "price": 0,
+   "buy": 0.1
+  },
+  "shard": {
+   "name": "Spirit Shard",
+   "description": "วัตถุดิบรุ่นเก่า มอนสเตอร์เลิกดรอปแล้ว · ขายให้ร้านค้าได้ · น้ำหนัก 2",
+   "kind": "material",
+   "weight": 2,
+   "price": 8
+  },
+  "jelly": {
+   "name": "Prism Crystal",
+   "description": "ผลึกเรืองแสง · ดรอปจาก Prism Hopper · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "sprout_leaf": {
+   "name": "Sprout Leaf",
+   "description": "ใบอ่อนสีเขียวสด · ดรอปจาก Leaf Sprout · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "dewdrop_tuft": {
+   "name": "Dewdrop Tuft",
+   "description": "ขนกระต่ายชุ่มน้ำค้าง · ดรอปจาก Dew Bunny · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "moss_spore_cap": {
+   "name": "Moss Spore Cap",
+   "description": "หมวกเห็ดคลุมมอส · ดรอปจาก Moss Mushroom · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "pixie_thorn": {
+   "name": "Pixie Thorn",
+   "description": "หนามแหลมโรยผงภูต · ดรอปจาก Thorn Pixie · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "bramble_fur": {
+   "name": "Bramble Fur",
+   "description": "ขนกระต่ายพันกิ่งหนาม · ดรอปจาก Bramble Hare · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "honey_wing_dust": {
+   "name": "Honey Wing Dust",
+   "description": "ผงปีกผีเสื้อกลิ่นน้ำผึ้ง · ดรอปจาก Honey Moth · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "twisted_root": {
+   "name": "Twisted Root",
+   "description": "รากไม้บิดเกลียว · ดรอปจาก Rootling · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "amber_shell": {
+   "name": "Amber Shell",
+   "description": "ปีกแข็งสีอำพัน · ดรอปจาก Amber Beetle · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "frost_fluff": {
+   "name": "Frost Fluff",
+   "description": "ปุยน้ำแข็ง · ดรอปจาก Frost Puff · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "icicle_whisker": {
+   "name": "Icicle Whisker",
+   "description": "หนวดน้ำแข็งใส · ดรอปจาก Icicle Hare · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 2
+  },
+  "snow_feather": {
+   "name": "Snow Feather",
+   "description": "ขนนกฮูกหิมะ · ดรอปจาก Snow Owl · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 3
+  },
+  "aurora_tail": {
+   "name": "Aurora Tail",
+   "description": "หางจิ้งจอกแสงออโรรา · ดรอปจาก Aurora Fox · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 3
+  },
+  "gecko_scale": {
+   "name": "Gecko Scale",
+   "description": "เกล็ดตุ๊กแกทะเลทราย · ดรอปจาก Dune Gecko · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 4
+  },
+  "scarab_carapace": {
+   "name": "Scarab Carapace",
+   "description": "กระดองด้วงสการับ · ดรอปจาก Scarab Sentinel · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 5
+  },
+  "cobra_fang": {
+   "name": "Cobra Fang",
+   "description": "เขี้ยวงูเห่าเกล็ดตะวัน · ดรอปจาก Sunscale Cobra · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 6
+  },
+  "cactus_needle": {
+   "name": "Cactus Needle",
+   "description": "หนามกระบองเพชร · ดรอปจาก Cactus Imp · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 7
+  },
+  "crab_claw": {
+   "name": "Crab Claw",
+   "description": "ก้ามปู · ดรอปจาก Tide Crab · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 7
+  },
+  "toad_wart": {
+   "name": "Toad Wart",
+   "description": "ปุ่มผิวคางคก · ดรอปจาก Bog Toad · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 8
+  },
+  "newt_tail": {
+   "name": "Newt Tail",
+   "description": "หางนิวต์โคลน · ดรอปจาก Mud Newt · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 9
+  },
+  "mire_gel": {
+   "name": "Mire Gel",
+   "description": "เจลหนองน้ำ · ดรอปจาก Mire Jelly · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 10
+  },
+  "mantis_blade": {
+   "name": "Mantis Blade",
+   "description": "ใบมีดตั๊กแตนตำข้าว · ดรอปจาก Reed Mantis · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 10
+  },
+  "wolf_fang": {
+   "name": "Wolf Fang",
+   "description": "เขี้ยวหมาป่า · ดรอปจาก Forest Wolf · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 11
+  },
+  "wisp_ember": {
+   "name": "Wisp Ember",
+   "description": "ถ่านไฟวิญญาณตะเกียง · ดรอปจาก Lantern Wisp · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 12
+  },
+  "smoldering_antler": {
+   "name": "Smoldering Antler",
+   "description": "เขากวางคุไฟ · ดรอปจาก Ember Antler · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 13
+  },
+  "moonlit_plume": {
+   "name": "Moonlit Plume",
+   "description": "ขนนกแสงจันทร์ · ดรอปจาก Moon Owl · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 14
+  },
+  "lynx_claw": {
+   "name": "Lynx Claw",
+   "description": "กรงเล็บลิงซ์พันเถาวัลย์ · ดรอปจาก Vine Lynx · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 15
+  },
+  "boar_tusk": {
+   "name": "Boar Tusk",
+   "description": "งาหมูป่า · ดรอปจาก Wild Boar · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 16
+  },
+  "drake_scale": {
+   "name": "Drake Scale",
+   "description": "เกล็ดมังกรทราย · ดรอปจาก Sand Drake · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 20
+  },
+  "bat_wing": {
+   "name": "Bat Wing",
+   "description": "ปีกค้างคาว · ดรอปจาก Cave Bat · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 21
+  },
+  "golem_core": {
+   "name": "Golem Core",
+   "description": "แกนหินโกเลม · ดรอปจาก Pebble Golem · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 25
+  },
+  "magma_scale": {
+   "name": "Magma Scale",
+   "description": "เกล็ดซาลาแมนเดอร์ลาวา · ดรอปจาก Magma Salamander · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 26
+  },
+  "cinder_fang": {
+   "name": "Cinder Fang",
+   "description": "เขี้ยวไฟคุ · ดรอปจาก Ember Hound · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 28
+  },
+  "basalt_shell": {
+   "name": "Basalt Shell",
+   "description": "แผ่นกระดองหินบะซอลต์ · ดรอปจาก Basalt Tortoise · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 29
+  },
+  "obsidian_stinger": {
+   "name": "Obsidian Stinger",
+   "description": "เหล็กในแมงป่องออบซิเดียน · ดรอปจาก Obsidian Scorpion · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 31
+  },
+  "shade_feather": {
+   "name": "Shade Feather",
+   "description": "ขนกาเงามืด · ดรอปจาก Shade Raven · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 32
+  },
+  "hound_bone": {
+   "name": "Hound Bone",
+   "description": "กระดูกหมาผี · ดรอปจาก Bone Hound · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 34
+  },
+  "wraith_shroud": {
+   "name": "Wraith Shroud",
+   "description": "ผ้าคลุมวิญญาณ · ดรอปจาก Bog Wraith · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 35
+  },
+  "grave_crest": {
+   "name": "Grave Crest",
+   "description": "ตราอัศวินสุสาน · ดรอปจาก Grave Knight · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 37
+  },
+  "quartz_leg": {
+   "name": "Quartz Leg",
+   "description": "ขาผลึกควอตซ์ · ดรอปจาก Quartz Crawler · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 38
+  },
+  "geode_plate": {
+   "name": "Geode Plate",
+   "description": "เกราะตัวนิ่มผลึกจีโอด · ดรอปจาก Geode Armadillo · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 40
+  },
+  "prism_scale": {
+   "name": "Prism Scale",
+   "description": "เกล็ดงูสีรุ้ง · ดรอปจาก Prism Serpent · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 41
+  },
+  "wyvern_scale": {
+   "name": "Wyvern Scale",
+   "description": "เกล็ดไวเวิร์นอเมทิสต์ · ดรอปจาก Amethyst Wyvern · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 43
+  },
+  "thunder_horn": {
+   "name": "Thunder Horn",
+   "description": "เขาแกะสายฟ้า · ดรอปจาก Thunder Ram · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 45
+  },
+  "roc_plume": {
+   "name": "Roc Plume",
+   "description": "ขนนกร็อกพายุ · ดรอปจาก Storm Roc · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 46
+  },
+  "cloud_pearl": {
+   "name": "Cloud Pearl",
+   "description": "ไข่มุกเมฆ · ดรอปจาก Cloud Serpent · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 48
+  },
+  "tempest_dragon_scale": {
+   "name": "Tempest Dragon Scale",
+   "description": "เกล็ดมังกรพายุ · ดรอปจาก Tempest Drake · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 50
+  },
+  "exp_scroll": {
+   "name": "EXP Scroll",
+   "description": "EXP x2 ทั้ง Base และ Job นาน 1 ชั่วโมง · ใช้ซ้ำเพื่อต่อเวลาได้สูงสุด 5 ชั่วโมง · ตายแล้วบัฟไม่หาย · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "usable",
+   "weight": 5,
+   "price": 0
+  },
+  "drop_scroll": {
+   "name": "Drop Scroll",
+   "description": "โอกาสดรอปไอเท็ม x2 นาน 1 ชั่วโมง · ใช้ซ้ำเพื่อต่อเวลาได้สูงสุด 5 ชั่วโมง · ตายแล้วบัฟไม่หาย · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "usable",
+   "weight": 5,
+   "price": 0
+  },
+  "gym_pass": {
+   "name": "Gym Pass",
+   "description": "เพิ่มน้ำหนักที่แบกได้ถาวร +1,000 ต่อใบ · ใช้ได้สูงสุด 10 ใบต่อตัวละคร · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "usable",
+   "weight": 1,
+   "price": 0
+  },
+  "break_protection_stone": {
+   "name": "Protection Stone",
+   "description": "เลือกใช้ตอนตีบวกแบบไม่ปลอดภัย · ใช้ 1 ก้อนเมื่อตีบวกล้มเหลวเท่านั้น สำเร็จไม่เสียหินกันแตก เพื่อป้องกันอุปกรณ์และการ์ดไม่ให้แตก โดยระดับเดิมไม่ลดเมื่อล้มเหลว · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "material",
+   "weight": 1,
+   "price": 0
+  },
+  "divine_wings": {
+   "name": "Divine Wings",
+   "description": "สกินปีกสีทองกางด้านหลังตัวละคร · ดับเบิลคลิกเพื่อสวมหรือถอด ไม่ใช้ช่องอุปกรณ์และไม่มีผลกับค่าสเตตัส · เทรด ขายในตลาด และฝากคลังได้ แต่ทิ้ง ทำลาย หรือขายให้พ่อค้าไม่ได้ · สุ่มได้จาก Mystery Relic Box 1 ใน 1,000,000 กล่อง",
+   "kind": "cash",
+   "weight": 1,
+   "price": 0
+  },
+  "megaphone": {
+   "name": "Megaphone",
+   "description": "ประกาศข้อความถึงผู้เล่นทุกคนทุกภูมิภาค 1 ครั้ง ขึ้นจอ 20 วินาที · ดับเบิลคลิกหรือกดปุ่ม 📢 ข้างแชทเพื่อใช้ · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "cash",
+   "weight": 1,
+   "price": 0
+  },
+  "rename_ticket": {
+   "name": "Rename Card",
+   "description": "เปลี่ยนชื่อตัวละครได้ 1 ครั้ง · ดับเบิลคลิกเพื่อตั้งชื่อใหม่ · ชื่อเดิมจะถูกจองไว้ให้คุณ 30 วัน คนอื่นใช้ไม่ได้ · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "cash",
+   "weight": 1,
+   "price": 0
+  },
+  "weapon_coat_fire": {
+   "name": "Fire Weapon Coating",
+   "description": "เคลือบอาวุธ 🔥ไฟ (Hephaestus) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_water": {
+   "name": "Water Weapon Coating",
+   "description": "เคลือบอาวุธ 💧น้ำ (Poseidon) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_wind": {
+   "name": "Wind Weapon Coating",
+   "description": "เคลือบอาวุธ 🌀ลม (Aeolus) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_earth": {
+   "name": "Earth Weapon Coating",
+   "description": "เคลือบอาวุธ 🍃ดิน (Gaia) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_light": {
+   "name": "Light Weapon Coating",
+   "description": "เคลือบอาวุธ ☀แสง (Apollo) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_dark": {
+   "name": "Dark Weapon Coating",
+   "description": "เคลือบอาวุธ ☾มืด (Chaos) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_fire": {
+   "name": "Fire Armor Coating",
+   "description": "เคลือบเกราะ 🔥ไฟ (Hephaestus) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_water": {
+   "name": "Water Armor Coating",
+   "description": "เคลือบเกราะ 💧น้ำ (Poseidon) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_wind": {
+   "name": "Wind Armor Coating",
+   "description": "เคลือบเกราะ 🌀ลม (Aeolus) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_earth": {
+   "name": "Earth Armor Coating",
+   "description": "เคลือบเกราะ 🍃ดิน (Gaia) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_light": {
+   "name": "Light Armor Coating",
+   "description": "เคลือบเกราะ ☀แสง (Apollo) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_dark": {
+   "name": "Dark Armor Coating",
+   "description": "เคลือบเกราะ ☾มืด (Chaos) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "refine_stone": {
+   "name": "Refine Stone",
+   "description": "ช่างตีบวกใช้ 1 ก้อนทุกครั้งที่ตีบวก · ได้จากเควสล่ารายวัน (กำจัดมอนสเตอร์ 100 ตัว) หรือดรอปจากมอนสเตอร์ Lv.70 ขึ้นไป 1%",
+   "kind": "material",
+   "weight": 1,
+   "price": 50
+  }
+ },
+ "cards": {
+  "hopper_card": {
+   "name": "Prism Hopper Card",
+   "description": "ฝังอุปกรณ์: LUK +3 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "luk": 3
+   },
+   "price": 150
+  },
+  "hollow_card": {
+   "name": "Hollow Card",
+   "description": "ฝังอุปกรณ์: INT +2 · MDEF +2 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "int": 2,
+    "mdef": 2
+   },
+   "price": 250
+  },
+  "boss_card": {
+   "name": "Crowned Prism Hopper Card",
+   "description": "ฝังอุปกรณ์: ATK +10 · LUK +3 · ATK +5% (รวมสูงสุด 30%) · MATK +5% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้ · การ์ดบอสที่หายากที่สุด",
+   "bonuses": {
+    "atk": 10,
+    "luk": 3,
+    "atkPct": 5,
+    "matkPct": 5
+   },
+   "price": 3000
+  },
+  "mushroom_card": {
+   "name": "Moss Mushroom Card",
+   "description": "ฝังอุปกรณ์: VIT +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "vit": 4
+   },
+   "price": 200
+  },
+  "bat_card": {
+   "name": "Cave Bat Card",
+   "description": "ฝังอุปกรณ์: AGI +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "agi": 4
+   },
+   "price": 220
+  },
+  "beetle_card": {
+   "name": "Amber Beetle Card",
+   "description": "ฝังอุปกรณ์: DEF +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "def": 4
+   },
+   "price": 220
+  },
+  "crab_card": {
+   "name": "Tide Crab Card",
+   "description": "ฝังอุปกรณ์: HP +80 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "hp": 80
+   },
+   "price": 250
+  },
+  "sprout_card": {
+   "name": "Leaf Sprout Card",
+   "description": "ฝังอุปกรณ์: SP +20 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "sp": 20
+   },
+   "price": 180
+  },
+  "bunny_card": {
+   "name": "Dew Bunny Card",
+   "description": "ฝังอุปกรณ์: FLEE +4 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "flee": 4
+   },
+   "price": 190
+  },
+  "pixie_card": {
+   "name": "Thorn Pixie Card",
+   "description": "ฝังอุปกรณ์: MATK +4 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "matk": 4
+   },
+   "price": 210
+  },
+  "rootling_card": {
+   "name": "Rootling Card",
+   "description": "ฝังอุปกรณ์: HP +50 · VIT +1 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "hp": 50,
+    "vit": 1
+   },
+   "price": 220
+  },
+  "moth_card": {
+   "name": "Honey Moth Card",
+   "description": "ฝังอุปกรณ์: SP +15 · INT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "sp": 15,
+    "int": 2
+   },
+   "price": 220
+  },
+  "hare_card": {
+   "name": "Bramble Hare Card",
+   "description": "ฝังอุปกรณ์: AGI +2 · FLEE +3 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "agi": 2,
+    "flee": 3
+   },
+   "price": 230
+  },
+  "puff_card": {
+   "name": "Frost Puff Card",
+   "description": "ฝังอุปกรณ์: MDEF +5 · กันแข็ง +25% (รวมสูงสุด 80%) · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "mdef": 5,
+    "resFreeze": 25
+   },
+   "price": 300
+  },
+  "icicle_card": {
+   "name": "Icicle Hare Card",
+   "description": "ฝังอุปกรณ์: AGI +3 · CRIT +1 · โจมตีติดแข็ง +3% (รวมสูงสุด 15%) · ติดแข็งเฉพาะการโจมตีปกติ บอสไม่ติด · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "agi": 3,
+    "crit": 1,
+    "freezeHit": 3
+   },
+   "price": 320
+  },
+  "snowowl_card": {
+   "name": "Snow Owl Card",
+   "description": "ฝังอุปกรณ์: HIT +8 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "hit": 8
+   },
+   "price": 340
+  },
+  "fox_card": {
+   "name": "Aurora Fox Card",
+   "description": "ฝังอุปกรณ์: INT +3 · MATK +4 · MATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "int": 3,
+    "matk": 4,
+    "matkPct": 3
+   },
+   "price": 360
+  },
+  "gecko_card": {
+   "name": "Dune Gecko Card",
+   "description": "ฝังอุปกรณ์: FLEE +8 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "flee": 8
+   },
+   "price": 420
+  },
+  "scarab_card": {
+   "name": "Scarab Sentinel Card",
+   "description": "ฝังอุปกรณ์: DEF +5 · VIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "def": 5,
+    "vit": 2
+   },
+   "price": 450
+  },
+  "cobra_card": {
+   "name": "Sunscale Cobra Card",
+   "description": "ฝังอุปกรณ์: CRIT +3 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "crit": 3
+   },
+   "price": 470
+  },
+  "cactus_card": {
+   "name": "Cactus Imp Card",
+   "description": "ฝังอุปกรณ์: ATK +6 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "atk": 6
+   },
+   "price": 490
+  },
+  "toad_card": {
+   "name": "Bog Toad Card",
+   "description": "ฝังอุปกรณ์: HP +150 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "hp": 150
+   },
+   "price": 540
+  },
+  "newt_card": {
+   "name": "Mud Newt Card",
+   "description": "ฝังอุปกรณ์: SP +40 · INT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "sp": 40,
+    "int": 2
+   },
+   "price": 560
+  },
+  "mire_card": {
+   "name": "Mire Jelly Card",
+   "description": "ฝังอุปกรณ์: MDEF +6 · HP +60 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "mdef": 6,
+    "hp": 60
+   },
+   "price": 580
+  },
+  "mantis_card": {
+   "name": "Reed Mantis Card",
+   "description": "ฝังอุปกรณ์: ATK +6 · CRIT +2 · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "atk": 6,
+    "crit": 2,
+    "atkPct": 3
+   },
+   "price": 600
+  },
+  "wisp_card": {
+   "name": "Lantern Wisp Card",
+   "description": "ฝังอุปกรณ์: MATK +9 · เจาะเวท +8% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "matk": 9,
+    "mpierce": 8
+   },
+   "price": 660
+  },
+  "wolf_card": {
+   "name": "Forest Wolf Card",
+   "description": "ฝังอุปกรณ์: STR +5 · เจาะกาย +5% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "str": 5,
+    "pierce": 5
+   },
+   "price": 680
+  },
+  "antler_card": {
+   "name": "Ember Antler Card",
+   "description": "ฝังอุปกรณ์: ATK +5 · MATK +5 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "atk": 5,
+    "matk": 5
+   },
+   "price": 700
+  },
+  "moonowl_card": {
+   "name": "Moon Owl Card",
+   "description": "ฝังอุปกรณ์: DEX +5 · HIT +6 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "dex": 5,
+    "hit": 6
+   },
+   "price": 720
+  },
+  "lynx_card": {
+   "name": "Vine Lynx Card",
+   "description": "ฝังอุปกรณ์: AGI +5 · ASPD +1 · ความเร็ววิ่ง +3% (รวมสูงสุด 30%) · ASPD จากการ์ดไม่ซ้อนกัน · ความเร็ววิ่งนับรวมกับ Fleet Foot · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "agi": 5,
+    "aspd": 1,
+    "moveSpeed": 3
+   },
+   "price": 740
+  },
+  "boar_card": {
+   "name": "Wild Boar Card",
+   "description": "ฝังอุปกรณ์: STR +4 · HP +100 · ดูดเลือด +1% (รวมสูงสุด 8%) · ดูดเลือดฟื้นไม่เกิน 10% ของ MaxHP ต่อครั้ง · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "str": 4,
+    "hp": 100,
+    "lifesteal": 1
+   },
+   "price": 800
+  },
+  "drake_card": {
+   "name": "Sand Drake Card",
+   "description": "ฝังอุปกรณ์: ATK +8 · DEF +3 · เจาะกาย +8% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "atk": 8,
+    "def": 3,
+    "pierce": 8
+   },
+   "price": 850
+  },
+  "golem_card": {
+   "name": "Pebble Golem Card",
+   "description": "ฝังอุปกรณ์: DEF +7 · HP +120 · กันสตัน +25% (รวมสูงสุด 80%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "def": 7,
+    "hp": 120,
+    "resStun": 25
+   },
+   "price": 900
+  },
+  "salamander_card": {
+   "name": "Magma Salamander Card",
+   "description": "ฝังอุปกรณ์: MATK +10 · INT +3 · เจาะเวท +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "matk": 10,
+    "int": 3,
+    "mpierce": 10
+   },
+   "price": 950
+  },
+  "hound_card": {
+   "name": "Ember Hound Card",
+   "description": "ฝังอุปกรณ์: ATK +9 · AGI +3 · CRIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "atk": 9,
+    "agi": 3,
+    "crit": 2
+   },
+   "price": 980
+  },
+  "tortoise_card": {
+   "name": "Basalt Tortoise Card",
+   "description": "ฝังอุปกรณ์: DEF +8 · MDEF +5 · HP +150 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "def": 8,
+    "mdef": 5,
+    "hp": 150
+   },
+   "price": 1000
+  },
+  "scorpion_card": {
+   "name": "Obsidian Scorpion Card",
+   "description": "ฝังอุปกรณ์: ATK +10 · เจาะกาย +10% (รวมสูงสุด 60%) · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "atk": 10,
+    "pierce": 10,
+    "atkPct": 3
+   },
+   "price": 1050
+  },
+  "raven_card": {
+   "name": "Shade Raven Card",
+   "description": "ฝังอุปกรณ์: AGI +4 · FLEE +6 · CRIT +2 · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "agi": 4,
+    "flee": 6,
+    "crit": 2
+   },
+   "price": 1100
+  },
+  "bonehound_card": {
+   "name": "Bone Hound Card",
+   "description": "ฝังอุปกรณ์: STR +5 · ATK +8 · ดูดเลือด +1% (รวมสูงสุด 8%) · ดูดเลือดฟื้นไม่เกิน 10% ของ MaxHP ต่อครั้ง · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "str": 5,
+    "atk": 8,
+    "lifesteal": 1
+   },
+   "price": 1120
+  },
+  "wraith_card": {
+   "name": "Bog Wraith Card",
+   "description": "ฝังอุปกรณ์: INT +4 · MATK +10 · MDEF +4 · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "int": 4,
+    "matk": 10,
+    "mdef": 4
+   },
+   "price": 1150
+  },
+  "knight_card": {
+   "name": "Grave Knight Card",
+   "description": "ฝังอุปกรณ์: DEF +9 · VIT +4 · HP +180 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "def": 9,
+    "vit": 4,
+    "hp": 180
+   },
+   "price": 1180
+  },
+  "quartz_card": {
+   "name": "Quartz Crawler Card",
+   "description": "ฝังอุปกรณ์: DEX +5 · HIT +8 · CRIT +2 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "dex": 5,
+    "hit": 8,
+    "crit": 2
+   },
+   "price": 1250
+  },
+  "geode_card": {
+   "name": "Geode Armadillo Card",
+   "description": "ฝังอุปกรณ์: DEF +10 · MDEF +6 · กันสตัน +20% (รวมสูงสุด 80%) · MDEF ลดเฉพาะดาเมจเวท เช่นสกิลธาตุของมอนสเตอร์ ไม่ลดการตีปกติ · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "def": 10,
+    "mdef": 6,
+    "resStun": 20
+   },
+   "price": 1280
+  },
+  "prism_card": {
+   "name": "Prism Serpent Card",
+   "description": "ฝังอุปกรณ์: INT +3 · MATK +12 · MATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "int": 3,
+    "matk": 12,
+    "matkPct": 3
+   },
+   "price": 1320
+  },
+  "wyvern_card": {
+   "name": "Amethyst Wyvern Card",
+   "description": "ฝังอุปกรณ์: ATK +12 · เจาะกาย +8% (รวมสูงสุด 60%) · ATK +3% (รวมสูงสุด 30%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "atk": 12,
+    "pierce": 8,
+    "atkPct": 3
+   },
+   "price": 1360
+  },
+  "ram_card": {
+   "name": "Thunder Ram Card",
+   "description": "ฝังอุปกรณ์: STR +6 · VIT +4 · HP +200 · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "str": 6,
+    "vit": 4,
+    "hp": 200
+   },
+   "price": 1450
+  },
+  "roc_card": {
+   "name": "Storm Roc Card",
+   "description": "ฝังอุปกรณ์: AGI +6 · FLEE +8 · ความเร็ววิ่ง +4% (รวมสูงสุด 30%) · FLEE จากอุปกรณ์และการ์ดช่วยหลบมอนสเตอร์รวมได้ไม่เกิน 20% · ความเร็ววิ่งนับรวมกับ Fleet Foot · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "agi": 6,
+    "flee": 8,
+    "moveSpeed": 4
+   },
+   "price": 1480
+  },
+  "cloud_card": {
+   "name": "Cloud Serpent Card",
+   "description": "ฝังอุปกรณ์: INT +5 · SP +60 · เจาะเวท +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "int": 5,
+    "sp": 60,
+    "mpierce": 10
+   },
+   "price": 1520
+  },
+  "stormdrake_card": {
+   "name": "Tempest Drake Card",
+   "description": "ฝังอุปกรณ์: ATK +14 · MATK +14 · เจาะกาย +10% (รวมสูงสุด 60%) · 1 ช่องต่อชิ้น · ถอดคืนไม่ได้",
+   "bonuses": {
+    "atk": 14,
+    "matk": 14,
+    "pierce": 10
+   },
+   "price": 1600
+  }
+ },
+ "status_effects": {
+  "poison": {
+   "id": "poison",
+   "name": "พิษ",
+   "kind": "debuff",
+   "icon": "☠",
+   "image": "/skills/status-poison.png",
+   "duration": 12000,
+   "dot": {
+    "percent": 0.015,
+    "interval": 2000
+   }
+  },
+  "slow": {
+   "id": "slow",
+   "name": "ช้า",
+   "kind": "debuff",
+   "icon": "🐌",
+   "image": "/skills/status-slow.png",
+   "duration": 8000,
+   "speedFactor": 0.65,
+   "aspdPercent": -0.15
+  },
+  "crush": {
+   "id": "crush",
+   "name": "เกราะแตก",
+   "kind": "debuff",
+   "icon": "🛡",
+   "image": "/skills/status-crush.png",
+   "duration": 10000,
+   "incomingFactor": 1.2
+  },
+  "bleed": {
+   "id": "bleed",
+   "name": "เลือดไหล",
+   "kind": "debuff",
+   "icon": "🩸",
+   "duration": 5000,
+   "dot": {
+    "percent": 0.008,
+    "interval": 1000
+   }
+  },
+  "burn": {
+   "id": "burn",
+   "name": "เผาไหม้",
+   "kind": "debuff",
+   "icon": "🔥",
+   "duration": 5000,
+   "dot": {
+    "percent": 0.007,
+    "interval": 1000
+   }
+  },
+  "stun": {
+   "id": "stun",
+   "name": "สตัน",
+   "kind": "debuff",
+   "icon": "💫",
+   "duration": 1000,
+   "disables": true
+  },
+  "freeze": {
+   "id": "freeze",
+   "name": "แช่แข็ง",
+   "kind": "debuff",
+   "icon": "❄",
+   "duration": 1000,
+   "disables": true
+  },
+  "blind": {
+   "id": "blind",
+   "name": "ตาพร่า",
+   "kind": "debuff",
+   "icon": "🌫",
+   "duration": 5000,
+   "aspdPercent": -0.25,
+   "missChance": 0.25
+  },
+  "blessing": {
+   "id": "blessing",
+   "name": "Blessing",
+   "kind": "buff",
+   "icon": "✨",
+   "image": "/skills/blessing-transparent-v3.png",
+   "duration": 45000,
+   "stats": {
+    "str": 2,
+    "agi": 2,
+    "int": 2,
+    "dex": 2
+   }
+  },
+  "overthrust": {
+   "id": "overthrust",
+   "name": "Over Thrust",
+   "kind": "buff",
+   "icon": "⚒",
+   "image": "/skills/overthrust-transparent-v3.png",
+   "duration": 25000,
+   "atkFactor": 0.18
+  },
+  "endure": {
+   "id": "endure",
+   "name": "Endure",
+   "kind": "buff",
+   "icon": "◆",
+   "image": "/skills/endure-transparent-v3.png",
+   "duration": 3500
+  },
+  "holyguard": {
+   "id": "holyguard",
+   "name": "Holy Guard",
+   "kind": "buff",
+   "icon": "✚",
+   "image": "/skills/holyguard-transparent-v3.png",
+   "duration": 3500
+  },
+  "haste": {
+   "id": "haste",
+   "name": "เร่งความเร็ว",
+   "kind": "buff",
+   "icon": "⚡",
+   "image": "/items/awakening_potion.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "taunt": {
+   "id": "taunt",
+   "name": "ถูกยั่วยุ",
+   "kind": "debuff",
+   "icon": "⚑",
+   "duration": 5000,
+   "atkFactor": -0.1,
+   "incomingFactor": 1.1
+  },
+  "weaken": {
+   "id": "weaken",
+   "name": "อ่อนแรง",
+   "kind": "debuff",
+   "icon": "▽",
+   "duration": 5000,
+   "atkFactor": -0.1
+  },
+  "spirit": {
+   "id": "spirit",
+   "name": "Spirit Instinct",
+   "kind": "buff",
+   "icon": "🜂",
+   "duration": 55000
+  },
+  "remedy": {
+   "id": "remedy",
+   "name": "Remedy Light",
+   "kind": "buff",
+   "icon": "✛",
+   "duration": 5000,
+   "wards": true
+  },
+  "expboost": {
+   "id": "expboost",
+   "name": "EXP x2",
+   "kind": "buff",
+   "icon": "📖",
+   "image": "/items/exp_scroll.png",
+   "duration": 3600000,
+   "fromItem": true,
+   "keepsOnDeath": true,
+   "pausesOffline": true
+  },
+  "dropboost": {
+   "id": "dropboost",
+   "name": "Drop x2",
+   "kind": "buff",
+   "icon": "🎁",
+   "image": "/items/drop_scroll.png",
+   "duration": 3600000,
+   "fromItem": true,
+   "keepsOnDeath": true,
+   "pausesOffline": true
+  },
+  "vanish": {
+   "id": "vanish",
+   "name": "Vanish",
+   "kind": "buff",
+   "icon": "◌",
+   "duration": 1000,
+   "hidden": true
+  },
+  "venom": {
+   "id": "venom",
+   "name": "พิษงู",
+   "kind": "debuff",
+   "icon": "🐍",
+   "image": "/skills/status-venom.png",
+   "duration": 8000,
+   "dot": {
+    "percent": 0,
+    "interval": 1000
+   }
+  },
+  "dokunuri": {
+   "id": "dokunuri",
+   "name": "Dokunuri",
+   "kind": "buff",
+   "icon": "🗡",
+   "image": "/skills/dokunuri-transparent-v3.png",
+   "duration": 45000
+  },
+  "meikyo": {
+   "id": "meikyo",
+   "name": "Meikyo Shisui",
+   "kind": "buff",
+   "icon": "🌊",
+   "image": "/skills/meikyo-transparent-v3.png",
+   "duration": 45000
+  },
+  "oil": {
+   "id": "oil",
+   "name": "ชุ่มน้ำมัน",
+   "kind": "debuff",
+   "icon": "🛢",
+   "image": "/skills/status-oil.png",
+   "duration": 6000,
+   "speedFactor": 0.7
+  },
+  "catbrew": {
+   "id": "catbrew",
+   "name": "Catalyst Brew",
+   "kind": "buff",
+   "icon": "⚗",
+   "image": "/skills/catbrew-transparent-v3.png",
+   "duration": 45000
+  },
+  "ninelives": {
+   "id": "ninelives",
+   "name": "เก้าชีวิต (พักฟื้น)",
+   "kind": "buff",
+   "icon": "🐾",
+   "image": "/skills/ninelives-transparent-v3.png",
+   "duration": 600000,
+   "keepsOnDeath": true
+  },
+  "crystal": {
+   "id": "crystal",
+   "name": "โล่ผลึก",
+   "kind": "buff",
+   "icon": "💎",
+   "image": "/skills/status-crystal.png",
+   "duration": 8000
+  },
+  "spawnguard": {
+   "id": "spawnguard",
+   "name": "อมตะ",
+   "kind": "buff",
+   "icon": "🛡",
+   "duration": 30000,
+   "wards": true,
+   "invulnerable": true
+  },
+  "riseguard": {
+   "id": "riseguard",
+   "name": "อมตะ",
+   "kind": "buff",
+   "icon": "🛡",
+   "duration": 3000,
+   "wards": true,
+   "invulnerable": true,
+   "pacified": true
+  },
+  "momentum": {
+   "id": "momentum",
+   "name": "Momentum",
+   "kind": "buff",
+   "icon": "🌀",
+   "duration": 10000
+  },
+  "wcoat_fire": {
+   "id": "wcoat_fire",
+   "name": "อาวุธ 🔥ไฟ",
+   "kind": "buff",
+   "icon": "🔥",
+   "image": "/items/weapon_coat_fire.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_water": {
+   "id": "wcoat_water",
+   "name": "อาวุธ 💧น้ำ",
+   "kind": "buff",
+   "icon": "💧",
+   "image": "/items/weapon_coat_water.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_wind": {
+   "id": "wcoat_wind",
+   "name": "อาวุธ 🌀ลม",
+   "kind": "buff",
+   "icon": "🌀",
+   "image": "/items/weapon_coat_wind.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_earth": {
+   "id": "wcoat_earth",
+   "name": "อาวุธ 🍃ดิน",
+   "kind": "buff",
+   "icon": "🍃",
+   "image": "/items/weapon_coat_earth.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_light": {
+   "id": "wcoat_light",
+   "name": "อาวุธ ☀แสง",
+   "kind": "buff",
+   "icon": "☀",
+   "image": "/items/weapon_coat_light.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_dark": {
+   "id": "wcoat_dark",
+   "name": "อาวุธ ☾มืด",
+   "kind": "buff",
+   "icon": "☾",
+   "image": "/items/weapon_coat_dark.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_fire": {
+   "id": "acoat_fire",
+   "name": "เกราะ 🔥ไฟ",
+   "kind": "buff",
+   "icon": "🔥",
+   "image": "/items/armor_coat_fire.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_water": {
+   "id": "acoat_water",
+   "name": "เกราะ 💧น้ำ",
+   "kind": "buff",
+   "icon": "💧",
+   "image": "/items/armor_coat_water.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_wind": {
+   "id": "acoat_wind",
+   "name": "เกราะ 🌀ลม",
+   "kind": "buff",
+   "icon": "🌀",
+   "image": "/items/armor_coat_wind.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_earth": {
+   "id": "acoat_earth",
+   "name": "เกราะ 🍃ดิน",
+   "kind": "buff",
+   "icon": "🍃",
+   "image": "/items/armor_coat_earth.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_light": {
+   "id": "acoat_light",
+   "name": "เกราะ ☀แสง",
+   "kind": "buff",
+   "icon": "☀",
+   "image": "/items/armor_coat_light.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_dark": {
+   "id": "acoat_dark",
+   "name": "เกราะ ☾มืด",
+   "kind": "buff",
+   "icon": "☾",
+   "image": "/items/armor_coat_dark.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  }
+ },
+ "maps": {
+  "arena": {
+   "name": "Aurelia Arena",
+   "subtitle": "PVP อิสระ · คลิกผู้เล่นเพื่อสู้ · ปาร์ตี้เดียวกันโจมตีกันไม่ได้",
+   "width": 1536,
+   "height": 1216,
+   "spawn": [
+    768,
+    928
+   ],
+   "portals": [
+    {
+     "x": 768,
+     "y": 1096,
+     "to": "field",
+     "label": "ป่าเริ่มต้น Lv.1–20 ↓",
+     "arrival": [
+      1328,
+      436
+     ]
+    }
+   ]
+  },
+  "training": {
+   "name": "Training Grounds",
+   "subtitle": "ลานฝึก · ทดสอบดาเมจกับหุ่นฟาง · ไม่มี EXP และไอเท็ม",
+   "width": 1344,
+   "height": 960,
+   "spawn": [
+    672,
+    700
+   ],
+   "portals": [
+    {
+     "x": 672,
+     "y": 832,
+     "to": "field",
+     "label": "กลับป่าเริ่มต้น ↓",
+     "arrival": [
+      1470,
+      290
+     ]
+    }
+   ]
+  },
+  "field": {
+   "name": "Verdant Forest",
+   "subtitle": "ป่าเริ่มต้น · Lv.1–20 · บอส Lv.35",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    640,
+    2336
+   ],
+   "portals": [
+    {
+     "x": 1456,
+     "y": 140,
+     "to": "rome",
+     "label": "เมือง Aurelia ↑",
+     "arrival": [
+      627,
+      610
+     ]
+    },
+    {
+     "x": 1560,
+     "y": 200,
+     "to": "training",
+     "label": "ลานฝึกหุ่นฟาง",
+     "arrival": [
+      672,
+      700
+     ]
+    },
+    {
+     "x": 180,
+     "y": 1536,
+     "to": "wildwood",
+     "label": "← ป่าลึก Lv.100–120",
+     "arrival": [
+      2892,
+      1656
+     ]
+    },
+    {
+     "x": 2992,
+     "y": 2736,
+     "to": "dunes",
+     "label": "ทะเลทรายหินแดง Lv.125–145 →",
+     "arrival": [
+      140,
+      1536
+     ]
+    },
+    {
+     "x": 1024,
+     "y": 2992,
+     "to": "crystal",
+     "label": "โพรงคริสตัล Lv.225–245 ↓",
+     "arrival": [
+      1536,
+      180
+     ]
+    },
+    {
+     "x": 1184,
+     "y": 448,
+     "to": "arena",
+     "label": "สนาม PVP · เข้าแล้วสู้ได้ทันที",
+     "arrival": [
+      768,
+      928
+     ]
+    }
+   ]
+  },
+  "rome": {
+   "name": "Aurelia Forum",
+   "subtitle": "เมืองโบราณ · ลานฟอรัมและน้ำพุ",
+   "width": 1254,
+   "height": 705.75,
+   "spawn": [
+    627,
+    490
+   ],
+   "portals": [
+    {
+     "x": 627,
+     "y": 650,
+     "to": "field",
+     "label": "ป่าเริ่มต้น Lv.1–20 ↓",
+     "arrival": [
+      1456,
+      220
+     ]
+    },
+    {
+     "x": 627,
+     "y": 43,
+     "to": "snow",
+     "label": "ช่องเขาหิมะ Lv.25–45 ↑",
+     "arrival": [
+      1536,
+      2930
+     ]
+    },
+    {
+     "x": 1213,
+     "y": 377,
+     "to": "desert",
+     "label": "ทะเลทราย Lv.50–70 →",
+     "arrival": [
+      140,
+      1536
+     ]
+    },
+    {
+     "x": 43,
+     "y": 377,
+     "to": "swamp",
+     "label": "หนองน้ำ Lv.75–95 ←",
+     "arrival": [
+      2930,
+      1536
+     ]
+    }
+   ]
+  },
+  "grove": {
+   "name": "Whispering Grove",
+   "subtitle": "ป่ากระซิบ · Hollow",
+   "width": 1920,
+   "height": 1280,
+   "spawn": [
+    150,
+    640
+   ],
+   "portals": [
+    {
+     "x": 96,
+     "y": 640,
+     "to": "field",
+     "label": "← กลับ Verdant Forest",
+     "arrival": [
+      2688,
+      1120
+     ]
+    },
+    {
+     "x": 1800,
+     "y": 640,
+     "to": "ruins",
+     "label": "ไป Moonfall Ruins →",
+     "arrival": [
+      150,
+      640
+     ]
+    },
+    {
+     "x": 960,
+     "y": 1120,
+     "to": "temple",
+     "label": "↓ วิหารกลางป่า",
+     "arrival": [
+      110,
+      512
+     ]
+    }
+   ]
+  },
+  "ruins": {
+   "name": "Moonfall Ruins",
+   "subtitle": "ซากลานจันทร์ · Prism Hopper และ Hollow",
+   "width": 1920,
+   "height": 1280,
+   "spawn": [
+    150,
+    640
+   ],
+   "portals": [
+    {
+     "x": 96,
+     "y": 640,
+     "to": "grove",
+     "label": "← กลับ Whispering Grove",
+     "arrival": [
+      1728,
+      640
+     ]
+    },
+    {
+     "x": 1800,
+     "y": 640,
+     "to": "snow",
+     "label": "ไป Frostveil Pass →",
+     "arrival": [
+      150,
+      640
+     ]
+    }
+   ]
+  },
+  "snow": {
+   "name": "Frostveil Pass",
+   "subtitle": "ช่องเขาหิมะ · Lv.25–45",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    256,
+    1536
+   ],
+   "portals": [
+    {
+     "x": 1536,
+     "y": 3012,
+     "to": "rome",
+     "label": "เมือง Aurelia ↓",
+     "arrival": [
+      627,
+      90
+     ]
+    },
+    {
+     "x": 60,
+     "y": 1536,
+     "to": "swamp",
+     "label": "← หนองน้ำ Lv.75–95",
+     "arrival": [
+      1536,
+      140
+     ]
+    },
+    {
+     "x": 3012,
+     "y": 1536,
+     "to": "glacier",
+     "label": "ธารน้ำแข็ง Lv.150–170 →",
+     "arrival": [
+      140,
+      1536
+     ]
+    },
+    {
+     "x": 1536,
+     "y": 60,
+     "to": "tempest",
+     "label": "ยอดเขาพายุ Lv.250–270 ↑",
+     "arrival": [
+      1536,
+      2892
+     ]
+    }
+   ]
+  },
+  "desert": {
+   "name": "Sunscar Desert",
+   "subtitle": "ทะเลทราย · Lv.50–70",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    160,
+    1536
+   ],
+   "portals": [
+    {
+     "x": 60,
+     "y": 1536,
+     "to": "rome",
+     "label": "← เมือง Aurelia",
+     "arrival": [
+      1160,
+      377
+     ]
+    },
+    {
+     "x": 1536,
+     "y": 60,
+     "to": "glacier",
+     "label": "ธารน้ำแข็ง Lv.150–170 ↑",
+     "arrival": [
+      1616,
+      2892
+     ]
+    },
+    {
+     "x": 1536,
+     "y": 3012,
+     "to": "dunes",
+     "label": "ทะเลทรายหินแดง Lv.125–145 ↓",
+     "arrival": [
+      1536,
+      140
+     ]
+    },
+    {
+     "x": 3012,
+     "y": 1536,
+     "to": "caldera",
+     "label": "ปล่องภูเขาไฟ Lv.175–195 →",
+     "arrival": [
+      140,
+      1536
+     ]
+    }
+   ]
+  },
+  "swamp": {
+   "name": "Mirewillow Marsh",
+   "subtitle": "หนองน้ำ · Lv.75–95",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    256,
+    1536
+   ],
+   "portals": [
+    {
+     "x": 3012,
+     "y": 1536,
+     "to": "rome",
+     "label": "เมือง Aurelia →",
+     "arrival": [
+      95,
+      377
+     ]
+    },
+    {
+     "x": 1536,
+     "y": 60,
+     "to": "snow",
+     "label": "ช่องเขาหิมะ Lv.25–45 ↑",
+     "arrival": [
+      140,
+      1536
+     ]
+    },
+    {
+     "x": 1536,
+     "y": 3012,
+     "to": "wildwood",
+     "label": "ป่าลึก Lv.100–120 ↓",
+     "arrival": [
+      1716,
+      160
+     ]
+    },
+    {
+     "x": 1000,
+     "y": 60,
+     "to": "moor",
+     "label": "ทุ่งหมอกวิญญาณ Lv.200–220 ↑",
+     "arrival": [
+      1536,
+      2892
+     ]
+    }
+   ]
+  },
+  "wildwood": {
+   "name": "Elderwood Forest",
+   "subtitle": "ป่าลึก · Lv.100–120",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    256,
+    1536
+   ],
+   "portals": [
+    {
+     "x": 1716,
+     "y": 80,
+     "to": "swamp",
+     "label": "หนองน้ำ Lv.75–95 ↑",
+     "arrival": [
+      1536,
+      2932
+     ]
+    },
+    {
+     "x": 2972,
+     "y": 1656,
+     "to": "field",
+     "label": "ป่าเริ่มต้น Lv.1–20 →",
+     "arrival": [
+      260,
+      1536
+     ]
+    }
+   ]
+  },
+  "dunes": {
+   "name": "Crimson Dunes",
+   "subtitle": "ทะเลทรายหินแดง · Lv.125–145",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    256,
+    1536
+   ],
+   "portals": [
+    {
+     "x": 1536,
+     "y": 60,
+     "to": "desert",
+     "label": "ทะเลทราย Lv.50–70 ↑",
+     "arrival": [
+      1536,
+      2932
+     ]
+    },
+    {
+     "x": 60,
+     "y": 1536,
+     "to": "field",
+     "label": "← ป่าเริ่มต้น Lv.1–20",
+     "arrival": [
+      2912,
+      2736
+     ]
+    }
+   ]
+  },
+  "glacier": {
+   "name": "Frostfang Glacier",
+   "subtitle": "ธารน้ำแข็ง · Lv.150–170",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    256,
+    1536
+   ],
+   "portals": [
+    {
+     "x": 60,
+     "y": 1536,
+     "to": "snow",
+     "label": "← ช่องเขาหิมะ Lv.25–45",
+     "arrival": [
+      2932,
+      1536
+     ]
+    },
+    {
+     "x": 1616,
+     "y": 2972,
+     "to": "desert",
+     "label": "ทะเลทราย Lv.50–70 ↓",
+     "arrival": [
+      1536,
+      140
+     ]
+    }
+   ]
+  },
+  "caldera": {
+   "name": "Emberfall Caldera",
+   "subtitle": "ปล่องภูเขาไฟ · Lv.175–195",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    256,
+    1536
+   ],
+   "portals": [
+    {
+     "x": 60,
+     "y": 1536,
+     "to": "desert",
+     "label": "← ทะเลทราย Lv.50–70",
+     "arrival": [
+      2872,
+      1536
+     ]
+    }
+   ]
+  },
+  "moor": {
+   "name": "Gloomveil Moor",
+   "subtitle": "ทุ่งหมอกวิญญาณ · Lv.200–220",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    1536,
+    2816
+   ],
+   "portals": [
+    {
+     "x": 1536,
+     "y": 3012,
+     "to": "swamp",
+     "label": "หนองน้ำ Lv.75–95 ↓",
+     "arrival": [
+      1000,
+      190
+     ]
+    }
+   ]
+  },
+  "crystal": {
+   "name": "Amethyst Hollows",
+   "subtitle": "โพรงคริสตัล · Lv.225–245",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    1536,
+    256
+   ],
+   "portals": [
+    {
+     "x": 1536,
+     "y": 60,
+     "to": "field",
+     "label": "ป่าเริ่มต้น Lv.1–20 ↑",
+     "arrival": [
+      1024,
+      2860
+     ]
+    }
+   ]
+  },
+  "tempest": {
+   "name": "Stormcrest Peaks",
+   "subtitle": "ยอดเขาพายุ · Lv.250–270",
+   "width": 3072,
+   "height": 3072,
+   "spawn": [
+    1536,
+    2816
+   ],
+   "portals": [
+    {
+     "x": 1536,
+     "y": 3012,
+     "to": "snow",
+     "label": "ช่องเขาหิมะ Lv.25–45 ↓",
+     "arrival": [
+      1536,
+      200
+     ]
+    }
+   ]
+  },
+  "cove": {
+   "name": "Prism Cove",
+   "subtitle": "อ่าวปริซึม · เกาะลี้ลับกลางสมุทร",
+   "width": 2048,
+   "height": 1152,
+   "spawn": [
+    460,
+    880
+   ],
+   "portals": [
+    {
+     "x": 360,
+     "y": 880,
+     "to": "field",
+     "label": "← นั่งเรือกลับป่าเริ่มต้น",
+     "arrival": [
+      640,
+      2336
+     ]
+    }
+   ]
+  },
+  "temple": {
+   "name": "Mossheart Sanctuary",
+   "subtitle": "วิหารกลางป่า · Prism Hopper และ Hollow",
+   "width": 1024,
+   "height": 1024,
+   "spawn": [
+    110,
+    512
+   ],
+   "portals": [
+    {
+     "x": 64,
+     "y": 512,
+     "to": "grove",
+     "label": "← กลับ Whispering Grove",
+     "arrival": [
+      960,
+      1050
+     ]
+    }
+   ]
+  },
+  "inn": {
+   "name": "The Lantern Inn",
+   "subtitle": "โรงเตี๊ยม · พื้นที่ปลอดภัย",
+   "width": 960,
+   "height": 640,
+   "spawn": [
+    480,
+    500
+   ],
+   "portals": [
+    {
+     "x": 480,
+     "y": 534,
+     "to": "field",
+     "label": "กลับสนาม",
+     "arrival": [
+      640,
+      2336
+     ]
+    }
+   ]
+  }
+ },
+ "skills": {
+  "bash": {
+   "name": "Power Strike",
+   "icon": "✦",
+   "job": 1,
+   "sp": 2,
+   "cooldown": 500,
+   "range": 64,
+   "multiplier": 1,
+   "description": "Power Strike",
+   "cooldownFromAspd": true,
+   "classId": "swordman",
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 16765803
+  },
+  "magnum": {
+   "name": "Flame Burst",
+   "icon": "✦",
+   "job": 3,
+   "sp": 4,
+   "cooldown": 1000,
+   "range": 96,
+   "multiplier": 1,
+   "description": "Flame Burst",
+   "classId": "swordman",
+   "target": "area",
+   "effect": "damage",
+   "power": "atk",
+   "color": 16750653
+  },
+  "endure": {
+   "name": "Iron Will",
+   "icon": "✦",
+   "job": 5,
+   "sp": 2,
+   "cooldown": 15000,
+   "range": 0,
+   "multiplier": 1,
+   "description": "Iron Will",
+   "classId": "swordman",
+   "target": "self",
+   "effect": "buff",
+   "power": "atk",
+   "color": 10213631,
+   "buff": "endure"
+  },
+  "firstaid": {
+   "classId": "novice",
+   "name": "First Aid",
+   "job": 1,
+   "sp": 3,
+   "cooldown": 6000,
+   "range": 0,
+   "target": "self",
+   "effect": "heal",
+   "power": "matk",
+   "color": 16746649,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "First Aid"
+  },
+  "firebolt": {
+   "classId": "mage",
+   "name": "Ember Bolt",
+   "job": 1,
+   "sp": 4,
+   "cooldown": 100,
+   "range": 240,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "matk",
+   "color": 16742195,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Ember Bolt"
+  },
+  "coldbolt": {
+   "classId": "mage",
+   "name": "Frost Area",
+   "job": 3,
+   "sp": 5,
+   "cooldown": 850,
+   "range": 150,
+   "target": "area",
+   "effect": "damage",
+   "power": "matk",
+   "color": 7593215,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Frost Area"
+  },
+  "thunderstorm": {
+   "classId": "mage",
+   "name": "Stormbreak",
+   "job": 5,
+   "sp": 7,
+   "cooldown": 550,
+   "range": 120,
+   "target": "area",
+   "effect": "damage",
+   "power": "matk",
+   "color": 11831807,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Stormbreak"
+  },
+  "doublestrafe": {
+   "classId": "archer",
+   "name": "Twin Shot",
+   "job": 1,
+   "sp": 0.7,
+   "cooldown": 500,
+   "range": 300,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 16765803,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Twin Shot",
+   "cooldownFromAspd": true
+  },
+  "arrowshower": {
+   "classId": "archer",
+   "name": "Arrow Rain",
+   "job": 3,
+   "sp": 4,
+   "cooldown": 5000,
+   "range": 280,
+   "target": "area",
+   "effect": "damage",
+   "power": "atk",
+   "color": 8639855,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Arrow Rain"
+  },
+  "piercingshot": {
+   "classId": "archer",
+   "name": "Piercing Shot",
+   "job": 5,
+   "sp": 10,
+   "cooldown": 5000,
+   "range": 320,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 8641023,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Piercing Shot"
+  },
+  "heal": {
+   "classId": "acolyte",
+   "name": "Heal",
+   "job": 1,
+   "sp": 3,
+   "cooldown": 1000,
+   "range": 160,
+   "target": "ally",
+   "effect": "heal",
+   "power": "matk",
+   "color": 9371564,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Heal"
+  },
+  "holylight": {
+   "classId": "acolyte",
+   "name": "Radiant Light",
+   "job": 3,
+   "sp": 4,
+   "cooldown": 1500,
+   "range": 150,
+   "target": "area",
+   "effect": "damage",
+   "power": "matk",
+   "color": 16774570,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Radiant Light"
+  },
+  "holyguard": {
+   "classId": "acolyte",
+   "name": "Holy Guard",
+   "job": 5,
+   "sp": 3,
+   "cooldown": 15000,
+   "range": 0,
+   "target": "self",
+   "effect": "buff",
+   "power": "matk",
+   "color": 11065343,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Holy Guard",
+   "buff": "holyguard"
+  },
+  "blessing": {
+   "classId": "acolyte",
+   "name": "Divine Boon",
+   "job": 7,
+   "sp": 5,
+   "cooldown": 15000,
+   "range": 150,
+   "target": "ally",
+   "effect": "buff",
+   "power": "matk",
+   "color": 16773296,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Divine Boon",
+   "buff": "blessing"
+  },
+  "remedylight": {
+   "classId": "acolyte",
+   "name": "Remedy Light",
+   "job": 9,
+   "sp": 20,
+   "cooldown": 15000,
+   "range": 170,
+   "target": "self",
+   "effect": "buff",
+   "power": "matk",
+   "color": 14221296,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Remedy Light",
+   "buff": "remedy"
+  },
+  "mammonite": {
+   "classId": "merchant",
+   "name": "Gold Strike",
+   "job": 1,
+   "sp": 2,
+   "cooldown": 3500,
+   "range": 72,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 16765803,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Gold Strike",
+   "cooldownFromAspd": true
+  },
+  "cartstrike": {
+   "classId": "merchant",
+   "name": "Cart Strike",
+   "job": 3,
+   "sp": 3.5,
+   "cooldown": 3000,
+   "range": 100,
+   "target": "area",
+   "effect": "damage",
+   "power": "atk",
+   "color": 16755810,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Cart Strike"
+  },
+  "hammerfall": {
+   "classId": "merchant",
+   "name": "Quake Hammer",
+   "job": 5,
+   "sp": 4,
+   "cooldown": 4500,
+   "range": 150,
+   "target": "area",
+   "effect": "damage",
+   "power": "atk",
+   "color": 16769699,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Quake Hammer"
+  },
+  "overthrust": {
+   "classId": "merchant",
+   "name": "Power Surge",
+   "job": 7,
+   "sp": 15,
+   "cooldown": 30000,
+   "range": 0,
+   "target": "self",
+   "effect": "buff",
+   "power": "atk",
+   "color": 16757854,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Power Surge",
+   "buff": "overthrust"
+  },
+  "twinfang": {
+   "classId": "thief",
+   "name": "Twin Fang",
+   "job": 1,
+   "sp": 4,
+   "cooldown": 2500,
+   "range": 72,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 16752800,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Twin Fang",
+   "cooldownFromAspd": true
+  },
+  "venomknife": {
+   "classId": "thief",
+   "name": "Toxin Blink",
+   "job": 3,
+   "sp": 1,
+   "cooldown": 7000,
+   "range": 220,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 9038933,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Toxin Blink"
+  },
+  "shadowburst": {
+   "classId": "thief",
+   "name": "Shadow Burst",
+   "job": 5,
+   "sp": 10,
+   "cooldown": 7500,
+   "range": 110,
+   "target": "area",
+   "effect": "damage",
+   "power": "atk",
+   "color": 12815359,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Shadow Burst"
+  },
+  "challenging": {
+   "classId": "swordman",
+   "name": "Challenging",
+   "job": 7,
+   "sp": 3,
+   "cooldown": 5000,
+   "range": 170,
+   "target": "area",
+   "effect": "debuff",
+   "power": "atk",
+   "color": 16739179,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Challenging",
+   "debuff": "taunt"
+  },
+  "tierra": {
+   "classId": "mage",
+   "name": "Tierra Sharp Spear",
+   "job": 7,
+   "sp": 4,
+   "cooldown": 100,
+   "range": 240,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "matk",
+   "color": 13146714,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Tierra Sharp Spear"
+  },
+  "spiritinstinct": {
+   "classId": "archer",
+   "name": "Spirit Instinct",
+   "job": 7,
+   "sp": 8,
+   "cooldown": 20000,
+   "range": 0,
+   "target": "self",
+   "effect": "buff",
+   "power": "atk",
+   "color": 11075544,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Spirit Instinct",
+   "buff": "spirit"
+  },
+  "leapshot": {
+   "classId": "archer",
+   "name": "Leap Shot",
+   "job": 9,
+   "sp": 15,
+   "cooldown": 7000,
+   "range": 170,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 10473727,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Leap Shot"
+  },
+  "vanish": {
+   "classId": "thief",
+   "name": "Vanish",
+   "job": 7,
+   "sp": 20,
+   "cooldown": 15000,
+   "range": 0,
+   "target": "self",
+   "effect": "buff",
+   "power": "atk",
+   "color": 9141183,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Vanish",
+   "buff": "vanish"
+  },
+  "viperfang": {
+   "classId": "mamushi",
+   "name": "Viper Fang",
+   "job": 1,
+   "sp": 4,
+   "cooldown": 2500,
+   "range": 200,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 10217578,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Viper Fang",
+   "cooldownFromAspd": true
+  },
+  "dokugiri": {
+   "classId": "mamushi",
+   "name": "Dokugiri",
+   "job": 3,
+   "sp": 8,
+   "cooldown": 6000,
+   "range": 110,
+   "target": "area",
+   "effect": "damage",
+   "power": "atk",
+   "color": 8380506,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Dokugiri"
+  },
+  "venomrupture": {
+   "classId": "mamushi",
+   "name": "Venom Rupture",
+   "job": 5,
+   "sp": 12,
+   "cooldown": 8000,
+   "range": 200,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 11824383,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Venom Rupture"
+  },
+  "dokunuri": {
+   "classId": "mamushi",
+   "name": "Dokunuri",
+   "job": 7,
+   "sp": 15,
+   "cooldown": 30000,
+   "range": 0,
+   "target": "self",
+   "effect": "buff",
+   "power": "atk",
+   "color": 10217578,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Dokunuri",
+   "buff": "dokunuri"
+  },
+  "iaigiri": {
+   "classId": "kensei",
+   "name": "Iaigiri",
+   "job": 1,
+   "sp": 4,
+   "cooldown": 2500,
+   "range": 72,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 12577023,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Iaigiri",
+   "cooldownFromAspd": true
+  },
+  "oboro": {
+   "classId": "kensei",
+   "name": "Oboro Ranbu",
+   "job": 3,
+   "sp": 12,
+   "cooldown": 15000,
+   "range": 220,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 16757703,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Oboro Ranbu"
+  },
+  "issen": {
+   "classId": "kensei",
+   "name": "Issen",
+   "job": 5,
+   "sp": 10,
+   "cooldown": 6000,
+   "range": 220,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "atk",
+   "color": 15267583,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Issen"
+  },
+  "meikyo": {
+   "classId": "kensei",
+   "name": "Meikyo Shisui",
+   "job": 7,
+   "sp": 15,
+   "cooldown": 30000,
+   "range": 0,
+   "target": "self",
+   "effect": "buff",
+   "power": "atk",
+   "color": 10478591,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Meikyo Shisui",
+   "buff": "meikyo"
+  },
+  "nekoflask": {
+   "classId": "nekobaku",
+   "name": "Fizz Flask",
+   "job": 1,
+   "sp": 3,
+   "cooldown": 500,
+   "range": 200,
+   "target": "enemy",
+   "effect": "damage",
+   "power": "matk",
+   "color": 8378623,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Fizz Flask",
+   "cooldownFromAspd": true
+  },
+  "tarflask": {
+   "classId": "nekobaku",
+   "name": "Tar Flask",
+   "job": 3,
+   "sp": 5,
+   "cooldown": 3000,
+   "range": 80,
+   "target": "area",
+   "effect": "damage",
+   "power": "matk",
+   "color": 11569738,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Tar Flask"
+  },
+  "bigkaboom": {
+   "classId": "nekobaku",
+   "name": "Big Kaboom",
+   "job": 5,
+   "sp": 9,
+   "cooldown": 5000,
+   "range": 100,
+   "target": "area",
+   "effect": "damage",
+   "power": "matk",
+   "color": 16747069,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Big Kaboom"
+  },
+  "catbrew": {
+   "classId": "nekobaku",
+   "name": "Catalyst Brew",
+   "job": 7,
+   "sp": 15,
+   "cooldown": 30000,
+   "range": 0,
+   "target": "self",
+   "effect": "buff",
+   "power": "matk",
+   "color": 13215999,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "Catalyst Brew",
+   "buff": "catbrew"
+  },
+  "swordmastery": {
+   "classId": "swordman",
+   "name": "Blade Mastery",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 15254394,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ATK +4% ต่อระดับเมื่อถืออาวุธประชิด (สูงสุด +40%) · ดาเมจต่อศัตรูที่ติดสตันหรือไฟไหม้ +40% · เพิ่มเฉพาะการโจมตีกายภาพ ไม่นับเวท",
+   "passive": true
+  },
+  "hprecovery": {
+   "classId": "swordman",
+   "name": "Vigor",
+   "job": 4,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 16752010,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ATK เพิ่มเท่ากับ 1% ของ HP สูงสุด ต่อระดับ (สูงสุด 10%) · ฟื้น HP ธรรมชาติเร็วขึ้น 10% และยาฟื้น HP แรงขึ้นอีก 10% ต่อระดับ · ฟื้น SP เพิ่มอีก 1 จุดทุก 2 ระดับ",
+   "passive": true
+  },
+  "sp_recovery": {
+   "classId": "mage",
+   "name": "Meditation",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "matk",
+   "color": 10213631,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ฟื้น SP เพิ่มอีก 1 จุดทุก 2 ระดับ · ร่ายสกิลใช้ SP น้อยลง 4% ต่อระดับ (สูงสุด 40%)",
+   "passive": true
+  },
+  "owleye": {
+   "classId": "archer",
+   "name": "Keen Eye",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 13232383,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · DEX +2 และ Hit +1% ต่อระดับ (สูงสุด +20 / +10%) · ATK เพิ่มเท่ากับ 2% ของ Hit และ 4.5% ของ DEX ต่อระดับ (สูงสุด 20% / 45%)",
+   "passive": true
+  },
+  "vultureeye": {
+   "classId": "archer",
+   "name": "Far Sight",
+   "job": 4,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 8639855,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ระยะโจมตีธนู +6 ต่อระดับ · ดาเมจขณะถือธนู +4% ต่อระดับ (สูงสุด +40%)",
+   "passive": true
+  },
+  "divineprotection": {
+   "classId": "acolyte",
+   "name": "Sacred Ward",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 11065343,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · DEF และ MDEF +2 ต่อระดับ (สูงสุด +20)",
+   "passive": true
+  },
+  "demonbane": {
+   "classId": "acolyte",
+   "name": "Fiend Slayer",
+   "job": 4,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 16773296,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ATK และ MATK +2% ต่อระดับ (สูงสุด +20%)",
+   "passive": true
+  },
+  "discount": {
+   "classId": "merchant",
+   "name": "Haggler",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 16767370,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ราคาซื้อลด 2% ต่อระดับ (สูงสุด 20%)",
+   "passive": true
+  },
+  "overcharge": {
+   "classId": "merchant",
+   "name": "Markup",
+   "job": 4,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 16769699,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ขายของได้เพิ่ม 2% ต่อระดับ (สูงสุด 20%)",
+   "passive": true
+  },
+  "doubleattack": {
+   "classId": "thief",
+   "name": "Twin Strike",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 16752800,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · โอกาสโจมตีสองครั้ง 5% ต่อระดับ (อาวุธประชิด) · Hit +1 ต่อระดับ",
+   "passive": true
+  },
+  "improvedodge": {
+   "classId": "thief",
+   "name": "Fleet Foot",
+   "job": 4,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 10420163,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · FLEE +2% และ Perfect Dodge +1 ต่อระดับ (สูงสุด FLEE +20% / Perfect Dodge +10) · ความเร็ววิ่ง +1.5% ต่อระดับ (สูงสุด +15%)",
+   "passive": true
+  },
+  "ironbody": {
+   "classId": "swordman",
+   "name": "Iron Body",
+   "job": 9,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 12568532,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · VIT +2 และ HP สูงสุด +0.5% ต่อระดับ (สูงสุด +20 / +5%)",
+   "passive": true
+  },
+  "mentality": {
+   "classId": "mage",
+   "name": "Mentality",
+   "job": 9,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "matk",
+   "color": 10205439,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · INT +2 และ SP สูงสุด +0.5% ต่อระดับ (สูงสุด +20 / +5%) · MATK เพิ่มเท่ากับ 1.5% ของ SP สูงสุด และ 10.5% ของ DEX ต่อระดับ (สูงสุด 15% / 105%)",
+   "passive": true
+  },
+  "magemastery": {
+   "classId": "mage",
+   "name": "Mage Mastery",
+   "job": 11,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "matk",
+   "color": 13805823,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · MATK +6% ต่อระดับ (สูงสุด +60%) · ลด SP ที่สกิลใช้ 1% ต่อระดับ (สูงสุด 10%)",
+   "passive": true
+  },
+  "weighttraining": {
+   "classId": "merchant",
+   "name": "Weight Training",
+   "job": 9,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 14268041,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · STR +1, ATK +5% และน้ำหนักที่แบกได้ +70 ต่อระดับ (สูงสุด STR +10 · ATK +50% · น้ำหนัก +700)",
+   "passive": true
+  },
+  "venommastery": {
+   "classId": "mamushi",
+   "name": "Venom Mastery",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 10217578,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ดาเมจพิษงู +4% ต่อระดับ (สูงสุด +40%) · ATK +1% ต่อระดับเมื่อถือคุไน (สูงสุด +10%)",
+   "passive": true
+  },
+  "numbingtoxin": {
+   "classId": "mamushi",
+   "name": "Numbing Toxin",
+   "job": 4,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 13215999,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ศัตรูที่ติดพิษงูตั้งแต่ 3 ชั้นทำดาเมจลดลง 1.5% ต่อระดับ (สูงสุด −15%) · FLEE +1% ต่อระดับ (สูงสุด +10%)",
+   "passive": true
+  },
+  "predator": {
+   "classId": "mamushi",
+   "name": "Predator's Patience",
+   "job": 9,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 15258474,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ดาเมจกายภาพต่อศัตรูที่ติดพิษงู +4% ต่อระดับ (สูงสุด +40%) · ASPD +1% ต่อระดับ (สูงสุด +10%)",
+   "passive": true
+  },
+  "katanamastery": {
+   "classId": "kensei",
+   "name": "Katana Mastery",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 14214384,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ATK +4% ต่อระดับเมื่อถือคาตานะ (สูงสุด +40%) · CRIT +1 ต่อระดับ (สูงสุด +10)",
+   "passive": true
+  },
+  "shukuchi": {
+   "classId": "kensei",
+   "name": "Shukuchi",
+   "job": 4,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 10467583,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ความเร็ววิ่ง +2% ต่อระดับ (สูงสุด +20%) · FLEE +1% ต่อระดับ (สูงสุด +10%)",
+   "passive": true
+  },
+  "zanshin": {
+   "classId": "kensei",
+   "name": "Zanshin",
+   "job": 9,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 16747146,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ดาเมจคริติคอล +3% ต่อระดับ (สูงสุด +30%) · ATK เพิ่มเท่ากับ 5% ของ AGI ต่อระดับ (สูงสุด 50%)",
+   "passive": true
+  },
+  "fatalsense": {
+   "classId": "thief",
+   "name": "Fatal Sense",
+   "job": 9,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "atk",
+   "color": 16747184,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ดาเมจคริติคอล +2% และ ASPD +1% ต่อระดับ (สูงสุด +20% / +10%) · ATK เพิ่มเท่ากับ 5.5% ของ AGI ต่อระดับ (สูงสุด 55%)",
+   "passive": true
+  },
+  "alchemymastery": {
+   "classId": "nekobaku",
+   "name": "Alchemy Mastery",
+   "job": 2,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "matk",
+   "color": 8378623,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · MATK +5% ต่อระดับ (สูงสุด +50%)",
+   "passive": true
+  },
+  "ninelives": {
+   "classId": "nekobaku",
+   "name": "Nine Lives",
+   "job": 4,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "matk",
+   "color": 16757575,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ถูกมอนสเตอร์หรือสถานะผิดปกติเล่นงานจนควรตาย จะรอดแล้วฟื้น HP 10% + 2% ต่อระดับ (ระดับ 10 = 30%) · ใช้ได้ทุก 10 นาที ลดลง 30 วินาทีต่อระดับ (ระดับ 10 = ทุก 5 นาที) · ไม่ทำงานในการดวลและอารีน่า",
+   "passive": true
+  },
+  "catreflex": {
+   "classId": "nekobaku",
+   "name": "Feline Reflex",
+   "job": 9,
+   "sp": 0,
+   "cooldown": 0,
+   "range": 0,
+   "target": "self",
+   "effect": "passive",
+   "power": "matk",
+   "color": 16765803,
+   "icon": "✦",
+   "multiplier": 1,
+   "description": "พาสซีฟ · ASPD +1% ต่อระดับ (สูงสุด +10%) · MATK เพิ่มเท่ากับ 4% ของ AGI ต่อระดับ (สูงสุด 40%)",
+   "passive": true
+  }
+ },
+ "drop_rates": {
+  "etc": 0.3,
+  "consumable": 0.15,
+  "equipment": 0.0125,
+  "card": 0.001,
+  "bossCard": 0.01,
+  "relicBox": 0.01,
+  "refineStone": 0.01,
+  "extraStat": 0.25,
+  "aspdAccessory": 0.3
+ },
+ "mob_status_attacks": {
+  "Moss Mushroom": {
+   "status": "poison",
+   "chance": 0.18
+  },
+  "Bog Toad": {
+   "status": "poison",
+   "chance": 0.15
+  },
+  "Cave Bat": {
+   "status": "slow",
+   "chance": 0.18
+  },
+  "Sunscale Cobra": {
+   "status": "slow",
+   "chance": 0.15
+  },
+  "Amber Beetle": {
+   "status": "crush",
+   "chance": 0.18
+  },
+  "Pebble Golem": {
+   "status": "crush",
+   "chance": 0.15
+  },
+  "Crowned Prism Hopper": {
+   "status": "crush",
+   "chance": 0.3
+  }
+ },
+ "aspd_potions": {
+  "concentration_potion": {
+   "level": 1,
+   "aspd": 3
+  },
+  "awakening_potion": {
+   "level": 40,
+   "aspd": 4
+  },
+  "berserk_potion": {
+   "level": 85,
+   "aspd": 5
+  }
+ },
+ "starter_equipment": [
+  {
+   "slot": "head",
+   "name": "Lumina Circlet",
+   "bonuses": {
+    "def": 6,
+    "mdef": 4,
+    "vit": 3
+   }
+  },
+  {
+   "slot": "face",
+   "name": "Lumina Monocle",
+   "bonuses": {
+    "mdef": 5,
+    "dex": 3,
+    "hit": 4
+   }
+  },
+  {
+   "slot": "mouth",
+   "name": "Lumina Scarf",
+   "bonuses": {
+    "mdef": 5,
+    "hp": 150
+   }
+  },
+  {
+   "slot": "armor",
+   "name": "Lumina Coat",
+   "bonuses": {
+    "def": 9,
+    "hp": 300,
+    "vit": 3
+   }
+  },
+  {
+   "slot": "shield",
+   "name": "Lumina Guard",
+   "bonuses": {
+    "def": 6,
+    "mdef": 3
+   }
+  },
+  {
+   "slot": "garment",
+   "name": "Lumina Cape",
+   "bonuses": {
+    "def": 5,
+    "flee": 8,
+    "agi": 3
+   }
+  },
+  {
+   "slot": "shoes",
+   "name": "Lumina Boots",
+   "bonuses": {
+    "def": 5,
+    "flee": 6,
+    "hp": 150
+   }
+  },
+  {
+   "slot": "accessory1",
+   "name": "Lumina Ring",
+   "bonuses": {
+    "crit": 6,
+    "hit": 6,
+    "luk": 3
+   }
+  },
+  {
+   "slot": "accessory2",
+   "name": "Lumina Earring",
+   "bonuses": {
+    "matk": 8,
+    "sp": 60,
+    "int": 3
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "sword",
+   "name": "Lumina Sword",
+   "bonuses": {
+    "atk": 16,
+    "hit": 8,
+    "str": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "knife",
+   "name": "Lumina Knife",
+   "bonuses": {
+    "atk": 13,
+    "hit": 8,
+    "agi": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "kunai",
+   "name": "Lumina Kunai",
+   "bonuses": {
+    "atk": 15,
+    "hit": 8,
+    "dex": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "katana",
+   "name": "Lumina Katana",
+   "bonuses": {
+    "atk": 15,
+    "hit": 8,
+    "agi": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "hammer",
+   "name": "Lumina Hammer",
+   "bonuses": {
+    "atk": 17,
+    "hit": 6,
+    "str": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "bow",
+   "name": "Lumina Bow",
+   "bonuses": {
+    "atk": 15,
+    "hit": 8,
+    "dex": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "rod",
+   "name": "Lumina Rod",
+   "bonuses": {
+    "matk": 16,
+    "int": 5
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "flask",
+   "name": "Lumina Flask",
+   "bonuses": {
+    "matk": 15,
+    "int": 3,
+    "agi": 3
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "quarterstaff",
+   "name": "Lumina Staff",
+   "bonuses": {
+    "atk": 10,
+    "matk": 8,
+    "int": 3
+   }
+  }
+ ]
+}

@@ -1,0 +1,674 @@
+{
+ "_meta": {
+  "source": "passive WS collection (guest), event defeat/pickup mining",
+  "note": "maxHp=max teramati; baseExp=base tertinggi teramati (party share menurunkan); drops=observasi empiris"
+ },
+ "monsters": {
+  "tempest-drake": {
+   "name": "Crowned Tempest Drake",
+   "level": 280,
+   "maxHp": 11162880,
+   "elite": false,
+   "areas": [
+    "tempest"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "storm-roc": {
+   "name": "Storm Roc",
+   "level": 257,
+   "maxHp": 958092,
+   "elite": true,
+   "areas": [
+    "tempest"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "thunder-ram": {
+   "name": "Thunder Ram",
+   "level": 250,
+   "maxHp": 878284,
+   "elite": true,
+   "areas": [
+    "tempest"
+   ],
+   "baseExp": 42070,
+   "jobExp": 4008,
+   "guildExp": 4969,
+   "drops": {
+    "thunder_horn": 3,
+    "yellow_potion": 1
+   },
+   "expSamples": 114
+  },
+  "grave-knight": {
+   "name": "Crowned Grave Knight",
+   "level": 230,
+   "maxHp": 5809040,
+   "elite": false,
+   "areas": [
+    "moor"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "quartz-crawler": {
+   "name": "Quartz Crawler",
+   "level": 225,
+   "maxHp": 629324,
+   "elite": true,
+   "areas": [
+    "crystal"
+   ],
+   "baseExp": 50634,
+   "jobExp": 11927,
+   "guildExp": null,
+   "drops": {
+    "quartz_leg": 4,
+    "orange_potion": 1,
+    "accessory2": 1
+   },
+   "expSamples": 28
+  },
+  "obsidian-scorpion": {
+   "name": "Crowned Obsidian Scorpion",
+   "level": 205,
+   "maxHp": 3797640,
+   "elite": false,
+   "areas": [
+    "caldera"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "shade-raven": {
+   "name": "Shade Raven",
+   "level": 200,
+   "maxHp": 419576,
+   "elite": true,
+   "areas": [
+    "moor"
+   ],
+   "baseExp": 28086,
+   "jobExp": 0,
+   "guildExp": 6828,
+   "drops": {
+    "shade_feather": 11,
+    "fly_wing": 1,
+    "butterfly_wing": 1,
+    "orange_potion": 1
+   },
+   "expSamples": 62
+  },
+  "ember-hound": {
+   "name": "Ember Hound",
+   "level": 182,
+   "maxHp": 74472,
+   "elite": false,
+   "areas": [
+    "caldera"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "magma-salamander": {
+   "name": "Magma Salamander",
+   "level": 175,
+   "maxHp": 260208,
+   "elite": true,
+   "areas": [
+    "caldera"
+   ],
+   "baseExp": 28004,
+   "jobExp": 1911,
+   "guildExp": 1062,
+   "drops": {
+    "ammo": 1,
+    "butterfly_wing": 1
+   },
+   "expSamples": 96
+  },
+  "pebble-golem": {
+   "name": "Pebble Golem",
+   "level": 170,
+   "maxHp": 56436,
+   "elite": false,
+   "areas": [
+    "glacier"
+   ],
+   "baseExp": 39786,
+   "jobExp": 19893,
+   "guildExp": 3998,
+   "drops": {
+    "yellow_potion": 2,
+    "relic_box": 1,
+    "blue_potion": 3,
+    "golem_core": 6,
+    "golem_card": 1
+   },
+   "expSamples": 68
+  },
+  "cave-bat": {
+   "name": "Cave Bat",
+   "level": 150,
+   "maxHp": 194352,
+   "elite": true,
+   "areas": [
+    "glacier"
+   ],
+   "baseExp": 31494,
+   "jobExp": 15747,
+   "guildExp": 528,
+   "drops": {
+    "bat_wing": 2,
+    "mouth": 1
+   },
+   "expSamples": 26
+  },
+  "sand-drake": {
+   "name": "Sand Drake",
+   "level": 145,
+   "maxHp": 1823320,
+   "elite": true,
+   "areas": [
+    "dunes"
+   ],
+   "baseExp": 19732,
+   "jobExp": 9866,
+   "guildExp": null,
+   "drops": {
+    "blue_potion": 1,
+    "drake_scale": 3,
+    "orange_potion": 1
+   },
+   "expSamples": 66
+  },
+  "wild-boar": {
+   "name": "Wild Boar",
+   "level": 125,
+   "maxHp": 117956,
+   "elite": true,
+   "areas": [
+    "dunes"
+   ],
+   "baseExp": 15008,
+   "jobExp": 7504,
+   "guildExp": null,
+   "drops": {
+    "boar_tusk": 11,
+    "sword": 1,
+    "blue_potion": 1,
+    "accessory1": 1
+   },
+   "expSamples": 332
+  },
+  "vine-lynx": {
+   "name": "Vine Lynx",
+   "level": 120,
+   "maxHp": 1093280,
+   "elite": true,
+   "areas": [
+    "wildwood"
+   ],
+   "baseExp": 10455,
+   "jobExp": 5227,
+   "guildExp": null,
+   "drops": {
+    "lynx_claw": 5,
+    "refine_stone": 1,
+    "fly_wing": 1,
+    "shoes": 1,
+    "yellow_potion": 1,
+    "butterfly_wing": 1
+   },
+   "expSamples": 34
+  },
+  "moon-owl": {
+   "name": "Moon Owl",
+   "level": 115,
+   "maxHp": 91172,
+   "elite": true,
+   "areas": [
+    "wildwood"
+   ],
+   "baseExp": 4835,
+   "jobExp": 0,
+   "guildExp": null,
+   "drops": {
+    "moonlit_plume": 2,
+    "blue_potion": 1,
+    "relic_box": 1
+   },
+   "expSamples": 6
+  },
+  "ember-antler": {
+   "name": "Ember Antler",
+   "level": 110,
+   "maxHp": 83980,
+   "elite": true,
+   "areas": [
+    "wildwood"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "forest-wolf": {
+   "name": "Forest Wolf",
+   "level": 100,
+   "maxHp": 15240,
+   "elite": false,
+   "areas": [
+    "wildwood"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "reed-mantis": {
+   "name": "Reed Mantis",
+   "level": 95,
+   "maxHp": 537720,
+   "elite": true,
+   "areas": [
+    "swamp"
+   ],
+   "baseExp": 9128,
+   "jobExp": 4564,
+   "guildExp": 92,
+   "drops": {
+    "relic_box": 1,
+    "mantis_blade": 1,
+    "mire_gel": 1
+   },
+   "expSamples": 58
+  },
+  "mire-jelly": {
+   "name": "Mire Jelly",
+   "level": 90,
+   "maxHp": 48736,
+   "elite": true,
+   "areas": [
+    "swamp"
+   ],
+   "baseExp": 4310,
+   "jobExp": 2155,
+   "guildExp": 83,
+   "drops": {
+    "mire_gel": 10,
+    "fly_wing": 2,
+    "butterfly_wing": 1,
+    "blue_potion": 1,
+    "relic_box": 1,
+    "yellow_potion": 1,
+    "head": 1,
+    "orange_potion": 1
+   },
+   "expSamples": 306
+  },
+  "mud-newt": {
+   "name": "Mud Newt",
+   "level": 85,
+   "maxHp": 41116,
+   "elite": true,
+   "areas": [
+    "swamp"
+   ],
+   "baseExp": 11226,
+   "jobExp": 5613,
+   "guildExp": null,
+   "drops": {
+    "newt_tail": 1,
+    "accessory2": 1,
+    "blue_potion": 1
+   },
+   "expSamples": 46
+  },
+  "bog-toad": {
+   "name": "Bog Toad",
+   "level": 80,
+   "maxHp": 36868,
+   "elite": true,
+   "areas": [
+    "swamp"
+   ],
+   "baseExp": 10092,
+   "jobExp": 5046,
+   "guildExp": null,
+   "drops": {
+    "butterfly_wing": 1,
+    "toad_wart": 1
+   },
+   "expSamples": 72
+  },
+  "tide-crab": {
+   "name": "Tide Crab",
+   "level": 75,
+   "maxHp": 33988,
+   "elite": true,
+   "areas": [
+    "swamp"
+   ],
+   "baseExp": 9018,
+   "jobExp": 4509,
+   "guildExp": null,
+   "drops": {
+    "crab_claw": 7,
+    "blue_potion": 1,
+    "yellow_potion": 1,
+    "fly_wing": 1
+   },
+   "expSamples": 72
+  },
+  "cactus-imp": {
+   "name": "Cactus Imp",
+   "level": 70,
+   "maxHp": 236600,
+   "elite": true,
+   "areas": [
+    "desert"
+   ],
+   "baseExp": 15984,
+   "jobExp": 7992,
+   "guildExp": null,
+   "drops": {
+    "cactus_needle": 9,
+    "blue_potion": 2,
+    "fly_wing": 1,
+    "orange_potion": 1
+   },
+   "expSamples": 66
+  },
+  "sunscale-cobra": {
+   "name": "Sunscale Cobra",
+   "level": 63,
+   "maxHp": 18336,
+   "elite": true,
+   "areas": [
+    "desert"
+   ],
+   "baseExp": 13344,
+   "jobExp": 6672,
+   "guildExp": null,
+   "drops": {
+    "cobra_fang": 6,
+    "shoes": 1,
+    "orange_potion": 1,
+    "blue_potion": 1
+   },
+   "expSamples": 40
+  },
+  "scarab-sentinel": {
+   "name": "Scarab Sentinel",
+   "level": 57,
+   "maxHp": 12896,
+   "elite": true,
+   "areas": [
+    "desert"
+   ],
+   "baseExp": 3756,
+   "jobExp": 1878,
+   "guildExp": null,
+   "drops": {
+    "orange_potion": 2,
+    "butterfly_wing": 1,
+    "armor": 1,
+    "blue_potion": 3,
+    "scarab_carapace": 10,
+    "potion": 1,
+    "fly_wing": 1
+   },
+   "expSamples": 68
+  },
+  "dune-gecko": {
+   "name": "Dune Gecko",
+   "level": 50,
+   "maxHp": 11220,
+   "elite": true,
+   "areas": [
+    "desert"
+   ],
+   "baseExp": 4518,
+   "jobExp": 2259,
+   "guildExp": null,
+   "drops": {
+    "gecko_scale": 11,
+    "orange_potion": 1,
+    "blue_potion": 1,
+    "shield": 1,
+    "potion": 1,
+    "gecko_card": 1,
+    "armor": 1
+   },
+   "expSamples": 54
+  },
+  "straw-dummy": {
+   "name": "Straw Dummy",
+   "level": 50,
+   "maxHp": 104894,
+   "elite": false,
+   "areas": [
+    "training"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "aurora-fox": {
+   "name": "Aurora Fox",
+   "level": 45,
+   "maxHp": 90360,
+   "elite": true,
+   "areas": [
+    "snow"
+   ],
+   "baseExp": 3804,
+   "jobExp": 1902,
+   "guildExp": null,
+   "drops": {},
+   "expSamples": 18
+  },
+  "snow-owl": {
+   "name": "Snow Owl",
+   "level": 38,
+   "maxHp": 5432,
+   "elite": true,
+   "areas": [
+    "snow"
+   ],
+   "baseExp": 1932,
+   "jobExp": 966,
+   "guildExp": null,
+   "drops": {
+    "butterfly_wing": 1,
+    "snow_feather": 1
+   },
+   "expSamples": 8
+  },
+  "icicle-hare": {
+   "name": "Icicle Hare",
+   "level": 32,
+   "maxHp": 4476,
+   "elite": true,
+   "areas": [
+    "snow"
+   ],
+   "baseExp": 555,
+   "jobExp": 277,
+   "guildExp": null,
+   "drops": {
+    "icicle_whisker": 2,
+    "blue_potion": 1
+   },
+   "expSamples": 12
+  },
+  "frost-puff": {
+   "name": "Frost Puff",
+   "level": 25,
+   "maxHp": 2720,
+   "elite": true,
+   "areas": [
+    "snow"
+   ],
+   "baseExp": 383,
+   "jobExp": 191,
+   "guildExp": null,
+   "drops": {
+    "blue_potion": 1,
+    "frost_fluff": 1
+   },
+   "expSamples": 20
+  },
+  "amber-beetle": {
+   "name": "Amber Beetle",
+   "level": 20,
+   "maxHp": 1800,
+   "elite": true,
+   "areas": [
+    "field"
+   ],
+   "baseExp": 2196,
+   "jobExp": 1098,
+   "guildExp": null,
+   "drops": {
+    "amber_shell": 2,
+    "fly_wing": 1
+   },
+   "expSamples": 14
+  },
+  "rootling": {
+   "name": "Rootling",
+   "level": 18,
+   "maxHp": 1448,
+   "elite": true,
+   "areas": [
+    "field"
+   ],
+   "baseExp": 239,
+   "jobExp": 119,
+   "guildExp": null,
+   "drops": {
+    "twisted_root": 1
+   },
+   "expSamples": 6
+  },
+  "honey-moth": {
+   "name": "Honey Moth",
+   "level": 15,
+   "maxHp": 1152,
+   "elite": true,
+   "areas": [
+    "field"
+   ],
+   "baseExp": 126,
+   "jobExp": 63,
+   "guildExp": null,
+   "drops": {},
+   "expSamples": 6
+  },
+  "bramble-hare": {
+   "name": "Bramble Hare",
+   "level": 13,
+   "maxHp": 261,
+   "elite": false,
+   "areas": [
+    "field"
+   ],
+   "baseExp": 428,
+   "jobExp": 214,
+   "guildExp": null,
+   "drops": {
+    "butterfly_wing": 1,
+    "bramble_fur": 1
+   },
+   "expSamples": 8
+  },
+  "thorn-pixie": {
+   "name": "Thorn Pixie",
+   "level": 11,
+   "maxHp": 788,
+   "elite": true,
+   "areas": [
+    "field"
+   ],
+   "baseExp": 348,
+   "jobExp": 174,
+   "guildExp": null,
+   "drops": {
+    "fly_wing": 1,
+    "pixie_thorn": 1
+   },
+   "expSamples": 6
+  },
+  "moss-mushroom": {
+   "name": "Moss Mushroom",
+   "level": 8,
+   "maxHp": 552,
+   "elite": true,
+   "areas": [
+    "field"
+   ],
+   "baseExp": 118,
+   "jobExp": 59,
+   "guildExp": null,
+   "drops": {
+    "blue_potion": 1
+   },
+   "expSamples": 6
+  },
+  "dew-bunny": {
+   "name": "Dew Bunny",
+   "level": 6,
+   "maxHp": 368,
+   "elite": true,
+   "areas": [
+    "field"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "leaf-sprout": {
+   "name": "Leaf Sprout",
+   "level": 3,
+   "maxHp": 61,
+   "elite": false,
+   "areas": [
+    "field"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  },
+  "prism-hopper": {
+   "name": "Prism Hopper",
+   "level": 1,
+   "maxHp": 30000,
+   "elite": true,
+   "areas": [
+    "field"
+   ],
+   "baseExp": null,
+   "jobExp": null,
+   "guildExp": null,
+   "drops": {}
+  }
+ }
+}

@@ -1,0 +1,8 @@
+monster_name,status_id,chance,confidence
+Moss Mushroom,poison,0.18,VERIFIED
+Bog Toad,poison,0.15,VERIFIED
+Cave Bat,slow,0.18,VERIFIED
+Sunscale Cobra,slow,0.15,VERIFIED
+Amber Beetle,crush,0.18,VERIFIED
+Pebble Golem,crush,0.15,VERIFIED
+Crowned Prism Hopper,crush,0.3,VERIFIED
