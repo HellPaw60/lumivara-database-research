@@ -3,9 +3,9 @@
 ## Baseline
 | Field | Value |
 |---|---|
-| Commit | `6baeede` (final V0.6 release state) |
+| Commit | `c2eac65` (FINAL V0.6 release state) |
 | Tag | `v0.6-mechanics-validation` |
-| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (first cleanup) → `371bf84` (changelog V3B archive) → `c15274d` (provenance correction) → `6baeede` (final release state) |
+| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (first cleanup) → `371bf84` (changelog V3B archive) → `c15274d` (provenance correction) → `6baeede` (freeze attempt #1) → `c2eac65` (FINAL V0.6 release state) |
 | v0.5 baseline | `6131965` |
 
 ## Changelog Snapshot
@@ -21,7 +21,14 @@
 |---|---|---|
 | V0.4.x | `Dk8pLLLq` | 669 |
 | V0.5 | `D0Wscyxj` | 678 |
-| V0.6 | `B6x3YIz5` | 685 |
+| V0.6 (release) | `B6x3YIz5` | 685 |
+
+### Post-Freeze Observation (informational, not part of V0.6 release)
+After V0.6 freeze (commit c2eac65), the official changelog bundle changed:
+- From: `B6x3YIz5` (685 entries, archived as V0.6 snapshot)
+- To: `CkIS7ST6` (688 entries)
+- Delta: 3 new UI/UX entries (Quiver rename, bag card tab, bot coat fix)
+- Archived as: `OFFICIAL_CHANGELOG_POSTV06.json` (observational, not V0.6 release data)
 
 ## Files Changed (this cleanup)
 | File | Change |
