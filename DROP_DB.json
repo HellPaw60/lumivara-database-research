@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "note": "drop counts = observasi empiris, bukan rate server"
+  },
+  "by_area": {
+    "desert": {
+      "cactus_needle": 15,
+      "blue_potion": 6,
+      "fly_wing": 6,
+      "potion": 1,
+      "butterfly_wing": 2,
+      "armor": 2,
+      "scarab_carapace": 4,
+      "orange_potion": 3,
+      "gecko_scale": 2,
+      "garment": 1
+    },
+    "dunes": {
+      "blue_potion": 3,
+      "butterfly_wing": 1,
+      "boar_tusk": 8,
+      "drake_scale": 15,
+      "fly_wing": 1
+    },
+    "glacier": {
+      "blue_potion": 5,
+      "fly_wing": 1,
+      "golem_core": 4,
+      "yellow_potion": 4,
+      "orange_potion": 1,
+      "relic_box": 2
+    },
+    "field": {
+      "blue_potion": 2,
+      "butterfly_wing": 1,
+      "potion": 2,
+      "honey_wing_dust": 3,
+      "twisted_root": 2
+    },
+    "swamp": {
+      "orange_potion": 1,
+      "yellow_potion": 1,
+      "fly_wing": 1,
+      "butterfly_wing": 2,
+      "crab_claw": 1,
+      "relic_box": 1,
+      "mantis_blade": 1
+    },
+    "wildwood": {
+      "lynx_claw": 3
+    },
+    "caldera": {
+      "ammo": 1,
+      "butterfly_wing": 2,
+      "magma_scale": 1,
+      "armor": 1
+    }
+  },
+  "by_mob": {}
+}

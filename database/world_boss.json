@@ -1,0 +1,15 @@
+{
+  "world_boss": {
+    "Crowned Prism Hopper": {
+      "hp": 30000,
+      "damage": 180,
+      "reward": 9000,
+      "respawn": "zi (variable)",
+      "home": "Ao (variable)",
+      "status_attack": "crush with 30% chance"
+    }
+  },
+  "king_mechanic": "king flag for boss mobs, affects loot ownership",
+  "boss_card": "Crowned Prism Hopper Card - atk:10, luk:3, atkPct:5, matkPct:5, price:3000",
+  "status": "VERIFIED - Crowned Prism Hopper data extracted"
+}

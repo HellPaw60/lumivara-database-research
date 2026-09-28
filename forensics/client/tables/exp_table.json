@@ -1,0 +1,10 @@
+{
+  "BA_array": "[6,7,10,9,2,11,4,15,5,14,1,8,3,0,13,12] - class job level progression order (16 entries)",
+  "z5_function": "Base level exp function (found but not fully extracted)",
+  "job_exp_formula": "jobExp stored as Number, capped at BA(jobLevel)-1",
+  "job_progression": "jobProgress[classId].level and jobExp tracked per class",
+  "exp_display": "UI shows exp / nextExp percentage",
+  "nextExp_display": "h.exp / Math.max(1, h.nextExp)",
+  "status": "VERIFIED - BA array found, exp system confirmed",
+  "note": "Exact exp formula per level not extracted (likely server-computed)"
+}

@@ -1,0 +1,4 @@
+s("stat-master","/jobs/stat-master-v1/player.png","/jobs/stat-master-v1/player.json"),h.load.atlas("fusion-master","/npc/fusion-master-v1/player.png","/npc/fusion-master-v1/player.json");for(const A of["hammer","anvil","success","broken"])h.load.image("forge-"+A,"/effects/forge-"+A+"-v1.png")}h.load.image("ember-bolt","/effects/ember-bolt-v1.png"),h.load.image("flame-burst","/effects/flame-burst-v2.png"
+
+บวกมีไม่ครบ 5 ชิ้น":"",As()},oe("fusion-confirm").onclick=()=>{ci||pe||!Cb()||(ci=!0,As(),Iy({type:"fuse",gearIds:[...Ie],slot:ke.slot,template:ke.template}),clearTimeout(au),au=setTimeout(()=>{ci&&(ci=!1,oe("fusion-result").textContent="ไม่ได้รับผลจากเซิร์ฟเวอร์ ตรวจสอบกระเป๋าก่อนลองใหม่",Te&&As())},1e4))}}}const Lm=()=>Ie.map(h=>Te.gear?.find(c=>c.id===h)).filter(Boolean),wb=()=>{const h=Lm()[0];ret
+

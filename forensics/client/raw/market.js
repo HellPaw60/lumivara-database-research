@@ -1,0 +1,6 @@
+ng){Ui({type:"marketBuyListing",listingId:h.listing.id});return}const S=fd(h,c);S.filled&&Ui({type:"marketCreateOrder",side:"buy",item:h.order.item,price:Math.min(h.price,S.limit),quantity:S.filled,instant:!0})}let Vm;function WT(h,c){if(!Mi())return;const S=h.listing?1:Math.max(1,Math.floor(c)),T=h.listing?void 0:fd(h,S),w=T?.silver||h.price*S,A=!!T&&w<h.price*S;Vm={row:h,quantity:S,at:Date.now()},pt("market-conf
+
+t.silver-Uf(t.silver))} Silver`],[Zx,`${Dt(A-o)} Gold`]];qx(T?gF:yF,r,o<S?T?CF:MF:"",()=>{$r({type:"goldOrder",side:h,price:t.limit,quantity:o,instant:!0}),u()})}else{const t=gd(`gold-${h}-price`);if(!t){xa("ใส่ราคาต่อ Gold ก่อน",!0);return}const o=t*S;if(y(o,S))return;const p=T?[[Yx,`${Dt(S)} Gold`],[Jx,`${Dt(t)} Silver`],[TF,`${Dt(o)} Silver`],[Qx,`${Dt(w-o)} Silver`]]:[[Kx,`${Dt(S)} Gold`],[Jx,`${Dt(t)}
+
+??0),this.gold=A.gold??0,this.premiumUntil=A.premiumUntil??0,this.guildLevel=A.guildLevel??0,n1(A,w.goldMarket,w.time),b6(w.ranking,A.id),this.networkGeneration!==T.generation&&(this.networkGeneration=T.generation,mw(),this.target=null,this.selectedPlayerId=null,this.destination=null,this.selectedDrop=null,this.portalPending=null,this.networkCommand=""),A.area!==this.area){this.area=A.area,this.arrival=[A.x
+

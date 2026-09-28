@@ -1,0 +1,1658 @@
+{
+ "_meta": {
+  "source": "D:/lumivara-re/collect/raw-snapshots.json — snapshot.self dari 14 area (akun collector guest)",
+  "generated": "2026-09-28T06:52:19Z",
+  "method": "Union rekursif seluruh field self dari semua area; tipe + contoh nilai + rentang numerik teramati. Interpretasi = inferensi semantik dari nama field & pola nilai (epoch ms timestamps, revision counters).",
+  "confidence": "VERIFIED untuk field/tipe/nilai; interpretasi teks = DERIVED",
+  "self_snapshots": 13,
+  "top_level_field_count": 45,
+  "confidence_note": "Interpretasi lineage direvisi: nilai bervariasi 9-30 antar snapshot, bukan konstanta."
+ },
+ "fields": {
+  "action": {
+   "types": [
+    "null"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": null,
+   "interpretation": "aksi yang sedang berjalan. Hanya nilai null yang teramati (idle) pada semua snapshot — tipe nilai non-null belum teramati."
+  },
+  "actionAt": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "timestamp epoch ms aksi dimulai (0 saat idle). Semua snapshot collector dalam keadaan idle.",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "actionX": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 627,
+   "interpretation": "target x aksi",
+   "observed_range": {
+    "min": 140,
+    "max": 2892
+   }
+  },
+  "actionY": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 610,
+   "interpretation": "target y aksi",
+   "observed_range": {
+    "min": 140,
+    "max": 2930
+   }
+  },
+  "area": {
+   "types": [
+    "string"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": "rome",
+   "interpretation": "area/map saat snapshot"
+  },
+  "arenaKills": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "jumlah kill di arena/PvP",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "classId": {
+   "types": [
+    "string"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": "novice",
+   "interpretation": "class aktif (novice, dsb)",
+   "distinct_values": [
+    "novice"
+   ]
+  },
+  "deadUntil": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "timestamp epoch ms hingga respawn jika mati (0 = hidup)",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "equipped": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {},
+   "interpretation": "dict slot -> equipment terpasang (kosong pada akun baru)"
+  },
+  "exp": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "exp saat ini",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "expTable": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 3,
+   "interpretation": "versi tabel exp (3)",
+   "observed_range": {
+    "min": 3,
+    "max": 3
+   }
+  },
+  "fieldRevision": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 5,
+   "interpretation": "revision state field/dunia (cache invalidation)",
+   "observed_range": {
+    "min": 5,
+    "max": 5
+   }
+  },
+  "gear": {
+   "types": [
+    "array"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": [],
+   "interpretation": "list equipment di bag (kosong pada akun baru)"
+  },
+  "gymPassUses": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "jumlah pemakaian gym pass",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "hp": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 110,
+   "interpretation": "HP saat ini",
+   "observed_range": {
+    "min": 110,
+    "max": 110
+   }
+  },
+  "id": {
+   "types": [
+    "string"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": "guest:f8f92817-5558-4644-8925-7b437b06f9be",
+   "interpretation": "ID akun player (format guest:<uuid> atau google:<gaia-id>)",
+   "distinct_values": [
+    "guest:f8f92817-5558-4644-8925-7b437b06f9be"
+   ]
+  },
+  "inventory": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {
+    "potion": 5,
+    "orange_potion": 0,
+    "yellow_potion": 0,
+    "white_potion": 0,
+    "blue_potion": 0,
+    "concentration_potion": 0,
+    "awakening_potion": 0,
+    "berserk_potion": 0,
+    "fly_wing": 0,
+    "butterfly_wing": 0,
+    "relic_box": 0,
+    "exp_scroll": 0,
+    "drop_scroll": 0,
+    "gym_pass": 0,
+    "weapon_coat_fire": 0,
+    "weapon_coat_water": 0,
+    "weapon_coat_wind": 0,
+    "weapon_coat_earth": 0,
+    "weapon_coat_light": 0,
+    "weapon_coat_dark": 0,
+    "armor_coat_fire": 0,
+    "armor_coat_water": 0,
+    "armor_coat_wind": 0,
+    "armor_coat_earth": 0,
+    "armor_coat_light": 0,
+    "armor_coat_dark": 0,
+    "iron_arrow": 0,
+    "jelly": 0,
+    "shard": 0,
+    "sprout_leaf": 0,
+    "dewdrop_tuft": 0,
+    "moss_spore_cap": 0,
+    "pixie_thorn": 0,
+    "bramble_fur": 0,
+    "honey_wing_dust": 0,
+    "twisted_root": 0,
+    "amber_shell": 0,
+    "frost_fluff": 0,
+    "icicle_whisker": 0,
+    "snow_feather": 0,
+    "aurora_tail": 0,
+    "gecko_scale": 0,
+    "scarab_carapace": 0,
+    "cobra_fang": 0,
+    "cactus_needle": 0,
+    "crab_claw": 0,
+    "toad_wart": 0,
+    "newt_tail": 0,
+    "mire_gel": 0,
+    "mantis_blade": 0,
+    "wolf_fang": 0,
+    "wisp_ember": 0,
+    "smoldering_antler": 0,
+    "moonlit_plume": 0,
+    "lynx_claw": 0,
+    "boar_tusk": 0,
+    "drake_scale": 0,
+    "bat_wing": 0,
+    "golem_core": 0,
+    "magma_scale": 0,
+    "cinder_fang": 0,
+    "basalt_shell": 0,
+    "obsidian_stinger": 0,
+    "shade_feather": 0,
+    "hound_bone": 0,
+    "wraith_shroud": 0,
+    "grave_crest": 0,
+    "quartz_leg": 0,
+    "geode_plate": 0,
+    "prism_scale": 0,
+    "wyvern_scale": 0,
+    "thunder_horn": 0,
+    "roc_plume": 0,
+    "cloud_pearl": 0,
+    "tempest_dragon_scale": 0,
+    "refine_stone": 0,
+    "break_protection_stone": 0,
+    "rename_ticket": 0,
+    "megaphone": 0,
+    "hopper_card": 0,
+    "hollow_card": 0,
+    "boss_card": 0,
+    "mushroom_card": 0,
+    "bat_card": 0,
+    "beetle_card": 0,
+    "crab_card": 0,
+    "sprout_card": 0,
+    "bunny_card": 0,
+    "pixie_card": 0,
+    "rootling_card": 0,
+    "moth_card": 0,
+    "hare_card": 0,
+    "puff_card": 0,
+    "icicle_card": 0,
+    "snowowl_card": 0,
+    "fox_card": 0,
+    "gecko_card": 0,
+    "scarab_card": 0,
+    "cobra_card": 0,
+    "cactus_card": 0,
+    "toad_card": 0,
+    "newt_card": 0,
+    "mire_card": 0,
+    "mantis_card": 0,
+    "wisp_card": 0,
+    "wolf_card": 0,
+    "antler_card": 0,
+    "moonowl_card": 0,
+    "lynx_card": 0,
+    "boar_card": 0,
+    "drake_card": 0,
+    "golem_card": 0,
+    "salamander_card": 0,
+    "hound_card": 0,
+    "tortoise_card": 0,
+    "scorpion_card": 0,
+    "raven_card": 0,
+    "bonehound_card": 0,
+    "wraith_card": 0,
+    "knight_card": 0,
+    "quartz_card": 0,
+    "geode_card": 0,
+    "prism_card": 0,
+    "wyvern_card": 0,
+    "ram_card": 0,
+    "roc_card": 0,
+    "cloud_card": 0,
+    "stormdrake_card": 0
+   },
+   "interpretation": "dict itemId -> jumlah (fixed slot list, sebagian besar 0)"
+  },
+  "jobExp": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "exp job saat ini",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "jobLevel": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "level job/class",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "jobProgress": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {
+    "novice": {
+     "level": 1,
+     "exp": 0
+    }
+   },
+   "interpretation": "progress level per class (dict classId -> {level, exp})"
+  },
+  "jobProgress.novice": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {
+    "level": 1,
+    "exp": 0
+   },
+   "interpretation": ""
+  },
+  "jobProgress.novice.exp": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "exp job novice",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "jobProgress.novice.level": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "level job novice",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "kills": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "jumlah kill mob",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "level": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "level karakter",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "lineage": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 29,
+   "interpretation": "nomor lineage — bervariasi antar snapshot teramati (9-30). Kemungkinan: shard/channel server, season, atau generation dunia. Interpretasi pasti belum bisa dipastikan dari data ini.",
+   "observed_range": {
+    "min": 9,
+    "max": 30
+   }
+  },
+  "mapSizeRevision": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "revision ukuran map (cache invalidation)",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "name": {
+   "types": [
+    "string"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": "Cartograph8720",
+   "interpretation": "nama karakter",
+   "distinct_values": [
+    "Cartograph8720"
+   ]
+  },
+  "nextExp": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 9,
+   "interpretation": "exp threshold untuk level berikutnya",
+   "observed_range": {
+    "min": 9,
+    "max": 9
+   }
+  },
+  "petBag": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {
+    "inventory": {},
+    "gear": []
+   },
+   "interpretation": "inventori pet: {inventory: {}, gear: []}"
+  },
+  "petBag.gear": {
+   "types": [
+    "array"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": [],
+   "interpretation": ""
+  },
+  "petBag.inventory": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {},
+   "interpretation": ""
+  },
+  "points": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "stat point belum dialokasikan",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "potionReadyAt": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "timestamp epoch ms cooldown potion berikutnya",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "progressReset": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "penanda progress direset (1 = sudah reset)",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "quest": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {
+    "index": 0,
+    "counters": {
+     "travel": 25
+    },
+    "claimed": []
+   },
+   "interpretation": "state quest: index quest aktif, counters (travel dll), claimed rewards"
+  },
+  "quest.claimed": {
+   "types": [
+    "array"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": [],
+   "interpretation": "list reward quest yang sudah di-claim"
+  },
+  "quest.counters": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {
+    "travel": 25
+   },
+   "interpretation": "counter progress quest (dict nama counter -> nilai)"
+  },
+  "quest.counters.travel": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 25,
+   "interpretation": "jumlah perjalanan antar area",
+   "observed_range": {
+    "min": 8,
+    "max": 26
+   }
+  },
+  "quest.index": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "index quest aktif",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "silver": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "mata uang silver",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "skillCooldowns": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {},
+   "interpretation": "dict skillId -> timestamp cooldown selesai (epoch ms)"
+  },
+  "skillLevels": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {},
+   "interpretation": "dict skillId -> level skill (kosong = belum belajar skill)"
+  },
+  "sp": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 25,
+   "interpretation": "skill point tersedia",
+   "observed_range": {
+    "min": 25,
+    "max": 25
+   }
+  },
+  "spRegenAt": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "unknown",
+    "wildwood"
+   ],
+   "example": 1790573442128,
+   "interpretation": "timestamp epoch ms regen SP berikutnya",
+   "observed_range": {
+    "min": 1790572336353,
+    "max": 1790573473300
+   }
+  },
+  "statRevision": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "revision stat (cache invalidation)",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "stats": {
+   "types": [
+    "object"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": {
+    "str": 1,
+    "agi": 1,
+    "vit": 1,
+    "int": 1,
+    "dex": 1,
+    "luk": 1
+   },
+   "interpretation": "stat dasar: str/agi/vit/int/dex/luk"
+  },
+  "stats.agi": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "stat agility",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "stats.dex": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "stat dexterity",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "stats.int": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "stat intelligence",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "stats.luk": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "stat luck",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "stats.str": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "stat strength",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "stats.vit": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "stat vitality",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "statuses": {
+   "types": [
+    "array"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "unknown",
+    "wildwood"
+   ],
+   "example": [
+    {
+     "id": "spawnguard",
+     "until": 1790573374546
+    }
+   ],
+   "interpretation": "list status aktif: {id, until(epoch ms)} — spawnguard = proteksi spawn"
+  },
+  "statuses[].id": {
+   "types": [
+    "string"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "unknown",
+    "wildwood"
+   ],
+   "example": "spawnguard",
+   "interpretation": "ID status (spawnguard)",
+   "distinct_values": [
+    "spawnguard"
+   ]
+  },
+  "statuses[].until": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "unknown",
+    "wildwood"
+   ],
+   "example": 1790573374546,
+   "interpretation": "timestamp epoch ms kedaluwarsa status",
+   "observed_range": {
+    "min": 1790572361060,
+    "max": 1790573475441
+   }
+  },
+  "target": {
+   "types": [
+    "null"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": null,
+   "interpretation": "target serangan (null = tidak ada)"
+  },
+  "townRevision": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "revision counter state kota (cache invalidation)",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "version": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 1,
+   "interpretation": "versi state/data (cache invalidation)",
+   "observed_range": {
+    "min": 1,
+    "max": 1
+   }
+  },
+  "worldWipe": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 0,
+   "interpretation": "penanda world wipe (0 = belum)",
+   "observed_range": {
+    "min": 0,
+    "max": 0
+   }
+  },
+  "x": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 625.3220652482853,
+   "interpretation": "posisi x (float, koordinat dunia)",
+   "observed_range": {
+    "min": 64,
+    "max": 3008
+   }
+  },
+  "y": {
+   "types": [
+    "number"
+   ],
+   "seen_in_areas": [
+    "caldera",
+    "crystal",
+    "desert",
+    "dunes",
+    "field",
+    "glacier",
+    "moor",
+    "rome",
+    "snow",
+    "swamp",
+    "tempest",
+    "wildwood"
+   ],
+   "example": 54.745543262003125,
+   "interpretation": "posisi y (float, koordinat dunia)",
+   "observed_range": {
+    "min": 54.7455,
+    "max": 3008
+   }
+  }
+ },
+ "inventory_keys": {
+  "_note": "Union semua key inventory pernah muncul (fixed slot list dari server); nilai non-zero teramati:",
+  "total_keys": 128,
+  "nonzero_observed": {
+   "potion": 5
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+  "templates": [
+    "sword",
+    "knife",
+    "kunai",
+    "katana",
+    "hammer",
+    "bow",
+    "rod",
+    "flask",
+    "quarterstaff",
+    "dagger_pair",
+    "staff"
+  ],
+  "template_detection": "Ga=['bow','staff','quarterstaff','dagger_pair','hammer'] - templates that use sword slot",
+  "divine_wings": "Wa=new Set(['divine_wings']) - special template",
+  "bonuses_structure": "Each equipment has bonuses object with stat values",
+  "status": "VERIFIED - template system found, bonuses structure confirmed"
+}

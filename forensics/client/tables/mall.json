@@ -1,0 +1,211 @@
+{
+  "starter_pack": {
+    "id": "starter",
+    "key": "mall-starter-1",
+    "name": "Starter Pack",
+    "gold": 160,
+    "pieces": [
+      {
+        "slot": "head",
+        "name": "Lumina Circlet",
+        "bonuses": {
+          "def": 6,
+          "mdef": 4,
+          "vit": 3
+        }
+      },
+      {
+        "slot": "face",
+        "name": "Lumina Monocle",
+        "bonuses": {
+          "mdef": 5,
+          "dex": 3,
+          "hit": 4
+        }
+      },
+      {
+        "slot": "mouth",
+        "name": "Lumina Scarf",
+        "bonuses": {
+          "mdef": 5,
+          "hp": 150
+        }
+      },
+      {
+        "slot": "armor",
+        "name": "Lumina Coat",
+        "bonuses": {
+          "def": 9,
+          "hp": 300,
+          "vit": 3
+        }
+      },
+      {
+        "slot": "shield",
+        "name": "Lumina Guard",
+        "bonuses": {
+          "def": 6,
+          "mdef": 3
+        }
+      },
+      {
+        "slot": "garment",
+        "name": "Lumina Cape",
+        "bonuses": {
+          "def": 5,
+          "flee": 8,
+          "agi": 3
+        }
+      },
+      {
+        "slot": "shoes",
+        "name": "Lumina Boots",
+        "bonuses": {
+          "def": 5,
+          "flee": 6,
+          "hp": 150
+        }
+      },
+      {
+        "slot": "accessory1",
+        "name": "Lumina Ring",
+        "bonuses": {
+          "crit": 6,
+          "hit": 6,
+          "luk": 3
+        }
+      },
+      {
+        "slot": "accessory2",
+        "name": "Lumina Earring",
+        "bonuses": {
+          "matk": 8,
+          "sp": 60,
+          "int": 3
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Sword",
+        "template": "sword",
+        "bonuses": {
+          "atk": 16,
+          "hit": 8,
+          "str": 4
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Knife",
+        "template": "knife",
+        "bonuses": {
+          "atk": 13,
+          "hit": 8,
+          "agi": 4
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Kunai",
+        "template": "kunai",
+        "bonuses": {
+          "atk": 15,
+          "hit": 8,
+          "dex": 4
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Katana",
+        "template": "katana",
+        "bonuses": {
+          "atk": 15,
+          "hit": 8,
+          "agi": 4
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Hammer",
+        "template": "hammer",
+        "bonuses": {
+          "atk": 17,
+          "hit": 6,
+          "str": 4
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Bow",
+        "template": "bow",
+        "bonuses": {
+          "atk": 15,
+          "hit": 8,
+          "dex": 4
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Rod",
+        "template": "rod",
+        "bonuses": {
+          "matk": 16,
+          "int": 5
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Flask",
+        "template": "flask",
+        "bonuses": {
+          "matk": 15,
+          "int": 3,
+          "agi": 3
+        }
+      },
+      {
+        "slot": "sword",
+        "name": "Lumina Staff",
+        "template": "quarterstaff",
+        "bonuses": {
+          "atk": 10,
+          "matk": 8,
+          "int": 3
+        }
+      }
+    ]
+  },
+  "npc_shop_items": {
+    "potion": {
+      "buy": 10,
+      "price": 5
+    },
+    "blue_potion": {
+      "buy": 50,
+      "price": 20
+    },
+    "concentration_potion": {
+      "buy": 80,
+      "price": 40
+    },
+    "awakening_potion": {
+      "buy": 240,
+      "price": 120
+    },
+    "berserk_potion": {
+      "buy": 600,
+      "price": 300
+    },
+    "fly_wing": {
+      "buy": 30,
+      "price": 15
+    },
+    "butterfly_wing": {
+      "buy": 30,
+      "price": 15
+    }
+  },
+  "gold_packs": "INFERRED - zf array imported from items.js but definition not found in analyzed files",
+  "premium_packs": "INFERRED - premiumBuy sends {type:'premiumBuy', pack:id} to server",
+  "status": "VERIFIED (starter pack + NPC shop), INFERRED (gold/premium packs)"
+}

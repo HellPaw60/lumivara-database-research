@@ -1,0 +1,29 @@
+# Transient & generated
+node_modules/
+*.log
+.tmp/
+temp/
+cache/
+debug/
+local/
+.env
+credentials*
+
+# OS / editor
+Thumbs.db
+.DS_Store
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# Large transient (bisa diregenerasi dari attachment)
+app/
+nsis-out/
+asar-out/
+site.html
+tilemaps/
+collect/package-lock.json
+
+# Collector logs (raw evidence snapshot JSON tetap disimpan)
+collect/run-*.log

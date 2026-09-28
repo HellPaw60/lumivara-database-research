@@ -1,0 +1,13 @@
+{
+  "storage_actions": {
+    "open": "{type:'storageOpen'} - opens storage window",
+    "deposit": "{type:'deposit', gearId:id} or {type:'deposit', item:item, quantity:qty}",
+    "withdraw": "withdraw action available"
+  },
+  "storage_npc": "Banker NPC (banker-v2)",
+  "storage_premium": "Premium increases storage capacity",
+  "status": "VERIFIED - storage system confirmed",
+  "storage_access": "Premium allows access from menu anywhere",
+  "banker_npc": "banker-v2 sprite, positioned near storage",
+  "storage_hint": "เข้าใกล้เจ้าหน้าที่คลังเพื่อฝาก–ถอน · Premium เปิดคลังจากเมนูได้ทุกที่"
+}

@@ -1,0 +1,763 @@
+{
+ "_meta": {
+  "source": "D:/lumivara-re/collect/raw-snapshots.json — event type 'hit'",
+  "generated": "2026-09-28T06:52:19Z",
+  "method": "Statistik deskriptif murni dari event teramati (label OBSERVED). Sampel maksimum 5000 event hit pertama (total 3282 tersedia). TIDAK ada fitting formula — hanya agregasi empiris.",
+  "confidence": "VERIFIED (statistik agregat dari data mentah; rasio crit dihitung dari mean teramati = DERIVED agregasi)",
+  "total_hit_events": 3282,
+  "sampled": 3282,
+  "outgoing_sampled": 2940,
+  "incoming_sampled": 342
+ },
+ "outgoing_damage_overall": {
+  "count": 2940,
+  "min": 9,
+  "max": 131030,
+  "mean": 7100.96,
+  "median": 3265.0,
+  "stdev": 12154.14
+ },
+ "crit_vs_noncrit_overall": {
+  "label": "OBSERVED",
+  "crit_hits": 1038,
+  "noncrit_hits": 1902,
+  "crit_mean_damage": 13267.11,
+  "noncrit_mean_damage": 3735.83,
+  "mean_ratio": 3.551,
+  "crit_rate_of_labeled": 0.3531
+ },
+ "miss_rate": {
+  "label": "OBSERVED",
+  "outgoing_hits": 2940,
+  "missed_true": 0,
+  "missed_field_present": 2940,
+  "miss_rate_of_labeled": 0.0,
+  "missed_damage_value_when_missed": []
+ },
+ "damage_per_skill": {
+  "_basic_attack_no_skill_field": {
+   "label": "OBSERVED",
+   "hit_events": 899,
+   "damage_all": {
+    "count": 899,
+    "min": 9,
+    "max": 35131,
+    "mean": 2305.43,
+    "median": 1261,
+    "stdev": 3235.78
+   },
+   "crit": {
+    "count": 377,
+    "min": 259,
+    "max": 21476,
+    "mean": 3696.17,
+    "median": 2760,
+    "stdev": 3249.73
+   },
+   "crit_count": 377,
+   "noncrit": {
+    "count": 522,
+    "min": 9,
+    "max": 35131,
+    "mean": 1301.0,
+    "median": 697.0,
+    "stdev": 2831.01
+   },
+   "noncrit_count": 522,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 2.841,
+   "double_hit_events": 165,
+   "double_hits_count_distribution": {
+    "2": 165
+   },
+   "double_example": {
+    "type": "hit",
+    "area": "caldera",
+    "x": 309.21951613321875,
+    "y": 943.7903143400334,
+    "player": "guest:df294f9e-371c-4277-980b-f08e43522e43",
+    "mob": 24,
+    "damage": 8874,
+    "critical": true,
+    "missed": false,
+    "double": true,
+    "hits": [
+     4437,
+     4437
+    ],
+    "crits": [
+     true,
+     true
+    ]
+   },
+   "subhit_damage": {
+    "count": 330,
+    "min": 31,
+    "max": 9409,
+    "mean": 1898.47
+   },
+   "damage_equals_sum_of_hits": "165/165",
+   "dot_events": 111
+  },
+  "coldbolt": {
+   "label": "OBSERVED",
+   "hit_events": 530,
+   "damage_all": {
+    "count": 530,
+    "min": 260,
+    "max": 14973,
+    "mean": 2843.71,
+    "median": 2624.5,
+    "stdev": 1908.06
+   },
+   "crit": {
+    "count": 68,
+    "min": 1019,
+    "max": 14973,
+    "mean": 5636.09,
+    "median": 5306.0,
+    "stdev": 2668.4
+   },
+   "crit_count": 68,
+   "noncrit": {
+    "count": 462,
+    "min": 260,
+    "max": 6239,
+    "mean": 2432.71,
+    "median": 2271.0,
+    "stdev": 1350.34
+   },
+   "noncrit_count": 462,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 2.317
+  },
+  "viperfang": {
+   "label": "OBSERVED",
+   "hit_events": 471,
+   "damage_all": {
+    "count": 471,
+    "min": 397,
+    "max": 41718,
+    "mean": 13549.71,
+    "median": 11079,
+    "stdev": 10413.7
+   },
+   "crit": {
+    "count": 217,
+    "min": 795,
+    "max": 41718,
+    "mean": 20982.8,
+    "median": 16859,
+    "stdev": 10605.72
+   },
+   "crit_count": 217,
+   "noncrit": {
+    "count": 254,
+    "min": 397,
+    "max": 14900,
+    "mean": 7199.4,
+    "median": 6463.0,
+    "stdev": 4189.65
+   },
+   "noncrit_count": 254,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 2.915
+  },
+  "twinfang": {
+   "label": "OBSERVED",
+   "hit_events": 259,
+   "damage_all": {
+    "count": 259,
+    "min": 480,
+    "max": 131030,
+    "mean": 13092.71,
+    "median": 3546,
+    "stdev": 22228.63
+   },
+   "crit": {
+    "count": 170,
+    "min": 1153,
+    "max": 131030,
+    "mean": 18610.27,
+    "median": 11720.0,
+    "stdev": 25626.26
+   },
+   "crit_count": 170,
+   "noncrit": {
+    "count": 89,
+    "min": 480,
+    "max": 18199,
+    "mean": 2553.56,
+    "median": 975,
+    "stdev": 4040.59
+   },
+   "noncrit_count": 89,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 7.288
+  },
+  "doublestrafe": {
+   "label": "OBSERVED",
+   "hit_events": 224,
+   "damage_all": {
+    "count": 224,
+    "min": 2608,
+    "max": 105851,
+    "mean": 19086.11,
+    "median": 8411.5,
+    "stdev": 23272.04
+   },
+   "crit": {
+    "count": 54,
+    "min": 5749,
+    "max": 105851,
+    "mean": 42981.98,
+    "median": 31500.5,
+    "stdev": 34954.78
+   },
+   "crit_count": 54,
+   "noncrit": {
+    "count": 170,
+    "min": 2608,
+    "max": 41944,
+    "mean": 11495.65,
+    "median": 6524.0,
+    "stdev": 9542.04
+   },
+   "noncrit_count": 170,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 3.739,
+   "double_hit_events": 224,
+   "double_hits_count_distribution": {
+    "2": 195,
+    "4": 29
+   },
+   "double_example": {
+    "skill": "doublestrafe",
+    "castId": "google:104141733731373158810:1790543806532:doublestrafe",
+    "type": "hit",
+    "area": "desert",
+    "x": 1558.1092525661325,
+    "y": 2204.8322152901746,
+    "player": "google:104141733731373158810",
+    "mob": 11,
+    "damage": 2608,
+    "critical": false,
+    "missed": false,
+    "double": true,
+    "hits": [
+     1304,
+     1304
+    ],
+    "crits": [
+     false,
+     false
+    ]
+   },
+   "subhit_damage": {
+    "count": 506,
+    "min": 137,
+    "max": 52926,
+    "mean": 8449.19
+   },
+   "damage_equals_sum_of_hits": "224/224"
+  },
+  "thunderstorm": {
+   "label": "OBSERVED",
+   "hit_events": 190,
+   "damage_all": {
+    "count": 190,
+    "min": 158,
+    "max": 9483,
+    "mean": 2654.6,
+    "median": 2384.0,
+    "stdev": 1964.22
+   },
+   "crit": {
+    "count": 34,
+    "min": 329,
+    "max": 9483,
+    "mean": 4887.71,
+    "median": 5721.0,
+    "stdev": 3028.8
+   },
+   "crit_count": 34,
+   "noncrit": {
+    "count": 156,
+    "min": 158,
+    "max": 3951,
+    "mean": 2167.9,
+    "median": 2093.0,
+    "stdev": 1191.25
+   },
+   "noncrit_count": 156,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 2.255
+  },
+  "bash": {
+   "label": "OBSERVED",
+   "hit_events": 119,
+   "damage_all": {
+    "count": 119,
+    "min": 1163,
+    "max": 44163,
+    "mean": 8390.55,
+    "median": 4918,
+    "stdev": 8734.65
+   },
+   "crit": {
+    "count": 43,
+    "min": 4230,
+    "max": 44163,
+    "mean": 13716.67,
+    "median": 7795,
+    "stdev": 11777.22
+   },
+   "crit_count": 43,
+   "noncrit": {
+    "count": 76,
+    "min": 1163,
+    "max": 18127,
+    "mean": 5377.08,
+    "median": 4229.0,
+    "stdev": 4110.5
+   },
+   "noncrit_count": 76,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 2.551
+  },
+  "mammonite": {
+   "label": "OBSERVED",
+   "hit_events": 58,
+   "damage_all": {
+    "count": 58,
+    "min": 1269,
+    "max": 16276,
+    "mean": 5113.14,
+    "median": 3743.0,
+    "stdev": 4436.46
+   },
+   "crit": {
+    "count": 14,
+    "min": 2490,
+    "max": 16276,
+    "mean": 10771.71,
+    "median": 12696.0,
+    "stdev": 5989.62
+   },
+   "crit_count": 14,
+   "noncrit": {
+    "count": 44,
+    "min": 1269,
+    "max": 5425,
+    "mean": 3312.68,
+    "median": 3743.0,
+    "stdev": 1225.66
+   },
+   "noncrit_count": 44,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 3.252
+  },
+  "firebolt": {
+   "label": "OBSERVED",
+   "hit_events": 52,
+   "damage_all": {
+    "count": 52,
+    "min": 724,
+    "max": 3193,
+    "mean": 1444.77,
+    "median": 1484.0,
+    "stdev": 608.21
+   },
+   "crit": null,
+   "crit_count": 0,
+   "noncrit": {
+    "count": 52,
+    "min": 724,
+    "max": 3193,
+    "mean": 1444.77,
+    "median": 1484.0,
+    "stdev": 608.21
+   },
+   "noncrit_count": 52
+  },
+  "iaigiri": {
+   "label": "OBSERVED",
+   "hit_events": 46,
+   "damage_all": {
+    "count": 46,
+    "min": 6871,
+    "max": 32734,
+    "mean": 18472.15,
+    "median": 20612.0,
+    "stdev": 9556.56
+   },
+   "crit": {
+    "count": 29,
+    "min": 20612,
+    "max": 32734,
+    "mean": 24792,
+    "median": 20612,
+    "stdev": 5863.72
+   },
+   "crit_count": 29,
+   "noncrit": {
+    "count": 17,
+    "min": 6871,
+    "max": 8614,
+    "mean": 7691.24,
+    "median": 6871,
+    "stdev": 896.77
+   },
+   "noncrit_count": 17,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 3.223
+  },
+  "arrowshower": {
+   "label": "OBSERVED",
+   "hit_events": 32,
+   "damage_all": {
+    "count": 32,
+    "min": 414,
+    "max": 24860,
+    "mean": 6605.28,
+    "median": 3178.5,
+    "stdev": 8723.99
+   },
+   "crit": {
+    "count": 9,
+    "min": 1432,
+    "max": 24860,
+    "mean": 17910.56,
+    "median": 24860,
+    "stdev": 8833.63
+   },
+   "crit_count": 9,
+   "noncrit": {
+    "count": 23,
+    "min": 414,
+    "max": 6905,
+    "mean": 2181.48,
+    "median": 414,
+    "stdev": 2474.34
+   },
+   "noncrit_count": 23,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 8.21
+  },
+  "holylight": {
+   "label": "OBSERVED",
+   "hit_events": 16,
+   "damage_all": {
+    "count": 16,
+    "min": 2306,
+    "max": 12184,
+    "mean": 5709.69,
+    "median": 4532.5,
+    "stdev": 2686.35
+   },
+   "crit": {
+    "count": 1,
+    "min": 12184,
+    "max": 12184,
+    "mean": 12184,
+    "median": 12184,
+    "stdev": 0
+   },
+   "crit_count": 1,
+   "noncrit": {
+    "count": 15,
+    "min": 2306,
+    "max": 8906,
+    "mean": 5278.07,
+    "median": 4453,
+    "stdev": 2130.33
+   },
+   "noncrit_count": 15,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 2.308,
+   "double_hit_events": 10,
+   "double_hits_count_distribution": {
+    "2": 8,
+    "3": 2
+   },
+   "double_example": {
+    "skill": "holylight",
+    "castId": "google:113181408852992091440:1790546968707:holylight",
+    "type": "hit",
+    "area": "crystal",
+    "x": 2010,
+    "y": 394,
+    "player": "google:113181408852992091440",
+    "mob": 103,
+    "damage": 2976,
+    "critical": false,
+    "missed": false,
+    "double": true,
+    "hits": [
+     1488,
+     1488
+    ],
+    "crits": [
+     false,
+     false
+    ]
+   },
+   "subhit_damage": {
+    "count": 22,
+    "min": 428,
+    "max": 11756,
+    "mean": 3047.82
+   },
+   "damage_equals_sum_of_hits": "10/10"
+  },
+  "magnum": {
+   "label": "OBSERVED",
+   "hit_events": 12,
+   "damage_all": {
+    "count": 12,
+    "min": 906,
+    "max": 48305,
+    "mean": 6499.58,
+    "median": 2311.0,
+    "stdev": 13238.83
+   },
+   "crit": {
+    "count": 3,
+    "min": 1812,
+    "max": 48305,
+    "mean": 18830.67,
+    "median": 6375,
+    "stdev": 25627.28
+   },
+   "crit_count": 3,
+   "noncrit": {
+    "count": 9,
+    "min": 906,
+    "max": 3669,
+    "mean": 2389.22,
+    "median": 2023,
+    "stdev": 880.03
+   },
+   "noncrit_count": 9,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 7.882
+  },
+  "venomknife": {
+   "label": "OBSERVED",
+   "hit_events": 11,
+   "damage_all": {
+    "count": 11,
+    "min": 131,
+    "max": 11699,
+    "mean": 2675.91,
+    "median": 426,
+    "stdev": 4496.18
+   },
+   "crit": {
+    "count": 11,
+    "min": 131,
+    "max": 11699,
+    "mean": 2675.91,
+    "median": 426,
+    "stdev": 4496.18
+   },
+   "crit_count": 11,
+   "noncrit": null,
+   "noncrit_count": 0
+  },
+  "shadowburst": {
+   "label": "OBSERVED",
+   "hit_events": 8,
+   "damage_all": {
+    "count": 8,
+    "min": 926,
+    "max": 14815,
+    "mean": 8485.38,
+    "median": 10449.0,
+    "stdev": 6613.38
+   },
+   "crit": {
+    "count": 7,
+    "min": 926,
+    "max": 14815,
+    "mean": 8520.71,
+    "median": 12660,
+    "stdev": 7142.45
+   },
+   "crit_count": 7,
+   "noncrit": {
+    "count": 1,
+    "min": 8238,
+    "max": 8238,
+    "mean": 8238,
+    "median": 8238,
+    "stdev": 0
+   },
+   "noncrit_count": 1,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 1.034
+  },
+  "hammerfall": {
+   "label": "OBSERVED",
+   "hit_events": 8,
+   "damage_all": {
+    "count": 8,
+    "min": 929,
+    "max": 11793,
+    "mean": 3283,
+    "median": 929.0,
+    "stdev": 3881.1
+   },
+   "crit": {
+    "count": 1,
+    "min": 11793,
+    "max": 11793,
+    "mean": 11793,
+    "median": 11793,
+    "stdev": 0
+   },
+   "crit_count": 1,
+   "noncrit": {
+    "count": 7,
+    "min": 929,
+    "max": 4913,
+    "mean": 2067.29,
+    "median": 929,
+    "stdev": 1943.99
+   },
+   "noncrit_count": 7,
+   "crit_to_noncrit_mean_ratio_OBSERVED": 5.705
+  },
+  "piercingshot": {
+   "label": "OBSERVED",
+   "hit_events": 2,
+   "damage_all": {
+    "count": 2,
+    "min": 3210,
+    "max": 5931,
+    "mean": 4570.5,
+    "median": 4570.5,
+    "stdev": 1924.04
+   },
+   "crit": null,
+   "crit_count": 0,
+   "noncrit": {
+    "count": 2,
+    "min": 3210,
+    "max": 5931,
+    "mean": 4570.5,
+    "median": 4570.5,
+    "stdev": 1924.04
+   },
+   "noncrit_count": 2
+  },
+  "dokugiri": {
+   "label": "OBSERVED",
+   "hit_events": 1,
+   "damage_all": {
+    "count": 1,
+    "min": 8511,
+    "max": 8511,
+    "mean": 8511,
+    "median": 8511,
+    "stdev": 0
+   },
+   "crit": null,
+   "crit_count": 0,
+   "noncrit": {
+    "count": 1,
+    "min": 8511,
+    "max": 8511,
+    "mean": 8511,
+    "median": 8511,
+    "stdev": 0
+   },
+   "noncrit_count": 1
+  },
+  "venomrupture": {
+   "label": "OBSERVED",
+   "hit_events": 1,
+   "damage_all": {
+    "count": 1,
+    "min": 427,
+    "max": 427,
+    "mean": 427,
+    "median": 427,
+    "stdev": 0
+   },
+   "crit": null,
+   "crit_count": 0,
+   "noncrit": {
+    "count": 1,
+    "min": 427,
+    "max": 427,
+    "mean": 427,
+    "median": 427,
+    "stdev": 0
+   },
+   "noncrit_count": 1
+  },
+  "cartstrike": {
+   "label": "OBSERVED",
+   "hit_events": 1,
+   "damage_all": {
+    "count": 1,
+    "min": 2213,
+    "max": 2213,
+    "mean": 2213,
+    "median": 2213,
+    "stdev": 0
+   },
+   "crit": null,
+   "crit_count": 0,
+   "noncrit": {
+    "count": 1,
+    "min": 2213,
+    "max": 2213,
+    "mean": 2213,
+    "median": 2213,
+    "stdev": 0
+   },
+   "noncrit_count": 1
+  }
+ },
+ "incoming_mob_to_player": {
+  "label": "OBSERVED",
+  "count": 342,
+  "damage": {
+   "count": 342,
+   "min": 0,
+   "max": 1459,
+   "mean": 71.04,
+   "median": 0.0,
+   "stdev": 179.5
+  },
+  "by_mob": {
+   "120": 17,
+   "72": 12,
+   "25": 12,
+   "74": 12,
+   "24": 11,
+   "33": 11,
+   "109": 11,
+   "64": 10,
+   "8": 8,
+   "2": 8,
+   "0": 7,
+   "121": 7,
+   "88": 6,
+   "122": 6,
+   "62": 6,
+   "90": 6,
+   "75": 6,
+   "65": 5,
+   "57": 5,
+   "21": 5
+  },
+  "with_skill_field": 0,
+  "note": "incoming=true menandakan serangan mob ke player (field damage tetap payload yang sama)"
+ },
+ "reactions_on_hits": {
+  "label": "OBSERVED",
+  "hits_with_reaction": 318,
+  "reaction_types": {
+   "frozen": 274,
+   "vaporize": 43,
+   "wildfire": 1
+  },
+  "note": "field reaction pada hit = elemental reaction yang terpicu bersamaan"
+ },
+ "field_presence_note": {
+  "skill+castId": "hadir pada hit yang berasal dari skill (korelasi ke event 'skill' via castId)",
+  "double+hits+crits": "multi-hit: satu event berisi N hit (hits) dengan crits jumlah crit di dalamnya",
+  "drainSp/drainHp": "efek steal SP/HP (life leech)",
+  "dot": "tick damage-over-time"
+ }
+}

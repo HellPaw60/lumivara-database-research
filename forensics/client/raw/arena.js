@@ -1,0 +1,6 @@
+e/coast.png");for(const A of c2[c].config.props)h.load.image(A,"/maps/realms-v1/"+A+".png")}if(c==="arena"||c==="training")for(const A of LM)h.load.image("arena-"+A,"/maps/arena-v1/"+A+".png");if(c==="caldera"){h.load.image("caldera-coast","/maps/field-reference/coast.png");for(const A of f2)h.load.image("caldera-"+A,"/maps/caldera-v1/"+A+".png")}if(c==="wildwood")for(const A of["ancient-oak","silver-b
+
+w(u,T,w));A&&$v(A,S,h.level)&&!Qf(h,A)&&(h.equipped[b2(A)]=A.id)}}function nB(h,c){J&&J.send({type:"pvpChallenge",target:h})}function aB(h,c){Yl({id:"pvp-invite",title:"ท้าดวล PVP",icon:"duel",name:c,message:`${_("ท้าคุณประลองฝีมือตัวต่อตัว")} · 3 ${_("นาที")} · ${_("แพ้ไม่เสียอะไร")}`,choices:[{label:"ปฏิเสธ",act:()=>J?.send({type:"pvpRespond",from:h,accept:!1})},{label:"รับคำท้า",kind:"accept",act:()=>J?.se
+
+22 3.5 9.6 15.9l1.5 1.5-1.6 1.6-1.9-1.9-3.1 3.1-2.3-.2-.2-2.3 3.1-3.1-1.9-1.9 1.6-1.6 1.5 1.5z",Hb={duel:Mo(`<path d="${ax}"/><g transform="scale(-1,1) translate(-24,0)"><path d="${ax}"/></g>`),friend:Mo('<path d="M10 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 10c3.3 0 6 1.8 6 4v2H4v-2c0-2.2 2.7-4 6-4zm9-6h2v3h3v2h-3v3h-2v-3h-3v-2h3z"/>'),party:Mo('<path d="M3 7l4 3 5-6 5 6 4-3-2 12H5zm2 14h14v2H5z"/>'),guild:M
+

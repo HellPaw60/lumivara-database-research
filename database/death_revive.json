@@ -1,0 +1,13 @@
+{
+  "death_mechanics": {
+    "deadUntil": "Timestamp until which player is dead",
+    "deathCause": "String describing what killed the player",
+    "revive_here": "Revive at current position (costs silver based on area)",
+    "revive_at_town": "Revive at town (free, full HP)"
+  },
+  "revive_here_cost": "L1(area) - silver cost varies by area",
+  "revive_atTown": "Free, sets deadUntil=0, full HP, nextAttack=now+500ms",
+  "death_ui": "death-window with revive-here-button and revive-button",
+  "death_timer": "Math.max(0, deadUntil - time.now) shown in seconds",
+  "status": "VERIFIED - death and revive mechanics confirmed"
+}

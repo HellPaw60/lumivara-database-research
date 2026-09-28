@@ -1,0 +1,1180 @@
+{
+ "_meta": {
+  "source": "D:/lumivara-re/collect/raw-snapshots.json (snapshot.drops per area + event pickup) vs D:/lumivara-re/MONSTER_DB.json (40 spesies, 27 dengan drop table)",
+  "generated": "2026-09-28T06:52:19Z",
+  "method": "Union item dari snapshot.drops (ground items teramati) dan event pickup (item yang diambil), dikelompokkan per area, lalu di-join dengan drop table MONSTER_DB (key monster -> drops).",
+  "confidence": "VERIFIED (item & count langsung teramati); asosiasi item->mob = DERIVED dari MONSTER_DB hasil mining sebelumnya"
+ },
+ "summary": {
+  "unique_items_observed": 48,
+  "items_associated_to_mob_in_MONSTER_DB": 44,
+  "items_NOT_associated_to_any_mob": 4,
+  "snapshot_drop_entries_total": 312,
+  "pickup_events_total": 198
+ },
+ "items_not_associated_to_any_mob": {
+  "_note": "Item teramati sebagai drop/pickup namun tidak ada di drop table MONSTER_DB manapun — kandidat: drop dari mob yang belum terdata, drop umum (potion), atau drop event/sistem",
+  "items": [
+   "aurora_tail",
+   "garment",
+   "honey_wing_dust",
+   "magma_scale"
+  ]
+ },
+ "items_associated": {
+  "accessory1": [
+   "wild-boar"
+  ],
+  "accessory2": [
+   "quartz-crawler",
+   "mud-newt"
+  ],
+  "amber_shell": [
+   "amber-beetle"
+  ],
+  "ammo": [
+   "magma-salamander"
+  ],
+  "armor": [
+   "scarab-sentinel",
+   "dune-gecko"
+  ],
+  "bat_wing": [
+   "cave-bat"
+  ],
+  "blue_potion": [
+   "pebble-golem",
+   "sand-drake",
+   "wild-boar",
+   "moon-owl",
+   "mire-jelly",
+   "mud-newt",
+   "tide-crab",
+   "cactus-imp",
+   "sunscale-cobra",
+   "scarab-sentinel",
+   "dune-gecko",
+   "icicle-hare",
+   "frost-puff",
+   "moss-mushroom"
+  ],
+  "boar_tusk": [
+   "wild-boar"
+  ],
+  "bramble_fur": [
+   "bramble-hare"
+  ],
+  "butterfly_wing": [
+   "shade-raven",
+   "magma-salamander",
+   "vine-lynx",
+   "mire-jelly",
+   "bog-toad",
+   "scarab-sentinel",
+   "snow-owl",
+   "bramble-hare"
+  ],
+  "cactus_needle": [
+   "cactus-imp"
+  ],
+  "cobra_fang": [
+   "sunscale-cobra"
+  ],
+  "crab_claw": [
+   "tide-crab"
+  ],
+  "drake_scale": [
+   "sand-drake"
+  ],
+  "fly_wing": [
+   "shade-raven",
+   "vine-lynx",
+   "mire-jelly",
+   "tide-crab",
+   "cactus-imp",
+   "scarab-sentinel",
+   "amber-beetle",
+   "thorn-pixie"
+  ],
+  "frost_fluff": [
+   "frost-puff"
+  ],
+  "gecko_card": [
+   "dune-gecko"
+  ],
+  "gecko_scale": [
+   "dune-gecko"
+  ],
+  "golem_card": [
+   "pebble-golem"
+  ],
+  "golem_core": [
+   "pebble-golem"
+  ],
+  "head": [
+   "mire-jelly"
+  ],
+  "icicle_whisker": [
+   "icicle-hare"
+  ],
+  "lynx_claw": [
+   "vine-lynx"
+  ],
+  "mantis_blade": [
+   "reed-mantis"
+  ],
+  "mire_gel": [
+   "reed-mantis",
+   "mire-jelly"
+  ],
+  "moonlit_plume": [
+   "moon-owl"
+  ],
+  "mouth": [
+   "cave-bat"
+  ],
+  "newt_tail": [
+   "mud-newt"
+  ],
+  "orange_potion": [
+   "quartz-crawler",
+   "shade-raven",
+   "sand-drake",
+   "mire-jelly",
+   "cactus-imp",
+   "sunscale-cobra",
+   "scarab-sentinel",
+   "dune-gecko"
+  ],
+  "pixie_thorn": [
+   "thorn-pixie"
+  ],
+  "potion": [
+   "scarab-sentinel",
+   "dune-gecko"
+  ],
+  "quartz_leg": [
+   "quartz-crawler"
+  ],
+  "refine_stone": [
+   "vine-lynx"
+  ],
+  "relic_box": [
+   "pebble-golem",
+   "moon-owl",
+   "reed-mantis",
+   "mire-jelly"
+  ],
+  "scarab_carapace": [
+   "scarab-sentinel"
+  ],
+  "shade_feather": [
+   "shade-raven"
+  ],
+  "shield": [
+   "dune-gecko"
+  ],
+  "shoes": [
+   "vine-lynx",
+   "sunscale-cobra"
+  ],
+  "snow_feather": [
+   "snow-owl"
+  ],
+  "sword": [
+   "wild-boar"
+  ],
+  "thunder_horn": [
+   "thunder-ram"
+  ],
+  "toad_wart": [
+   "bog-toad"
+  ],
+  "twisted_root": [
+   "rootling"
+  ],
+  "yellow_potion": [
+   "thunder-ram",
+   "pebble-golem",
+   "vine-lynx",
+   "mire-jelly",
+   "tide-crab"
+  ]
+ },
+ "per_area": {
+  "rome": {},
+  "desert": {
+   "garment": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": []
+   },
+   "cactus_needle": {
+    "in_snapshot_drops": 11,
+    "pickup_event_count": 9,
+    "associated_mobs_in_MONSTER_DB": [
+     "cactus-imp"
+    ]
+   },
+   "gecko_card": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "dune-gecko"
+    ]
+   },
+   "scarab_carapace": {
+    "in_snapshot_drops": 14,
+    "pickup_event_count": 11,
+    "associated_mobs_in_MONSTER_DB": [
+     "scarab-sentinel"
+    ]
+   },
+   "potion": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "armor": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "shield": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "dune-gecko"
+    ]
+   },
+   "orange_potion": {
+    "in_snapshot_drops": 4,
+    "pickup_event_count": 5,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "shade-raven",
+     "sand-drake",
+     "mire-jelly",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "fly_wing": {
+    "in_snapshot_drops": 9,
+    "pickup_event_count": 4,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab",
+     "cactus-imp",
+     "scarab-sentinel",
+     "amber-beetle",
+     "thorn-pixie"
+    ]
+   },
+   "blue_potion": {
+    "in_snapshot_drops": 7,
+    "pickup_event_count": 7,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "sand-drake",
+     "wild-boar",
+     "moon-owl",
+     "mire-jelly",
+     "mud-newt",
+     "tide-crab",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko",
+     "icicle-hare",
+     "frost-puff",
+     "moss-mushroom"
+    ]
+   },
+   "shoes": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "vine-lynx",
+     "sunscale-cobra"
+    ]
+   },
+   "gecko_scale": {
+    "in_snapshot_drops": 8,
+    "pickup_event_count": 11,
+    "associated_mobs_in_MONSTER_DB": [
+     "dune-gecko"
+    ]
+   },
+   "refine_stone": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "vine-lynx"
+    ]
+   },
+   "cobra_fang": {
+    "in_snapshot_drops": 5,
+    "pickup_event_count": 6,
+    "associated_mobs_in_MONSTER_DB": [
+     "sunscale-cobra"
+    ]
+   }
+  },
+  "caldera": {
+   "armor": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "ammo": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "magma-salamander"
+    ]
+   },
+   "magma_scale": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": []
+   }
+  },
+  "dunes": {
+   "yellow_potion": {
+    "in_snapshot_drops": 5,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "thunder-ram",
+     "pebble-golem",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab"
+    ]
+   },
+   "sword": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "wild-boar"
+    ]
+   },
+   "drake_scale": {
+    "in_snapshot_drops": 21,
+    "pickup_event_count": 5,
+    "associated_mobs_in_MONSTER_DB": [
+     "sand-drake"
+    ]
+   },
+   "boar_tusk": {
+    "in_snapshot_drops": 10,
+    "pickup_event_count": 12,
+    "associated_mobs_in_MONSTER_DB": [
+     "wild-boar"
+    ]
+   },
+   "orange_potion": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "shade-raven",
+     "sand-drake",
+     "mire-jelly",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "fly_wing": {
+    "in_snapshot_drops": 3,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab",
+     "cactus-imp",
+     "scarab-sentinel",
+     "amber-beetle",
+     "thorn-pixie"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "blue_potion": {
+    "in_snapshot_drops": 9,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "sand-drake",
+     "wild-boar",
+     "moon-owl",
+     "mire-jelly",
+     "mud-newt",
+     "tide-crab",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko",
+     "icicle-hare",
+     "frost-puff",
+     "moss-mushroom"
+    ]
+   },
+   "accessory1": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "wild-boar"
+    ]
+   }
+  },
+  "glacier": {
+   "bat_wing": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "cave-bat"
+    ]
+   },
+   "golem_core": {
+    "in_snapshot_drops": 3,
+    "pickup_event_count": 7,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem"
+    ]
+   },
+   "yellow_potion": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "thunder-ram",
+     "pebble-golem",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab"
+    ]
+   },
+   "relic_box": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "moon-owl",
+     "reed-mantis",
+     "mire-jelly"
+    ]
+   },
+   "orange_potion": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "shade-raven",
+     "sand-drake",
+     "mire-jelly",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "fly_wing": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab",
+     "cactus-imp",
+     "scarab-sentinel",
+     "amber-beetle",
+     "thorn-pixie"
+    ]
+   },
+   "blue_potion": {
+    "in_snapshot_drops": 4,
+    "pickup_event_count": 3,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "sand-drake",
+     "wild-boar",
+     "moon-owl",
+     "mire-jelly",
+     "mud-newt",
+     "tide-crab",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko",
+     "icicle-hare",
+     "frost-puff",
+     "moss-mushroom"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "golem_card": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem"
+    ]
+   },
+   "mouth": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "cave-bat"
+    ]
+   }
+  },
+  "field": {
+   "potion": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "pixie_thorn": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "thorn-pixie"
+    ]
+   },
+   "bramble_fur": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "bramble-hare"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "blue_potion": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "sand-drake",
+     "wild-boar",
+     "moon-owl",
+     "mire-jelly",
+     "mud-newt",
+     "tide-crab",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko",
+     "icicle-hare",
+     "frost-puff",
+     "moss-mushroom"
+    ]
+   },
+   "fly_wing": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab",
+     "cactus-imp",
+     "scarab-sentinel",
+     "amber-beetle",
+     "thorn-pixie"
+    ]
+   },
+   "honey_wing_dust": {
+    "in_snapshot_drops": 3,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": []
+   },
+   "amber_shell": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "amber-beetle"
+    ]
+   },
+   "twisted_root": {
+    "in_snapshot_drops": 3,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "rootling"
+    ]
+   }
+  },
+  "snow": {
+   "potion": {
+    "in_snapshot_drops": 3,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "armor": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "aurora_tail": {
+    "in_snapshot_drops": 25,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": []
+   },
+   "relic_box": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "moon-owl",
+     "reed-mantis",
+     "mire-jelly"
+    ]
+   },
+   "frost_fluff": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "frost-puff"
+    ]
+   },
+   "orange_potion": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "shade-raven",
+     "sand-drake",
+     "mire-jelly",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "fly_wing": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab",
+     "cactus-imp",
+     "scarab-sentinel",
+     "amber-beetle",
+     "thorn-pixie"
+    ]
+   },
+   "blue_potion": {
+    "in_snapshot_drops": 12,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "sand-drake",
+     "wild-boar",
+     "moon-owl",
+     "mire-jelly",
+     "mud-newt",
+     "tide-crab",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko",
+     "icicle-hare",
+     "frost-puff",
+     "moss-mushroom"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "snow_feather": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "snow-owl"
+    ]
+   },
+   "icicle_whisker": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "icicle-hare"
+    ]
+   }
+  },
+  "swamp": {
+   "crab_claw": {
+    "in_snapshot_drops": 9,
+    "pickup_event_count": 7,
+    "associated_mobs_in_MONSTER_DB": [
+     "tide-crab"
+    ]
+   },
+   "mire_gel": {
+    "in_snapshot_drops": 24,
+    "pickup_event_count": 11,
+    "associated_mobs_in_MONSTER_DB": [
+     "reed-mantis",
+     "mire-jelly"
+    ]
+   },
+   "mantis_blade": {
+    "in_snapshot_drops": 11,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "reed-mantis"
+    ]
+   },
+   "yellow_potion": {
+    "in_snapshot_drops": 5,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "thunder-ram",
+     "pebble-golem",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab"
+    ]
+   },
+   "accessory2": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "mud-newt"
+    ]
+   },
+   "newt_tail": {
+    "in_snapshot_drops": 8,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "mud-newt"
+    ]
+   },
+   "relic_box": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "moon-owl",
+     "reed-mantis",
+     "mire-jelly"
+    ]
+   },
+   "head": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "mire-jelly"
+    ]
+   },
+   "orange_potion": {
+    "in_snapshot_drops": 6,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "shade-raven",
+     "sand-drake",
+     "mire-jelly",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 5,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "fly_wing": {
+    "in_snapshot_drops": 5,
+    "pickup_event_count": 3,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab",
+     "cactus-imp",
+     "scarab-sentinel",
+     "amber-beetle",
+     "thorn-pixie"
+    ]
+   },
+   "blue_potion": {
+    "in_snapshot_drops": 13,
+    "pickup_event_count": 3,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "sand-drake",
+     "wild-boar",
+     "moon-owl",
+     "mire-jelly",
+     "mud-newt",
+     "tide-crab",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko",
+     "icicle-hare",
+     "frost-puff",
+     "moss-mushroom"
+    ]
+   },
+   "refine_stone": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "vine-lynx"
+    ]
+   },
+   "toad_wart": {
+    "in_snapshot_drops": 4,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "bog-toad"
+    ]
+   }
+  },
+  "wildwood": {
+   "yellow_potion": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "thunder-ram",
+     "pebble-golem",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab"
+    ]
+   },
+   "relic_box": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "moon-owl",
+     "reed-mantis",
+     "mire-jelly"
+    ]
+   },
+   "lynx_claw": {
+    "in_snapshot_drops": 4,
+    "pickup_event_count": 5,
+    "associated_mobs_in_MONSTER_DB": [
+     "vine-lynx"
+    ]
+   },
+   "orange_potion": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "shade-raven",
+     "sand-drake",
+     "mire-jelly",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 3,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "shoes": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "vine-lynx",
+     "sunscale-cobra"
+    ]
+   },
+   "fly_wing": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab",
+     "cactus-imp",
+     "scarab-sentinel",
+     "amber-beetle",
+     "thorn-pixie"
+    ]
+   },
+   "blue_potion": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "pebble-golem",
+     "sand-drake",
+     "wild-boar",
+     "moon-owl",
+     "mire-jelly",
+     "mud-newt",
+     "tide-crab",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko",
+     "icicle-hare",
+     "frost-puff",
+     "moss-mushroom"
+    ]
+   },
+   "refine_stone": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "vine-lynx"
+    ]
+   },
+   "moonlit_plume": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 2,
+    "associated_mobs_in_MONSTER_DB": [
+     "moon-owl"
+    ]
+   }
+  },
+  "tempest": {
+   "yellow_potion": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "thunder-ram",
+     "pebble-golem",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab"
+    ]
+   },
+   "thunder_horn": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 3,
+    "associated_mobs_in_MONSTER_DB": [
+     "thunder-ram"
+    ]
+   }
+  },
+  "moor": {
+   "shade_feather": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 12,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven"
+    ]
+   },
+   "butterfly_wing": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "magma-salamander",
+     "vine-lynx",
+     "mire-jelly",
+     "bog-toad",
+     "scarab-sentinel",
+     "snow-owl",
+     "bramble-hare"
+    ]
+   },
+   "fly_wing": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "shade-raven",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab",
+     "cactus-imp",
+     "scarab-sentinel",
+     "amber-beetle",
+     "thorn-pixie"
+    ]
+   },
+   "orange_potion": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "shade-raven",
+     "sand-drake",
+     "mire-jelly",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   }
+  },
+  "crystal": {
+   "yellow_potion": {
+    "in_snapshot_drops": 1,
+    "pickup_event_count": 0,
+    "associated_mobs_in_MONSTER_DB": [
+     "thunder-ram",
+     "pebble-golem",
+     "vine-lynx",
+     "mire-jelly",
+     "tide-crab"
+    ]
+   },
+   "accessory2": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "mud-newt"
+    ]
+   },
+   "quartz_leg": {
+    "in_snapshot_drops": 2,
+    "pickup_event_count": 4,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler"
+    ]
+   },
+   "orange_potion": {
+    "in_snapshot_drops": 0,
+    "pickup_event_count": 1,
+    "associated_mobs_in_MONSTER_DB": [
+     "quartz-crawler",
+     "shade-raven",
+     "sand-drake",
+     "mire-jelly",
+     "cactus-imp",
+     "sunscale-cobra",
+     "scarab-sentinel",
+     "dune-gecko"
+    ]
+   }
+  },
+  "unknown": {},
+  "training": {}
+ }
+}

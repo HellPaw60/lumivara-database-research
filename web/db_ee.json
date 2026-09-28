@@ -1,0 +1,11 @@
+{
+  "etc": 0.3,
+  "consumable": 0.15,
+  "equipment": 0.0125,
+  "card": 0.001,
+  "bossCard": 0.01,
+  "relicBox": 0.01,
+  "refineStone": 0.01,
+  "extraStat": 0.25,
+  "aspdAccessory": 0.3
+}

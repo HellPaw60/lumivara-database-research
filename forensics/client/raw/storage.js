@@ -1,0 +1,6 @@
+this.storage=x.storage,this.gear=x.gear,lt.play("pickup"),this.ui()),oy(C.text)},()=>J?.send({type:"storageOpen"})),HO(E=>{if(!this.deadUntil){if(J){J.send(E);return}Z5(this,E.gearId,E.card,E.replace===!0,E.index??0)&&(this.log("ฝังการ์ดสำเร็จ"),this.ui())}}),NO({onVector:E=>{E&&!this.joystick&&(this.worldTravel.cancel(),this.holdWalk=!1,this.setAuto(!1),this.target=null,this.pendingHit=null,this.cancelPicku
+
+ropagation(),i.preventDefault(),ay()){fb(ii?.deadUntil?"ใช้คลังไม่ได้ขณะตาย":cb);return}e?In({type:"deposit",gearId:e}):n&&(ii.inventory[n]??0)>0&&In({type:"deposit",item:n,quantity:ii.inventory[n]})}},!0),new MutationObserver(()=>T.hidden?m6():v6()).observe(T,{attributes:!0,attributeFilter:["hidden"]})}const cb="เข้าใกล้เจ้าหน้าที่คลังเพื่อฝาก–ถอน · Premium เปิดคลังจากเมนูได้ทุกที่";function f6(){if(doc
+
+{key:"storevault:"+i,compare:!1,share:!1,primary:{label:"คลิกเพื่อถอนเข้ากระเป๋า",run:()=>In({type:"withdraw",gearId:i})}}):null}),fs("storestack",i=>{const s=ii?Op().inventory[i]??0:0;if(!(s>0))return null;const e=mt[i]??{name:i,description:""},[n,...l]=e.description.split(" · ");return{key:"storestack:"+i,icon:ee(i),name:e.name,rarity:zl(i),type:Qt(i)?"Card":"Item",effect:n,description:l.join(" · "),row
+

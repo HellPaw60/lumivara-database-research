@@ -1,0 +1,26 @@
+{
+  "arena_map": {
+    "name": "Aurelia Arena",
+    "subtitle": "PVP อิสระ · คลิกผู้เล่นเพื่อสู้ · ปาร์ตี้เดียวกันโจมตีกันไม่ได้",
+    "width": "NA[0]",
+    "height": "NA[1]",
+    "spawn": "sn",
+    "portals": [
+      {
+        "to": "field",
+        "label": "ป่าเริ่มต้น Lv.1–20 ↓"
+      }
+    ]
+  },
+  "training_map": {
+    "name": "Training Grounds",
+    "subtitle": "ลานฝึก · ทดสอบดาเมจกับหุ่นฟาง · ไม่มี EXP และไอเท็ม"
+  },
+  "pvp_actions": {
+    "challenge": "{type:'pvpChallenge', target:playerId}",
+    "respond": "{type:'pvpRespond', from:playerId, accept:bool}",
+    "invite": "pvp-invite dialog with 3 minute duel"
+  },
+  "duel_rules": "3 minutes, no penalty for losing",
+  "status": "VERIFIED - arena and PVP system confirmed"
+}

@@ -1,0 +1,23 @@
+{
+  "pet_types": {
+    "dew-bunny": "water element, level 7",
+    "thorn-pixie": "poison element, level 14",
+    "honey-moth": "wind element, level 18",
+    "bramble-hare": "earth element, level 16",
+    "frost-puff": "ice element, level 28",
+    "icicle-hare": "ice element",
+    "snow-owl": "ice element",
+    "aurora-fox": "ice element",
+    "dune-gecko": "earth element",
+    "scarab-sentinel": "earth element"
+  },
+  "pet_bag": "Storage for pet loot, separate from player inventory",
+  "pet_loot": "Pets can collect loot with configurable filter (consumable, etc, card, equipment)",
+  "pet_withdraw": "Transfer items from pet bag to player inventory",
+  "pet_window": "UI for managing pet (pet-window element)",
+  "pet_pickup": "Toggle for pet auto-pickup",
+  "pet_first": "Option for pet to loot before player",
+  "status": "VERIFIED - pet system confirmed with multiple pet types",
+  "pet_withdraw_all": "pet-withdraw-all button sends {type:'petWithdraw', all:true}",
+  "pet_first_option": "radio input [name=pet-first] with values 'owner' or 'pet'"
+}

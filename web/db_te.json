@@ -1,0 +1,16 @@
+{
+  "pierce": 60,
+  "mpierce": 60,
+  "atkPct": 30,
+  "matkPct": 30,
+  "lifesteal": 8,
+  "freezeHit": 15,
+  "resStun": 80,
+  "resFreeze": 80,
+  "moveSpeed": 30,
+  "critDmg": 60,
+  "stunHit": 15,
+  "bleedHit": 15,
+  "crushHit": 15,
+  "spDrain": 5
+}

@@ -1,0 +1,3567 @@
+{
+ "_meta": {
+  "source": "D:/lumivara-re/collect/raw-snapshots.json (8593 events, 14 area)",
+  "generated": "2026-09-28T06:52:19Z",
+  "method": "Union semua field per event type dari seluruh event teramati; tipe nilai diklasifikasi (number/string/bool/null/object/array); rentang min/max/mean untuk numerik; distinct values untuk string low-cardinality. Contoh payload = event dengan field terbanyak.",
+  "confidence": "VERIFIED (semua field & nilai langsung teramati dari data)",
+  "event_types_total": 26,
+  "envelope": {
+   "description": "Setiap event dibungkus envelope {area, ev} — area = area asal event, ev = payload event dengan field 'type'",
+   "outer_area_values": {
+    "rome": 368,
+    "desert": 1521,
+    "caldera": 695,
+    "dunes": 1762,
+    "glacier": 1148,
+    "field": 175,
+    "snow": 166,
+    "swamp": 1363,
+    "wildwood": 223,
+    "tempest": 339,
+    "moor": 390,
+    "crystal": 430,
+    "unknown": 8,
+    "training": 5
+   },
+   "note_outer_unknown": "area luar 'unknown' muncul untuk event market (ev.area tetap 'rome') — indikasi event market di-broadcast lintas area atau area asal tidak dilampirkan"
+  }
+ },
+ "events": {
+  "buy": {
+   "count": 21,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 21,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "21/21",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 21,
+     "distinct_values": [
+      "google:112640313818320642628",
+      "guest:08e4888c-f28e-4a5e-8932-87feb88e4000",
+      "guest:5d3c72b0-aed3-4baa-80b4-20a62f3ac363"
+     ],
+     "presence": "21/21",
+     "optional": false
+    },
+    "silver": {
+     "types": [
+      "number"
+     ],
+     "present": 21,
+     "min": 0.1,
+     "max": 100,
+     "mean": 4.8571,
+     "presence": "21/21",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 21,
+     "distinct_values": [
+      "ซื้อ Arrow ×100 แล้ว",
+      "ซื้อ Arrow ×1100 แล้ว",
+      "ซื้อ Arrow ×1600 แล้ว",
+      "ซื้อ Arrow ×1900 แล้ว",
+      "ซื้อ Arrow ×4600 แล้ว",
+      "ซื้อ Arrow ×9000 แล้ว",
+      "ซื้อ Katana แล้ว"
+     ],
+     "presence": "21/21",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 21,
+     "distinct_values": [
+      "buy"
+     ],
+     "presence": "21/21",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 21,
+     "min": 448,
+     "max": 470.618,
+     "mean": 468.6421,
+     "presence": "21/21",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 21,
+     "min": 272,
+     "max": 335.0287,
+     "mean": 275.1469,
+     "presence": "21/21",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "buy",
+    "text": "ซื้อ Katana แล้ว",
+    "area": "rome",
+    "x": 448,
+    "y": 272,
+    "player": "guest:08e4888c-f28e-4a5e-8932-87feb88e4000",
+    "silver": 100
+   },
+   "notes": [
+    "pembelian NPC shop; silver = harga"
+   ]
+  },
+  "casting": {
+   "count": 64,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 64,
+     "distinct_values": [
+      "caldera",
+      "crystal",
+      "desert",
+      "dunes",
+      "field",
+      "swamp"
+     ],
+     "presence": "64/64",
+     "optional": false
+    },
+    "duration": {
+     "types": [
+      "number"
+     ],
+     "present": 64,
+     "min": 11,
+     "max": 868,
+     "mean": 296.1719,
+     "presence": "64/64",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 64,
+     "distinct_values": [
+      "google:100684859241033961236",
+      "google:101199933540500983184",
+      "google:101497780685142126638",
+      "google:101832447478896977360",
+      "google:102619423992976277580",
+      "google:103024211716805508871",
+      "google:105226767815688917680",
+      "google:105459234457020524711",
+      "google:105602643297038859658",
+      "google:106066148764935111042",
+      "google:106819360697525405484",
+      "google:108153871752772372436",
+      "google:109414740729859896158",
+      "google:115007331065743218222",
+      "guest:325de3db-47f2-41a8-a9ad-5bfa395392d5",
+      "guest:3aea7bf0-dd70-4531-b550-4c64619545bb",
+      "guest:d0b840d4-943c-4eda-951a-099dff7f68f1",
+      "guest:d1d7b380-c324-4de5-9455-f0212cf01dac"
+     ],
+     "presence": "64/64",
+     "optional": false
+    },
+    "skill": {
+     "types": [
+      "string"
+     ],
+     "present": 64,
+     "distinct_values": [
+      "coldbolt",
+      "firebolt",
+      "holylight",
+      "thunderstorm"
+     ],
+     "presence": "64/64",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 64,
+     "distinct_values": [
+      "casting"
+     ],
+     "presence": "64/64",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 64,
+     "min": 285,
+     "max": 2865.8442,
+     "mean": 1273.7486,
+     "presence": "64/64",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 64,
+     "min": 287.7949,
+     "max": 2896,
+     "mean": 1173.3577,
+     "presence": "64/64",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "casting",
+    "skill": "coldbolt",
+    "duration": 294,
+    "area": "caldera",
+    "x": 285,
+    "y": 2034,
+    "player": "google:102619423992976277580"
+   },
+   "notes": [
+    "duration = ms cast time; skill yang butuh cast akan kirim 'casting' dulu lalu 'skill'"
+   ]
+  },
+  "defeat": {
+   "count": 860,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 860,
+     "distinct_values": [
+      "caldera",
+      "crystal",
+      "desert",
+      "dunes",
+      "field",
+      "glacier",
+      "moor",
+      "snow",
+      "swamp",
+      "tempest",
+      "wildwood"
+     ],
+     "presence": "860/860",
+     "optional": false
+    },
+    "baseExp": {
+     "types": [
+      "number"
+     ],
+     "present": 860,
+     "min": 59,
+     "max": 50634,
+     "mean": 3325.2047,
+     "presence": "860/860",
+     "optional": false
+    },
+    "damage": {
+     "types": [
+      "number"
+     ],
+     "present": 860,
+     "min": 59,
+     "max": 50634,
+     "mean": 3325.2047,
+     "presence": "860/860",
+     "optional": false
+    },
+    "guildExp": {
+     "types": [
+      "number"
+     ],
+     "present": 71,
+     "min": 15,
+     "max": 6828,
+     "mean": 641.0704,
+     "presence": "71/860",
+     "optional": true
+    },
+    "jobExp": {
+     "types": [
+      "number"
+     ],
+     "present": 860,
+     "min": 0,
+     "max": 19893,
+     "mean": 694.0419,
+     "presence": "860/860",
+     "optional": false
+    },
+    "mob": {
+     "types": [
+      "number"
+     ],
+     "present": 860,
+     "min": 0,
+     "max": 155,
+     "mean": 60.2616,
+     "presence": "860/860",
+     "optional": false
+    },
+    "name": {
+     "types": [
+      "string"
+     ],
+     "present": 860,
+     "distinct_count": 30,
+     "examples": [
+      "Amber Beetle",
+      "Aurora Fox",
+      "Bog Toad",
+      "Bramble Hare",
+      "Cactus Imp",
+      "Cave Bat",
+      "Dune Gecko",
+      "Frost Puff",
+      "Honey Moth",
+      "Icicle Hare"
+     ],
+     "presence": "860/860",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 860,
+     "distinct_count": 188,
+     "examples": [
+      "google:100051092632488271629",
+      "google:100192705427962134936",
+      "google:100293378224657090039",
+      "google:100461134230842812029",
+      "google:100518385382385329971",
+      "google:100522530405028890291",
+      "google:100533139454385820970",
+      "google:100684130695146667470",
+      "google:100684859241033961236",
+      "google:100852496685872108328"
+     ],
+     "presence": "860/860",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 860,
+     "distinct_values": [
+      "defeat"
+     ],
+     "presence": "860/860",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 860,
+     "min": 192.262,
+     "max": 2928.3873,
+     "mean": 1425.3702,
+     "presence": "860/860",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 860,
+     "min": 157.5409,
+     "max": 2916.7365,
+     "mean": 1252.8967,
+     "presence": "860/860",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "defeat",
+    "baseExp": 6013,
+    "jobExp": 0,
+    "guildExp": 668,
+    "name": "Pebble Golem",
+    "area": "glacier",
+    "x": 1905.1052143998118,
+    "y": 2571.4523721546784,
+    "player": "google:106126124531472100473",
+    "mob": 126,
+    "damage": 6013
+   },
+   "notes": [
+    "baseExp/jobExp = exp yang didapat; damage pada defeat = damage finishing blow; name = nama mob yang dikalahkan"
+   ]
+  },
+  "fusion": {
+   "count": 2,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "equipment": {
+     "types": [
+      "object"
+     ],
+     "present": 2,
+     "structure_example": {
+      "id": "46eab093-4b79-4598-b617-24b9319cc17a",
+      "slot": "accessory1",
+      "tier": 5,
+      "name": "V Ruby Ring",
+      "bonuses": {
+       "crit": 15,
+       "flee": 5,
+       "hit": 10,
+       "agi": 10
+      },
+      "finder": "Xiaoju"
+     },
+     "presence": "2/2",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "google:115844079687235042943"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      ""
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "fusion"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 970.1458,
+     "max": 970.1458,
+     "mean": 970.1458,
+     "presence": "2/2",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 356.2083,
+     "max": 356.2083,
+     "mean": 356.2083,
+     "presence": "2/2",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "fusion",
+    "text": "",
+    "equipment": {
+     "id": "46eab093-4b79-4598-b617-24b9319cc17a",
+     "slot": "accessory1",
+     "tier": 5,
+     "name": "V Ruby Ring",
+     "bonuses": {
+      "crit": 15,
+      "flee": 5,
+      "hit": 10,
+      "agi": 10
+     },
+     "finder": "Xiaoju"
+    },
+    "area": "rome",
+    "x": 970.1458346727304,
+    "y": 356.20833811629575,
+    "player": "google:115844079687235042943"
+   },
+   "notes": [
+    "hasil fusion equipment; equipment object berisi id/slot/tier/name/bonuses/finder"
+   ]
+  },
+  "gold": {
+   "count": 9,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 9,
+     "distinct_values": [
+      "caldera",
+      "desert",
+      "snow",
+      "swamp"
+     ],
+     "presence": "9/9",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 9,
+     "distinct_values": [
+      "google:102445869321793081113",
+      "google:105497280454354693952",
+      "google:109997039237130623903",
+      "guest:b960e47b-3e58-4cd5-b97f-37fa32248bfc",
+      "guest:fb95fed3-2e3a-4dee-9c96-cb673d79eff0"
+     ],
+     "presence": "9/9",
+     "optional": false
+    },
+    "silver": {
+     "types": [
+      "number"
+     ],
+     "present": 9,
+     "min": 1,
+     "max": 5,
+     "mean": 3.1111,
+     "presence": "9/9",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 9,
+     "distinct_values": [
+      "Gold Strike · +1 Silver",
+      "Gold Strike · +2 Silver",
+      "Gold Strike · +4 Silver",
+      "Gold Strike · +5 Silver"
+     ],
+     "presence": "9/9",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 9,
+     "distinct_values": [
+      "gold"
+     ],
+     "presence": "9/9",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 9,
+     "min": 698.3383,
+     "max": 2906,
+     "mean": 1655.4436,
+     "presence": "9/9",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 9,
+     "min": 714.2047,
+     "max": 2526.1652,
+     "mean": 1654.433,
+     "presence": "9/9",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "gold",
+    "silver": 1,
+    "text": "Gold Strike · +1 Silver",
+    "area": "swamp",
+    "x": 2906,
+    "y": 1290,
+    "player": "guest:fb95fed3-2e3a-4dee-9c96-cb673d79eff0"
+   },
+   "notes": [
+    "Gold Strike proc: +silver dari skill/passive"
+   ]
+  },
+  "guild": {
+   "count": 3,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "tempest"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "directory": {
+     "types": [
+      "array"
+     ],
+     "present": 3,
+     "structure_example": [
+      {
+       "id": "1ea526b2-827c-4849-b112-0a37c7c2a8f0",
+       "name": "AMB[Gaming]",
+       "level": 10,
+       "members": 11,
+       "capacity": 28,
+       "pending": false
+      },
+      {
+       "id": "b8a30be8-a1ce-4d91-85f0-f4dfc0829f34",
+       "name": "Cluade",
+       "level": 7,
+       "members": 22,
+       "capacity": 22,
+       "pending": false
+      },
+      {
+       "id": "7392e26c-48b9-459c-97b7-f8db2832076c",
+       "name": "Death Crown",
+       "level": 8,
+       "members": 16,
+       "capacity": 24,
+       "pending": false
+      },
+      {
+       "id": "948922b9-5a12-4c93-bb43-1939a56d8bda",
+       "name": "EccentriC",
+       "level": 8,
+       "members": 36,
+       "capacity": 24,
+       "pending": false
+      },
+      {
+       "id": "b56cbdba-e5cf-469c-b69f-2d07c6127411",
+       "name": "Game",
+       "level": 4,
+       "members": 15,
+       "capacity": 16,
+       "pending": false
+      },
+      {
+       "id": "ba6e3159-cf39-4478-ae39-1d35815ff88a",
+       "name": "ImPosSiBle",
+       "level": 7,
+       "members": 10,
+       "capacity": 22,
+       "pending": false
+      },
+      {
+       "id": "5c7694f8-d39f-400c-9b87-0c1915a5c419",
+       "name": "KGB",
+       "level": 5,
+       "members": 16,
+       "capacity": 18,
+       "pending": false
+      },
+      {
+       "id": "4d3a692e-6174-45d0-a14a-ebce473f2a9e",
+       "name": "Lumi",
+       "level": 9,
+       "members": 50,
+       "capacity": 26,
+       "pending": false
+      },
+      {
+       "id": "7f40b6bc-8eba-4fe0-bdb2-f66d105bd095",
+       "name": "LUMINUSX",
+       "level": 5,
+       "members": 18,
+       "capacity": 18,
+       "pending": false
+      },
+      {
+       "id": "b5eaf3cb-daea-439f-92f4-b738a9335391",
+       "name": "Nusantara",
+       "level": 6,
+       "members": 19,
+       "capacity": 20,
+       "pending": false
+      },
+      {
+       "id": "d146b516-d09d-42fb-a450-a75780fd9ab3",
+       "name": "OnlyfanS",
+       "level": 6,
+       "members": 24,
+       "capacity": 20,
+       "pending": false
+      },
+      {
+       "id": "a6804646-5b74-4150-9184-3dd461646ae4",
+       "name": "OopzZ",
+       "level": 10,
+       "members": 51,
+       "capacity": 28,
+       "pending": false
+      },
+      {
+       "id": "5b7df194-4f3c-44aa-8a95-8298823ba0a1",
+       "name": "Parc Ferme",
+       "level": 3,
+       "members": 8,
+       "capacity": 14,
+       "pending": false
+      },
+      {
+       "id": "7f979deb-9d42-4f6c-a402-8ce0ff1f9ebc",
+       "name": "RainMaker",
+       "level": 6,
+       "members": 20,
+       "capacity": 20,
+       "pending": false
+      },
+      {
+       "id": "5cd8993c-5bd8-483c-a647-e71f3f620d72",
+       "name": "TestamenT",
+       "level": 10,
+       "members": 28,
+       "capacity": 28,
+       "pending": false
+      },
+      {
+       "id": "6ca4cca0-8dbe-4417-b60a-80978db3be63",
+       "name": "TheRisen",
+       "level": 9,
+       "members": 45,
+       "capacity": 26,
+       "pending": false
+      },
+      {
+       "id": "69cf3e18-9a10-4006-b672-a236ffc3db2e",
+       "name": "TITAN",
+       "level": 11,
+       "members": 55,
+       "capacity": 30,
+       "pending": false
+      },
+      {
+       "id": "f63fd9ce-6a5f-4aa0-ad73-378de8e0e071",
+       "name": "VirusZ",
+       "level": 7,
+       "members": 21,
+       "capacity": 22,
+       "pending": false
+      },
+      {
+       "id": "b0d295d3-b2a2-4512-a891-1091c4b7c306",
+       "name": "ZENITH",
+       "level": 3,
+       "members": 12,
+       "capacity": 14,
+       "pending": false
+      },
+      {
+       "id": "f117d4ec-d602-465a-8f67-e9ad6ecdb2a1",
+       "name": "ขายพูลวิลล่าCNX",
+       "level": 10,
+       "members": 26,
+       "capacity": 28,
+       "pending": false
+      },
+      {
+       "id": "a45f11e1-05eb-4d50-b878-b1a19c0936b1",
+       "name": "ดุ๋ยดุ่ย",
+       "level": 9,
+       "members": 26,
+       "capacity": 26,
+       "pending": false
+      },
+      {
+       "id": "eba1134d-58ea-4352-85f4-fac22443ab40",
+       "name": "วงเวียน22",
+       "level": 7,
+       "members": 19,
+       "capacity": 22,
+       "pending": false
+      },
+      {
+       "id": "a5fb86be-189b-428b-b10d-9eb80198bddf",
+       "name": "หีควยแตด",
+       "level": 5,
+       "members": 18,
+       "capacity": 18,
+       "pending": false
+      },
+      {
+       "id": "c19a4b60-fe52-430e-a386-6d3bc227862e",
+       "name": "ิอยู่แป๊บ",
+       "level": 4,
+       "members": 1,
+       "capacity": 16,
+       "pending": false
+      }
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "guild": {
+     "types": [
+      "null"
+     ],
+     "present": 3,
+     "null_count": 3,
+     "presence": "3/3",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "google:100522530405028890291"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "คำขอกิลนี้เต็มแล้ว กรุณาลองใหม่ภายหลัง"
+     ],
+     "presence": "2/3",
+     "optional": true
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "guild"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 3,
+     "min": 1095.4317,
+     "max": 1135.3786,
+     "mean": 1111.5441,
+     "presence": "3/3",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 3,
+     "min": 2449.1965,
+     "max": 2453.462,
+     "mean": 2451.9342,
+     "presence": "3/3",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "guild",
+    "guild": null,
+    "text": "คำขอกิลนี้เต็มแล้ว กรุณาลองใหม่ภายหลัง",
+    "directory": [
+     {
+      "id": "1ea526b2-827c-4849-b112-0a37c7c2a8f0",
+      "name": "AMB[Gaming]",
+      "level": 10,
+      "members": 11,
+      "capacity": 28,
+      "pending": false
+     },
+     {
+      "id": "b8a30be8-a1ce-4d91-85f0-f4dfc0829f34",
+      "name": "Cluade",
+      "level": 7,
+      "members": 22,
+      "capacity": 22,
+      "pending": false
+     },
+     {
+      "id": "7392e26c-48b9-459c-97b7-f8db2832076c",
+      "name": "Death Crown",
+      "level": 8,
+      "members": 16,
+      "capacity": 24,
+      "pending": false
+     },
+     {
+      "id": "948922b9-5a12-4c93-bb43-1939a56d8bda",
+      "name": "EccentriC",
+      "level": 8,
+      "members": 36,
+      "capacity": 24,
+      "pending": false
+     },
+     {
+      "id": "b56cbdba-e5cf-469c-b69f-2d07c6127411",
+      "name": "Game",
+      "level": 4,
+      "members": 15,
+      "capacity": 16,
+      "pending": false
+     },
+     {
+      "id": "ba6e3159-cf39-4478-ae39-1d35815ff88a",
+      "name": "ImPosSiBle",
+      "level": 7,
+      "members": 10,
+      "capacity": 22,
+      "pending": false
+     },
+     {
+      "id": "5c7694f8-d39f-400c-9b87-0c1915a5c419",
+      "name": "KGB",
+      "level": 5,
+      "members": 16,
+      "capacity": 18,
+      "pending": false
+     },
+     {
+      "id": "4d3a692e-6174-45d0-a14a-ebce473f2a9e",
+      "name": "Lumi",
+      "level": 9,
+      "members": 50,
+      "capacity": 26,
+      "pending": false
+     },
+     {
+      "id": "7f40b6bc-8eba-4fe0-bdb2-f66d105bd095",
+      "name": "LUMINUSX",
+      "level": 5,
+      "members": 18,
+      "capacity": 18,
+      "pending": false
+     },
+     {
+      "id": "b5eaf3cb-daea-439f-92f4-b738a9335391",
+      "name": "Nusantara",
+      "level": 6,
+      "members": 19,
+      "capacity": 20,
+      "pending": false
+     },
+     {
+      "id": "d146b516-d09d-42fb-a450-a75780fd9ab3",
+      "name": "OnlyfanS",
+      "level": 6,
+      "members": 24,
+      "capacity": 20,
+      "pending": false
+     },
+     {
+      "id": "a6804646-5b74-4150-9184-3dd461646ae4",
+      "name": "OopzZ",
+      "level": 10,
+      "members": 51,
+      "capacity": 28,
+      "pending": false
+     },
+     {
+      "id": "5b7df194-4f3c-44aa-8a95-8298823ba0a1",
+      "name": "Parc Ferme",
+      "level": 3,
+      "members": 8,
+      "capacity": 14,
+      "pending": false
+     },
+     {
+      "id": "7f979deb-9d42-4f6c-a402-8ce0ff1f9ebc",
+      "name": "RainMaker",
+      "level": 6,
+      "members": 20,
+      "capacity": 20,
+      "pending": false
+     },
+     {
+      "id": "5cd8993c-5bd8-483c-a647-e71f3f620d72",
+      "name": "TestamenT",
+      "level": 10,
+      "members": 28,
+      "capacity": 28,
+      "pending": false
+     },
+     {
+      "id": "6ca4cca0-8dbe-4417-b60a-80978db3be63",
+      "name": "TheRisen",
+      "level": 9,
+      "members": 45,
+      "capacity": 26,
+      "pending": false
+     },
+     {
+      "id": "69cf3e18-9a10-4006-b672-a236ffc3db2e",
+      "name": "TITAN",
+      "level": 11,
+      "members": 55,
+      "capacity": 30,
+      "pending": false
+     },
+     {
+      "id": "f63fd9ce-6a5f-4aa0-ad73-378de8e0e071",
+      "name": "VirusZ",
+      "level": 7,
+      "members": 21,
+      "capacity": 22,
+      "pending": false
+     },
+     {
+      "id": "b0d295d3-b2a2-4512-a891-1091c4b7c306",
+      "name": "ZENITH",
+      "level": 3,
+      "members": 12,
+      "capacity": 14,
+      "pending": false
+     },
+     {
+      "id": "f117d4ec-d602-465a-8f67-e9ad6ecdb2a1",
+      "name": "ขายพูลวิลล่าCNX",
+      "level": 10,
+      "members": 26,
+      "capacity": 28,
+      "pending": false
+     },
+     {
+      "id": "a45f11e1-05eb-4d50-b878-b1a19c0936b1",
+      "name": "ดุ๋ยดุ่ย",
+      "level": 9,
+      "members": 26,
+      "capacity": 26,
+      "pending": false
+     },
+     {
+      "id": "eba1134d-58ea-4352-85f4-fac22443ab40",
+      "name": "วงเวียน22",
+      "level": 7,
+      "members": 19,
+      "capacity": 22,
+      "pending": false
+     },
+     {
+      "id": "a5fb86be-189b-428b-b10d-9eb80198bddf",
+      "name": "หีควยแตด",
+      "level": 5,
+      "members": 18,
+      "capacity": 18,
+      "pending": false
+     },
+     {
+      "id": "c19a4b60-fe52-430e-a386-6d3bc227862e",
+      "name": "ิอยู่แป๊บ",
+      "level": 4,
+      "members": 1,
+      "capacity": 16,
+      "pending": false
+     }
+    ],
+    "area": "tempest",
+    "x": 1135.3786381663156,
+    "y": 2453.4620144929936,
+    "player": "google:100522530405028890291"
+   },
+   "notes": [
+    "guild directory listing dengan id/name/level/members/capacity/pending"
+   ]
+  },
+  "hit": {
+   "count": 3282,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 3282,
+     "distinct_values": [
+      "caldera",
+      "crystal",
+      "desert",
+      "dunes",
+      "field",
+      "glacier",
+      "moor",
+      "snow",
+      "swamp",
+      "tempest",
+      "training",
+      "wildwood"
+     ],
+     "presence": "3282/3282",
+     "optional": false
+    },
+    "castId": {
+     "types": [
+      "string"
+     ],
+     "present": 2041,
+     "distinct_count": 1319,
+     "examples": [
+      "google:100051092632488271629:1790549334304:doublestrafe",
+      "google:100051092632488271629:1790549334681:doublestrafe",
+      "google:100051092632488271629:1790549335031:doublestrafe",
+      "google:100051092632488271629:1790549336166:doublestrafe",
+      "google:100051092632488271629:1790549336559:doublestrafe",
+      "google:100051092632488271629:1790549336965:doublestrafe",
+      "google:100051092632488271629:1790549337318:doublestrafe",
+      "google:100051092632488271629:1790549338023:doublestrafe",
+      "google:100051092632488271629:1790549338424:doublestrafe",
+      "google:100051092632488271629:1790549338798:doublestrafe"
+     ],
+     "presence": "2041/3282",
+     "optional": true
+    },
+    "critical": {
+     "types": [
+      "bool"
+     ],
+     "present": 2940,
+     "true_count": 1038,
+     "false_count": 1902,
+     "presence": "2940/3282",
+     "optional": true
+    },
+    "crits": {
+     "types": [
+      "array"
+     ],
+     "present": 399,
+     "structure_example": [
+      true,
+      true
+     ],
+     "presence": "399/3282",
+     "optional": true
+    },
+    "damage": {
+     "types": [
+      "number"
+     ],
+     "present": 3282,
+     "min": 0,
+     "max": 131030,
+     "mean": 6368.4059,
+     "presence": "3282/3282",
+     "optional": false
+    },
+    "dot": {
+     "types": [
+      "bool"
+     ],
+     "present": 111,
+     "true_count": 111,
+     "false_count": 0,
+     "presence": "111/3282",
+     "optional": true
+    },
+    "double": {
+     "types": [
+      "bool"
+     ],
+     "present": 399,
+     "true_count": 399,
+     "false_count": 0,
+     "presence": "399/3282",
+     "optional": true
+    },
+    "drainHp": {
+     "types": [
+      "number"
+     ],
+     "present": 31,
+     "min": 2,
+     "max": 300,
+     "mean": 72.0323,
+     "presence": "31/3282",
+     "optional": true
+    },
+    "drainSp": {
+     "types": [
+      "number"
+     ],
+     "present": 91,
+     "min": 2,
+     "max": 6,
+     "mean": 2.7033,
+     "presence": "91/3282",
+     "optional": true
+    },
+    "hits": {
+     "types": [
+      "array"
+     ],
+     "present": 399,
+     "structure_example": [
+      4437,
+      4437
+     ],
+     "presence": "399/3282",
+     "optional": true
+    },
+    "incoming": {
+     "types": [
+      "bool"
+     ],
+     "present": 342,
+     "true_count": 342,
+     "false_count": 0,
+     "presence": "342/3282",
+     "optional": true
+    },
+    "missed": {
+     "types": [
+      "bool"
+     ],
+     "present": 3277,
+     "true_count": 266,
+     "false_count": 3011,
+     "presence": "3277/3282",
+     "optional": true
+    },
+    "mob": {
+     "types": [
+      "number"
+     ],
+     "present": 3282,
+     "min": 0,
+     "max": 155,
+     "mean": 62.4385,
+     "presence": "3282/3282",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 3282,
+     "distinct_count": 139,
+     "examples": [
+      "google:100051092632488271629",
+      "google:100522530405028890291",
+      "google:100533139454385820970",
+      "google:100684859241033961236",
+      "google:100884277438834133311",
+      "google:101100261177774329583",
+      "google:101199933540500983184",
+      "google:101497780685142126638",
+      "google:101754122659938120842",
+      "google:101832447478896977360"
+     ],
+     "presence": "3282/3282",
+     "optional": false
+    },
+    "reaction": {
+     "types": [
+      "string"
+     ],
+     "present": 318,
+     "distinct_values": [
+      "frozen",
+      "vaporize",
+      "wildfire"
+     ],
+     "presence": "318/3282",
+     "optional": true
+    },
+    "skill": {
+     "types": [
+      "string"
+     ],
+     "present": 2041,
+     "distinct_values": [
+      "arrowshower",
+      "bash",
+      "cartstrike",
+      "coldbolt",
+      "dokugiri",
+      "doublestrafe",
+      "firebolt",
+      "hammerfall",
+      "holylight",
+      "iaigiri",
+      "magnum",
+      "mammonite",
+      "piercingshot",
+      "shadowburst",
+      "thunderstorm",
+      "twinfang",
+      "venomknife",
+      "venomrupture",
+      "viperfang"
+     ],
+     "presence": "2041/3282",
+     "optional": true
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 3282,
+     "distinct_values": [
+      "hit"
+     ],
+     "presence": "3282/3282",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 3282,
+     "min": 192,
+     "max": 2928.3873,
+     "mean": 1490.5886,
+     "presence": "3282/3282",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 3282,
+     "min": 157.5409,
+     "max": 2916.7365,
+     "mean": 1419.3868,
+     "presence": "3282/3282",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "skill": "doublestrafe",
+    "castId": "google:117891370212776099515:1790545327768:doublestrafe",
+    "type": "hit",
+    "area": "desert",
+    "x": 2677.9244836335374,
+    "y": 1053.3344165201695,
+    "player": "google:117891370212776099515",
+    "mob": 71,
+    "damage": 2923,
+    "critical": false,
+    "missed": false,
+    "double": true,
+    "hits": [
+     1462,
+     1461
+    ],
+    "crits": [
+     false,
+     false
+    ],
+    "drainHp": 29
+   },
+   "notes": [
+    "damage = angka damage; critical/missed bool; skill+castId hadir jika hit berasal dari skill; incoming=true berarti mob menyerang player; double=true dengan hits/crits = multi-hit dalam satu event; dot=true untuk damage-over-time tick; drainSp/drainHp = life/SP steal"
+   ]
+  },
+  "mail": {
+   "count": 13,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 13,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "13/13",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 13,
+     "distinct_values": [
+      "google:105081172495518203680",
+      "google:105743808113696522773",
+      "google:107174957971327407912",
+      "google:109183044708404308875",
+      "google:114799113795399689347",
+      "google:118377913553811288879",
+      "guest:62a054af-a98a-434c-8c13-ce825118ee8d"
+     ],
+     "presence": "13/13",
+     "optional": false
+    },
+    "silver": {
+     "types": [
+      "number"
+     ],
+     "present": 1,
+     "min": 74,
+     "max": 74,
+     "mean": 74,
+     "presence": "1/13",
+     "optional": true
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 13,
+     "distinct_values": [
+      "รับของจากจดหมาย · 74 Silver",
+      "📬 จดหมายใหม่: ขายได้ II Katana",
+      "📬 จดหมายใหม่: ขายได้ IV Muffler",
+      "📬 จดหมายใหม่: ขายได้ V Coat",
+      "📬 มีจดหมายใหม่รออยู่ในกล่องจดหมาย"
+     ],
+     "presence": "13/13",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 13,
+     "distinct_values": [
+      "mail"
+     ],
+     "presence": "13/13",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 13,
+     "min": 416,
+     "max": 872.4237,
+     "mean": 643.9649,
+     "presence": "13/13",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 13,
+     "min": 90,
+     "max": 490,
+     "mean": 396.3414,
+     "presence": "13/13",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "mail",
+    "text": "รับของจากจดหมาย · 74 Silver",
+    "area": "rome",
+    "x": 872.4237392712557,
+    "y": 264.4237392712558,
+    "player": "google:118377913553811288879",
+    "silver": 74
+   },
+   "notes": [
+    "notifikasi mail baru"
+   ]
+  },
+  "market": {
+   "count": 24,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 24,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "24/24",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 24,
+     "distinct_values": [
+      "google:103263587197777769485",
+      "google:105453927924497263243",
+      "google:105884469442566189085",
+      "google:106067811052095892111",
+      "google:106126124531472100473",
+      "google:113896997911221636438",
+      "google:116597900500073514697",
+      "google:117393865256515840230",
+      "guest:14d4d487-2019-425d-83f2-93858d9b3528",
+      "guest:37fbb102-c8c0-4e4a-a7d0-16852fd5ff37",
+      "guest:e6f0a265-8751-4c0b-94b7-e5e700945951"
+     ],
+     "presence": "24/24",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 24,
+     "distinct_values": [
+      "ซื้อ II Dagger Pair จาก ลิงเผือกหางแดง ที่ 200 Silver แล้ว",
+      "ซื้อ II Red Scarf จาก GTNN ที่ 40 Silver แล้ว",
+      "ซื้อ III Hammer จาก Kikimay ที่ 80 Silver แล้ว",
+      "ซื้อ V Helm จาก Sastrawut ที่ 5,000 Silver แล้ว",
+      "ซื้อทันที 1 ชิ้น รวม 3,000 Silver",
+      "ซื้อทันที 1 ชิ้น รวม 6,999 Silver",
+      "ซื้อทันที 31 ชิ้น รวม 108,500 Silver",
+      "ซื้ออุปกรณ์จากกระดานเรียบร้อย",
+      "ตลาดกลางตอบช้า กำลังยืนยันรายการให้ อย่าเพิ่งสั่งซ้ำ",
+      "ตลาดกลางรับคำสั่งของคุณแล้ว",
+      "ตั้งขาย III Falchion ที่ 2,000 Silver แล้ว · ค่าธรรมเนียม 2.5% = 50 Silver",
+      "ตั้งขาย III Feather Arrow ที่ 2,000 Silver แล้ว · ค่าธรรมเนียม 2.5% = 50 Silver",
+      "ตั้งขาย V Leather Boots ที่ 3,000 Silver แล้ว · ค่าธรรมเนียม 2.5% = 75 Silver",
+      "ตั้งขาย V Red Scarf ที่ 3,000 Silver แล้ว · ค่าธรรมเนียม 2.5% = 75 Silver",
+      "ตั้งขาย V Sapphire Ring ที่ 2,000 Silver แล้ว · ค่าธรรมเนียม 2.5% = 50 Silver",
+      "ตั้งคำสั่ง ขาย ในตลาดเรียบร้อย · ค่าธรรมเนียม 2.5% = 9,675 Silver",
+      "เก็บ V Explorer Glasses คืนเข้ากระเป๋าแล้ว"
+     ],
+     "presence": "24/24",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 24,
+     "distinct_values": [
+      "market"
+     ],
+     "presence": "24/24",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 24,
+     "min": 626.2006,
+     "max": 887.4921,
+     "mean": 745.5644,
+     "presence": "24/24",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 24,
+     "min": 235.0951,
+     "max": 523.1343,
+     "mean": 277.4209,
+     "presence": "24/24",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "market",
+    "text": "ซื้อ V Helm จาก Sastrawut ที่ 5,000 Silver แล้ว",
+    "area": "rome",
+    "x": 867.5297465870002,
+    "y": 240,
+    "player": "guest:e6f0a265-8751-4c0b-94b7-e5e700945951"
+   },
+   "notes": [
+    "pembelian via player market; text berisi deskripsi transaksi bahasa Thai"
+   ]
+  },
+  "mobSkill": {
+   "count": 5,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 5,
+     "distinct_values": [
+      "desert",
+      "dunes",
+      "swamp"
+     ],
+     "presence": "5/5",
+     "optional": false
+    },
+    "element": {
+     "types": [
+      "string"
+     ],
+     "present": 5,
+     "distinct_values": [
+      "earth",
+      "water",
+      "wind"
+     ],
+     "presence": "5/5",
+     "optional": false
+    },
+    "mob": {
+     "types": [
+      "number"
+     ],
+     "present": 5,
+     "min": 21,
+     "max": 120,
+     "mean": 71.4,
+     "presence": "5/5",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 5,
+     "distinct_values": [
+      "google:101100261177774329583",
+      "google:104697538561837170498",
+      "google:105170728224963102456",
+      "google:109164935083228212276",
+      "google:112441970656844449508"
+     ],
+     "presence": "5/5",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 5,
+     "distinct_values": [
+      "Earth Strike",
+      "Water Strike",
+      "Wind Strike"
+     ],
+     "presence": "5/5",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 5,
+     "distinct_values": [
+      "mobSkill"
+     ],
+     "presence": "5/5",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 5,
+     "min": 890.2299,
+     "max": 2816.1993,
+     "mean": 1706.1959,
+     "presence": "5/5",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 5,
+     "min": 871.2178,
+     "max": 2831.332,
+     "mean": 1787.7902,
+     "presence": "5/5",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "mobSkill",
+    "mob": 21,
+    "text": "Wind Strike",
+    "element": "wind",
+    "area": "swamp",
+    "x": 890.2298720026943,
+    "y": 2831.332010562225,
+    "player": "google:109164935083228212276"
+   },
+   "notes": [
+    "skill telegraph dari mob"
+   ]
+  },
+  "party": {
+   "count": 2,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "from": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "google:103667348464972169382",
+      "google:112714198942058076088"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "kind": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "request"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "name": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "sKyzz",
+      "๐WHITE๐"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "google:116597900500073514697"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "party"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 626.2006,
+     "max": 626.2006,
+     "mean": 626.2006,
+     "presence": "2/2",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 235.0951,
+     "max": 235.0951,
+     "mean": 235.0951,
+     "presence": "2/2",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "party",
+    "kind": "request",
+    "from": "google:103667348464972169382",
+    "name": "sKyzz",
+    "area": "rome",
+    "x": 626.2005869189159,
+    "y": 235.09508236249678,
+    "player": "google:116597900500073514697"
+   },
+   "notes": [
+    "party system; kind=request dengan from/name pengirim invite"
+   ]
+  },
+  "pet": {
+   "count": 4,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 4,
+     "distinct_values": [
+      "glacier",
+      "rome"
+     ],
+     "presence": "4/4",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 4,
+     "distinct_values": [
+      "google:107174957971327407912",
+      "google:107481696023022782925",
+      "guest:6c2a306f-e6b6-4114-acb7-11d864dcf495"
+     ],
+     "presence": "4/4",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 4,
+     "distinct_values": [
+      "กระเป๋าสัตว์เลี้ยงว่างอยู่",
+      "หยิบของจากสัตว์เลี้ยง 10 รายการ",
+      "หยิบของจากสัตว์เลี้ยงแล้ว"
+     ],
+     "presence": "4/4",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 4,
+     "distinct_values": [
+      "pet"
+     ],
+     "presence": "4/4",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 4,
+     "min": 414.6743,
+     "max": 752,
+     "mean": 510.0372,
+     "presence": "4/4",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 4,
+     "min": 416,
+     "max": 2056.7114,
+     "mean": 1256.5017,
+     "presence": "4/4",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "pet",
+    "text": "หยิบของจากสัตว์เลี้ยงแล้ว",
+    "area": "glacier",
+    "x": 414.674290340141,
+    "y": 2056.7113817916056,
+    "player": "guest:6c2a306f-e6b6-4114-acb7-11d864dcf495"
+   },
+   "notes": [
+    "interaksi pet (ambil item dari pet)"
+   ]
+  },
+  "pickup": {
+   "count": 198,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 198,
+     "distinct_values": [
+      "caldera",
+      "crystal",
+      "desert",
+      "dunes",
+      "field",
+      "glacier",
+      "moor",
+      "snow",
+      "swamp",
+      "tempest",
+      "wildwood"
+     ],
+     "presence": "198/198",
+     "optional": false
+    },
+    "count": {
+     "types": [
+      "number"
+     ],
+     "present": 47,
+     "min": 1,
+     "max": 1,
+     "mean": 1,
+     "presence": "47/198",
+     "optional": true
+    },
+    "equipment": {
+     "types": [
+      "object"
+     ],
+     "present": 14,
+     "structure_example": {
+      "id": "6ebe1a27-c685-4d65-b359-b77e4a83f36f",
+      "slot": "ammo",
+      "tier": 5,
+      "name": "V Feather Arrow",
+      "bonuses": {
+       "atk": 5,
+       "hit": 5,
+       "dex": 15
+      },
+      "finder": "TheYoX"
+     },
+     "presence": "14/198",
+     "optional": true
+    },
+    "item": {
+     "types": [
+      "string"
+     ],
+     "present": 198,
+     "distinct_count": 46,
+     "examples": [
+      "accessory1",
+      "accessory2",
+      "amber_shell",
+      "ammo",
+      "armor",
+      "bat_wing",
+      "blue_potion",
+      "boar_tusk",
+      "bramble_fur",
+      "butterfly_wing"
+     ],
+     "presence": "198/198",
+     "optional": false
+    },
+    "pet": {
+     "types": [
+      "string"
+     ],
+     "present": 47,
+     "distinct_values": [
+      "bag",
+      "owner"
+     ],
+     "presence": "47/198",
+     "optional": true
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 198,
+     "distinct_count": 85,
+     "examples": [
+      "google:100051092632488271629",
+      "google:100522530405028890291",
+      "google:100684859241033961236",
+      "google:100884277438834133311",
+      "google:101081926369382614870",
+      "google:101199933540500983184",
+      "google:101497780685142126638",
+      "google:101754122659938120842",
+      "google:102182631220152476023",
+      "google:102591881432185702565"
+     ],
+     "presence": "198/198",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 198,
+     "distinct_values": [
+      "pickup"
+     ],
+     "presence": "198/198",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 198,
+     "min": 191.7682,
+     "max": 2909.9792,
+     "mean": 1602.8683,
+     "presence": "198/198",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 198,
+     "min": 263.5668,
+     "max": 2924.7365,
+     "mean": 1578.9466,
+     "presence": "198/198",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "pickup",
+    "pet": "owner",
+    "count": 1,
+    "area": "caldera",
+    "x": 303.41204374963155,
+    "y": 939.01109810574,
+    "player": "guest:bc3efe5f-d116-4485-bb29-7cee5aceab87",
+    "item": "ammo",
+    "equipment": {
+     "id": "6ebe1a27-c685-4d65-b359-b77e4a83f36f",
+     "slot": "ammo",
+     "tier": 5,
+     "name": "V Feather Arrow",
+     "bonuses": {
+      "atk": 5,
+      "hit": 5,
+      "dex": 15
+     },
+     "finder": "TheYoX"
+    }
+   },
+   "notes": [
+    "pickup drop dari tanah; item = item id"
+   ]
+  },
+  "potion": {
+   "count": 40,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 40,
+     "distinct_values": [
+      "caldera",
+      "desert",
+      "dunes",
+      "field",
+      "glacier",
+      "swamp"
+     ],
+     "presence": "40/40",
+     "optional": false
+    },
+    "damage": {
+     "types": [
+      "number"
+     ],
+     "present": 40,
+     "min": 19,
+     "max": 1575,
+     "mean": 439.575,
+     "presence": "40/40",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 40,
+     "distinct_values": [
+      "google:101100261177774329583",
+      "google:102591881432185702565",
+      "google:102619423992976277580",
+      "google:103683009143864855882",
+      "google:104697538561837170498",
+      "google:104880510598011534031",
+      "google:105170728224963102456",
+      "google:105226767815688917680",
+      "google:106066148764935111042",
+      "google:109054328224070832229",
+      "google:109164935083228212276",
+      "google:109705782261707061129",
+      "google:111491324968475588555",
+      "google:112441970656844449508",
+      "google:114875923645041148493",
+      "guest:520ec0b2-3e15-4318-8ac0-5283f9159ee7",
+      "guest:5e479054-506c-4f25-b636-1db5f24536a0"
+     ],
+     "presence": "40/40",
+     "optional": false
+    },
+    "skill": {
+     "types": [
+      "string"
+     ],
+     "present": 12,
+     "distinct_values": [
+      "endure"
+     ],
+     "presence": "12/40",
+     "optional": true
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 40,
+     "distinct_values": [
+      "potion"
+     ],
+     "presence": "40/40",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 40,
+     "min": 285,
+     "max": 2816.1993,
+     "mean": 1494.1256,
+     "presence": "40/40",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 40,
+     "min": 301.7477,
+     "max": 2831.332,
+     "mean": 1798.6547,
+     "presence": "40/40",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "potion",
+    "skill": "endure",
+    "area": "dunes",
+    "x": 875.0304914637727,
+    "y": 767.377740112245,
+    "player": "guest:520ec0b2-3e15-4318-8ac0-5283f9159ee7",
+    "damage": 145
+   },
+   "notes": [
+    "potion cooldown event; damage = jumlah HP yang dipulihkan (field reuse)"
+   ]
+  },
+  "reaction": {
+   "count": 318,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 318,
+     "distinct_values": [
+      "caldera",
+      "crystal",
+      "desert",
+      "dunes",
+      "glacier",
+      "swamp"
+     ],
+     "presence": "318/318",
+     "optional": false
+    },
+    "element": {
+     "types": [
+      "string"
+     ],
+     "present": 318,
+     "distinct_values": [
+      "fire",
+      "water",
+      "wind"
+     ],
+     "presence": "318/318",
+     "optional": false
+    },
+    "mob": {
+     "types": [
+      "number"
+     ],
+     "present": 318,
+     "min": 0,
+     "max": 126,
+     "mean": 66.9245,
+     "presence": "318/318",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 318,
+     "distinct_values": [
+      "google:100684859241033961236",
+      "google:101832447478896977360",
+      "google:104727957928652172667",
+      "google:105459234457020524711",
+      "google:105602643297038859658",
+      "google:106819360697525405484",
+      "google:107711512452645256525",
+      "google:109414740729859896158",
+      "google:114709862352041831832",
+      "google:115007331065743218222",
+      "guest:5e479054-506c-4f25-b636-1db5f24536a0",
+      "guest:ac9b4d00-d0b9-4fae-8514-ea6a3393906d"
+     ],
+     "presence": "318/318",
+     "optional": false
+    },
+    "reaction": {
+     "types": [
+      "string"
+     ],
+     "present": 318,
+     "distinct_values": [
+      "frozen",
+      "vaporize",
+      "wildfire"
+     ],
+     "presence": "318/318",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 318,
+     "distinct_values": [
+      "ระเหย",
+      "แช่แข็ง",
+      "ไฟลาม"
+     ],
+     "presence": "318/318",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 318,
+     "distinct_values": [
+      "reaction"
+     ],
+     "presence": "318/318",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 318,
+     "min": 207.3992,
+     "max": 2894.8004,
+     "mean": 1239.9357,
+     "presence": "318/318",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 318,
+     "min": 197.5771,
+     "max": 2588.8481,
+     "mean": 1385.2663,
+     "presence": "318/318",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "reaction",
+    "reaction": "frozen",
+    "element": "wind",
+    "text": "แช่แข็ง",
+    "mob": 24,
+    "area": "caldera",
+    "x": 251.7767450742933,
+    "y": 954.4175168757538,
+    "player": "google:114709862352041831832"
+   },
+   "notes": [
+    "elemental reaction trigger (frozen, burn, dll) dengan element terkait"
+   ]
+  },
+  "refine": {
+   "count": 13,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 13,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "13/13",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 13,
+     "distinct_values": [
+      "google:103364558400188857601",
+      "google:106126124531472100473"
+     ],
+     "presence": "13/13",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 13,
+     "distinct_values": [
+      ""
+     ],
+     "presence": "13/13",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 13,
+     "distinct_values": [
+      "refine"
+     ],
+     "presence": "13/13",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 13,
+     "min": 624,
+     "max": 639.5151,
+     "mean": 629.9674,
+     "presence": "13/13",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 13,
+     "min": 464,
+     "max": 502.2759,
+     "mean": 478.7215,
+     "presence": "13/13",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "refine",
+    "text": "",
+    "area": "rome",
+    "x": 639.5151317660633,
+    "y": 502.2759479017807,
+    "player": "google:106126124531472100473"
+   },
+   "notes": [
+    "refine equipment; text kosong saat sukses (silent)"
+   ]
+  },
+  "repair": {
+   "count": 2,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "google:106126124531472100473"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "ซ่อมอุปกรณ์ 10 ชิ้นแล้ว (−Silver 3,125)",
+      "ไม่มีอุปกรณ์ที่ต้องซ่อม"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "repair"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 639.5151,
+     "max": 639.5151,
+     "mean": 639.5151,
+     "presence": "2/2",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 502.2759,
+     "max": 502.2759,
+     "mean": 502.2759,
+     "presence": "2/2",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "repair",
+    "text": "ซ่อมอุปกรณ์ 10 ชิ้นแล้ว (−Silver 3,125)",
+    "area": "rome",
+    "x": 639.5151317660633,
+    "y": 502.2759479017807,
+    "player": "google:106126124531472100473"
+   },
+   "notes": [
+    "repair equipment; text berisi jumlah item + biaya silver"
+   ]
+  },
+  "resetStats": {
+   "count": 3,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "google:107174957971327407912",
+      "google:112678860127607066062"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "ต้องใช้ Silver 2,500 เพื่อรีเซ็ต",
+      "รีเซ็ตสถานะสำเร็จ · คืนทั้งหมด 1267 แต้ม (−Silver 2,500)",
+      "รีเซ็ตสถานะสำเร็จ · คืนทั้งหมด 1336 แต้ม (−Silver 2,500)"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "resetStats"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 3,
+     "min": 416,
+     "max": 457,
+     "mean": 429.6667,
+     "presence": "3/3",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 3,
+     "min": 416,
+     "max": 456.25,
+     "mean": 429.4167,
+     "presence": "3/3",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "resetStats",
+    "text": "รีเซ็ตสถานะสำเร็จ · คืนทั้งหมด 1336 แต้ม (−Silver 2,500)",
+    "area": "rome",
+    "x": 457,
+    "y": 456.25,
+    "player": "google:112678860127607066062"
+   },
+   "notes": [
+    "reset stat points; text berisi jumlah poin yang dikembalikan + biaya silver"
+   ]
+  },
+  "reveal": {
+   "count": 3,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "desert",
+      "swamp"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "duration": {
+     "types": [
+      "number"
+     ],
+     "present": 3,
+     "min": 3000,
+     "max": 3000,
+     "mean": 3000,
+     "presence": "3/3",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "google:106066148764935111042",
+      "google:114784622501872995900",
+      "guest:261b59b1-b9aa-4ae6-8f46-8beb0771c0f1"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "radius": {
+     "types": [
+      "number"
+     ],
+     "present": 3,
+     "min": 170,
+     "max": 170,
+     "mean": 170,
+     "presence": "3/3",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 3,
+     "distinct_values": [
+      "reveal"
+     ],
+     "presence": "3/3",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 3,
+     "min": 817.2227,
+     "max": 1491.5994,
+     "mean": 1075.6319,
+     "presence": "3/3",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 3,
+     "min": 1058.1322,
+     "max": 2135.7202,
+     "mean": 1677.0336,
+     "presence": "3/3",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "reveal",
+    "radius": 170,
+    "duration": 3000,
+    "area": "desert",
+    "x": 1491.5993921695672,
+    "y": 2135.720179305655,
+    "player": "google:114784622501872995900"
+   },
+   "notes": [
+    "area reveal (radar/minimap) dengan radius dan duration ms"
+   ]
+  },
+  "revive": {
+   "count": 2,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "google:115306826113357396741",
+      "guest:48572172-e2d4-4eaf-b79e-410f83172129"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "silver": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 0,
+     "max": 0,
+     "mean": 0,
+     "presence": "2/2",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "เกิดใหม่ตรงจุดเดิม — HP เต็ม"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 2,
+     "distinct_values": [
+      "revive"
+     ],
+     "presence": "2/2",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 627,
+     "max": 627,
+     "mean": 627,
+     "presence": "2/2",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 2,
+     "min": 490,
+     "max": 490,
+     "mean": 490,
+     "presence": "2/2",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "revive",
+    "text": "เกิดใหม่ตรงจุดเดิม — HP เต็ม",
+    "silver": 0,
+    "area": "rome",
+    "x": 627,
+    "y": 490,
+    "player": "guest:48572172-e2d4-4eaf-b79e-410f83172129"
+   },
+   "notes": [
+    "revive di titik mati; silver = biaya revive (0 = gratis)"
+   ]
+  },
+  "sale": {
+   "count": 8,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 8,
+     "distinct_values": [
+      "rome"
+     ],
+     "presence": "8/8",
+     "optional": false
+    },
+    "damage": {
+     "types": [
+      "number"
+     ],
+     "present": 8,
+     "min": 208,
+     "max": 18375,
+     "mean": 4324.5,
+     "presence": "8/8",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 8,
+     "distinct_values": [
+      "google:106484541562327321015",
+      "google:107174957971327407912",
+      "google:117884163553176639929",
+      "guest:010f4951-ee70-44b3-89ab-c97f9e2768a6",
+      "guest:5ec13335-8ab2-4596-8064-bfa31d7b35e7",
+      "guest:68467cfa-f6f0-429b-b8a3-70dac30afb33"
+     ],
+     "presence": "8/8",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 8,
+     "distinct_values": [
+      "sale"
+     ],
+     "presence": "8/8",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 8,
+     "min": 365.5445,
+     "max": 485.5,
+     "mean": 427.0412,
+     "presence": "8/8",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 8,
+     "min": 271.6911,
+     "max": 416,
+     "mean": 338.5871,
+     "presence": "8/8",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "sale",
+    "area": "rome",
+    "x": 416,
+    "y": 272,
+    "player": "guest:68467cfa-f6f0-429b-b8a3-70dac30afb33",
+    "damage": 3372
+   },
+   "notes": [
+    "penjualan item ke NPC; damage = total silver didapat (field reuse)"
+   ]
+  },
+  "skill": {
+   "count": 2005,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 2005,
+     "distinct_values": [
+      "caldera",
+      "crystal",
+      "desert",
+      "dunes",
+      "field",
+      "glacier",
+      "moor",
+      "snow",
+      "swamp",
+      "tempest",
+      "wildwood"
+     ],
+     "presence": "2005/2005",
+     "optional": false
+    },
+    "castId": {
+     "types": [
+      "string"
+     ],
+     "present": 2005,
+     "distinct_count": 1341,
+     "examples": [
+      "google:100051092632488271629:1790549334304:doublestrafe",
+      "google:100051092632488271629:1790549334681:doublestrafe",
+      "google:100051092632488271629:1790549335031:doublestrafe",
+      "google:100051092632488271629:1790549336166:doublestrafe",
+      "google:100051092632488271629:1790549336559:doublestrafe",
+      "google:100051092632488271629:1790549336965:doublestrafe",
+      "google:100051092632488271629:1790549337318:doublestrafe",
+      "google:100051092632488271629:1790549338023:doublestrafe",
+      "google:100051092632488271629:1790549338424:doublestrafe",
+      "google:100051092632488271629:1790549338798:doublestrafe"
+     ],
+     "presence": "2005/2005",
+     "optional": false
+    },
+    "duration": {
+     "types": [
+      "number"
+     ],
+     "present": 4,
+     "min": 8000,
+     "max": 8000,
+     "mean": 8000,
+     "presence": "4/2005",
+     "optional": true
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 2005,
+     "distinct_count": 122,
+     "examples": [
+      "google:100051092632488271629",
+      "google:100522530405028890291",
+      "google:100533139454385820970",
+      "google:100684859241033961236",
+      "google:100884277438834133311",
+      "google:101100261177774329583",
+      "google:101199933540500983184",
+      "google:101497780685142126638",
+      "google:101754122659938120842",
+      "google:101832447478896977360"
+     ],
+     "presence": "2005/2005",
+     "optional": false
+    },
+    "skill": {
+     "types": [
+      "string"
+     ],
+     "present": 2005,
+     "distinct_count": 27,
+     "examples": [
+      "arrowshower",
+      "bash",
+      "blessing",
+      "cartstrike",
+      "coldbolt",
+      "dokugiri",
+      "dokunuri",
+      "doublestrafe",
+      "endure",
+      "firebolt"
+     ],
+     "presence": "2005/2005",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 2005,
+     "distinct_values": [
+      "skill"
+     ],
+     "presence": "2005/2005",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 2005,
+     "min": 192,
+     "max": 2917.9792,
+     "mean": 1524.6176,
+     "presence": "2005/2005",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 2005,
+     "min": 157.5409,
+     "max": 2869.7547,
+     "mean": 1414.554,
+     "presence": "2005/2005",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "skill",
+    "skill": "endure",
+    "castId": "guest:520ec0b2-3e15-4318-8ac0-5283f9159ee7:1790544419406:endure",
+    "duration": 8000,
+    "area": "dunes",
+    "x": 875.0304914637727,
+    "y": 767.377740112245,
+    "player": "guest:520ec0b2-3e15-4318-8ac0-5283f9159ee7"
+   },
+   "notes": [
+    "castId format: <playerId>:<timestampMs>:<skillId> — korelasi dengan hit events berikutnya"
+   ]
+  },
+  "skillError": {
+   "count": 84,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 84,
+     "distinct_values": [
+      "caldera",
+      "crystal",
+      "desert",
+      "dunes",
+      "glacier",
+      "moor",
+      "rome",
+      "snow",
+      "swamp",
+      "tempest",
+      "wildwood"
+     ],
+     "presence": "84/84",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 84,
+     "distinct_count": 29,
+     "examples": [
+      "google:100051092632488271629",
+      "google:100533139454385820970",
+      "google:101100261177774329583",
+      "google:102445869321793081113",
+      "google:104457493858074173062",
+      "google:104783096416374129639",
+      "google:105284211106198409534",
+      "google:105471987792084990914",
+      "google:105497280454354693952",
+      "google:106507004615398879587"
+     ],
+     "presence": "84/84",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 84,
+     "distinct_values": [
+      "ลูกธนูหมด — ซื้อเพิ่มที่พ่อค้า Silver",
+      "สกิลกำลังคูลดาวน์",
+      "สวมไม่ได้ · ต้องการ Novice/Swordsman",
+      "เดินเข้าไปในระยะ Ember Bolt แล้วร่ายอัตโนมัติ",
+      "เดินเข้าไปในระยะ Gold Strike แล้วร่ายอัตโนมัติ",
+      "เดินเข้าไปในระยะ Iaigiri แล้วร่ายอัตโนมัติ",
+      "เดินเข้าไปในระยะ Power Strike แล้วร่ายอัตโนมัติ",
+      "เดินเข้าไปในระยะ Toxin Blink แล้วร่ายอัตโนมัติ",
+      "เดินเข้าไปในระยะ Twin Fang แล้วร่ายอัตโนมัติ",
+      "เดินเข้าไปในระยะ Viper Fang แล้วร่ายอัตโนมัติ",
+      "เลือกมอนสเตอร์หรือคู่ดวลในระยะก่อนใช้สกิล"
+     ],
+     "presence": "84/84",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 84,
+     "distinct_values": [
+      "skillError"
+     ],
+     "presence": "84/84",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 84,
+     "min": 210.1155,
+     "max": 2833.7153,
+     "mean": 1438.2886,
+     "presence": "84/84",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 84,
+     "min": 199.7407,
+     "max": 2774.6672,
+     "mean": 1431.9165,
+     "presence": "84/84",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "skillError",
+    "text": "เดินเข้าไปในระยะ Twin Fang แล้วร่ายอัตโนมัติ",
+    "area": "caldera",
+    "x": 340.0924437511116,
+    "y": 898.033367679792,
+    "player": "guest:bc3efe5f-d116-4485-bb29-7cee5aceab87"
+   },
+   "notes": [
+    "error validasi skill (cooldown, range, dsb); text pesan error bahasa Thai"
+   ]
+  },
+  "status": {
+   "count": 1437,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 1437,
+     "distinct_values": [
+      "caldera",
+      "crystal",
+      "desert",
+      "dunes",
+      "field",
+      "glacier",
+      "moor",
+      "rome",
+      "snow",
+      "swamp",
+      "tempest",
+      "training",
+      "wildwood"
+     ],
+     "presence": "1437/1437",
+     "optional": false
+    },
+    "duration": {
+     "types": [
+      "number"
+     ],
+     "present": 832,
+     "min": 1500,
+     "max": 8000,
+     "mean": 5113.7019,
+     "presence": "832/1437",
+     "optional": true
+    },
+    "mob": {
+     "types": [
+      "number"
+     ],
+     "present": 833,
+     "min": 0,
+     "max": 153,
+     "mean": 64.4238,
+     "presence": "833/1437",
+     "optional": true
+    },
+    "on": {
+     "types": [
+      "bool"
+     ],
+     "present": 1437,
+     "true_count": 1378,
+     "false_count": 59,
+     "presence": "1437/1437",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 1437,
+     "distinct_count": 126,
+     "examples": [
+      "google:100293378224657090039",
+      "google:100435289515136283784",
+      "google:100522530405028890291",
+      "google:100684859241033961236",
+      "google:101199933540500983184",
+      "google:101497780685142126638",
+      "google:101754122659938120842",
+      "google:101825238610177350041",
+      "google:101832447478896977360",
+      "google:102147524556925368012"
+     ],
+     "presence": "1437/1437",
+     "optional": false
+    },
+    "status": {
+     "types": [
+      "string"
+     ],
+     "present": 1437,
+     "distinct_values": [
+      "blessing",
+      "blind",
+      "burn",
+      "crush",
+      "dokunuri",
+      "endure",
+      "freeze",
+      "holyguard",
+      "overthrust",
+      "poison",
+      "remedy",
+      "slow",
+      "spawnguard",
+      "spirit",
+      "stun",
+      "vanish",
+      "venom",
+      "weaken"
+     ],
+     "presence": "1437/1437",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 1437,
+     "distinct_values": [
+      "status"
+     ],
+     "presence": "1437/1437",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 1437,
+     "min": 95,
+     "max": 2988.75,
+     "mean": 1348.6701,
+     "presence": "1437/1437",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 1437,
+     "min": 90,
+     "max": 2982.1838,
+     "mean": 1377.0997,
+     "presence": "1437/1437",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "status",
+    "status": "venom",
+    "on": true,
+    "mob": 7,
+    "duration": 8000,
+    "area": "desert",
+    "x": 2688,
+    "y": 1056,
+    "player": "google:104066200483708988436"
+   },
+   "notes": [
+    "status buff/debuff dengan on=true/false; contoh spawnguard = proteksi spawn"
+   ]
+  },
+  "storage": {
+   "count": 164,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 164,
+     "distinct_values": [
+      "dunes",
+      "rome"
+     ],
+     "presence": "164/164",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 164,
+     "distinct_values": [
+      "google:102505836228467248618",
+      "google:103364558400188857601",
+      "google:104106445919582604112",
+      "google:110231309296345841037",
+      "google:110675568754070912146",
+      "google:113062901683122958952",
+      "google:115023594402525895706",
+      "google:115306826113357396741",
+      "google:117393865256515840230",
+      "google:117884163553176639929",
+      "guest:010f4951-ee70-44b3-89ab-c97f9e2768a6",
+      "guest:a99e0a21-a9a0-4d51-afba-d0c0e7b080e4"
+     ],
+     "presence": "164/164",
+     "optional": false
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 164,
+     "distinct_values": [
+      "นำของออกจากคลังแล้ว",
+      "ฝากของเข้าคลังแล้ว",
+      "เปิดคลัง −100 Silver",
+      "ไม่พบอุปกรณ์ชิ้นนี้",
+      "ไม่พบอุปกรณ์ในคลัง"
+     ],
+     "presence": "164/164",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 164,
+     "distinct_values": [
+      "storage"
+     ],
+     "presence": "164/164",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 164,
+     "min": 789,
+     "max": 1049.8368,
+     "mean": 831.0621,
+     "presence": "164/164",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 164,
+     "min": 294.919,
+     "max": 470.4908,
+     "mean": 388.9581,
+     "presence": "164/164",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "storage",
+    "text": "ฝากของเข้าคลังแล้ว",
+    "area": "rome",
+    "x": 792.5712563150752,
+    "y": 296.5712563150751,
+    "player": "google:102505836228467248618"
+   },
+   "notes": [
+    "storage deposit event"
+   ]
+  },
+  "use": {
+   "count": 27,
+   "fields": {
+    "area": {
+     "types": [
+      "string"
+     ],
+     "present": 27,
+     "distinct_values": [
+      "caldera",
+      "desert",
+      "dunes",
+      "field",
+      "rome",
+      "snow",
+      "swamp"
+     ],
+     "presence": "27/27",
+     "optional": false
+    },
+    "item": {
+     "types": [
+      "string"
+     ],
+     "present": 27,
+     "distinct_values": [
+      "blue_potion",
+      "butterfly_wing",
+      "fly_wing",
+      "relic_box"
+     ],
+     "presence": "27/27",
+     "optional": false
+    },
+    "player": {
+     "types": [
+      "string"
+     ],
+     "present": 27,
+     "distinct_values": [
+      "google:100051092632488271629",
+      "google:100884277438834133311",
+      "google:101100261177774329583",
+      "google:102208132041519648022",
+      "google:104880510598011534031",
+      "google:105047959412676523885",
+      "google:105170728224963102456",
+      "google:105226767815688917680",
+      "google:106423755769704692588",
+      "google:107481696023022782925",
+      "google:112253876698384044274",
+      "google:113890337686822365039",
+      "google:114784622501872995900",
+      "google:118015005063959193733",
+      "google:118161499811750847199",
+      "guest:14d4d487-2019-425d-83f2-93858d9b3528",
+      "guest:325de3db-47f2-41a8-a9ad-5bfa395392d5",
+      "guest:42a08d5e-8310-457c-95b9-60e5c77f8385",
+      "guest:bc3efe5f-d116-4485-bb29-7cee5aceab87"
+     ],
+     "presence": "27/27",
+     "optional": false
+    },
+    "received": {
+     "types": [
+      "array"
+     ],
+     "present": 1,
+     "structure_example": [
+      {
+       "item": "blue_potion",
+       "quantity": 1
+      }
+     ],
+     "presence": "1/27",
+     "optional": true
+    },
+    "text": {
+     "types": [
+      "string"
+     ],
+     "present": 27,
+     "distinct_values": [
+      "ฟื้น SP 102 ค่า",
+      "ฟื้น SP 104 ค่า",
+      "ฟื้น SP 107 ค่า",
+      "ฟื้น SP 119 ค่า",
+      "ฟื้น SP 137 ค่า",
+      "ฟื้น SP 191 ค่า",
+      "ฟื้น SP 269 ค่า",
+      "ฟื้น SP 365 ค่า",
+      "ฟื้น SP 42 ค่า",
+      "ฟื้น SP 516 ค่า",
+      "ฟื้น SP 72 ค่า",
+      "ฟื้น SP 74 ค่า",
+      "ฟื้น SP 83 ค่า",
+      "ฟื้น SP 86 ค่า",
+      "ฟื้น SP 99 ค่า",
+      "วาร์ปกลับเมือง Aurelia Forum แล้ว",
+      "เทเลพอร์ตสุ่มในแมพ",
+      "เปิด Mystery Relic Box"
+     ],
+     "presence": "27/27",
+     "optional": false
+    },
+    "type": {
+     "types": [
+      "string"
+     ],
+     "present": 27,
+     "distinct_values": [
+      "use"
+     ],
+     "presence": "27/27",
+     "optional": false
+    },
+    "x": {
+     "types": [
+      "number"
+     ],
+     "present": 27,
+     "min": 221.1478,
+     "max": 2816.1993,
+     "mean": 1105.1496,
+     "presence": "27/27",
+     "optional": false
+    },
+    "y": {
+     "types": [
+      "number"
+     ],
+     "present": 27,
+     "min": 161.2116,
+     "max": 2797.637,
+     "mean": 1249.0251,
+     "presence": "27/27",
+     "optional": false
+    }
+   },
+   "example_payload": {
+    "type": "use",
+    "item": "relic_box",
+    "area": "rome",
+    "x": 630.5970283686964,
+    "y": 523.1343299028043,
+    "player": "guest:14d4d487-2019-425d-83f2-93858d9b3528",
+    "text": "เปิด Mystery Relic Box",
+    "received": [
+     {
+      "item": "blue_potion",
+      "quantity": 1
+     }
+    ]
+   },
+   "notes": [
+    "penggunaan item consumable; text = efek (heal SP dll)"
+   ]
+  }
+ }
+}

@@ -1,0 +1,36 @@
+{
+  "npcs": {
+    "blacksmith": {
+      "sprite": "npc-blacksmith-v1",
+      "function": "Repair equipment (repair action)",
+      "location": "Aurelia Forum"
+    },
+    "merchant": {
+      "sprite": "npc-merchant-v2",
+      "function": "Buy/sell items",
+      "location": "Aurelia Forum"
+    },
+    "broker": {
+      "sprite": "npc-broker (uses merchant-v1 sprite)",
+      "label": "นายหน้าตลาด (Market)",
+      "function": "Market trading",
+      "location": "Aurelia Forum"
+    },
+    "stat-master": {
+      "sprite": "stat-master-v1",
+      "function": "Reset/allocate stats",
+      "location": "Aurelia Forum"
+    },
+    "fusion-master": {
+      "sprite": "fusion-master-v1",
+      "function": "Equipment fusion",
+      "location": "Aurelia Forum"
+    },
+    "banker": {
+      "sprite": "banker-v2",
+      "function": "Storage/bank",
+      "location": "Aurelia Forum"
+    }
+  },
+  "status": "VERIFIED - 6 NPCs confirmed with sprites and functions"
+}

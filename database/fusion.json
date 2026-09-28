@@ -1,0 +1,12 @@
+{
+  "fusion_master_npc": "fusion-master-v1",
+  "fusion_mechanic": "Client sends {type:'fuse', gearIds:[...], slot:slot, template:template} to server",
+  "forge_effects": [
+    "hammer",
+    "anvil",
+    "success",
+    "broken"
+  ],
+  "fusion_result_display": "fusion-result element shows server response",
+  "status": "VERIFIED - fusion mechanic found (fuse action to server)"
+}

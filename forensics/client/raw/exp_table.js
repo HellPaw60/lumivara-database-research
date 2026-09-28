@@ -1,0 +1,10 @@
+ify([h.name,h.level,h.classTitle,h.silver,h.avatarSrc,h.hp,h.maxHp,h.shield??0,h.sp,h.maxSp,h.exp,h.nextExp,h.points,h.questTitle,h.questProgress,h.questReady,h.mapName,h.channel,Math.round(h.playerX/16),Math.round(h.playerY/16),h.sitting,h.fps,h.ping,h.online,h.noticeBadge,h.menuBadge]);if(S===Pg)return;Pg=S;const T=(n,l)=>{const a=document.getElementById(n);a&&a.textContent!==l&&(a.textContent=l)},w=(n
+
+ction cI(h){lI(h);const c=$t[h.classId??"novice"],S=h.jobLevel??1,T=E3(h.classId),w=S>=T?"MAX":`${h.jobExp??0} / ${N2(S)}`,A=h.classId??"novice",u=document.getElementById("job-current-art");u.dataset?.classId!==A&&(u.src=Nm(A),u.dataset&&(u.dataset.classId=A)),zp("job-current-name",c);const y=`Job Lv.<b>${S}</b><i>·</i>Job EXP <b>${w}</b><i>·</i>Skill Point <b>${Wr(h)}</b>`,t=document.getElementById("jo
+
+mobs[x.mob]?.y??x.y)}else if(x.type==="defeat")C&&(l1(x.name??this.mobs[x.mob]?.name??"มอนสเตอร์",x.baseExp??x.damage??0,x.jobExp??0),lt.play("defeat"));else if(x.type==="eat")this.float(x.x,x.y-30,"ง่ำ!","#ffe7aa");else if(x.type==="bagFull"&&C&&x.pet)this.log("กระเป๋าสัตว์เลี้ยงและกระเป๋าของคุณเต็มแล้ว — กระต่ายเก็บของเพิ่มไม่ได้"),this.notifyBagFull();else if(x.type==="pickup"&&C&&x.pet){const P=x.cou
+
+=!!ct[A].passive;te.dead||Date.now()<_u||(w.dataset.more?!o&&y===u&&t<u?Kg(A,t+1):y<10&&su()>0&&(te.jobLevel??1)>=ct[A].job&&(Ki[A]=y+1):y>u?y-1===u?delete Ki[A]:Ki[A]=y-1:!o&&t>1&&Kg(A,t-1),Ne=A,Rn())}),c.querySelectorAll("[data-skill-icon]").forEach(w=>{const A=w.dataset.skillIcon;w.onclick=()=>{Ne=A,Rn()},w.ondblclick=()=>cr.skill(A),w.ondragstart=i=>{if(!vs(te,A)||ct[A].passive){i.preventDefault();ret
+
+ e=we(A.classId);A.jobLevel=Number.isSafeInteger(A.jobLevel)?Math.max(1,Math.min(e,A.jobLevel)):1,A.jobExp=Number.isSafeInteger(A.jobExp)?Math.max(0,Math.min(BA(A.jobLevel)-1,A.jobExp)):0,A.jobLevel===e&&(A.jobExp=0);const t={};for(const n of Object.keys(z)){const r=A.jobProgress?.[n];if(!r)continue;const a=we(n),o=Number.isSafeInteger(r.level)?Math.max(1,Math.min(a,r.level)):1,s=o===a?0:Number.isSafeIn
+

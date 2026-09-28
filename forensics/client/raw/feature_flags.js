@@ -1,0 +1,2 @@
+f(window.WebGLRenderingContext)try{var a=r.createWebGL(this),d=a.getContext("webgl")||a.getContext("experimental-webgl"),f=r.create2D(this),m=f.getContext("2d",{willReadFrequently:!0}),v=m.createImageData(1,1);return n=v.data instanceof Uint8ClampedArray,r.remove(a),r.remove(f),!!d}catch{return!1}return!1};return i.webGL=l(),i.worker=!!window.Worker,i.pointerLock="pointerLockElement"in document||"mozPointerLo
+

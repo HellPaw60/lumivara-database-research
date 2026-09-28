@@ -1,0 +1,375 @@
+{
+ "_meta": {
+  "source": "D:/lumivara-re/collect/raw-snapshots.json — field 'player' dari semua event + owner drops + party.from",
+  "generated": "2026-09-28T06:52:19Z",
+  "method": "Agregasi unique ID, hitungan event per area per player, frekuensi skill (event 'skill' = cast, event 'hit' dengan field skill = damage yang mendarat).",
+  "confidence": "VERIFIED (hitungan langsung); interpretasi google:/guest: = DERIVED dari format ID"
+ },
+ "unique_players": {
+  "total": 265,
+  "google_accounts": 184,
+  "guest_accounts": 81,
+  "other_format": 0,
+  "google_to_guest_ratio": 2.272,
+  "note": "google:<gaia-id> = login Google Play Games; guest:<uuid> = akun anonim. Collector sendiri termasuk guest."
+ },
+ "activity_per_area": {
+  "caldera": {
+   "total_events": 695,
+   "unique_active_players": 37,
+   "top_players": {
+    "google:114709862352041831832": 173,
+    "google:104727957928652172667": 118,
+    "guest:bc3efe5f-d116-4485-bb29-7cee5aceab87": 75,
+    "google:101832447478896977360": 56,
+    "guest:df294f9e-371c-4277-980b-f08e43522e43": 42,
+    "google:115686959881242714790": 40,
+    "google:109997039237130623903": 35,
+    "guest:ba414e9f-6c91-47fb-99e6-a623bc6d97b9": 33,
+    "guest:c0789adc-8bcd-43d8-b286-f474450ad22e": 32,
+    "google:102635617208160875022": 19
+   }
+  },
+  "crystal": {
+   "total_events": 430,
+   "unique_active_players": 7,
+   "top_players": {
+    "google:115007331065743218222": 209,
+    "guest:0974945f-423e-4978-ac0a-8b69baca843f": 122,
+    "guest:ac9b4d00-d0b9-4fae-8514-ea6a3393906d": 72,
+    "google:113181408852992091440": 21,
+    "guest:1f75991f-f1bb-45b6-87dc-c3501d947da9": 2,
+    "guest:70a1027c-7cb3-4bb5-8c6d-8fdc8933c229": 2,
+    "guest:f8f92817-5558-4644-8925-7b437b06f9be": 2
+   }
+  },
+  "desert": {
+   "total_events": 1521,
+   "unique_active_players": 47,
+   "top_players": {
+    "guest:d0b840d4-943c-4eda-951a-099dff7f68f1": 114,
+    "google:105226767815688917680": 90,
+    "google:105459234457020524711": 79,
+    "google:105170728224963102456": 78,
+    "guest:325de3db-47f2-41a8-a9ad-5bfa395392d5": 77,
+    "google:101100261177774329583": 70,
+    "google:101199933540500983184": 66,
+    "google:113890337686822365039": 64,
+    "google:116915835857868560800": 62,
+    "google:105047959412676523885": 53
+   }
+  },
+  "dunes": {
+   "total_events": 1762,
+   "unique_active_players": 46,
+   "top_players": {
+    "google:106819360697525405484": 313,
+    "guest:b6f6275c-435a-4200-afce-fcf9be9d6b25": 153,
+    "google:103735401922709994369": 123,
+    "google:105602643297038859658": 122,
+    "google:100684859241033961236": 114,
+    "guest:0fd1ef1a-83d7-47aa-80ef-293dc8b2a820": 81,
+    "guest:c2007b8d-51f0-4da3-b49b-f454ffac2c81": 59,
+    "google:105081890622806509886": 59,
+    "google:117777750699281594464": 59,
+    "google:106507004615398879587": 59
+   }
+  },
+  "field": {
+   "total_events": 175,
+   "unique_active_players": 16,
+   "top_players": {
+    "google:103683009143864855882": 53,
+    "google:103024211716805508871": 30,
+    "google:109054328224070832229": 18,
+    "guest:70a1027c-7cb3-4bb5-8c6d-8fdc8933c229": 13,
+    "google:106968937976492676974": 11,
+    "guest:f8f92817-5558-4644-8925-7b437b06f9be": 10,
+    "google:112253876698384044274": 8,
+    "guest:1f75991f-f1bb-45b6-87dc-c3501d947da9": 6,
+    "google:115102898858488461567": 6,
+    "google:116914651191409029649": 5
+   }
+  },
+  "glacier": {
+   "total_events": 1148,
+   "unique_active_players": 16,
+   "top_players": {
+    "guest:5e479054-506c-4f25-b636-1db5f24536a0": 353,
+    "google:107711512452645256525": 210,
+    "guest:6c2a306f-e6b6-4114-acb7-11d864dcf495": 143,
+    "google:106126124531472100473": 142,
+    "guest:91d24f45-4ad9-4f00-87f9-2501499c32ed": 98,
+    "guest:4d3940d2-c71c-42b1-823d-3557c3a940cb": 88,
+    "google:107308024524460999970": 48,
+    "google:104783096416374129639": 40,
+    "google:118403873224007540945": 6,
+    "guest:ba414e9f-6c91-47fb-99e6-a623bc6d97b9": 4
+   }
+  },
+  "moor": {
+   "total_events": 390,
+   "unique_active_players": 11,
+   "top_players": {
+    "google:101754122659938120842": 97,
+    "guest:91d24f45-4ad9-4f00-87f9-2501499c32ed": 93,
+    "guest:df294f9e-371c-4277-980b-f08e43522e43": 79,
+    "guest:0a42cbf0-b0f0-4d4a-b56f-5ada28b5491a": 66,
+    "google:100533139454385820970": 33,
+    "google:108437983046599410256": 12,
+    "guest:7ef4d7db-dcaa-4354-a784-2c1df85ba700": 2,
+    "guest:cbdc485f-6842-42b7-b309-8460be6d3a5c": 2,
+    "guest:1f75991f-f1bb-45b6-87dc-c3501d947da9": 2,
+    "guest:70a1027c-7cb3-4bb5-8c6d-8fdc8933c229": 2
+   }
+  },
+  "rome": {
+   "total_events": 376,
+   "unique_active_players": 61,
+   "top_players": {
+    "google:110675568754070912146": 100,
+    "guest:010f4951-ee70-44b3-89ab-c97f9e2768a6": 23,
+    "guest:5d3c72b0-aed3-4baa-80b4-20a62f3ac363": 20,
+    "guest:70a1027c-7cb3-4bb5-8c6d-8fdc8933c229": 18,
+    "google:117884163553176639929": 16,
+    "guest:f8f92817-5558-4644-8925-7b437b06f9be": 15,
+    "google:116597900500073514697": 13,
+    "google:100435289515136283784": 11,
+    "google:115023594402525895706": 11,
+    "google:107481696023022782925": 11
+   }
+  },
+  "snow": {
+   "total_events": 166,
+   "unique_active_players": 13,
+   "top_players": {
+    "guest:42a08d5e-8310-457c-95b9-60e5c77f8385": 36,
+    "google:103825962731203469950": 26,
+    "google:111473858167695928696": 24,
+    "guest:b960e47b-3e58-4cd5-b97f-37fa32248bfc": 15,
+    "google:102621299575511254298": 13,
+    "guest:70a1027c-7cb3-4bb5-8c6d-8fdc8933c229": 11,
+    "guest:6509dc8a-42d9-452c-aa8b-5c582c81327f": 10,
+    "guest:7ef4d7db-dcaa-4354-a784-2c1df85ba700": 8,
+    "guest:f8f92817-5558-4644-8925-7b437b06f9be": 8,
+    "guest:cbdc485f-6842-42b7-b309-8460be6d3a5c": 6
+   }
+  },
+  "swamp": {
+   "total_events": 1363,
+   "unique_active_players": 51,
+   "top_players": {
+    "google:104697538561837170498": 113,
+    "guest:fabed146-9814-4baa-998d-6885cfa220af": 109,
+    "google:102182631220152476023": 76,
+    "google:102445869321793081113": 72,
+    "guest:7e1f3d30-4a9e-4d84-8298-bc2bc69952c9": 57,
+    "google:106066148764935111042": 56,
+    "guest:d1d7b380-c324-4de5-9455-f0212cf01dac": 52,
+    "google:116697783469143894238": 51,
+    "google:101497780685142126638": 48,
+    "google:102591881432185702565": 46
+   }
+  },
+  "tempest": {
+   "total_events": 339,
+   "unique_active_players": 14,
+   "top_players": {
+    "google:112686144303564195702": 125,
+    "google:100522530405028890291": 121,
+    "guest:563ae9b9-dfc7-4da8-85ec-8425c81f3056": 42,
+    "google:116246995744829187100": 7,
+    "guest:c2381be7-4d36-455d-bffd-72cd4fede414": 7,
+    "google:103605717149067809302": 7,
+    "google:113774406097557679666": 7,
+    "google:116664910557575103104": 7,
+    "guest:dc716a76-3431-42d3-8061-7ab048efdd57": 6,
+    "guest:7ef4d7db-dcaa-4354-a784-2c1df85ba700": 2
+   }
+  },
+  "training": {
+   "total_events": 5,
+   "unique_active_players": 2,
+   "top_players": {
+    "google:116621107612576194952": 3,
+    "guest:70a1027c-7cb3-4bb5-8c6d-8fdc8933c229": 2
+   }
+  },
+  "wildwood": {
+   "total_events": 223,
+   "unique_active_players": 10,
+   "top_players": {
+    "google:105471987792084990914": 97,
+    "google:108467234722522138045": 42,
+    "google:118443578671985774008": 41,
+    "google:108286151283792735236": 30,
+    "guest:0df4507d-f138-4422-9a23-cf3fec66fdad": 3,
+    "guest:7ef4d7db-dcaa-4354-a784-2c1df85ba700": 2,
+    "guest:cbdc485f-6842-42b7-b309-8460be6d3a5c": 2,
+    "guest:1f75991f-f1bb-45b6-87dc-c3501d947da9": 2,
+    "guest:70a1027c-7cb3-4bb5-8c6d-8fdc8933c229": 2,
+    "guest:f8f92817-5558-4644-8925-7b437b06f9be": 2
+   }
+  }
+ },
+ "top_players_overall": {
+  "guest:5e479054-506c-4f25-b636-1db5f24536a0": 353,
+  "google:106819360697525405484": 313,
+  "google:107711512452645256525": 210,
+  "google:115007331065743218222": 209,
+  "guest:91d24f45-4ad9-4f00-87f9-2501499c32ed": 191,
+  "google:114709862352041831832": 173,
+  "guest:b6f6275c-435a-4200-afce-fcf9be9d6b25": 153,
+  "google:106126124531472100473": 150,
+  "guest:6c2a306f-e6b6-4114-acb7-11d864dcf495": 143,
+  "google:112686144303564195702": 125,
+  "google:103735401922709994369": 123,
+  "google:105602643297038859658": 122,
+  "guest:0974945f-423e-4978-ac0a-8b69baca843f": 122,
+  "guest:df294f9e-371c-4277-980b-f08e43522e43": 121,
+  "google:100522530405028890291": 121,
+  "google:104727957928652172667": 118,
+  "guest:d0b840d4-943c-4eda-951a-099dff7f68f1": 114,
+  "google:100684859241033961236": 114,
+  "google:104697538561837170498": 113,
+  "guest:fabed146-9814-4baa-998d-6885cfa220af": 109,
+  "google:110675568754070912146": 100,
+  "google:105471987792084990914": 97,
+  "google:101754122659938120842": 97,
+  "google:105226767815688917680": 90,
+  "guest:4d3940d2-c71c-42b1-823d-3557c3a940cb": 88
+ },
+ "skill_usage_frequency": {
+  "_note": "cast count = event 'skill'; landed hits = event 'hit' non-incoming dengan field skill",
+  "by_cast": {
+   "viperfang": 471,
+   "coldbolt": 397,
+   "twinfang": 259,
+   "thunderstorm": 254,
+   "doublestrafe": 224,
+   "bash": 119,
+   "mammonite": 58,
+   "arrowshower": 55,
+   "firebolt": 52,
+   "iaigiri": 46,
+   "magnum": 12,
+   "holylight": 12,
+   "venomknife": 11,
+   "hammerfall": 10,
+   "shadowburst": 7,
+   "endure": 4,
+   "dokunuri": 2,
+   "spiritinstinct": 2,
+   "piercingshot": 2,
+   "vanish": 1,
+   "holyguard": 1,
+   "blessing": 1,
+   "remedylight": 1,
+   "dokugiri": 1,
+   "venomrupture": 1,
+   "overthrust": 1,
+   "cartstrike": 1
+  },
+  "by_landed_hits": {
+   "coldbolt": 530,
+   "viperfang": 471,
+   "twinfang": 259,
+   "doublestrafe": 224,
+   "thunderstorm": 190,
+   "bash": 119,
+   "mammonite": 58,
+   "firebolt": 52,
+   "iaigiri": 46,
+   "arrowshower": 32,
+   "holylight": 16,
+   "magnum": 12,
+   "venomknife": 11,
+   "shadowburst": 8,
+   "hammerfall": 8,
+   "piercingshot": 2,
+   "dokugiri": 1,
+   "venomrupture": 1,
+   "cartstrike": 1
+  }
+ },
+ "item_usage_frequency": {
+  "blue_potion": 18,
+  "butterfly_wing": 5,
+  "fly_wing": 3,
+  "relic_box": 1
+ },
+ "per_player_top_skills": {
+  "google:106819360697525405484": {
+   "coldbolt": 56,
+   "thunderstorm": 46
+  },
+  "guest:5e479054-506c-4f25-b636-1db5f24536a0": {
+   "coldbolt": 52,
+   "thunderstorm": 32
+  },
+  "google:112686144303564195702": {
+   "doublestrafe": 42,
+   "arrowshower": 17
+  },
+  "google:115007331065743218222": {
+   "coldbolt": 59
+  },
+  "guest:91d24f45-4ad9-4f00-87f9-2501499c32ed": {
+   "viperfang": 48
+  },
+  "google:105602643297038859658": {
+   "firebolt": 21,
+   "thunderstorm": 13,
+   "coldbolt": 12
+  },
+  "guest:b6f6275c-435a-4200-afce-fcf9be9d6b25": {
+   "viperfang": 45
+  },
+  "google:107711512452645256525": {
+   "coldbolt": 25,
+   "thunderstorm": 20
+  },
+  "google:114709862352041831832": {
+   "coldbolt": 24,
+   "thunderstorm": 20
+  },
+  "guest:6c2a306f-e6b6-4114-acb7-11d864dcf495": {
+   "viperfang": 44
+  },
+  "guest:fabed146-9814-4baa-998d-6885cfa220af": {
+   "doublestrafe": 42
+  },
+  "google:100684859241033961236": {
+   "coldbolt": 20,
+   "thunderstorm": 20
+  },
+  "google:106126124531472100473": {
+   "viperfang": 38
+  },
+  "guest:df294f9e-371c-4277-980b-f08e43522e43": {
+   "twinfang": 32,
+   "shadowburst": 2,
+   "venomknife": 2
+  },
+  "google:103735401922709994369": {
+   "viperfang": 36
+  },
+  "google:105459234457020524711": {
+   "coldbolt": 19,
+   "thunderstorm": 15
+  },
+  "google:100522530405028890291": {
+   "viperfang": 34
+  },
+  "guest:0974945f-423e-4978-ac0a-8b69baca843f": {
+   "viperfang": 34
+  },
+  "guest:0a42cbf0-b0f0-4d4a-b56f-5ada28b5491a": {
+   "arrowshower": 20,
+   "doublestrafe": 11
+  },
+  "guest:d0b840d4-943c-4eda-951a-099dff7f68f1": {
+   "coldbolt": 30
+  }
+ }
+}

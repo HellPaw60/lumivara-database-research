@@ -1,0 +1,14 @@
+{
+  "market_actions": {
+    "create_order_sell": "{type:'marketCreateOrder', side:'sell', item:item, price:price, quantity:qty}",
+    "create_order_buy": "{type:'marketCreateOrder', side:'buy', item:item, price:price, quantity:qty}",
+    "gold_order": "{type:'goldOrder', side:side, price:price, quantity:qty}",
+    "market_list_gear": "{type:'marketListGear', gearId:id, price:price}",
+    "cancel_order": "cancelOrder action available"
+  },
+  "gold_market": "System for trading gold at market price",
+  "gold_market_field": "w.goldMarket - server-provided gold market data",
+  "status": "VERIFIED - market system confirmed with order creation",
+  "cancel_order": "cancelOrder function available",
+  "market_class": "e9 class handles market orders/orders/listings with Map data structures"
+}

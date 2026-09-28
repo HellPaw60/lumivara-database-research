@@ -1,0 +1,760 @@
+{
+ "_meta": {
+  "generated": "2026-09-28",
+  "confidence": "see per-record"
+ },
+ "consumables": {
+  "potion": {
+   "name": "Red Potion",
+   "description": "ฟื้น HP 50 + 15% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด",
+   "kind": "usable",
+   "weight": 10,
+   "price": 5,
+   "buy": 10
+  },
+  "orange_potion": {
+   "name": "Orange Potion",
+   "description": "ฟื้น HP 120 + 20% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด",
+   "kind": "usable",
+   "weight": 12,
+   "price": 20
+  },
+  "yellow_potion": {
+   "name": "Yellow Potion",
+   "description": "ฟื้น HP 250 + 25% ของ HP สูงสุด · คูลดาวน์ร่วมกับยาทุกขวด",
+   "kind": "usable",
+   "weight": 15,
+   "price": 45
+  },
+  "white_potion": {
+   "name": "White Potion",
+   "description": "ฟื้น HP 500 + 30% ของ HP สูงสุด · ดรอปจากบอสเท่านั้น",
+   "kind": "usable",
+   "weight": 20,
+   "price": 100
+  },
+  "blue_potion": {
+   "name": "Blue Potion",
+   "description": "ฟื้น SP 60% ของ SP สูงสุด · ใช้คูลดาวน์ยาร่วมกัน",
+   "kind": "usable",
+   "weight": 15,
+   "price": 20,
+   "buy": 50
+  },
+  "concentration_potion": {
+   "name": "Concentration Potion",
+   "description": "ASPD +3 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ใช้ได้ทุกเลเวล",
+   "kind": "usable",
+   "weight": 15,
+   "price": 40,
+   "buy": 80
+  },
+  "awakening_potion": {
+   "name": "Awakening Potion",
+   "description": "ASPD +4 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ต้องมี Base Lv.40 ขึ้นไป",
+   "kind": "usable",
+   "weight": 20,
+   "price": 120,
+   "buy": 240
+  },
+  "berserk_potion": {
+   "name": "Berserk Potion",
+   "description": "ASPD +5 นาน 30 นาที · ส่วนที่ทำให้ ASPD เกิน 180 ได้ครึ่งเดียว และ ASPD สูงสุด 193 · ต้องมี Base Lv.85 ขึ้นไป",
+   "kind": "usable",
+   "weight": 25,
+   "price": 300,
+   "buy": 600
+  },
+  "fly_wing": {
+   "name": "Warp Scroll",
+   "description": "เทเลพอร์ตไปยังจุดสุ่มในแมพปัจจุบัน",
+   "kind": "usable",
+   "weight": 3,
+   "price": 15,
+   "buy": 30
+  },
+  "butterfly_wing": {
+   "name": "Return Scroll",
+   "description": "วาร์ปกลับเมือง Aurelia Forum (ลานน้ำพุที่มี NPC ครบ)",
+   "kind": "usable",
+   "weight": 3,
+   "price": 15,
+   "buy": 30
+  },
+  "relic_box": {
+   "name": "Mystery Relic Box",
+   "description": "เปิดเพื่อสุ่มรับไอเท็มหรืออุปกรณ์ · ดรอปจากมอนสเตอร์ 1%",
+   "kind": "usable",
+   "weight": 20,
+   "price": 250
+  },
+  "iron_arrow": {
+   "name": "Arrow",
+   "description": "ลูกธนูสำหรับ Bow · ยิงธรรมดาและใช้สกิลโจมตีใช้ 1 ดอกต่อครั้ง ลูกธนูหมดจะยิงไม่ได้ · ซื้อที่พ่อค้า Silver ดอกละ 0.1 Silver · ขายคืนพ่อค้าไม่ได้",
+   "kind": "usable",
+   "weight": 0.01,
+   "price": 0,
+   "buy": 0.1
+  },
+  "shard": {
+   "name": "Spirit Shard",
+   "description": "วัตถุดิบรุ่นเก่า มอนสเตอร์เลิกดรอปแล้ว · ขายให้ร้านค้าได้ · น้ำหนัก 2",
+   "kind": "material",
+   "weight": 2,
+   "price": 8
+  },
+  "jelly": {
+   "name": "Prism Crystal",
+   "description": "ผลึกเรืองแสง · ดรอปจาก Prism Hopper · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "sprout_leaf": {
+   "name": "Sprout Leaf",
+   "description": "ใบอ่อนสีเขียวสด · ดรอปจาก Leaf Sprout · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "dewdrop_tuft": {
+   "name": "Dewdrop Tuft",
+   "description": "ขนกระต่ายชุ่มน้ำค้าง · ดรอปจาก Dew Bunny · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "moss_spore_cap": {
+   "name": "Moss Spore Cap",
+   "description": "หมวกเห็ดคลุมมอส · ดรอปจาก Moss Mushroom · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "pixie_thorn": {
+   "name": "Pixie Thorn",
+   "description": "หนามแหลมโรยผงภูต · ดรอปจาก Thorn Pixie · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "bramble_fur": {
+   "name": "Bramble Fur",
+   "description": "ขนกระต่ายพันกิ่งหนาม · ดรอปจาก Bramble Hare · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "honey_wing_dust": {
+   "name": "Honey Wing Dust",
+   "description": "ผงปีกผีเสื้อกลิ่นน้ำผึ้ง · ดรอปจาก Honey Moth · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "twisted_root": {
+   "name": "Twisted Root",
+   "description": "รากไม้บิดเกลียว · ดรอปจาก Rootling · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "amber_shell": {
+   "name": "Amber Shell",
+   "description": "ปีกแข็งสีอำพัน · ดรอปจาก Amber Beetle · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "frost_fluff": {
+   "name": "Frost Fluff",
+   "description": "ปุยน้ำแข็ง · ดรอปจาก Frost Puff · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 1
+  },
+  "icicle_whisker": {
+   "name": "Icicle Whisker",
+   "description": "หนวดน้ำแข็งใส · ดรอปจาก Icicle Hare · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 2
+  },
+  "snow_feather": {
+   "name": "Snow Feather",
+   "description": "ขนนกฮูกหิมะ · ดรอปจาก Snow Owl · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 3
+  },
+  "aurora_tail": {
+   "name": "Aurora Tail",
+   "description": "หางจิ้งจอกแสงออโรรา · ดรอปจาก Aurora Fox · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 3
+  },
+  "gecko_scale": {
+   "name": "Gecko Scale",
+   "description": "เกล็ดตุ๊กแกทะเลทราย · ดรอปจาก Dune Gecko · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 4
+  },
+  "scarab_carapace": {
+   "name": "Scarab Carapace",
+   "description": "กระดองด้วงสการับ · ดรอปจาก Scarab Sentinel · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 5
+  },
+  "cobra_fang": {
+   "name": "Cobra Fang",
+   "description": "เขี้ยวงูเห่าเกล็ดตะวัน · ดรอปจาก Sunscale Cobra · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 6
+  },
+  "cactus_needle": {
+   "name": "Cactus Needle",
+   "description": "หนามกระบองเพชร · ดรอปจาก Cactus Imp · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 7
+  },
+  "crab_claw": {
+   "name": "Crab Claw",
+   "description": "ก้ามปู · ดรอปจาก Tide Crab · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 7
+  },
+  "toad_wart": {
+   "name": "Toad Wart",
+   "description": "ปุ่มผิวคางคก · ดรอปจาก Bog Toad · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 8
+  },
+  "newt_tail": {
+   "name": "Newt Tail",
+   "description": "หางนิวต์โคลน · ดรอปจาก Mud Newt · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 9
+  },
+  "mire_gel": {
+   "name": "Mire Gel",
+   "description": "เจลหนองน้ำ · ดรอปจาก Mire Jelly · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 10
+  },
+  "mantis_blade": {
+   "name": "Mantis Blade",
+   "description": "ใบมีดตั๊กแตนตำข้าว · ดรอปจาก Reed Mantis · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 10
+  },
+  "wolf_fang": {
+   "name": "Wolf Fang",
+   "description": "เขี้ยวหมาป่า · ดรอปจาก Forest Wolf · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 11
+  },
+  "wisp_ember": {
+   "name": "Wisp Ember",
+   "description": "ถ่านไฟวิญญาณตะเกียง · ดรอปจาก Lantern Wisp · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 12
+  },
+  "smoldering_antler": {
+   "name": "Smoldering Antler",
+   "description": "เขากวางคุไฟ · ดรอปจาก Ember Antler · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 13
+  },
+  "moonlit_plume": {
+   "name": "Moonlit Plume",
+   "description": "ขนนกแสงจันทร์ · ดรอปจาก Moon Owl · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 14
+  },
+  "lynx_claw": {
+   "name": "Lynx Claw",
+   "description": "กรงเล็บลิงซ์พันเถาวัลย์ · ดรอปจาก Vine Lynx · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 15
+  },
+  "boar_tusk": {
+   "name": "Boar Tusk",
+   "description": "งาหมูป่า · ดรอปจาก Wild Boar · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 16
+  },
+  "drake_scale": {
+   "name": "Drake Scale",
+   "description": "เกล็ดมังกรทราย · ดรอปจาก Sand Drake · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 20
+  },
+  "bat_wing": {
+   "name": "Bat Wing",
+   "description": "ปีกค้างคาว · ดรอปจาก Cave Bat · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 21
+  },
+  "golem_core": {
+   "name": "Golem Core",
+   "description": "แกนหินโกเลม · ดรอปจาก Pebble Golem · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 25
+  },
+  "magma_scale": {
+   "name": "Magma Scale",
+   "description": "เกล็ดซาลาแมนเดอร์ลาวา · ดรอปจาก Magma Salamander · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 26
+  },
+  "cinder_fang": {
+   "name": "Cinder Fang",
+   "description": "เขี้ยวไฟคุ · ดรอปจาก Ember Hound · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 28
+  },
+  "basalt_shell": {
+   "name": "Basalt Shell",
+   "description": "แผ่นกระดองหินบะซอลต์ · ดรอปจาก Basalt Tortoise · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 29
+  },
+  "obsidian_stinger": {
+   "name": "Obsidian Stinger",
+   "description": "เหล็กในแมงป่องออบซิเดียน · ดรอปจาก Obsidian Scorpion · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 31
+  },
+  "shade_feather": {
+   "name": "Shade Feather",
+   "description": "ขนกาเงามืด · ดรอปจาก Shade Raven · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 32
+  },
+  "hound_bone": {
+   "name": "Hound Bone",
+   "description": "กระดูกหมาผี · ดรอปจาก Bone Hound · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 34
+  },
+  "wraith_shroud": {
+   "name": "Wraith Shroud",
+   "description": "ผ้าคลุมวิญญาณ · ดรอปจาก Bog Wraith · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 35
+  },
+  "grave_crest": {
+   "name": "Grave Crest",
+   "description": "ตราอัศวินสุสาน · ดรอปจาก Grave Knight · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 37
+  },
+  "quartz_leg": {
+   "name": "Quartz Leg",
+   "description": "ขาผลึกควอตซ์ · ดรอปจาก Quartz Crawler · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 38
+  },
+  "geode_plate": {
+   "name": "Geode Plate",
+   "description": "เกราะตัวนิ่มผลึกจีโอด · ดรอปจาก Geode Armadillo · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 40
+  },
+  "prism_scale": {
+   "name": "Prism Scale",
+   "description": "เกล็ดงูสีรุ้ง · ดรอปจาก Prism Serpent · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 41
+  },
+  "wyvern_scale": {
+   "name": "Wyvern Scale",
+   "description": "เกล็ดไวเวิร์นอเมทิสต์ · ดรอปจาก Amethyst Wyvern · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 43
+  },
+  "thunder_horn": {
+   "name": "Thunder Horn",
+   "description": "เขาแกะสายฟ้า · ดรอปจาก Thunder Ram · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 45
+  },
+  "roc_plume": {
+   "name": "Roc Plume",
+   "description": "ขนนกร็อกพายุ · ดรอปจาก Storm Roc · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 46
+  },
+  "cloud_pearl": {
+   "name": "Cloud Pearl",
+   "description": "ไข่มุกเมฆ · ดรอปจาก Cloud Serpent · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 48
+  },
+  "tempest_dragon_scale": {
+   "name": "Tempest Dragon Scale",
+   "description": "เกล็ดมังกรพายุ · ดรอปจาก Tempest Drake · ขายให้ร้านค้าได้ · น้ำหนัก 1",
+   "kind": "material",
+   "weight": 1,
+   "price": 50
+  },
+  "exp_scroll": {
+   "name": "EXP Scroll",
+   "description": "EXP x2 ทั้ง Base และ Job นาน 1 ชั่วโมง · ใช้ซ้ำเพื่อต่อเวลาได้สูงสุด 5 ชั่วโมง · ตายแล้วบัฟไม่หาย · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "usable",
+   "weight": 5,
+   "price": 0
+  },
+  "drop_scroll": {
+   "name": "Drop Scroll",
+   "description": "โอกาสดรอปไอเท็ม x2 นาน 1 ชั่วโมง · ใช้ซ้ำเพื่อต่อเวลาได้สูงสุด 5 ชั่วโมง · ตายแล้วบัฟไม่หาย · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "usable",
+   "weight": 5,
+   "price": 0
+  },
+  "gym_pass": {
+   "name": "Gym Pass",
+   "description": "เพิ่มน้ำหนักที่แบกได้ถาวร +1,000 ต่อใบ · ใช้ได้สูงสุด 10 ใบต่อตัวละคร · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "usable",
+   "weight": 1,
+   "price": 0
+  },
+  "break_protection_stone": {
+   "name": "Protection Stone",
+   "description": "เลือกใช้ตอนตีบวกแบบไม่ปลอดภัย · ใช้ 1 ก้อนเมื่อตีบวกล้มเหลวเท่านั้น สำเร็จไม่เสียหินกันแตก เพื่อป้องกันอุปกรณ์และการ์ดไม่ให้แตก โดยระดับเดิมไม่ลดเมื่อล้มเหลว · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "material",
+   "weight": 1,
+   "price": 0
+  },
+  "divine_wings": {
+   "name": "Divine Wings",
+   "description": "สกินปีกสีทองกางด้านหลังตัวละคร · ดับเบิลคลิกเพื่อสวมหรือถอด ไม่ใช้ช่องอุปกรณ์และไม่มีผลกับค่าสเตตัส · เทรด ขายในตลาด และฝากคลังได้ แต่ทิ้ง ทำลาย หรือขายให้พ่อค้าไม่ได้ · สุ่มได้จาก Mystery Relic Box 1 ใน 1,000,000 กล่อง",
+   "kind": "cash",
+   "weight": 1,
+   "price": 0
+  },
+  "megaphone": {
+   "name": "Megaphone",
+   "description": "ประกาศข้อความถึงผู้เล่นทุกคนทุกภูมิภาค 1 ครั้ง ขึ้นจอ 20 วินาที · ดับเบิลคลิกหรือกดปุ่ม 📢 ข้างแชทเพื่อใช้ · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "cash",
+   "weight": 1,
+   "price": 0
+  },
+  "rename_ticket": {
+   "name": "Rename Card",
+   "description": "เปลี่ยนชื่อตัวละครได้ 1 ครั้ง · ดับเบิลคลิกเพื่อตั้งชื่อใหม่ · ชื่อเดิมจะถูกจองไว้ให้คุณ 30 วัน คนอื่นใช้ไม่ได้ · ผูกกับตัวละคร ซื้อขายและเทรดไม่ได้",
+   "kind": "cash",
+   "weight": 1,
+   "price": 0
+  },
+  "weapon_coat_fire": {
+   "name": "Fire Weapon Coating",
+   "description": "เคลือบอาวุธ 🔥ไฟ (Hephaestus) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_water": {
+   "name": "Water Weapon Coating",
+   "description": "เคลือบอาวุธ 💧น้ำ (Poseidon) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_wind": {
+   "name": "Wind Weapon Coating",
+   "description": "เคลือบอาวุธ 🌀ลม (Aeolus) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_earth": {
+   "name": "Earth Weapon Coating",
+   "description": "เคลือบอาวุธ 🍃ดิน (Gaia) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_light": {
+   "name": "Light Weapon Coating",
+   "description": "เคลือบอาวุธ ☀แสง (Apollo) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "weapon_coat_dark": {
+   "name": "Dark Weapon Coating",
+   "description": "เคลือบอาวุธ ☾มืด (Chaos) · ตีปกติและสกิลไร้ธาตุจะเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_fire": {
+   "name": "Fire Armor Coating",
+   "description": "เคลือบเกราะ 🔥ไฟ (Hephaestus) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_water": {
+   "name": "Water Armor Coating",
+   "description": "เคลือบเกราะ 💧น้ำ (Poseidon) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_wind": {
+   "name": "Wind Armor Coating",
+   "description": "เคลือบเกราะ 🌀ลม (Aeolus) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_earth": {
+   "name": "Earth Armor Coating",
+   "description": "เคลือบเกราะ 🍃ดิน (Gaia) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_light": {
+   "name": "Light Armor Coating",
+   "description": "เคลือบเกราะ ☀แสง (Apollo) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "armor_coat_dark": {
+   "name": "Dark Armor Coating",
+   "description": "เคลือบเกราะ ☾มืด (Chaos) · รับการโจมตีเป็นธาตุนี้ · 30 นาที · ใช้ซ้ำธาตุเดิมเพื่อต่อเวลา · สูงสุด 5 ชั่วโมง · ใช้ธาตุอื่นจะแทนที่ของเดิม · ตายแล้วบัฟไม่หาย · แลกได้จากของดรอปมอนสเตอร์ธาตุเดียวกัน ที่หน้าต่างเควส",
+   "kind": "usable",
+   "weight": 3,
+   "price": 10
+  },
+  "refine_stone": {
+   "name": "Refine Stone",
+   "description": "ช่างตีบวกใช้ 1 ก้อนทุกครั้งที่ตีบวก · ได้จากเควสล่ารายวัน (กำจัดมอนสเตอร์ 100 ตัว) หรือดรอปจากมอนสเตอร์ Lv.70 ขึ้นไป 1%",
+   "kind": "material",
+   "weight": 1,
+   "price": 50
+  }
+ },
+ "starter_equipment": [
+  {
+   "slot": "head",
+   "name": "Lumina Circlet",
+   "bonuses": {
+    "def": 6,
+    "mdef": 4,
+    "vit": 3
+   }
+  },
+  {
+   "slot": "face",
+   "name": "Lumina Monocle",
+   "bonuses": {
+    "mdef": 5,
+    "dex": 3,
+    "hit": 4
+   }
+  },
+  {
+   "slot": "mouth",
+   "name": "Lumina Scarf",
+   "bonuses": {
+    "mdef": 5,
+    "hp": 150
+   }
+  },
+  {
+   "slot": "armor",
+   "name": "Lumina Coat",
+   "bonuses": {
+    "def": 9,
+    "hp": 300,
+    "vit": 3
+   }
+  },
+  {
+   "slot": "shield",
+   "name": "Lumina Guard",
+   "bonuses": {
+    "def": 6,
+    "mdef": 3
+   }
+  },
+  {
+   "slot": "garment",
+   "name": "Lumina Cape",
+   "bonuses": {
+    "def": 5,
+    "flee": 8,
+    "agi": 3
+   }
+  },
+  {
+   "slot": "shoes",
+   "name": "Lumina Boots",
+   "bonuses": {
+    "def": 5,
+    "flee": 6,
+    "hp": 150
+   }
+  },
+  {
+   "slot": "accessory1",
+   "name": "Lumina Ring",
+   "bonuses": {
+    "crit": 6,
+    "hit": 6,
+    "luk": 3
+   }
+  },
+  {
+   "slot": "accessory2",
+   "name": "Lumina Earring",
+   "bonuses": {
+    "matk": 8,
+    "sp": 60,
+    "int": 3
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "sword",
+   "name": "Lumina Sword",
+   "bonuses": {
+    "atk": 16,
+    "hit": 8,
+    "str": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "knife",
+   "name": "Lumina Knife",
+   "bonuses": {
+    "atk": 13,
+    "hit": 8,
+    "agi": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "kunai",
+   "name": "Lumina Kunai",
+   "bonuses": {
+    "atk": 15,
+    "hit": 8,
+    "dex": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "katana",
+   "name": "Lumina Katana",
+   "bonuses": {
+    "atk": 15,
+    "hit": 8,
+    "agi": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "hammer",
+   "name": "Lumina Hammer",
+   "bonuses": {
+    "atk": 17,
+    "hit": 6,
+    "str": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "bow",
+   "name": "Lumina Bow",
+   "bonuses": {
+    "atk": 15,
+    "hit": 8,
+    "dex": 4
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "rod",
+   "name": "Lumina Rod",
+   "bonuses": {
+    "matk": 16,
+    "int": 5
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "flask",
+   "name": "Lumina Flask",
+   "bonuses": {
+    "matk": 15,
+    "int": 3,
+    "agi": 3
+   }
+  },
+  {
+   "slot": "sword",
+   "template": "quarterstaff",
+   "name": "Lumina Staff",
+   "bonuses": {
+    "atk": 10,
+    "matk": 8,
+    "int": 3
+   }
+  }
+ ],
+ "aspd_potions": {
+  "concentration_potion": {
+   "level": 1,
+   "aspd": 3
+  },
+  "awakening_potion": {
+   "level": 40,
+   "aspd": 4
+  },
+  "berserk_potion": {
+   "level": 85,
+   "aspd": 5
+  }
+ }
+}

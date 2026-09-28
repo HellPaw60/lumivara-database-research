@@ -1,0 +1,138 @@
+{
+ "_meta": {
+  "generated": "2026-09-28",
+  "confidence": "see per-record"
+ },
+ "classes": {
+  "novice": {
+   "name": "Novice"
+  },
+  "swordman": {
+   "name": "Swordsman"
+  },
+  "mage": {
+   "name": "Mage"
+  },
+  "archer": {
+   "name": "Archer"
+  },
+  "acolyte": {
+   "name": "Cleric"
+  },
+  "merchant": {
+   "name": "Merchant"
+  },
+  "thief": {
+   "name": "Thief"
+  },
+  "mamushi": {
+   "name": "Mamushi"
+  },
+  "nekobaku": {
+   "name": "Nekobaku",
+   "unlock": {
+    "jobs": {
+     "merchant": 50,
+     "mamushi": 50
+    },
+    "silver": 120000
+   }
+  },
+  "kensei": {
+   "name": "Kensei",
+   "unlock": {
+    "jobs": {
+     "swordman": 50,
+     "thief": 50
+    },
+    "silver": 120000
+   }
+  }
+ },
+ "skills_by_class": {
+  "swordman": [
+   "bash",
+   "magnum",
+   "endure",
+   "challenging",
+   "swordmastery",
+   "hprecovery",
+   "ironbody"
+  ],
+  "novice": [
+   "firstaid"
+  ],
+  "mage": [
+   "firebolt",
+   "coldbolt",
+   "thunderstorm",
+   "tierra",
+   "sp_recovery",
+   "mentality",
+   "magemastery"
+  ],
+  "archer": [
+   "doublestrafe",
+   "arrowshower",
+   "piercingshot",
+   "spiritinstinct",
+   "leapshot",
+   "owleye",
+   "vultureeye"
+  ],
+  "acolyte": [
+   "heal",
+   "holylight",
+   "holyguard",
+   "blessing",
+   "remedylight",
+   "divineprotection",
+   "demonbane"
+  ],
+  "merchant": [
+   "mammonite",
+   "cartstrike",
+   "hammerfall",
+   "overthrust",
+   "discount",
+   "overcharge",
+   "weighttraining"
+  ],
+  "thief": [
+   "twinfang",
+   "venomknife",
+   "shadowburst",
+   "vanish",
+   "doubleattack",
+   "improvedodge",
+   "fatalsense"
+  ],
+  "mamushi": [
+   "viperfang",
+   "dokugiri",
+   "venomrupture",
+   "dokunuri",
+   "venommastery",
+   "numbingtoxin",
+   "predator"
+  ],
+  "kensei": [
+   "iaigiri",
+   "oboro",
+   "issen",
+   "meikyo",
+   "katanamastery",
+   "shukuchi",
+   "zanshin"
+  ],
+  "nekobaku": [
+   "nekoflask",
+   "tarflask",
+   "bigkaboom",
+   "catbrew",
+   "alchemymastery",
+   "ninelives",
+   "catreflex"
+  ]
+ }
+}

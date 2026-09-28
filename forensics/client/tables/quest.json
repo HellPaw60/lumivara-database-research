@@ -1,0 +1,30 @@
+{
+  "questTick_function": "questTick(c,S=1){(this.quest??=FC()).counters[c]=(this.quest.counters[c]??0)+S,this.refreshQuest()}",
+  "questTick_events": [
+    "changeClass",
+    "equip",
+    "buy",
+    "sell",
+    "learn",
+    "stat",
+    "potion",
+    "pickup",
+    "travel",
+    "kill",
+    "kill:mobName"
+  ],
+  "claimQuest_function": "Sends claimQuest to server or processes locally via kh()",
+  "claimHunt_function": "Daily hunt quest - sends claimHunt to server",
+  "claimDaily_function": "Daily quest claim - ZR(()=>this.claimDaily())",
+  "exchangeCoat_function": "Exchange coat quest",
+  "quest_initializer": "FC() - initializes quest state with counters",
+  "quest_window": "quest-window element with quest-badge for notifications",
+  "status": "VERIFIED - questTick found 14 times, claimQuest 3 times",
+  "note": "Quest data is server-driven. Client only tracks counters and displays progress.",
+  "quest_display": {
+    "no_quest": "เส้นทางของนักผจญภัย (Adventurer's Path)",
+    "quest_progress_format": "`${quest.hint} (${have}/${need})`",
+    "quest_complete": "ทำครบแล้ว · แตะเพื่อรับรางวัล",
+    "all_complete": "จบเควสไกด์ทั้งหมดแล้ว"
+  }
+}

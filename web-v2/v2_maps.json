@@ -1,0 +1,650 @@
+{
+  "arena": {
+    "name": "Aurelia Arena",
+    "subtitle": "PVP อิสระ · คลิกผู้เล่นเพื่อสู้ · ปาร์ตี้เดียวกันโจมตีกันไม่ได้",
+    "width": 1536,
+    "height": 1216,
+    "spawn": [
+      768,
+      928
+    ],
+    "portals": [
+      {
+        "x": 768,
+        "y": 1096,
+        "to": "field",
+        "label": "ป่าเริ่มต้น Lv.1–20 ↓",
+        "arrival": [
+          1328,
+          436
+        ]
+      }
+    ]
+  },
+  "training": {
+    "name": "Training Grounds",
+    "subtitle": "ลานฝึก · ทดสอบดาเมจกับหุ่นฟาง · ไม่มี EXP และไอเท็ม",
+    "width": 1344,
+    "height": 960,
+    "spawn": [
+      672,
+      700
+    ],
+    "portals": [
+      {
+        "x": 672,
+        "y": 832,
+        "to": "field",
+        "label": "กลับป่าเริ่มต้น ↓",
+        "arrival": [
+          1470,
+          290
+        ]
+      }
+    ]
+  },
+  "field": {
+    "name": "Verdant Forest",
+    "subtitle": "ป่าเริ่มต้น · Lv.1–20 · บอส Lv.35",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      640,
+      2336
+    ],
+    "portals": [
+      {
+        "x": 1456,
+        "y": 140,
+        "to": "rome",
+        "label": "เมือง Aurelia ↑",
+        "arrival": [
+          627,
+          610
+        ]
+      },
+      {
+        "x": 1560,
+        "y": 200,
+        "to": "training",
+        "label": "ลานฝึกหุ่นฟาง",
+        "arrival": [
+          672,
+          700
+        ]
+      },
+      {
+        "x": 180,
+        "y": 1536,
+        "to": "wildwood",
+        "label": "← ป่าลึก Lv.100–120",
+        "arrival": [
+          2892,
+          1656
+        ]
+      },
+      {
+        "x": 2992,
+        "y": 2736,
+        "to": "dunes",
+        "label": "ทะเลทรายหินแดง Lv.125–145 →",
+        "arrival": [
+          140,
+          1536
+        ]
+      },
+      {
+        "x": 1024,
+        "y": 2992,
+        "to": "crystal",
+        "label": "โพรงคริสตัล Lv.225–245 ↓",
+        "arrival": [
+          1536,
+          180
+        ]
+      },
+      {
+        "x": 1184,
+        "y": 448,
+        "to": "arena",
+        "label": "สนาม PVP · เข้าแล้วสู้ได้ทันที",
+        "arrival": [
+          768,
+          928
+        ]
+      }
+    ]
+  },
+  "rome": {
+    "name": "Aurelia Forum",
+    "subtitle": "เมืองโบราณ · ลานฟอรัมและน้ำพุ",
+    "width": 1254,
+    "height": 705.75,
+    "spawn": [
+      627,
+      490
+    ],
+    "portals": [
+      {
+        "x": 627,
+        "y": 650,
+        "to": "field",
+        "label": "ป่าเริ่มต้น Lv.1–20 ↓",
+        "arrival": [
+          1456,
+          220
+        ]
+      },
+      {
+        "x": 627,
+        "y": 43,
+        "to": "snow",
+        "label": "ช่องเขาหิมะ Lv.25–45 ↑",
+        "arrival": [
+          1536,
+          2930
+        ]
+      },
+      {
+        "x": 1213,
+        "y": 377,
+        "to": "desert",
+        "label": "ทะเลทราย Lv.50–70 →",
+        "arrival": [
+          140,
+          1536
+        ]
+      },
+      {
+        "x": 43,
+        "y": 377,
+        "to": "swamp",
+        "label": "หนองน้ำ Lv.75–95 ←",
+        "arrival": [
+          2930,
+          1536
+        ]
+      }
+    ]
+  },
+  "grove": {
+    "name": "Whispering Grove",
+    "subtitle": "ป่ากระซิบ · Hollow",
+    "width": 1920,
+    "height": 1280,
+    "spawn": [
+      150,
+      640
+    ],
+    "portals": [
+      {
+        "x": 96,
+        "y": 640,
+        "to": "field",
+        "label": "← กลับ Verdant Forest",
+        "arrival": [
+          2688,
+          1120
+        ]
+      },
+      {
+        "x": 1800,
+        "y": 640,
+        "to": "ruins",
+        "label": "ไป Moonfall Ruins →",
+        "arrival": [
+          150,
+          640
+        ]
+      },
+      {
+        "x": 960,
+        "y": 1120,
+        "to": "temple",
+        "label": "↓ วิหารกลางป่า",
+        "arrival": [
+          110,
+          512
+        ]
+      }
+    ]
+  },
+  "ruins": {
+    "name": "Moonfall Ruins",
+    "subtitle": "ซากลานจันทร์ · Prism Hopper และ Hollow",
+    "width": 1920,
+    "height": 1280,
+    "spawn": [
+      150,
+      640
+    ],
+    "portals": [
+      {
+        "x": 96,
+        "y": 640,
+        "to": "grove",
+        "label": "← กลับ Whispering Grove",
+        "arrival": [
+          1728,
+          640
+        ]
+      },
+      {
+        "x": 1800,
+        "y": 640,
+        "to": "snow",
+        "label": "ไป Frostveil Pass →",
+        "arrival": [
+          150,
+          640
+        ]
+      }
+    ]
+  },
+  "snow": {
+    "name": "Frostveil Pass",
+    "subtitle": "ช่องเขาหิมะ · Lv.25–45",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      256,
+      1536
+    ],
+    "portals": [
+      {
+        "x": 1536,
+        "y": 3012,
+        "to": "rome",
+        "label": "เมือง Aurelia ↓",
+        "arrival": [
+          627,
+          90
+        ]
+      },
+      {
+        "x": 60,
+        "y": 1536,
+        "to": "swamp",
+        "label": "← หนองน้ำ Lv.75–95",
+        "arrival": [
+          1536,
+          140
+        ]
+      },
+      {
+        "x": 3012,
+        "y": 1536,
+        "to": "glacier",
+        "label": "ธารน้ำแข็ง Lv.150–170 →",
+        "arrival": [
+          140,
+          1536
+        ]
+      },
+      {
+        "x": 1536,
+        "y": 60,
+        "to": "tempest",
+        "label": "ยอดเขาพายุ Lv.250–270 ↑",
+        "arrival": [
+          1536,
+          2892
+        ]
+      }
+    ]
+  },
+  "desert": {
+    "name": "Sunscar Desert",
+    "subtitle": "ทะเลทราย · Lv.50–70",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      160,
+      1536
+    ],
+    "portals": [
+      {
+        "x": 60,
+        "y": 1536,
+        "to": "rome",
+        "label": "← เมือง Aurelia",
+        "arrival": [
+          1160,
+          377
+        ]
+      },
+      {
+        "x": 1536,
+        "y": 60,
+        "to": "glacier",
+        "label": "ธารน้ำแข็ง Lv.150–170 ↑",
+        "arrival": [
+          1616,
+          2892
+        ]
+      },
+      {
+        "x": 1536,
+        "y": 3012,
+        "to": "dunes",
+        "label": "ทะเลทรายหินแดง Lv.125–145 ↓",
+        "arrival": [
+          1536,
+          140
+        ]
+      },
+      {
+        "x": 3012,
+        "y": 1536,
+        "to": "caldera",
+        "label": "ปล่องภูเขาไฟ Lv.175–195 →",
+        "arrival": [
+          140,
+          1536
+        ]
+      }
+    ]
+  },
+  "swamp": {
+    "name": "Mirewillow Marsh",
+    "subtitle": "หนองน้ำ · Lv.75–95",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      256,
+      1536
+    ],
+    "portals": [
+      {
+        "x": 3012,
+        "y": 1536,
+        "to": "rome",
+        "label": "เมือง Aurelia →",
+        "arrival": [
+          95,
+          377
+        ]
+      },
+      {
+        "x": 1536,
+        "y": 60,
+        "to": "snow",
+        "label": "ช่องเขาหิมะ Lv.25–45 ↑",
+        "arrival": [
+          140,
+          1536
+        ]
+      },
+      {
+        "x": 1536,
+        "y": 3012,
+        "to": "wildwood",
+        "label": "ป่าลึก Lv.100–120 ↓",
+        "arrival": [
+          1716,
+          160
+        ]
+      },
+      {
+        "x": 1000,
+        "y": 60,
+        "to": "moor",
+        "label": "ทุ่งหมอกวิญญาณ Lv.200–220 ↑",
+        "arrival": [
+          1536,
+          2892
+        ]
+      }
+    ]
+  },
+  "wildwood": {
+    "name": "Elderwood Forest",
+    "subtitle": "ป่าลึก · Lv.100–120",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      256,
+      1536
+    ],
+    "portals": [
+      {
+        "x": 1716,
+        "y": 80,
+        "to": "swamp",
+        "label": "หนองน้ำ Lv.75–95 ↑",
+        "arrival": [
+          1536,
+          2932
+        ]
+      },
+      {
+        "x": 2972,
+        "y": 1656,
+        "to": "field",
+        "label": "ป่าเริ่มต้น Lv.1–20 →",
+        "arrival": [
+          260,
+          1536
+        ]
+      }
+    ]
+  },
+  "dunes": {
+    "name": "Crimson Dunes",
+    "subtitle": "ทะเลทรายหินแดง · Lv.125–145",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      256,
+      1536
+    ],
+    "portals": [
+      {
+        "x": 1536,
+        "y": 60,
+        "to": "desert",
+        "label": "ทะเลทราย Lv.50–70 ↑",
+        "arrival": [
+          1536,
+          2932
+        ]
+      },
+      {
+        "x": 60,
+        "y": 1536,
+        "to": "field",
+        "label": "← ป่าเริ่มต้น Lv.1–20",
+        "arrival": [
+          2912,
+          2736
+        ]
+      }
+    ]
+  },
+  "glacier": {
+    "name": "Frostfang Glacier",
+    "subtitle": "ธารน้ำแข็ง · Lv.150–170",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      256,
+      1536
+    ],
+    "portals": [
+      {
+        "x": 60,
+        "y": 1536,
+        "to": "snow",
+        "label": "← ช่องเขาหิมะ Lv.25–45",
+        "arrival": [
+          2932,
+          1536
+        ]
+      },
+      {
+        "x": 1616,
+        "y": 2972,
+        "to": "desert",
+        "label": "ทะเลทราย Lv.50–70 ↓",
+        "arrival": [
+          1536,
+          140
+        ]
+      }
+    ]
+  },
+  "caldera": {
+    "name": "Emberfall Caldera",
+    "subtitle": "ปล่องภูเขาไฟ · Lv.175–195",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      256,
+      1536
+    ],
+    "portals": [
+      {
+        "x": 60,
+        "y": 1536,
+        "to": "desert",
+        "label": "← ทะเลทราย Lv.50–70",
+        "arrival": [
+          2872,
+          1536
+        ]
+      }
+    ]
+  },
+  "moor": {
+    "name": "Gloomveil Moor",
+    "subtitle": "ทุ่งหมอกวิญญาณ · Lv.200–220",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      1536,
+      2816
+    ],
+    "portals": [
+      {
+        "x": 1536,
+        "y": 3012,
+        "to": "swamp",
+        "label": "หนองน้ำ Lv.75–95 ↓",
+        "arrival": [
+          1000,
+          190
+        ]
+      }
+    ]
+  },
+  "crystal": {
+    "name": "Amethyst Hollows",
+    "subtitle": "โพรงคริสตัล · Lv.225–245",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      1536,
+      256
+    ],
+    "portals": [
+      {
+        "x": 1536,
+        "y": 60,
+        "to": "field",
+        "label": "ป่าเริ่มต้น Lv.1–20 ↑",
+        "arrival": [
+          1024,
+          2860
+        ]
+      }
+    ]
+  },
+  "tempest": {
+    "name": "Stormcrest Peaks",
+    "subtitle": "ยอดเขาพายุ · Lv.250–270",
+    "width": 3072,
+    "height": 3072,
+    "spawn": [
+      1536,
+      2816
+    ],
+    "portals": [
+      {
+        "x": 1536,
+        "y": 3012,
+        "to": "snow",
+        "label": "ช่องเขาหิมะ Lv.25–45 ↓",
+        "arrival": [
+          1536,
+          200
+        ]
+      }
+    ]
+  },
+  "cove": {
+    "name": "Prism Cove",
+    "subtitle": "อ่าวปริซึม · เกาะลี้ลับกลางสมุทร",
+    "width": 2048,
+    "height": 1152,
+    "spawn": [
+      460,
+      880
+    ],
+    "portals": [
+      {
+        "x": 360,
+        "y": 880,
+        "to": "field",
+        "label": "← นั่งเรือกลับป่าเริ่มต้น",
+        "arrival": [
+          640,
+          2336
+        ]
+      }
+    ]
+  },
+  "temple": {
+    "name": "Mossheart Sanctuary",
+    "subtitle": "วิหารกลางป่า · Prism Hopper และ Hollow",
+    "width": 1024,
+    "height": 1024,
+    "spawn": [
+      110,
+      512
+    ],
+    "portals": [
+      {
+        "x": 64,
+        "y": 512,
+        "to": "grove",
+        "label": "← กลับ Whispering Grove",
+        "arrival": [
+          960,
+          1050
+        ]
+      }
+    ]
+  },
+  "inn": {
+    "name": "The Lantern Inn",
+    "subtitle": "โรงเตี๊ยม · พื้นที่ปลอดภัย",
+    "width": 960,
+    "height": 640,
+    "spawn": [
+      480,
+      500
+    ],
+    "portals": [
+      {
+        "x": 480,
+        "y": 534,
+        "to": "field",
+        "label": "กลับสนาม",
+        "arrival": [
+          640,
+          2336
+        ]
+      }
+    ]
+  }
+}

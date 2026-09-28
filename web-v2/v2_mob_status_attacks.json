@@ -1,0 +1,30 @@
+{
+  "Moss Mushroom": {
+    "status": "poison",
+    "chance": 0.18
+  },
+  "Bog Toad": {
+    "status": "poison",
+    "chance": 0.15
+  },
+  "Cave Bat": {
+    "status": "slow",
+    "chance": 0.18
+  },
+  "Sunscale Cobra": {
+    "status": "slow",
+    "chance": 0.15
+  },
+  "Amber Beetle": {
+    "status": "crush",
+    "chance": 0.18
+  },
+  "Pebble Golem": {
+    "status": "crush",
+    "chance": 0.15
+  },
+  "Crowned Prism Hopper": {
+    "status": "crush",
+    "chance": 0.3
+  }
+}

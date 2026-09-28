@@ -1,0 +1,9 @@
+{
+  "experimental": "Only found in WebGL context creation (not a feature flag)",
+  "disabled": "214 matches - mostly UI element states, not feature flags",
+  "hidden": "570 matches - mostly UI visibility states",
+  "comingSoon": "Not found",
+  "notImplemented": "Not found",
+  "workInProgress": "Not found",
+  "status": "INFERRED - No explicit feature flags found. 'disabled' and 'hidden' are UI states."
+}

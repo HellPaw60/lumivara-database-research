@@ -1,0 +1,8 @@
+on").onclick=()=>this.reviveAtTown(),document.getElementById("revive-here-button").onclick=()=>this.reviveHere(),St("bot-run").onclick=()=>this.setAuto(!this.autoPlay),bI({walk:()=>this.walkToward("field"),auto:()=>this.setAuto(!0)}),NN(),$N(),VD(),this.input.keyboard?.removeAllListeners("keydown-F"),this.input.keyboard?.on("keydown-F",E=>{E.repeat||this.setAuto(!this.autoPlay)}),this.input.keyboard?.remove
+
+ลับเมือง</button></div></div></section>'),document.getElementById("revive-button").onclick=()=>this.reviveAtTown(),document.getElementById("revive-here-button").onclick=()=>this.reviveHere(),St("bot-run").onclick=()=>this.setAuto(!this.autoPlay),bI({walk:()=>this.walkToward("field"),auto:()=>this.setAuto(!0)}),NN(),$N(),VD(),this.input.keyboard?.removeAllListeners("keydown-F"),this.input.keyboard?.on("keydown
+
+รณ์ที่บันทึกไว้"),h.insertBefore(S,h.querySelector(".equipment-detail"))}function _9(h){Ks=h,Fo=!!h.deadUntil;const c=document.getElementById("loadout-bar");if(!c)return;const S=Ks.loadouts??[],T=JSON.stringify([S,Ks.equipped,Ks.gear?.map(w=>w.id),Fo]);if(c.dataset.signature!==T){c.dataset.signature=T,c.replaceChildren();for(let w=0;w<Jw;w++){const A=S[w],u=document.createElement("button");if(u.className="
+
+ligible=!0;classStats;questSignature="";questSeenIndex=0;questReadySeen=!1;nextAttack=0;deadUntil=0;deathCause="";logs=[];get maxHp(){return Zt(this).maxHp}get damage(){return Zt(this).atk}get interval(){return Zt(this).interval}get bowEquipped(){return this.gear?.find(S=>S.id===this.equipped?.sword&&S.slot==="sword")?.template==="bow"}get rangedWeapon(){const c=this.gear?.find(S=>S.id===this.equipped?.swor
+

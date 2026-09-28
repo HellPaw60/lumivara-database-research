@@ -1,0 +1,14 @@
+{
+  "concentration_potion": {
+    "level": 1,
+    "aspd": 3
+  },
+  "awakening_potion": {
+    "level": 40,
+    "aspd": 4
+  },
+  "berserk_potion": {
+    "level": 85,
+    "aspd": 5
+  }
+}

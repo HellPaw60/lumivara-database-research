@@ -1,0 +1,25 @@
+{
+  "refineStone_drop_rate": "ie.refineStone = 0.01 (1%)",
+  "refineStone_level_requirement": "Ra=70 - only drops from level 70+",
+  "refine_formula": {
+    "startLevel": 20,
+    "perLevel": 0.0025,
+    "max": 0.3,
+    "description": "Ca(level) = min(0.3, max(0, (level - 20) * 0.0025))"
+  },
+  "refine_success_rate": "Ic(level, refine) = 1 - Ca(level) * (1 - min(100, max(0, refine)) / 100)",
+  "refine_bonuses": {
+    "pierce": 60,
+    "mpierce": 60,
+    "atkPct": 30,
+    "matkPct": 30,
+    "lifesteal": 8,
+    "freezeHit": 15,
+    "resStun": 80,
+    "resFreeze": 80,
+    "moveSpeed": 30,
+    "critDmg": 60
+  },
+  "break_protection": "Protection Stone prevents equipment and cards from breaking",
+  "status": "VERIFIED"
+}

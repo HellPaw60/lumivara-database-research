@@ -1,0 +1,435 @@
+{
+ "_meta": {
+  "generated": "2026-09-28",
+  "confidence": "see per-record"
+ },
+ "statuses": {
+  "poison": {
+   "id": "poison",
+   "name": "พิษ",
+   "kind": "debuff",
+   "icon": "☠",
+   "image": "/skills/status-poison.png",
+   "duration": 12000,
+   "dot": {
+    "percent": 0.015,
+    "interval": 2000
+   }
+  },
+  "slow": {
+   "id": "slow",
+   "name": "ช้า",
+   "kind": "debuff",
+   "icon": "🐌",
+   "image": "/skills/status-slow.png",
+   "duration": 8000,
+   "speedFactor": 0.65,
+   "aspdPercent": -0.15
+  },
+  "crush": {
+   "id": "crush",
+   "name": "เกราะแตก",
+   "kind": "debuff",
+   "icon": "🛡",
+   "image": "/skills/status-crush.png",
+   "duration": 10000,
+   "incomingFactor": 1.2
+  },
+  "bleed": {
+   "id": "bleed",
+   "name": "เลือดไหล",
+   "kind": "debuff",
+   "icon": "🩸",
+   "duration": 5000,
+   "dot": {
+    "percent": 0.008,
+    "interval": 1000
+   }
+  },
+  "burn": {
+   "id": "burn",
+   "name": "เผาไหม้",
+   "kind": "debuff",
+   "icon": "🔥",
+   "duration": 5000,
+   "dot": {
+    "percent": 0.007,
+    "interval": 1000
+   }
+  },
+  "stun": {
+   "id": "stun",
+   "name": "สตัน",
+   "kind": "debuff",
+   "icon": "💫",
+   "duration": 1000,
+   "disables": true
+  },
+  "freeze": {
+   "id": "freeze",
+   "name": "แช่แข็ง",
+   "kind": "debuff",
+   "icon": "❄",
+   "duration": 1000,
+   "disables": true
+  },
+  "blind": {
+   "id": "blind",
+   "name": "ตาพร่า",
+   "kind": "debuff",
+   "icon": "🌫",
+   "duration": 5000,
+   "aspdPercent": -0.25,
+   "missChance": 0.25
+  },
+  "blessing": {
+   "id": "blessing",
+   "name": "Blessing",
+   "kind": "buff",
+   "icon": "✨",
+   "image": "/skills/blessing-transparent-v3.png",
+   "duration": 45000,
+   "stats": {
+    "str": 2,
+    "agi": 2,
+    "int": 2,
+    "dex": 2
+   }
+  },
+  "overthrust": {
+   "id": "overthrust",
+   "name": "Over Thrust",
+   "kind": "buff",
+   "icon": "⚒",
+   "image": "/skills/overthrust-transparent-v3.png",
+   "duration": 25000,
+   "atkFactor": 0.18
+  },
+  "endure": {
+   "id": "endure",
+   "name": "Endure",
+   "kind": "buff",
+   "icon": "◆",
+   "image": "/skills/endure-transparent-v3.png",
+   "duration": 3500
+  },
+  "holyguard": {
+   "id": "holyguard",
+   "name": "Holy Guard",
+   "kind": "buff",
+   "icon": "✚",
+   "image": "/skills/holyguard-transparent-v3.png",
+   "duration": 3500
+  },
+  "haste": {
+   "id": "haste",
+   "name": "เร่งความเร็ว",
+   "kind": "buff",
+   "icon": "⚡",
+   "image": "/items/awakening_potion.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "taunt": {
+   "id": "taunt",
+   "name": "ถูกยั่วยุ",
+   "kind": "debuff",
+   "icon": "⚑",
+   "duration": 5000,
+   "atkFactor": -0.1,
+   "incomingFactor": 1.1
+  },
+  "weaken": {
+   "id": "weaken",
+   "name": "อ่อนแรง",
+   "kind": "debuff",
+   "icon": "▽",
+   "duration": 5000,
+   "atkFactor": -0.1
+  },
+  "spirit": {
+   "id": "spirit",
+   "name": "Spirit Instinct",
+   "kind": "buff",
+   "icon": "🜂",
+   "duration": 55000
+  },
+  "remedy": {
+   "id": "remedy",
+   "name": "Remedy Light",
+   "kind": "buff",
+   "icon": "✛",
+   "duration": 5000,
+   "wards": true
+  },
+  "expboost": {
+   "id": "expboost",
+   "name": "EXP x2",
+   "kind": "buff",
+   "icon": "📖",
+   "image": "/items/exp_scroll.png",
+   "duration": 3600000,
+   "fromItem": true,
+   "keepsOnDeath": true,
+   "pausesOffline": true
+  },
+  "dropboost": {
+   "id": "dropboost",
+   "name": "Drop x2",
+   "kind": "buff",
+   "icon": "🎁",
+   "image": "/items/drop_scroll.png",
+   "duration": 3600000,
+   "fromItem": true,
+   "keepsOnDeath": true,
+   "pausesOffline": true
+  },
+  "vanish": {
+   "id": "vanish",
+   "name": "Vanish",
+   "kind": "buff",
+   "icon": "◌",
+   "duration": 1000,
+   "hidden": true
+  },
+  "venom": {
+   "id": "venom",
+   "name": "พิษงู",
+   "kind": "debuff",
+   "icon": "🐍",
+   "image": "/skills/status-venom.png",
+   "duration": 8000,
+   "dot": {
+    "percent": 0,
+    "interval": 1000
+   }
+  },
+  "dokunuri": {
+   "id": "dokunuri",
+   "name": "Dokunuri",
+   "kind": "buff",
+   "icon": "🗡",
+   "image": "/skills/dokunuri-transparent-v3.png",
+   "duration": 45000
+  },
+  "meikyo": {
+   "id": "meikyo",
+   "name": "Meikyo Shisui",
+   "kind": "buff",
+   "icon": "🌊",
+   "image": "/skills/meikyo-transparent-v3.png",
+   "duration": 45000
+  },
+  "oil": {
+   "id": "oil",
+   "name": "ชุ่มน้ำมัน",
+   "kind": "debuff",
+   "icon": "🛢",
+   "image": "/skills/status-oil.png",
+   "duration": 6000,
+   "speedFactor": 0.7
+  },
+  "catbrew": {
+   "id": "catbrew",
+   "name": "Catalyst Brew",
+   "kind": "buff",
+   "icon": "⚗",
+   "image": "/skills/catbrew-transparent-v3.png",
+   "duration": 45000
+  },
+  "ninelives": {
+   "id": "ninelives",
+   "name": "เก้าชีวิต (พักฟื้น)",
+   "kind": "buff",
+   "icon": "🐾",
+   "image": "/skills/ninelives-transparent-v3.png",
+   "duration": 600000,
+   "keepsOnDeath": true
+  },
+  "crystal": {
+   "id": "crystal",
+   "name": "โล่ผลึก",
+   "kind": "buff",
+   "icon": "💎",
+   "image": "/skills/status-crystal.png",
+   "duration": 8000
+  },
+  "spawnguard": {
+   "id": "spawnguard",
+   "name": "อมตะ",
+   "kind": "buff",
+   "icon": "🛡",
+   "duration": 30000,
+   "wards": true,
+   "invulnerable": true
+  },
+  "riseguard": {
+   "id": "riseguard",
+   "name": "อมตะ",
+   "kind": "buff",
+   "icon": "🛡",
+   "duration": 3000,
+   "wards": true,
+   "invulnerable": true,
+   "pacified": true
+  },
+  "momentum": {
+   "id": "momentum",
+   "name": "Momentum",
+   "kind": "buff",
+   "icon": "🌀",
+   "duration": 10000
+  },
+  "wcoat_fire": {
+   "id": "wcoat_fire",
+   "name": "อาวุธ 🔥ไฟ",
+   "kind": "buff",
+   "icon": "🔥",
+   "image": "/items/weapon_coat_fire.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_water": {
+   "id": "wcoat_water",
+   "name": "อาวุธ 💧น้ำ",
+   "kind": "buff",
+   "icon": "💧",
+   "image": "/items/weapon_coat_water.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_wind": {
+   "id": "wcoat_wind",
+   "name": "อาวุธ 🌀ลม",
+   "kind": "buff",
+   "icon": "🌀",
+   "image": "/items/weapon_coat_wind.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_earth": {
+   "id": "wcoat_earth",
+   "name": "อาวุธ 🍃ดิน",
+   "kind": "buff",
+   "icon": "🍃",
+   "image": "/items/weapon_coat_earth.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_light": {
+   "id": "wcoat_light",
+   "name": "อาวุธ ☀แสง",
+   "kind": "buff",
+   "icon": "☀",
+   "image": "/items/weapon_coat_light.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "wcoat_dark": {
+   "id": "wcoat_dark",
+   "name": "อาวุธ ☾มืด",
+   "kind": "buff",
+   "icon": "☾",
+   "image": "/items/weapon_coat_dark.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_fire": {
+   "id": "acoat_fire",
+   "name": "เกราะ 🔥ไฟ",
+   "kind": "buff",
+   "icon": "🔥",
+   "image": "/items/armor_coat_fire.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_water": {
+   "id": "acoat_water",
+   "name": "เกราะ 💧น้ำ",
+   "kind": "buff",
+   "icon": "💧",
+   "image": "/items/armor_coat_water.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_wind": {
+   "id": "acoat_wind",
+   "name": "เกราะ 🌀ลม",
+   "kind": "buff",
+   "icon": "🌀",
+   "image": "/items/armor_coat_wind.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_earth": {
+   "id": "acoat_earth",
+   "name": "เกราะ 🍃ดิน",
+   "kind": "buff",
+   "icon": "🍃",
+   "image": "/items/armor_coat_earth.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_light": {
+   "id": "acoat_light",
+   "name": "เกราะ ☀แสง",
+   "kind": "buff",
+   "icon": "☀",
+   "image": "/items/armor_coat_light.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  },
+  "acoat_dark": {
+   "id": "acoat_dark",
+   "name": "เกราะ ☾มืด",
+   "kind": "buff",
+   "icon": "☾",
+   "image": "/items/armor_coat_dark.png",
+   "duration": 1800000,
+   "fromItem": true,
+   "keepsOnDeath": true
+  }
+ },
+ "mob_status_attacks": {
+  "Moss Mushroom": {
+   "status": "poison",
+   "chance": 0.18
+  },
+  "Bog Toad": {
+   "status": "poison",
+   "chance": 0.15
+  },
+  "Cave Bat": {
+   "status": "slow",
+   "chance": 0.18
+  },
+  "Sunscale Cobra": {
+   "status": "slow",
+   "chance": 0.15
+  },
+  "Amber Beetle": {
+   "status": "crush",
+   "chance": 0.18
+  },
+  "Pebble Golem": {
+   "status": "crush",
+   "chance": 0.15
+  },
+  "Crowned Prism Hopper": {
+   "status": "crush",
+   "chance": 0.3
+  }
+ }
+}
