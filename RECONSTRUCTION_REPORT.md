@@ -74,9 +74,11 @@ Lihat formulas/combat-analysis.json (3.282 hit event, full coverage):
 
 ## 16-18. Equipment / Refine / Fusion
 
-- Generator: template-based (11 template senjata), random stat +1–3 (75% 1 stat, 25% 2 stat)
-- Refine: success = 1 − Ca(level, refine); refine stone 1% drop Lv70+ atau daily hunt
-- Fusion: fuse gearIds[] via Fusion Master NPC → forge effects (4 jenis)
+- Generator: template-based (11 template senjata), random stat +1–3 (75% 1 stat, 25% 2 stat) — **generation sepenuhnya SERVER-SIDE**, klien hanya punya template detection (`Ga=['bow','staff','quarterstaff','dagger_pair','hammer']`)
+- **Refine formula (VERIFIED dari kode)**: `failFactor(level) = min(0.3, max(0, (level-20) × 0.0025))`; `successRate(level, refine) = 1 − failFactor × (1 − min(100, refine)/100)` — makin tinggi level & refine stat, makin tinggi success; cap 30% fail factor. Refine stone 1% drop Lv70+ atau daily hunt. 10 bonus stat refine dengan cap masing-masing (pierce 60, atkPct 30, lifesteal 8, moveSpeed 30, dst.)
+- Fusion: `fuse gearIds[] + slot + template` via Fusion Master NPC → forge effects (4 jenis)
+- **Pet system (VERIFIED)**: 10+ pet dengan elemen — dew-bunny(water), thorn-pixie(poison), honey-moth(wind), bramble-hare(earth), frost-puff(ice) — petBag terpisah dari inventory, petLoot dengan filter (consumable/etc/card/equipment), petWithdraw all
+- **World Boss (VERIFIED dari kode)**: Crowned Prism Hopper — `hp:30000, damage:180, reward:9000`, ada respawn timer (`respawn:zi`) dan home area (`home:Ao`)
 
 ## 19-20. Party & Economy
 
@@ -113,6 +115,9 @@ storage, use — schema lengkap di protocol/NETWORK_PROTOCOL_v3.json
 3. Rate drop aktual server (vs display klien)
 4. Quest/mall/pet server state (endpoint butuh login Google)
 5. World Boss spawn schedule
+6. Gold/Premium pack pricing (zf array di-import tapi definisi tidak ditemukan di bundle yang dianalisis)
+7. z5 function (points per level) — ditemukan tapi belum ter-ekstrak penuh
+8. Quest harian sepenuhnya server-driven — struktur reward tidak terlihat dari klien
 
 ## 25. Confidence Matrix
 
