@@ -3,9 +3,9 @@
 ## Baseline
 | Field | Value |
 |---|---|
-| Commit | `c15274d` (final V0.6 validation/provenance commit) |
+| Commit | `6baeede` (final V0.6 release state) |
 | Tag | `v0.6-mechanics-validation` |
-| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (first cleanup) → `371bf84` (changelog V3B archive) → `c15274d` (final) |
+| Previous | `1bd5fd6` (initial V0.6) → `d797ee1` (first cleanup) → `371bf84` (changelog V3B archive) → `c15274d` (provenance correction) → `6baeede` (final release state) |
 | v0.5 baseline | `6131965` |
 
 ## Changelog Snapshot
