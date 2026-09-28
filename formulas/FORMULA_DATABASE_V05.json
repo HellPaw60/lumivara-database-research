@@ -1,7 +1,7 @@
 {
  "_meta": {
   "version": "v0.5",
-  "formula_count": 31,
+  "formula_count": 33,
   "confidence_legend": [
    "VERIFIED_FROM_CLIENT_CODE",
    "OBSERVED",
@@ -590,6 +590,52 @@
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
    "notes": "negative finding: tidak ditemukan elementDamage/weakness multiplier di pipeline damage"
+  },
+  "atk_base": {
+   "formula_id": "atk_base",
+   "name": "Base ATK (melee/ranged split)",
+   "scope": "GLOBAL",
+   "inputs": [
+    "STR",
+    "DEX",
+    "LUK",
+    "level",
+    "weaponTemplate"
+   ],
+   "outputs": [
+    "baseATK"
+   ],
+   "expression": "10 + (isRanged ? DEX*2 + floor(STR/5) : STR*2 + floor(DEX/5)) + floor(LUK/10) + (Lv-1)*0.3",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "source_symbol": "De",
+   "source_offset": 118174,
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED",
+   "notes": "isRanged = Ft(template): bow/kunai/flask; melee lainnya"
+  },
+  "matk_base": {
+   "formula_id": "matk_base",
+   "name": "Base MATK",
+   "scope": "GLOBAL",
+   "inputs": [
+    "INT",
+    "DEX",
+    "level"
+   ],
+   "outputs": [
+    "baseMATK"
+   ],
+   "expression": "5 + INT*3 + DEX + (Lv-1)*0.3",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "source_symbol": "De",
+   "source_offset": 118174,
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED",
+   "notes": "sebelum equip/skill bonus"
   }
  }
 }
