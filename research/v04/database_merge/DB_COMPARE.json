@@ -1,0 +1,141 @@
+{
+ "_meta": {
+  "final": "database/LUMIVARA_FORENSICS.sqlite",
+  "initial": "forensics/database/LUMIVARA_FORENSICS.sqlite",
+  "method": "deterministic column+row+value comparison"
+ },
+ "schema_diff": {
+  "tables_only_in_final": [
+   "CLIENT_MINING"
+  ],
+  "tables_only_in_initial": [],
+  "column_changes": {},
+  "common_tables": [
+   "CARDS",
+   "CLASSES",
+   "DROP_RATES",
+   "ITEMS",
+   "MAPS",
+   "MONSTERS",
+   "MONSTER_STATUS_ATTACKS",
+   "SKILLS",
+   "STATUSES",
+   "TRANSLATIONS",
+   "_prov"
+  ]
+ },
+ "row_diff": {
+  "CARDS": {
+   "final_rows": 49,
+   "initial_rows": 49,
+   "delta": 0
+  },
+  "CLASSES": {
+   "final_rows": 10,
+   "initial_rows": 10,
+   "delta": 0
+  },
+  "DROP_RATES": {
+   "final_rows": 9,
+   "initial_rows": 9,
+   "delta": 0
+  },
+  "ITEMS": {
+   "final_rows": 80,
+   "initial_rows": 80,
+   "delta": 0
+  },
+  "MAPS": {
+   "final_rows": 19,
+   "initial_rows": 19,
+   "delta": 0
+  },
+  "MONSTERS": {
+   "final_rows": 40,
+   "initial_rows": 40,
+   "delta": 0
+  },
+  "MONSTER_STATUS_ATTACKS": {
+   "final_rows": 7,
+   "initial_rows": 7,
+   "delta": 0
+  },
+  "SKILLS": {
+   "final_rows": 64,
+   "initial_rows": 64,
+   "delta": 0
+  },
+  "STATUSES": {
+   "final_rows": 42,
+   "initial_rows": 42,
+   "delta": 0
+  },
+  "TRANSLATIONS": {
+   "final_rows": 2547,
+   "initial_rows": 2547,
+   "delta": 0
+  },
+  "_prov": {
+   "final_rows": 10,
+   "initial_rows": 10,
+   "delta": 0
+  }
+ },
+ "value_diff": {
+  "CARDS": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "CLASSES": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "DROP_RATES": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "ITEMS": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "MAPS": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "MONSTERS": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "MONSTER_STATUS_ATTACKS": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "SKILLS": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "STATUSES": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "TRANSLATIONS": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  },
+  "_prov": {
+   "added": [],
+   "removed": [],
+   "modified": []
+  }
+ }
+}

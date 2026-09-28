@@ -334,6 +334,7 @@
    "doc_values": [
     "12 tabel",
     "12 tabel",
+    "12 tabel",
     "12 tabel"
    ],
    "actual": 11,
@@ -343,6 +344,7 @@
    "doc": "repo_audit/V03_AUDIT.md",
    "claim": "sqlite_rows=2891",
    "doc_values": [
+    "2.891",
     "2.891"
    ],
    "actual": 2881,

@@ -64,4 +64,4 @@
 | repo_audit/V03_AUDIT.md | ws_events=26 | [] | 26 | NOT_FOUND |
 | repo_audit/V03_AUDIT.md | formulas=18 | ['18 formula'] | 18 | MATCH |
 | repo_audit/V03_AUDIT.md | sqlite_tables=12 | ['12 tabel', '12 tabel'] | 11 | MISMATCH |
-| repo_audit/V03_AUDIT.md | sqlite_rows=2891 | ['2.891'] | 2881 | MISMATCH |
+| repo_audit/V03_AUDIT.md | sqlite_rows=2891 | ['2.891', '2.891'] | 2881 | MISMATCH |

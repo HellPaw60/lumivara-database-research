@@ -1,0 +1,319 @@
+{
+ "_meta": {
+  "version": "v0.4",
+  "domains": 14,
+  "classification_legend": [
+   "OBSERVED_MODEL",
+   "CLIENT_MODEL",
+   "INFERRED_MODEL",
+   "UNKNOWN_MODEL"
+  ]
+ },
+ "domains": {
+  "quest": {
+   "domain": "quest",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "questTick(), FC(), claimQuest/claimHunt/claimDaily",
+   "observed_fields": [
+    "quest.counters{}",
+    "quest.claimed[]",
+    "questTick events (11 jenis)"
+   ],
+   "normalized_fields": [
+    "counters: map<event_id, count>",
+    "claimed: list<quest_id>"
+   ],
+   "relations": {
+    "MONSTERS": "questTick kill counter → monster defeat events",
+    "ITEMS": "reward presumably item — UNKNOWN"
+   },
+   "confidence": "OBSERVED_MODEL (protocol) / UNKNOWN_MODEL (rewards)",
+   "unknowns": [
+    "reward structure server-side",
+    "quest definitions server-side",
+    "daily reset schedule"
+   ]
+  },
+  "mall": {
+   "domain": "mall",
+   "source_file": "web-v2/items-CvFgs761.js + main",
+   "source_symbols": "Ae (starter pack), zf (gold packs, not found), premiumBuy",
+   "observed_fields": [
+    "starter_pack: {id, gold:160, pieces:[5 slot items]}",
+    "npc_shop_items: 7",
+    "premiumBuy protocol"
+   ],
+   "normalized_fields": [
+    "MALL_ITEMS: 5 starter pieces VERIFIED",
+    "gold_packs: INFERRED (zf imported, def not found)"
+   ],
+   "relations": {
+    "ITEMS": "starter pieces = Lumina set (starter_equipment)",
+    "ECONOMY": "gold pricing"
+   },
+   "confidence": "CLIENT_MODEL (starter) / INFERRED_MODEL (gold packs)",
+   "unknowns": [
+    "zf array definition location",
+    "premium pack contents",
+    "gold pricing table"
+   ]
+  },
+  "equipment_generator": {
+   "domain": "equipment_generator",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "Ga (sword-slot templates), Pe (template check), Wa (divine_wings)",
+   "observed_fields": [
+    "templates: bow staff quarterstaff dagger_pair hammer + sword knife kunai hammer bow rod quarterstaff katana flask",
+    "divine_wings special template"
+   ],
+   "normalized_fields": [
+    "EQUIPMENT_TEMPLATES: 11 weapon templates + divine_wings"
+   ],
+   "relations": {
+    "CLASSES": "templates bound to class jobs[] (katana→kensei, flask→nekobaku)",
+    "ITEMS": "starter equipment uses templates"
+   },
+   "confidence": "CLIENT_MODEL (template list) / UNKNOWN_MODEL (generation formula)",
+   "unknowns": [
+    "actual generation roll server-side",
+    "stat ranges per tier",
+    "tier assignment"
+   ]
+  },
+  "exp_table": {
+   "domain": "exp_table",
+   "source_file": "web-v2/items-CvFgs761.js",
+   "source_symbols": "BA (16-entry array), z5 function (not extracted), of(level)",
+   "observed_fields": [
+    "BA=[6,7,10,9,2,11,4,15,5,14,1,8,3,0,13,12]",
+    "z5 = base exp function, ditemukan tidak terekstrak"
+   ],
+   "normalized_fields": [
+    "EXP_TABLE: UNKNOWN — z5 belum diekstrak; BA = job progression order (interpretasi INFERRED)"
+   ],
+   "relations": {
+    "MONSTERS": "baseExp observed per monster",
+    "CLASSES": "jobProgress per class"
+   },
+   "confidence": "UNKNOWN_MODEL",
+   "unknowns": [
+    "z5 function body",
+    "level cap",
+    "job exp curve"
+   ]
+  },
+  "refine": {
+   "domain": "refine",
+   "source_file": "web-v2/items-CvFgs761.js",
+   "source_symbols": "Ce (fail factor), pc/Ic (success calc), ce (stat caps), ie.refineStone",
+   "observed_fields": [
+    "startLevel:20, perLevel:0.0025, max:0.3",
+    "10 stat caps",
+    "refineStone rate 0.01, level>=70"
+   ],
+   "normalized_fields": [
+    "REFINE_RULES: failFactor(level), successRate(level, refine), stat_caps[10]"
+   ],
+   "relations": {
+    "ITEMS": "refine_stone item",
+    "MONSTERS": "drop Lv70+"
+   },
+   "confidence": "CLIENT_MODEL (formula display) / UNKNOWN_MODEL (server behavior)",
+   "unknowns": [
+    "server refine formula",
+    "break behavior",
+    "break_protection_stone mechanics"
+   ]
+  },
+  "fusion": {
+   "domain": "fusion",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "Iy({type:\"fuse\",...}), fusion-master NPC",
+   "observed_fields": [
+    "fuse protocol: gearIds[] + slot + template",
+    "forge_effects: 4"
+   ],
+   "normalized_fields": [
+    "FUSION_RULES: protocol VERIFIED, forge effect values UNKNOWN"
+   ],
+   "relations": {
+    "EQUIPMENT_TEMPLATES": "template param",
+    "NPCS": "fusion-master"
+   },
+   "confidence": "OBSERVED_MODEL (protocol) / UNKNOWN_MODEL (rules)",
+   "unknowns": [
+    "forge effect definitions",
+    "fusion success rate",
+    "material requirements"
+   ]
+  },
+  "pet": {
+   "domain": "pet",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "petBag, petLoot, petWithdraw",
+   "observed_fields": [
+    "10 pet types elemental",
+    "petBag {inventory, gear}",
+    "loot filter: consumable/etc/card/equipment"
+   ],
+   "normalized_fields": [
+    "PET_TYPES: 10 (dew-bunny water, thorn-pixie poison, honey-moth wind, bramble-hare earth, frost-puff ice, ...)",
+    "PET_ACTIONS: petLoot/petWithdraw protocol"
+   ],
+   "relations": {
+    "ITEMS": "pet loot filter references item categories",
+    "MONSTERS": "pet originates from monster family (INFERRED: dew-bunny ↔ Dew Bunny mob)"
+   },
+   "confidence": "CLIENT_MODEL (types) / OBSERVED_MODEL (protocol)",
+   "unknowns": [
+    "pet acquisition",
+    "pet leveling",
+    "pet stats"
+   ]
+  },
+  "world_boss": {
+   "domain": "world_boss",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "{key:\"prism-hopper\",hp:3e4,damage:180,reward:9e3,respawn:zi,home:Ao}",
+   "observed_fields": [
+    "hp:30000, damage:180, reward:9000 (VERIFIED)",
+    "respawn: zi (variable, UNKNOWN value)",
+    "home: Ao (UNKNOWN value)"
+   ],
+   "normalized_fields": [
+    "WORLD_BOSSES: 1 boss — stats VERIFIED, respawn/home UNKNOWN"
+   ],
+   "relations": {
+    "MONSTERS": "prism-hopper = Prism Hopper Lv1 elite (30000 HP match!)",
+    "CARDS": "boss_card = Crowned Prism Hopper Card"
+   },
+   "confidence": "CLIENT_MODEL (stats) / UNKNOWN_MODEL (schedule)",
+   "unknowns": [
+    "zi respawn value",
+    "Ao home coordinates",
+    "spawn announcement"
+   ]
+  },
+  "arena": {
+   "domain": "arena",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "arena map, pvpChallenge, duel rules",
+   "observed_fields": [
+    "arena map 1536x1216",
+    "pvp_actions: 3 (challenge/respond/concede)",
+    "duel: 3 minutes no penalty"
+   ],
+   "normalized_fields": [
+    "ARENAS: 1 arena map + PVP protocol"
+   ],
+   "relations": {
+    "MAPS": "arena map entry",
+    "CLASSES": "class change in arena"
+   },
+   "confidence": "CLIENT_MODEL",
+   "unknowns": [
+    "arena channels server state",
+    "rating system (ada?)"
+   ]
+  },
+  "npc": {
+   "domain": "npc",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "atlas loads: blacksmith merchant broker banker stat-master fusion-master",
+   "observed_fields": [
+    "6 NPC dengan sprite + fungsi"
+   ],
+   "normalized_fields": [
+    "NPCS: 6 — blacksmith(refine), merchant(shop), broker(market), banker(storage), stat-master(reset), fusion-master(fusion)"
+   ],
+   "relations": {
+    "MAPS": "semua di rome (Aurelia Forum)",
+    "REFINE/FUSION/STORAGE/MARKET": "masing-masing NPC gateway"
+   },
+   "confidence": "CLIENT_MODEL (VERIFIED sprite+fungsi)",
+   "unknowns": [
+    "posisi koordinat NPC di map"
+   ]
+  },
+  "storage": {
+   "domain": "storage",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "storageOpen, deposit, withdraw protocol",
+   "observed_fields": [
+    "3 actions",
+    "premium: buka dari menu di mana saja"
+   ],
+   "normalized_fields": [
+    "STORAGE_RULES: protocol VERIFIED, kapasitas UNKNOWN"
+   ],
+   "relations": {
+    "NPCS": "banker",
+    "ECONOMY": "premium feature"
+   },
+   "confidence": "OBSERVED_MODEL (protocol)",
+   "unknowns": [
+    "kapasitas storage",
+    "premium multiplier"
+   ]
+  },
+  "market": {
+   "domain": "market",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "marketCreateOrder, goldOrder, marketGetDepth, marketListGear, w.goldMarket",
+   "observed_fields": [
+    "5 actions",
+    "gold market: order book (asks/bids depth)",
+    "goldMarket = server-provided"
+   ],
+   "normalized_fields": [
+    "MARKET_RULES: order protocol VERIFIED, fee/tax UNKNOWN"
+   ],
+   "relations": {
+    "ITEMS": "gear listing",
+    "ECONOMY": "gold exchange"
+   },
+   "confidence": "OBSERVED_MODEL (protocol) / UNKNOWN_MODEL (fees)",
+   "unknowns": [
+    "market fee/tax",
+    "min/max price",
+    "order expiry"
+   ]
+  },
+  "feature_flags": {
+   "domain": "feature_flags",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "disabled(214), hidden(570) — UI states only",
+   "observed_fields": [
+    "tidak ada feature flag eksplisit",
+    "comingSoon/notImplemented: tidak ditemukan"
+   ],
+   "normalized_fields": [
+    "FEATURE_FLAGS: NONE — semua disabled/hidden = UI state"
+   ],
+   "relations": {},
+   "confidence": "VERIFIED (negative finding)",
+   "unknowns": []
+  },
+  "death_revive": {
+   "domain": "death_revive",
+   "source_file": "web-v2/main-DEXZ0AP0.js",
+   "source_symbols": "deadUntil, reviveHere, reviveAtTown, L1(area)",
+   "observed_fields": [
+    "reviveHere: silver cost varies by area (L1)",
+    "reviveAtTown: free + full HP + 500ms attack delay"
+   ],
+   "normalized_fields": [
+    "DEATH_REVIVE_RULES: 2 mode — cost table L1(area) UNKNOWN values"
+   ],
+   "relations": {
+    "MAPS": "cost per area",
+    "ECONOMY": "silver sink"
+   },
+   "confidence": "CLIENT_MODEL (mechanism) / UNKNOWN_MODEL (cost values)",
+   "unknowns": [
+    "L1 cost table per area",
+    "EXP penalty (ada?)"
+   ]
+  }
+ }
+}
