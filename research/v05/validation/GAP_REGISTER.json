@@ -1,120 +1,124 @@
 {
-  "_meta": {
-    "version": "v0.6",
-    "purpose": "Structured register of unresolved/unknown global mechanics",
-    "priority_levels": ["HIGH", "MEDIUM", "LOW"],
-    "generated": "2026-09-28"
+ "_meta": {
+  "version": "v0.6",
+  "purpose": "Structured register of unresolved/unknown global mechanics",
+  "priority_levels": [
+   "HIGH",
+   "MEDIUM",
+   "LOW"
+  ],
+  "generated": "2026-09-28"
+ },
+ "gaps": [
+  {
+   "id": "GAP-001",
+   "subsystem": "PROGRESSION",
+   "question": "What is the exact EXP required per player level (z5 function)?",
+   "current_knowledge": "z5(i) is called on level-up with i = level-r+1 for r in 1..level. Function defined in items bundle (export as 'z5') but body not extracted from current minified source. z5 is imported in main bundle.",
+   "best_evidence": "grep shows z5(i) called at level-up, loops r=JC(this,o) down to 1",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Need to locate z5 function definition in items bundle (likely renamed via minification)",
+   "next_verification_method": "Static extraction of z5 body from bundle, OR run client locally with debugger",
+   "priority": "HIGH"
   },
-  "gaps": [
-    {
-      "id": "GAP-001",
-      "subsystem": "PROGRESSION",
-      "question": "What is the exact EXP required per player level (z5 function)?",
-      "current_knowledge": "z5(i) is called on level-up with i = level-r+1 for r in 1..level. Function defined in items bundle (export as 'z5') but body not extracted from current minified source. z5 is imported in main bundle.",
-      "best_evidence": "grep shows z5(i) called at level-up, loops r=JC(this,o) down to 1",
-      "confidence": "UNKNOWN",
-      "blocking_dependency": "Need to locate z5 function definition in items bundle (likely renamed via minification)",
-      "next_verification_method": "Static extraction of z5 body from bundle, OR run client locally with debugger",
-      "priority": "HIGH"
-    },
-    {
-      "id": "GAP-002",
-      "subsystem": "PARTY",
-      "question": "Exact party EXP split formula and +2%/member bonus implementation",
-      "current_knowledge": "UI strings describe split merata + 2% per member max 12, within 10 level diff. Runtime defeat events show baseExp variance (271-4310 at Lv90) consistent with party modifier but cannot isolate formula.",
-      "best_evidence": "TRANSLATIONS.json contains party bonus descriptions; 800+ defeat events show variance",
-      "confidence": "INFERRED",
-      "blocking_dependency": "Controlled party experiments (1 member, 2 members same mob) — requires guest accounts",
-      "next_verification_method": "Empirical measurement with guest party",
-      "priority": "HIGH"
-    },
-    {
-      "id": "GAP-003",
-      "subsystem": "DROP",
-      "question": "Actual server drop rates vs client-displayed constants",
-      "current_knowledge": "Client constants: equipment 1.25%, card 0.1%, bossCard 1%, etc. These are DISPLAY rates (var ie in items bundle). Server may use different values.",
-      "best_evidence": "800+ defeat events + drops — sample size too small to distinguish 1.25% from 1.0% or 1.5%",
-      "confidence": "UNKNOWN (server rate)",
-      "blocking_dependency": "Large-scale drop logging (>10K kills per mob) OR server disassembly",
-      "next_verification_method": "Statistical hypothesis testing on drop frequencies",
-      "priority": "MEDIUM"
-    },
-    {
-      "id": "GAP-004",
-      "subsystem": "REFINE",
-      "question": "Server refine success formula vs client formula",
-      "current_knowledge": "Client formula: successRate = 1 - Ca(level)*(1-refine/100), Ca=min(0.3,max(0,(level-20)*0.0025)). Refine caps 10 bonus stats.",
-      "best_evidence": "Client code Ic() at offset ~273 in items bundle",
-      "confidence": "VERIFIED_FROM_CLIENT_CODE / server UNKNOWN",
-      "blocking_dependency": "Empirical refine attempts logged with outcomes",
-      "next_verification_method": "Track N refine attempts across levels",
-      "priority": "MEDIUM"
-    },
-    {
-      "id": "GAP-005",
-      "subsystem": "DAMAGE",
-      "question": "Exact damage variance/randomness model",
-      "current_knowledge": "Basic factor has variance (observed max/min ratio up to 4.059 in multi-hit). Crit is per-cast roll. No evidence of additional random roll.",
-      "best_evidence": "342 incoming damage events, 2940+ outgoing, multi-hit variance analysis",
-      "confidence": "INFERRED (variance exists, model unknown)",
-      "blocking_dependency": "Paired damage samples (same player/skill/mob, many hits)",
-      "next_verification_method": "Distribution fitting on large samples",
-      "priority": "MEDIUM"
-    },
-    {
-      "id": "GAP-006",
-      "subsystem": "MONSTER",
-      "question": "Monster stats (ATK/DEF/MDEF/FLEE) exact formulas beyond FLEE=100+2*level",
-      "current_knowledge": "Mob FLEE = 100 + 2*level (verified). Mob HP from MONSTER_DB (40 species). Mob ATK/DEF/MDEF/HIT not in client data (server-authoritative).",
-      "best_evidence": "Client has FLEE formula; incoming damage events give mobDamage before DEF subtraction",
-      "confidence": "UNKNOWN (ATK/DEF/MDEF/HIT)",
-      "blocking_dependency": "Reverse-engineer from incoming damage events with known player DEF",
-      "next_verification_method": "Statistical inference from incoming damage distribution",
-      "priority": "MEDIUM"
-    },
-    {
-      "id": "GAP-007",
-      "subsystem": "PVP",
-      "question": "PvP damage formula and hit/flee mechanics",
-      "current_knowledge": "Arena exists (Aurelia Arena PVP อิสระ). Changelog mentions PVP damage reduction ('ดวล PvP ไม่ตายในทีเดีวัน'). No runtime PvP combat data captured.",
-      "best_evidence": "Arena map in GAME_DB, changelog PVP entry 2026-09-24-pvp-damage-tenth",
-      "confidence": "UNKNOWN",
-      "blocking_dependency": "PvP combat logging (not done — would require arena participation)",
-      "next_verification_method": "Code search for PVP damage modifier + arena combat logging",
-      "priority": "MEDIUM"
-    },
-    {
-      "id": "GAP-008",
-      "subsystem": "SKILL",
-      "question": "Skill cast time formula (not just cooldown)",
-      "current_knowledge": "Skill cooldowns in skill table (500-30000ms). Cast time / animation lock not documented.",
-      "best_evidence": "Skill table has cooldown_ms field; no cast_time field",
-      "confidence": "UNKNOWN",
-      "blocking_dependency": "Runtime measurement of skill animation duration",
-      "next_verification_method": "Frame-by-frame analysis or network timing",
-      "priority": "LOW"
-    },
-    {
-      "id": "GAP-009",
-      "subsystem": "ASPD",
-      "question": "Attack cooldown vs ASPD relationship for skills",
-      "current_knowledge": "cooldownFromAspd flag exists on some skills (bash, doublestrafe, arrowshower). Basic attack interval = (200-ASPD)*20ms. Skill cooldown may or may not scale.",
-      "best_evidence": "Skill table cooldownFromAspd boolean",
-      "confidence": "INFERRED",
-      "blocking_dependency": "Runtime measurement of skill attack cadence",
-      "next_verification_method": "Time consecutive skill attacks at different ASPD",
-      "priority": "LOW"
-    },
-    {
-      "id": "GAP-010",
-      "subsystem": "STORAGE",
-      "question": "Bank/storage capacity formula",
-      "current_knowledge": "Premium increases capacity (UI string). Base capacity unknown.",
-      "best_evidence": "TRANSLATIONS mentions storage + premium",
-      "confidence": "UNKNOWN",
-      "blocking_dependency": "Code search + runtime testing",
-      "next_verification_method": "Code extraction from items bundle",
-      "priority": "LOW"
-    }
-  ]
+  {
+   "id": "GAP-002",
+   "subsystem": "PARTY",
+   "question": "Exact party EXP split formula and +2%/member bonus implementation",
+   "current_knowledge": "UI strings describe split merata + 2% per member max 12, within 10 level diff. Runtime defeat events show baseExp variance (271-4310 at Lv90) consistent with party modifier but cannot isolate formula.",
+   "best_evidence": "TRANSLATIONS.json contains party bonus descriptions; 800+ defeat events show variance",
+   "confidence": "INFERRED",
+   "blocking_dependency": "Controlled party experiments (1 member, 2 members same mob) — requires guest accounts",
+   "next_verification_method": "Empirical measurement with guest party",
+   "priority": "HIGH"
+  },
+  {
+   "id": "GAP-003",
+   "subsystem": "DROP",
+   "question": "Actual server drop rates vs client-displayed constants",
+   "current_knowledge": "Client constants: equipment 1.25%, card 0.1%, bossCard 1%, etc. These are DISPLAY rates (var ie in items bundle). Server may use different values.",
+   "best_evidence": "800+ defeat events + drops — sample size too small to distinguish 1.25% from 1.0% or 1.5%",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Large-scale drop logging (>10K kills per mob) OR server disassembly",
+   "next_verification_method": "Statistical hypothesis testing on drop frequencies",
+   "priority": "MEDIUM"
+  },
+  {
+   "id": "GAP-004",
+   "subsystem": "REFINE",
+   "question": "Server refine success formula vs client formula",
+   "current_knowledge": "Client formula: successRate = 1 - Ca(level)*(1-refine/100), Ca=min(0.3,max(0,(level-20)*0.0025)). Refine caps 10 bonus stats.",
+   "best_evidence": "Client code Ic() at offset ~273 in items bundle",
+   "confidence": "INFERRED",
+   "blocking_dependency": "Empirical refine attempts logged with outcomes",
+   "next_verification_method": "Track N refine attempts across levels",
+   "priority": "MEDIUM"
+  },
+  {
+   "id": "GAP-005",
+   "subsystem": "DAMAGE",
+   "question": "Exact damage variance/randomness model",
+   "current_knowledge": "Basic factor has variance (observed max/min ratio up to 4.059 in multi-hit). Crit is per-cast roll. No evidence of additional random roll.",
+   "best_evidence": "342 incoming damage events, 2940+ outgoing, multi-hit variance analysis",
+   "confidence": "INFERRED",
+   "blocking_dependency": "Paired damage samples (same player/skill/mob, many hits)",
+   "next_verification_method": "Distribution fitting on large samples",
+   "priority": "MEDIUM"
+  },
+  {
+   "id": "GAP-006",
+   "subsystem": "MONSTER",
+   "question": "Monster stats (ATK/DEF/MDEF/FLEE) exact formulas beyond FLEE=100+2*level",
+   "current_knowledge": "Mob FLEE = 100 + 2*level (verified). Mob HP from MONSTER_DB (40 species). Mob ATK/DEF/MDEF/HIT not in client data (server-authoritative).",
+   "best_evidence": "Client has FLEE formula; incoming damage events give mobDamage before DEF subtraction",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Reverse-engineer from incoming damage events with known player DEF",
+   "next_verification_method": "Statistical inference from incoming damage distribution",
+   "priority": "MEDIUM"
+  },
+  {
+   "id": "GAP-007",
+   "subsystem": "PVP",
+   "question": "PvP damage formula and hit/flee mechanics",
+   "current_knowledge": "Arena exists (Aurelia Arena PVP อิสระ). Changelog mentions PVP damage reduction ('ดวล PvP ไม่ตายในทีเดีวัน'). No runtime PvP combat data captured.",
+   "best_evidence": "Arena map in GAME_DB, changelog PVP entry 2026-09-24-pvp-damage-tenth",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "PvP combat logging (not done — would require arena participation)",
+   "next_verification_method": "Code search for PVP damage modifier + arena combat logging",
+   "priority": "MEDIUM"
+  },
+  {
+   "id": "GAP-008",
+   "subsystem": "SKILL",
+   "question": "Skill cast time formula (not just cooldown)",
+   "current_knowledge": "Skill cooldowns in skill table (500-30000ms). Cast time / animation lock not documented.",
+   "best_evidence": "Skill table has cooldown_ms field; no cast_time field",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Runtime measurement of skill animation duration",
+   "next_verification_method": "Frame-by-frame analysis or network timing",
+   "priority": "LOW"
+  },
+  {
+   "id": "GAP-009",
+   "subsystem": "ASPD",
+   "question": "Attack cooldown vs ASPD relationship for skills",
+   "current_knowledge": "cooldownFromAspd flag exists on some skills (bash, doublestrafe, arrowshower). Basic attack interval = (200-ASPD)*20ms. Skill cooldown may or may not scale.",
+   "best_evidence": "Skill table cooldownFromAspd boolean",
+   "confidence": "INFERRED",
+   "blocking_dependency": "Runtime measurement of skill attack cadence",
+   "next_verification_method": "Time consecutive skill attacks at different ASPD",
+   "priority": "LOW"
+  },
+  {
+   "id": "GAP-010",
+   "subsystem": "STORAGE",
+   "question": "Bank/storage capacity formula",
+   "current_knowledge": "Premium increases capacity (UI string). Base capacity unknown.",
+   "best_evidence": "TRANSLATIONS mentions storage + premium",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Code search + runtime testing",
+   "next_verification_method": "Code extraction from items bundle",
+   "priority": "LOW"
+  }
+ ]
 }

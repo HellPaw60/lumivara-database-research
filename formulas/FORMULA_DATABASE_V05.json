@@ -13,7 +13,13 @@
    "CLASS_SPECIFIC",
    "SKILL_SPECIFIC",
    "MONSTER_SPECIFIC"
-  ]
+  ],
+  "formula_type_legend": {
+   "COMPUTED_FORMULA": "mathematical expression with arithmetic operations",
+   "LOOKUP_TABLE": "fixed values from data tables (skill/status/equipment)",
+   "CONDITIONAL_RULE": "if-then-else logic without arithmetic",
+   "MECHANIC_DEFINITION": "descriptive rule without computable expression"
+  }
  },
  "formulas": {
   "maxhp": {
@@ -36,7 +42,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "fungsi De() offset ~118174"
+   "notes": "fungsi De() offset ~118174",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "maxsp": {
    "formula_id": "maxsp",
@@ -58,7 +65,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "fungsi De()"
+   "notes": "fungsi De()",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "atk": {
    "formula_id": "atk",
@@ -79,7 +87,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": ""
+   "notes": "",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "matk": {
    "formula_id": "matk",
@@ -100,7 +109,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": ""
+   "notes": "",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "def": {
    "formula_id": "def",
@@ -120,7 +130,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "DEF dikurangkan dari incoming damage (bukan outgoing)"
+   "notes": "DEF dikurangkan dari incoming damage (bukan outgoing)",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "mdef": {
    "formula_id": "mdef",
@@ -141,7 +152,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": ""
+   "notes": "",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "hit": {
    "formula_id": "hit",
@@ -163,7 +175,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": ""
+   "notes": "",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "flee": {
    "formula_id": "flee",
@@ -185,7 +198,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": ""
+   "notes": "",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "crit_physical": {
    "formula_id": "crit_physical",
@@ -208,7 +222,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "dagger/knife/kunai ×2 (fungsi wi)"
+   "notes": "dagger/knife/kunai ×2 (fungsi wi)",
+   "formula_type": "CONDITIONAL_RULE"
   },
   "crit_spell": {
    "formula_id": "crit_spell",
@@ -227,7 +242,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "cocok changelog: crit เวท = LUK/3 + CRIT dari equipment"
+   "notes": "cocok changelog: crit เวท = LUK/3 + CRIT dari equipment",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "crit_multiplier": {
    "formula_id": "crit_multiplier",
@@ -246,7 +262,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "base 200%, max teoretis 3.8x dengan fatalsense+zanshin+equip"
+   "notes": "base 200%, max teoretis 3.8x dengan fatalsense+zanshin+equip",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "hit_chance_p2m": {
    "formula_id": "hit_chance_p2m",
@@ -265,7 +282,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "fungsi qr(); mobFLEE = 100 + 2*mobLevel"
+   "notes": "fungsi qr(); mobFLEE = 100 + 2*mobLevel",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "mob_flee": {
    "formula_id": "mob_flee",
@@ -283,7 +301,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "dari tooltip"
+   "notes": "dari tooltip",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "dodge_p": {
    "formula_id": "dodge_p",
@@ -305,7 +324,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "fungsi _l(); dodgeCap 0.95 player / 0.87 mob"
+   "notes": "fungsi _l(); dodgeCap 0.95 player / 0.87 mob",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "basic_damage": {
    "formula_id": "basic_damage",
@@ -325,7 +345,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "fungsi Ml(); basicFactor = 1 + max(0, aspd-170)*0.015"
+   "notes": "fungsi Ml(); basicFactor = 1 + max(0, aspd-170)*0.015",
+   "formula_type": "CONDITIONAL_RULE"
   },
   "skill_damage": {
    "formula_id": "skill_damage",
@@ -345,7 +366,8 @@
    "source_sha256": "3eb80e0d6537d7a2",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "fungsi skillStrike(); skill tidak miss by default"
+   "notes": "fungsi skillStrike(); skill tidak miss by default",
+   "formula_type": "CONDITIONAL_RULE"
   },
   "skill_mult_scaling": {
    "formula_id": "skill_mult_scaling",
@@ -364,7 +386,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "level 10 = full multiplier; exceptions: hammerfall, arrowshower (linear)"
+   "notes": "level 10 = full multiplier; exceptions: hammerfall, arrowshower (linear)",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "pierce": {
    "formula_id": "pierce",
@@ -383,7 +406,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "pierce = PERSENTASE bukan flat; efektivitas turun vs level tinggi"
+   "notes": "pierce = PERSENTASE bukan flat; efektivitas turun vs level tinggi",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "incoming_damage": {
    "formula_id": "incoming_damage",
@@ -404,7 +428,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "fungsi _l(); DEF dikurangi flat setelah shield"
+   "notes": "fungsi _l(); DEF dikurangi flat setelah shield",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "status_dmg_mod": {
    "formula_id": "status_dmg_mod",
@@ -423,7 +448,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "hanya basic attack, fungsi O1"
+   "notes": "hanya basic attack, fungsi O1",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "aspd": {
    "formula_id": "aspd",
@@ -447,7 +473,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "base per class 145-152; weapon mod -10..+2"
+   "notes": "base per class 145-152; weapon mod -10..+2",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "attack_interval": {
    "formula_id": "attack_interval",
@@ -465,7 +492,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "ASPD 148=1040ms, 193=140ms"
+   "notes": "ASPD 148=1040ms, 193=140ms",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "basic_factor": {
    "formula_id": "basic_factor",
@@ -483,7 +511,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "ASPD 193 = 1.345x basic damage"
+   "notes": "ASPD 193 = 1.345x basic damage",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "stat_bounds": {
    "formula_id": "stat_bounds",
@@ -500,7 +529,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "fungsi W0"
+   "notes": "fungsi W0",
+   "formula_type": "MECHANIC_DEFINITION"
   },
   "crit_ratio_observed": {
    "formula_id": "crit_ratio_observed",
@@ -513,7 +543,8 @@
    "source_path": "collect/raw-snapshots.json",
    "confidence": "OBSERVED",
    "validation_status": "OBSERVED",
-   "notes": "bukan formula — distribusi; konsisten dengan critMultiplier 2*(1+bonus)"
+   "notes": "bukan formula — distribusi; konsisten dengan critMultiplier 2*(1+bonus)",
+   "formula_type": "MECHANIC_DEFINITION"
   },
   "crit_roll_percast": {
    "formula_id": "crit_roll_percast",
@@ -526,7 +557,8 @@
    "source_path": "collect/raw-snapshots.json",
    "confidence": "OBSERVED",
    "validation_status": "OBSERVED",
-   "notes": "399/399 double-hit events uniform crits"
+   "notes": "399/399 double-hit events uniform crits",
+   "formula_type": "MECHANIC_DEFINITION"
   },
   "jobexp_ratio": {
    "formula_id": "jobexp_ratio",
@@ -539,7 +571,8 @@
    "source_path": "collect/raw-snapshots.json",
    "confidence": "OBSERVED",
    "validation_status": "OBSERVED",
-   "notes": ""
+   "notes": "",
+   "formula_type": "MECHANIC_DEFINITION"
   },
   "miss_outgoing_zero": {
    "formula_id": "miss_outgoing_zero",
@@ -552,7 +585,8 @@
    "source_path": "collect/raw-snapshots.json",
    "confidence": "OBSERVED",
    "validation_status": "OBSERVED",
-   "notes": "konsisten dengan formula qr: HIT player >> mobFLEE saat farming sesuai level"
+   "notes": "konsisten dengan formula qr: HIT player >> mobFLEE saat farming sesuai level",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "z5_exptable": {
    "formula_id": "z5_exptable",
@@ -563,7 +597,8 @@
    "expression": "UNKNOWN — z5 function tidak terekstrak",
    "confidence": "UNKNOWN",
    "validation_status": "OBSERVED",
-   "notes": ""
+   "notes": "",
+   "formula_type": "MECHANIC_DEFINITION"
   },
   "party_share": {
    "formula_id": "party_share",
@@ -575,7 +610,8 @@
    "source_type": "UI_STRING",
    "confidence": "INFERRED",
    "validation_status": "OBSERVED",
-   "notes": ""
+   "notes": "",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "element_damage": {
    "formula_id": "element_damage",
@@ -589,7 +625,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "negative finding: tidak ditemukan elementDamage/weakness multiplier di pipeline damage"
+   "notes": "negative finding: tidak ditemukan elementDamage/weakness multiplier di pipeline damage",
+   "formula_type": "MECHANIC_DEFINITION"
   },
   "atk_base": {
    "formula_id": "atk_base",
@@ -613,7 +650,8 @@
    "source_offset": 118174,
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "isRanged = Ft(template): bow/kunai/flask; melee lainnya"
+   "notes": "isRanged = Ft(template): bow/kunai/flask; melee lainnya",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "matk_base": {
    "formula_id": "matk_base",
@@ -635,7 +673,8 @@
    "source_offset": 118174,
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "sebelum equip/skill bonus"
+   "notes": "sebelum equip/skill bonus",
+   "formula_type": "COMPUTED_FORMULA"
   },
   "skill_cooldown": {
    "formula_id": "skill_cooldown",
@@ -654,7 +693,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "field cooldown_ms di skill table; cooldownFromAspd flag pada 4+ skill"
+   "notes": "field cooldown_ms di skill table; cooldownFromAspd flag pada 4+ skill",
+   "formula_type": "LOOKUP_TABLE"
   },
   "skill_sp_cost": {
    "formula_id": "skill_sp_cost",
@@ -670,7 +710,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "field sp_cost di skill table; tidak ada scaling"
+   "notes": "field sp_cost di skill table; tidak ada scaling",
+   "formula_type": "LOOKUP_TABLE"
   },
   "status_duration": {
    "formula_id": "status_duration",
@@ -686,7 +727,8 @@
    "source_sha256": "b0b0942b556fc813",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED",
-   "notes": "field duration_ms di status_effects table"
+   "notes": "field duration_ms di status_effects table",
+   "formula_type": "LOOKUP_TABLE"
   }
  }
 }
