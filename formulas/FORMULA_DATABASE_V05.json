@@ -1,7 +1,7 @@
 {
  "_meta": {
   "version": "v0.5",
-  "formula_count": 36,
+  "formula_count": 38,
   "confidence_legend": [
    "VERIFIED_FROM_CLIENT_CODE",
    "OBSERVED",
@@ -19,7 +19,8 @@
    "LOOKUP_TABLE": "fixed values from data tables (skill/status/equipment)",
    "CONDITIONAL_RULE": "if-then-else logic without arithmetic",
    "MECHANIC_DEFINITION": "descriptive rule without computable expression"
-  }
+  },
+  "v07_updates": "3 formulas upgraded/added: z5_exptable verified, +stat_points_per_level, +cumulative_job_points"
  },
  "formulas": {
   "maxhp": {
@@ -590,15 +591,24 @@
   },
   "z5_exptable": {
    "formula_id": "z5_exptable",
-   "name": "EXP Table per Level",
+   "name": "Job Points per Level (z5)",
    "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [],
-   "expression": "UNKNOWN — z5 function tidak terekstrak",
-   "confidence": "UNKNOWN",
-   "validation_status": "OBSERVED",
-   "notes": "",
-   "formula_type": "MECHANIC_DEFINITION"
+   "inputs": [
+    "level"
+   ],
+   "outputs": [
+    "jobPoints"
+   ],
+   "expression": "floor(level/5) + 3",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V07",
+   "notes": "V0.7: z5 = floor(Lv/5)+3 = job points per level (NOT EXP). EXP threshold table remains server-side UNKNOWN.",
+   "formula_type": "COMPUTED_FORMULA",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "source_symbol": "F0 (=z5)",
+   "source_offset": 116487
   },
   "party_share": {
    "formula_id": "party_share",
@@ -729,6 +739,46 @@
    "validation_status": "EXTRACTED",
    "notes": "field duration_ms di status_effects table",
    "formula_type": "LOOKUP_TABLE"
+  },
+  "stat_points_per_level": {
+   "formula_id": "stat_points_per_level",
+   "name": "Stat Points per Level",
+   "scope": "GLOBAL",
+   "inputs": [
+    "level"
+   ],
+   "outputs": [
+    "statPoints"
+   ],
+   "expression": "floor((level-1)/10) + 2",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "source_symbol": "$0",
+   "source_offset": 116487,
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V07",
+   "formula_type": "COMPUTED_FORMULA"
+  },
+  "cumulative_job_points": {
+   "formula_id": "cumulative_job_points",
+   "name": "Cumulative Job Points",
+   "scope": "GLOBAL",
+   "inputs": [
+    "level"
+   ],
+   "outputs": [
+    "totalPoints"
+   ],
+   "expression": "Σ floor(t/5)+3 for t=2..level",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-CvFgs761.js",
+   "source_sha256": "b0b0942b556fc813",
+   "source_symbol": "It",
+   "source_offset": 116487,
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V07",
+   "formula_type": "COMPUTED_FORMULA"
   }
  }
 }

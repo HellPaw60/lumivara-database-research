@@ -14,12 +14,14 @@
    "id": "GAP-001",
    "subsystem": "PROGRESSION",
    "question": "What is the exact EXP required per player level (z5 function)?",
-   "current_knowledge": "z5(i) is called on level-up with i = level-r+1 for r in 1..level. Function defined in items bundle (export as 'z5') but body not extracted from current minified source. z5 is imported in main bundle.",
+   "current_knowledge": "z5 = F0 = floor(Lv/5)+3 = job points per level (NOT EXP table). $0 = floor((Lv-1)/10)+2 = stat points per level. It = Σ F0(2..Lv) = cumulative points. EXP threshold table remains server-side UNKNOWN.",
    "best_evidence": "grep shows z5(i) called at level-up, loops r=JC(this,o) down to 1",
-   "confidence": "UNKNOWN",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE (z5 body) / UNKNOWN (EXP threshold)",
    "blocking_dependency": "Need to locate z5 function definition in items bundle (likely renamed via minification)",
    "next_verification_method": "Static extraction of z5 body from bundle, OR run client locally with debugger",
-   "priority": "HIGH"
+   "priority": "HIGH",
+   "status": "PARTIALLY_RESOLVED",
+   "evidence": "web-v2/items-CvFgs761.js offset 116487, chain F0→dY→z5"
   },
   {
    "id": "GAP-002",
@@ -30,7 +32,8 @@
    "confidence": "INFERRED",
    "blocking_dependency": "Controlled party experiments (1 member, 2 members same mob) — requires guest accounts",
    "next_verification_method": "Empirical measurement with guest party",
-   "priority": "HIGH"
+   "priority": "HIGH",
+   "status": "OPEN"
   },
   {
    "id": "GAP-003",
@@ -41,7 +44,8 @@
    "confidence": "UNKNOWN",
    "blocking_dependency": "Large-scale drop logging (>10K kills per mob) OR server disassembly",
    "next_verification_method": "Statistical hypothesis testing on drop frequencies",
-   "priority": "MEDIUM"
+   "priority": "MEDIUM",
+   "status": "OPEN"
   },
   {
    "id": "GAP-004",
@@ -52,18 +56,21 @@
    "confidence": "INFERRED",
    "blocking_dependency": "Empirical refine attempts logged with outcomes",
    "next_verification_method": "Track N refine attempts across levels",
-   "priority": "MEDIUM"
+   "priority": "MEDIUM",
+   "status": "OPEN"
   },
   {
    "id": "GAP-005",
    "subsystem": "DAMAGE",
    "question": "Exact damage variance/randomness model",
-   "current_knowledge": "Basic factor has variance (observed max/min ratio up to 4.059 in multi-hit). Crit is per-cast roll. No evidence of additional random roll.",
+   "current_knowledge": "Damage deterministic apart from crit. No random multiplier (57 controlled groups). Variance = crit(2x) + DEF + pierce + rounding.",
    "best_evidence": "342 incoming damage events, 2940+ outgoing, multi-hit variance analysis",
-   "confidence": "INFERRED",
+   "confidence": "OBSERVED",
    "blocking_dependency": "Paired damage samples (same player/skill/mob, many hits)",
    "next_verification_method": "Distribution fitting on large samples",
-   "priority": "MEDIUM"
+   "priority": "MEDIUM",
+   "status": "RESOLVED",
+   "evidence": "57 controlled groups, 2940+ outgoing hits, ratio/CV analysis"
   },
   {
    "id": "GAP-006",
@@ -74,7 +81,8 @@
    "confidence": "UNKNOWN",
    "blocking_dependency": "Reverse-engineer from incoming damage events with known player DEF",
    "next_verification_method": "Statistical inference from incoming damage distribution",
-   "priority": "MEDIUM"
+   "priority": "MEDIUM",
+   "status": "OPEN"
   },
   {
    "id": "GAP-007",
@@ -85,7 +93,8 @@
    "confidence": "UNKNOWN",
    "blocking_dependency": "PvP combat logging (not done — would require arena participation)",
    "next_verification_method": "Code search for PVP damage modifier + arena combat logging",
-   "priority": "MEDIUM"
+   "priority": "MEDIUM",
+   "status": "OPEN"
   },
   {
    "id": "GAP-008",
@@ -96,7 +105,8 @@
    "confidence": "UNKNOWN",
    "blocking_dependency": "Runtime measurement of skill animation duration",
    "next_verification_method": "Frame-by-frame analysis or network timing",
-   "priority": "LOW"
+   "priority": "LOW",
+   "status": "OPEN"
   },
   {
    "id": "GAP-009",
@@ -107,7 +117,8 @@
    "confidence": "INFERRED",
    "blocking_dependency": "Runtime measurement of skill attack cadence",
    "next_verification_method": "Time consecutive skill attacks at different ASPD",
-   "priority": "LOW"
+   "priority": "LOW",
+   "status": "OPEN"
   },
   {
    "id": "GAP-010",
@@ -118,7 +129,32 @@
    "confidence": "UNKNOWN",
    "blocking_dependency": "Code search + runtime testing",
    "next_verification_method": "Code extraction from items bundle",
-   "priority": "LOW"
+   "priority": "LOW",
+   "status": "OPEN"
+  },
+  {
+   "id": "GAP-011",
+   "subsystem": "PROGRESSION",
+   "question": "Exact EXP threshold per level (server-side)",
+   "current_knowledge": "Client does not contain EXP table. z5 is points-per-level, not EXP. M5/JC functions trigger level-ups server-side.",
+   "best_evidence": "grep confirms no EXP table in client bundles",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Server disassembly or large-scale empirical measurement",
+   "next_verification_method": "Track EXP gained vs level-ups over time",
+   "priority": "HIGH",
+   "status": "OPEN"
+  },
+  {
+   "id": "GAP-011",
+   "subsystem": "PROGRESSION",
+   "question": "Exact EXP threshold per level (server-side)",
+   "current_knowledge": "Client has no EXP table. z5=points not EXP. Level-up triggered server-side via M5/JC.",
+   "best_knowledge": "grep confirms no EXP table in client bundles",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Server disassembly or empirical measurement",
+   "next_verification_method": "Track EXP gained vs level-ups over time",
+   "priority": "HIGH",
+   "status": "OPEN"
   }
  ]
 }
