@@ -56,8 +56,13 @@ Quest harian: questTick counters + claimQuest; daily hunt (100 monster) → refi
 
 ## 14. Combat (statistik observasi — bukan formula)
 
-Lihat formulas/combat-analysis.json: damage per skill teramati, crit ratio, miss rate,
-double-hit events. Formula server-side = UNKNOWN (butuh eksperimen terkontrol).
+Lihat formulas/combat-analysis.json (3.282 hit event, full coverage):
+- **Crit ratio rata-rata 3.551x** (crit mean 13.267 vs non-crit 3.736; crit rate 35.3% dari labeled)
+- **Miss rate teramati 0%** (2.940 outgoing berlabel, semua `missed:false`) — hit/flee mungkin tidak berlaku untuk mob farming biasa
+- **Multi-hit terverifikasi**: `damage == sum(hits[])` pada event double (399 event)
+- 20 skill teramati; terpopuler: viperfang (471 cast), coldbolt (397), twinfang (259 — crit ratio 7.29 tapi stdev 22.289, distribusi lebar)
+- `incoming` (mob→player): 342 event; `drainSp`/`drainHp`/`dot` juga teramati
+- Formula server-side = UNKNOWN (butuh eksperimen terkontrol)
 
 ## 15. Drop System (dari client constants + TRANSLATIONS)
 
@@ -86,10 +91,20 @@ buy, casting, defeat, fusion, gold, guild, hit, mail, market, mobSkill, party, p
 potion, reaction, refine, repair, resetStats, reveal, revive, sale, skill, skillError, status,
 storage, use — schema lengkap di protocol/NETWORK_PROTOCOL_v3.json
 
+**Temuan protokol tambahan:**
+- Envelope konsisten `{area, ev}`; event `market` teramati dengan outer area `unknown` — indikasi **broadcast lintas area**
+- `castId` format `<playerId>:<tsMs>:<skillId>` — korelasi event `skill` → `hit`
+- Field reuse: `potion.damage` = HP healed, `sale.damage` = silver
+- 265 player teramati (184 google vs 81 guest, rasio 2.27); area teraktif: dunes (1.762 event/46 player)
+- 62 field path character state (44 top-level + nested) — rekonstruksi model data server terlengkap
+
 ## 22-23. Changelog & Version Diff
 
 650 entri (7 hari, ~93/hari). Diff v1→v2: +2 class, +14 skill, +5 item, +4 pesan protokol,
 −1 (enterArena), rebalancing 8 monster. Lihat diffs/DIFF_v1_v2.json.
+
+**Drop orphans**: 4 item teramati sebagai drop tapi belum terasosiasi ke mob di MONSTER_DB —
+`aurora_tail`, `garment`, `honey_wing_dust`, `magma_scale` (kandidat drop mob yang belum terdata / drop world boss).
 
 ## 24. Unknowns
 
