@@ -97,17 +97,18 @@ Previously counted ~30 items. Now counting from v2 JSON files:
 | Equipment | ~26 | items-DqMVEwxd.js |
 | Formulas | 47 | FORMULA_DATABASE |
 
-**Total client-side records: ~377**
+**Total client-side records: PARTIAL COUNT, total = UNKNOWN**
 
 ---
 
-## Server-Side Classification — CORRECTED
+## Classification — NOT_FOUND_IN_CLIENT Domains
 
-### Masalah
-Sebelumnya menggunakan "SERVER-SIDE ONLY" hanya karena "No table found".
-Ini kurang tepat karena tidak ada evidence bahwa data benar-benar server-authoritative.
+### Istilah
+Sebelumnya menggunakan label yang menyiratkan data bersifat server-authoritative.
+Koreksi ini tidak ada evidence bahwa data berada di server — hanya bahwa
+datatidak ditemukan di client bundle yang dianalisis (6 bundle).
 
-### Klasifikasi Baru
+### Daftar Domain
 
 | Domain | Status | Evidence |
 |---|---|---|
