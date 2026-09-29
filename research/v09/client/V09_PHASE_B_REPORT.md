@@ -1,6 +1,6 @@
 # V0.9 PHASE B REPORT — DATA DOMAIN EXTRACTION
 
-## Quest Data — EXTRACTED
+## Quest Data — CORRECTED
 
 | ID | Title | Goal | Reward |
 |---|---|---|---|
@@ -15,9 +15,11 @@
 | wider-world | โลกกว้างกว่าที่คิด | Travel to new map | 400 silver |
 | true-conqueror | ผู้พิชิตตัวจริง | Reach Base Level 10 | 1000 silver + potions |
 
-**Total: 10 quests extracted** (was 0, now 100%)
+**10 tutorial quests extracted** (was 0, now 10 of UNKNOWN total quest count)
 
 Source: `party-BnJKGOnI.js` (Tn array)
+
+**IMPORTANT**: Tn is NOT the master quest table — it's the tutorial/beginner quest subset. Full quest database is server-driven. Total quest count = UNKNOWN.
 
 ---
 
@@ -78,23 +80,31 @@ Previously counted ~30 items. Now counting from v2 JSON files:
 
 ---
 
-## Server-Side Only (Confirmed NOT in client)
+## Server-Side Classification — CORRECTED
 
-| Domain | Evidence |
-|---|---|
-| NPC data | No NPC table found in bundles |
-| Shop data | No shop table found in bundles |
-| Refine success rates | Client formula only, server rate unknown |
-| Fusion recipes | No recipe table found in bundles |
-| Pet definitions | No pet table found in bundles |
-| Storage capacity | No capacity formula found in bundles |
-| Market listings | No market table found in bundles |
-| Monster stats (ATK/DEF/MDEF/HIT) | Server authoritative |
-| Drop rates (actual) | Server authoritative |
-| Party EXP split | Server authoritative |
-| EXP threshold | Server authoritative |
-| Bot AI behavior | Server authoritative |
-| Economy (gold market, etc.) | Server authoritative |
+### Masalah
+Sebelumnya menggunakan "SERVER-SIDE ONLY" hanya karena "No table found".
+Ini kurang tepat karena tidak ada evidence bahwa data benar-benar server-authoritative.
+
+### Klasifikasi Baru
+
+| Domain | Status | Evidence |
+|---|---|---|
+| NPC | NOT_FOUND_IN_CLIENT | No NPC table, only sprite/UI references |
+| Shop | NOT_FOUND_IN_CLIENT | No shop table, only UI strings |
+| Fusion | NOT_FOUND_IN_CLIENT | No recipe table, only NPC sprite |
+| Pets | NOT_FOUND_IN_CLIENT | No pet table, only UI window |
+| Storage | NOT_FOUND_IN_CLIENT | No capacity formula, only UI |
+| Market | NOT_FOUND_IN_CLIENT | No listing table, only order logic |
+| Monster stats | NOT_FOUND_IN_CLIENT | Species only, no ATK/DEF/MDEF/HIT |
+| Drop rates | NOT_FOUND_IN_CLIENT | Display constants only |
+| Party EXP | NOT_FOUND_IN_CLIENT | Logic exists, formula unknown |
+| EXP threshold | NOT_FOUND_IN_CLIENT | No table found |
+| Bot AI | NOT_FOUND_IN_CLIENT | Bot window UI only |
+| Economy | NOT_FOUND_IN_CLIENT | Gold/silver UI only |
+
+### Catatan
+Beberapa domain (NPC, Shop, Fusion, Pets, dll) kemungkinan memang server-authoritative tapi tidak bisa dibuktikan hanya dari client bundle analysis. Evidence negatif (tidak ditemukan) bukti bahwa data ada di client, bukti bahwa data ada di server.
 
 ---
 

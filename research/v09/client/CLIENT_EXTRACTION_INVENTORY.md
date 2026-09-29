@@ -82,31 +82,37 @@
 
 ---
 
-## Domain Coverage Assessment
+## Domain Coverage Assessment (CORRECTED)
 
-| Domain | Status | Coverage |
+| Domain | Status | Evidence |
 |---|---|---|
-| Skills | ✓ Analyzed in V0.8 | 64 skills, all classes |
-| Items (consumables) | ✓ Analyzed in V0.8 | 80 items |
-| Cards | ✓ Analyzed in V0.8 | 49 cards |
-| Status effects | ✓ Analyzed in V0.8 | 42 effects |
-| Maps/areas | ✓ Analyzed in V0.8 | 19 maps |
-| Monsters (species) | ⚠️ Partial | 40 species, no stats |
-| Equipment | ⚠️ Partial | ~30 items, no full stats |
-| Formulas | ✓ Analyzed in V0.8 | 47 formulas |
-| Drops | ⚠️ Partial | 9 display rates |
-| Quests | ❌ Not analyzed | New in V0.9 |
-| NPCs | ❌ Not analyzed | New in V0.9 |
-| Shops | ❌ Not analyzed | New in V0.9 |
-| Refine | ⚠️ Partial | Client formula only |
-| Fusion/Craft | ❌ Not analyzed | New in V0.9 |
-| Pets | ❌ Not analyzed | New in V0.9 |
-| Storage | ❌ Not analyzed | New in V0.9 |
-| World Boss | ⚠️ Partial | Spawn metadata only |
-| Arena/PvP | ⚠️ Partial | Basic data only |
-| Party | ⚠️ Partial | Party system data |
-| Market | ❌ Not analyzed | New in V0.9 |
-| Localization | ✓ Available | 73KB strings |
+| Skills | ✓ EXTRACTED | 64 skills from v2_skills.json |
+| Consumables | ✓ EXTRACTED | 80 items from v2_consumables.json |
+| Cards | ✓ EXTRACTED | 49 cards from v2_cards.json |
+| Status effects | ✓ EXTRACTED | 42 effects from v2_status_effects.json |
+| Maps/areas | ✓ EXTRACTED | 19 maps from v2_maps.json |
+| Formulas | ✓ EXTRACTED | 47 formulas, client-verified |
+| Tutorial quests | ✓ EXTRACTED | 10 quests from party-BnJKGOnI.js (Tn array) |
+| Equipment | ⚠️ PARTIAL | ~26 items from TA array |
+| Monsters (species) | ⚠️ PARTIAL | 40 species, no stats |
+| Drops | ⚠️ PARTIAL | 9 display rates |
+| Refine | ⚠️ PARTIAL | Client formula only |
+| World Boss | ⚠️ PARTIAL | Spawn metadata only |
+| Arena/PvP | ⚠️ PARTIAL | Basic data only |
+| Party | ⚠️ PARTIAL | Party system data |
+| Full quest database | NOT_FOUND_IN_CLIENT | Tn = tutorial subset only |
+| NPCs | NOT_FOUND_IN_CLIENT | No NPC table in bundles |
+| Shops | NOT_FOUND_IN_CLIENT | No shop table in bundles |
+| Fusion/Craft | NOT_FOUND_IN_CLIENT | No recipe table in bundles |
+| Pets | NOT_FOUND_IN_CLIENT | No pet table in bundles |
+| Storage | NOT_FOUND_IN_CLIENT | No capacity formula in bundles |
+| Market | NOT_FOUND_IN_CLIENT | No listing table in bundles |
+| Monster stats | NOT_FOUND_IN_CLIENT | Species only, no ATK/DEF/MDEF/HIT |
+| Drop rates | NOT_FOUND_IN_CLIENT | Display constants only |
+| Party EXP | NOT_FOUND_IN_CLIENT | Logic exists, formula unknown |
+| EXP threshold | NOT_FOUND_IN_CLIENT | No table found |
+| Bot AI | NOT_FOUND_IN_CLIENT | Bot window UI only |
+| Economy | NOT_FOUND_IN_CLIENT | Gold/silver UI only |
 
 ---
 
