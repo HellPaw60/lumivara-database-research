@@ -3,8 +3,8 @@
 ## Remote Baseline
 | Field | Value |
 |---|---|
-| main | `ed552e3616317ca512d5dfdfc33099fe85a71fa4` |
-| v0.7-global-mechanics | `ed552e3616317ca512d5dfdfc33099fe85a71fa4` |
+| main | `bd8ca1d9063fb90ba8e30597b899beb9bedb420e` |
+| v0.7-global-mechanics | `bd8ca1d9063fb90ba8e30597b899beb9bedb420e` |
 | v0.6-mechanics-validation | `82fde9aef4a131d4b2a84b01081fb0d9fca5d4df` |
 | v0.5-global-mechanics | `6131965787a638fe2da0d6c2e1c7c4606fd43730` |
 
