@@ -1,0 +1,15 @@
+[
+ {
+  "key": "hammer",
+  "slot": "sword",
+  "name": "Hammer",
+  "bonuses": "{atk:12",
+  "sell": 200,
+  "buy": 400,
+  "jobs": [
+   "novice",
+   "merchant"
+  ],
+  "level": null
+ }
+]

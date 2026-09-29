@@ -1,0 +1,65 @@
+[
+ {
+  "id": "first-steps",
+  "title": "ก้าวแรกของนักผจญภัย",
+  "hint": "คลิกที่มอนสเตอร์เพื่อโจมตี — เริ่มจาก Prism Hopper ตัวเล็ก ๆ สีฟ้าใกล้เมือง",
+  "goal": "type:\"killNamed\",count:1,mob:\"Prism Hopper\"",
+  "reward": "silver:50"
+ },
+ {
+  "id": "field-loot",
+  "title": "เก็บของในสนามรบ",
+  "hint": "คลิกไอเทมที่ตกพื้น (หรือกด F เป้าหมายใกล้สุด) เพื่อเก็บเข้ากระเป๋า",
+  "goal": "type:\"pickup\",count:3",
+  "reward": "items:{potion:5"
+ },
+ {
+  "id": "basic-power",
+  "title": "พลังพื้นฐาน",
+  "hint": "กด S เปิดหน้าต่าง Status แล้วกด + เพื่ออัปค่าสถานะที่ต้องการ",
+  "goal": "type:\"stat\",count:1",
+  "reward": "silver:100"
+ },
+ {
+  "id": "first-gear",
+  "title": "เกราะชิ้นแรก",
+  "hint": "กด I เปิดกระเป็า คลิกอุปกรณ์แล้วกดสวมใส่ (หรือลากไปช่องในหน้าต่าง Equipment)",
+  "goal": "type:\"equip\",count:1",
+  "reward": "gear:\"sword\""
+ },
+ {
+  "id": "life-force",
+  "title": "พลังชีวิต",
+  "hint": "กด H เพื่อใช้ยา HP เมื่อเลือดเริ่มน้อย (Q คือหน้าต่างเควส)",
+  "goal": "type:\"potion\",count:1",
+  "reward": "items:{potion:10"
+ },
+ {
+  "id": "first-skill",
+  "title": "เลือกเส้นทาง",
+  "hint": "กด K เปิดต้นไม้สกิล แล้วใช้แต้ม Job เรียนสกิลแรก",
+  "goal": "type:\"learn\",count:1",
+  "reward": "silver:200,items:{fly_wing:1"
+ },
+ {
+  "id": "border-economy",
+  "title": "เศรษฐกิจชายขอบ",
+  "hint": "คลิกพ่อค้า Silver หน้าเมือง ลองขายของ 1 ครั้งและซื้อของ 1 ครั้ง",
+  "goal": "type:\"sell\",count:1",
+  "reward": "silver:150"
+ },
+ {
+  "id": "wider-world",
+  "title": "โลกกว้างกว่าที่คิด",
+  "hint": "กด M เปิดแผนที่โลก เลือกแมพถัดไปแล้วเดินเข้า portal",
+  "goal": "type:\"travel\",count:1",
+  "reward": "silver:400"
+ },
+ {
+  "id": "true-conqueror",
+  "title": "ผู้พิชิตตัวจริง",
+  "hint": "สะสมพลังจนถึง Base Level 10 — จากนี้เป็นการผจญภัยของคุณเอง",
+  "goal": "type:\"level\",count:10",
+  "reward": "silver:1e3,items:{orange_potion:10"
+ }
+]
