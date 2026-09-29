@@ -8,7 +8,8 @@
    "LOW"
   ],
   "generated": "2026-09-28",
-  "note": "Post-V0.7 cleanup: duplicates removed, GAP-001 updated"
+  "note": "Post-V0.7 cleanup: duplicates removed, GAP-001 updated",
+  "v08_updates": "5 new gaps added (GAP-012 to GAP-016), GAP-011 marked HIGH PRIORITY"
  },
  "gaps": [
   {
@@ -143,6 +144,66 @@
    "blocking_dependency": "Server disassembly or large-scale empirical measurement",
    "next_verification_method": "Track EXP gained vs level-ups over time",
    "priority": "HIGH",
+   "status": "OPEN"
+  },
+  {
+   "id": "GAP-012",
+   "subsystem": "EQUIPMENT",
+   "question": "Two-handed weapon ×2 stat multiplier exact formula",
+   "current_knowledge": "Ee() detects two-handed (staff/quarterstaff/dagger_pair/hammer), Ar=2 multiplier. Dt() returns 2 card slots for two-handed.",
+   "best_evidence": "items-DqMVEwxd.js: Ee() function, Ar=2 constant, Dt() function",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "blocking_dependency": null,
+   "next_verification_method": "Runtime: equip two-handed weapon, compare ATK with/without",
+   "priority": "HIGH",
+   "status": "RESOLVED"
+  },
+  {
+   "id": "GAP-013",
+   "subsystem": "EQUIPMENT",
+   "question": "Bow one-handed + card slot interaction",
+   "current_knowledge": "Bow NOT in Ee() list → one-handed. Gets 1 card slot. Can equip shield/orb/quiver in off-hand.",
+   "best_evidence": "items-DqMVEwxd.js: Jn=\"bow\", Zn()=Ee() returns false for bow",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "blocking_dependency": null,
+   "next_verification_method": "Runtime: equip bow + card, verify card applies",
+   "priority": "HIGH",
+   "status": "RESOLVED"
+  },
+  {
+   "id": "GAP-014",
+   "subsystem": "SKILL",
+   "question": "Nekobaku basic attack MATK formula",
+   "current_knowledge": "Z0() returns \"matk\" for flask template. Basic attack uses MATK instead of ATK for Nekobaku.",
+   "best_evidence": "main-CFj0fJNd.js: Z0() function, basicPower==\"matk\" branch",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "blocking_dependency": null,
+   "next_verification_method": "Runtime: Nekobaku basic attack on known DEF mob, compare ATK vs MATK formula",
+   "priority": "HIGH",
+   "status": "RESOLVED"
+  },
+  {
+   "id": "GAP-015",
+   "subsystem": "COMBAT",
+   "question": "Monster damage reduction by level",
+   "current_knowledge": "Changelog: \"Monster damage reduced by level, accuracy increased\". Not found in client bundles.",
+   "best_evidence": "changelog entry only",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Server disassembly or large-scale incoming damage measurement",
+   "next_verification_method": "Controlled incoming damage samples across levels",
+   "priority": "MEDIUM",
+   "status": "OPEN"
+  },
+  {
+   "id": "GAP-016",
+   "subsystem": "BOSS",
+   "question": "Crowned boss spawn every channel",
+   "current_knowledge": "Changelog: \"Boss spawns every channel, respawns after 1 hour\". Not in client bundles.",
+   "best_evidence": "changelog entry only",
+   "confidence": "UNKNOWN",
+   "blocking_dependency": "Server disassembly or spawn observation",
+   "next_verification_method": "Track boss spawn timing across channels",
+   "priority": "LOW",
    "status": "OPEN"
   }
  ]

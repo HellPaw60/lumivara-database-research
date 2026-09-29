@@ -1,7 +1,7 @@
 {
  "_meta": {
   "version": "v0.5",
-  "formula_count": 38,
+  "formula_count": 44,
   "confidence_legend": [
    "VERIFIED_FROM_CLIENT_CODE",
    "OBSERVED",
@@ -20,7 +20,8 @@
    "CONDITIONAL_RULE": "if-then-else logic without arithmetic",
    "MECHANIC_DEFINITION": "descriptive rule without computable expression"
   },
-  "v07_updates": "3 formulas upgraded/added: z5_exptable verified, +stat_points_per_level, +cumulative_job_points"
+  "v07_updates": "3 formulas upgraded/added: z5_exptable verified, +stat_points_per_level, +cumulative_job_points",
+  "v08_phaseA_updates": "6 formulas added: isTwoHanded, twoHandedMultiplier, isBow, cardSlotCount, basicAttackType, orbEquipClasses"
  },
  "formulas": {
   "maxhp": {
@@ -779,6 +780,118 @@
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED_V07",
    "formula_type": "COMPUTED_FORMULA"
+  },
+  "isTwoHanded": {
+   "formula_id": "isTwoHanded",
+   "name": "Two-Handed Weapon Detection",
+   "scope": "GLOBAL",
+   "inputs": [
+    "item"
+   ],
+   "outputs": [
+    "isTwoHanded"
+   ],
+   "expression": "item.slot===\"sword\" && [\"staff\",\"quarterstaff\",\"dagger_pair\",\"hammer\"].includes(item.template)",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-DqMVEwxd.js",
+   "source_sha256": "513e5c8fe1deee3f",
+   "source_symbol": "Ee()",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "CONDITIONAL_RULE"
+  },
+  "twoHandedMultiplier": {
+   "formula_id": "twoHandedMultiplier",
+   "name": "Two-Handed Weapon Stat Multiplier",
+   "scope": "GLOBAL",
+   "inputs": [
+    "isTwoHanded"
+   ],
+   "outputs": [
+    "statMultiplier"
+   ],
+   "expression": "2 if isTwoHanded else 1",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-DqMVEwxd.js",
+   "source_sha256": "513e5c8fe1deee3f",
+   "source_symbol": "Ar=2",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "COMPUTED_FORMULA"
+  },
+  "isBow": {
+   "formula_id": "isBow",
+   "name": "Bow Classification (One-Handed)",
+   "scope": "GLOBAL",
+   "inputs": [
+    "item"
+   ],
+   "outputs": [
+    "isBow"
+   ],
+   "expression": "item.slot===\"sword\" && item.template===\"bow\"",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-DqMVEwxd.js",
+   "source_sha256": "513e5c8fe1deee3f",
+   "source_symbol": "Jn=\"bow\"",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "CONDITIONAL_RULE"
+  },
+  "cardSlotCount": {
+   "formula_id": "cardSlotCount",
+   "name": "Card Slot Count",
+   "scope": "GLOBAL",
+   "inputs": [
+    "item"
+   ],
+   "outputs": [
+    "cardSlots"
+   ],
+   "expression": "0 if isWings(item) else 2 if isTwoHanded(item) else 1",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-DqMVEwxd.js",
+   "source_sha256": "513e5c8fe1deee3f",
+   "source_symbol": "Dt()",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "COMPUTED_FORMULA"
+  },
+  "basicAttackType": {
+   "formula_id": "basicAttackType",
+   "name": "Basic Attack Power Type",
+   "scope": "GLOBAL",
+   "inputs": [
+    "item"
+   ],
+   "outputs": [
+    "basicPower"
+   ],
+   "expression": "\"matk\" if item.template==\"flask\" else \"atk\"",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/main-CFj0fJNd.js",
+   "source_sha256": "ce5087aca04a2686",
+   "source_symbol": "Z0()",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "CONDITIONAL_RULE"
+  },
+  "orbEquipClasses": {
+   "formula_id": "orbEquipClasses",
+   "name": "Orb Equippable Classes",
+   "scope": "GLOBAL",
+   "inputs": [],
+   "outputs": [
+    "classes"
+   ],
+   "expression": "[\"mage\", \"nekobaku\"]",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-DqMVEwxd.js",
+   "source_sha256": "513e5c8fe1deee3f",
+   "source_symbol": "Orb.jobs",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "LOOKUP_TABLE"
   }
  }
 }
