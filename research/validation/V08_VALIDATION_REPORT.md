@@ -3,8 +3,8 @@
 ## Remote Baseline
 | Field | Value |
 |---|---|
-| main | `e036caf5140d44375de7c9c6f64b33f3750a1a4c` |
-| v0.8-global-mechanics | `e036caf5140d44375de7c9c6f64b33f3750a1a4c` ✓ MATCH |
+| main | `adc6ef6d302ba3f567a5c820e5448437661ebea0` |
+| v0.8-global-mechanics | `adc6ef6d302ba3f567a5c820e5448437661ebea0` ✓ MATCH |
 | v0.7-mechanics-validation | `f5ab9dd54965c583f6a35eb1d1bfb8770b9d5b06` ✓ preserved |
 
 ## Changelog Status
@@ -82,8 +82,8 @@
 | Metric | V0.7 | V0.8 |
 |---|---|---|
 | Total | 38 | **47** |
-| COMPUTED_FORMULA | 27 | **31** |
-| CONDITIONAL_RULE | 3 | **7** |
+| COMPUTED_FORMULA | 27 | **30** |
+| CONDITIONAL_RULE | 3 | **8** |
 | LOOKUP_TABLE | 3 | **4** |
 | MECHANIC_DEFINITION | 5 | **5** |
 | VERIFIED_FROM_CLIENT_CODE | 33 | **42** |
@@ -94,7 +94,7 @@
 | `isTwoHanded` | Two-Handed Detection | CONDITIONAL | `Ee()` items-DqMVEwxd.js |
 | `twoHandedMultiplier` | Two-Handed Stat Multiplier | COMPUTED | `Ar=2` |
 | `isBow` | Bow = One-Handed | CONDITIONAL | `Jn="bow"` |
-| `cardSlotCount` | Card Slot Count | COMPUTED | `Dt()` |
+| `cardSlotCount` | Card Slot Count | CONDITIONAL | `Dt()` |
 | `basicAttackType` | Basic Attack Power Type | CONDITIONAL | `Z0()` main-CFj0fJNd.js |
 | `orbEquipClasses` | Orb Equippable Classes | LOOKUP | `Orb.jobs` |
 | `matkDamagePierce` | MATK Uses Magic Pierce | CONDITIONAL | `p?o.mpierce:o.pierce` |
@@ -120,7 +120,7 @@
 | GAP-014 | SKILL | **RESOLVED** | Nekobaku MATK basic |
 | GAP-015 | COMBAT | OPEN | Server-side |
 | GAP-016 | BOSS | OPEN | Server-side |
-| **Total** | | **16** | **3 RESOLVED, 1 PARTIALLY, 12 OPEN** |
+| **Total** | | **16** | **4 RESOLVED, 1 PARTIALLY, 11 OPEN** |
 
 ## Validation Checks (8/8 PASS)
 | Check | Status |

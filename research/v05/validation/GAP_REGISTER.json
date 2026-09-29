@@ -1,16 +1,22 @@
 {
  "_meta": {
-  "version": "v0.7",
+  "version": "v0.8",
   "purpose": "Structured register of unresolved/unknown global mechanics",
   "priority_levels": [
    "HIGH",
    "MEDIUM",
    "LOW"
   ],
-  "generated": "2026-09-28",
+  "generated": "2026-09-29",
   "note": "Post-V0.7 cleanup: duplicates removed, GAP-001 updated",
   "v08_updates": "5 new gaps added (GAP-012 to GAP-016), GAP-011 marked HIGH PRIORITY",
-  "v08_phaseD_updates": "GAP-015/016 confirmed SERVER_SIDE_ONLY"
+  "v08_phaseD_updates": "GAP-015/016 confirmed SERVER_SIDE_ONLY",
+  "current_release": "v0.8",
+  "historical_note": "GAP-001..010 from V0.5/V0.6/V0.7. GAP-011..016 added in V0.8.",
+  "total": 16,
+  "resolved_count": 4,
+  "partial_count": 1,
+  "open_count": 11
  },
  "gaps": [
   {

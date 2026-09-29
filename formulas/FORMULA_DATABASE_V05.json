@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "v0.5",
+  "version": "v0.8",
   "formula_count": 47,
   "confidence_legend": [
    "VERIFIED_FROM_CLIENT_CODE",
@@ -22,7 +22,20 @@
   },
   "v07_updates": "3 formulas upgraded/added: z5_exptable verified, +stat_points_per_level, +cumulative_job_points",
   "v08_phaseA_updates": "6 formulas added: isTwoHanded, twoHandedMultiplier, isBow, cardSlotCount, basicAttackType, orbEquipClasses",
-  "v08_phaseC_updates": "3 formulas added: matkDamagePierce, nekobakuSkillMultiplier, cooldownFromAspd"
+  "v08_phaseC_updates": "3 formulas added: matkDamagePierce, nekobakuSkillMultiplier, cooldownFromAspd",
+  "confidence_distribution": {
+   "VERIFIED_FROM_CLIENT_CODE": 42,
+   "OBSERVED": 4,
+   "INFERRED": 1
+  },
+  "type_distribution": {
+   "COMPUTED_FORMULA": 30,
+   "CONDITIONAL_RULE": 8,
+   "MECHANIC_DEFINITION": 5,
+   "LOOKUP_TABLE": 4
+  },
+  "current_release": "v0.8",
+  "notes": "V0.8 final formula database. 9 formulas added in Phase A/C."
  },
  "formulas": {
   "maxhp": {
@@ -856,7 +869,8 @@
    "source_symbol": "Dt()",
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED_V08",
-   "formula_type": "COMPUTED_FORMULA"
+   "formula_type": "CONDITIONAL_RULE",
+   "notes": " | V0.8 FIX: Changed from COMPUTED_FORMULA to CONDITIONAL_RULE because it returns discrete values (0,1,2) based on conditions, not arithmetic computation."
   },
   "basicAttackType": {
    "formula_id": "basicAttackType",
