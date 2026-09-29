@@ -76,14 +76,44 @@
 | Metric | Value |
 |---|---|
 | Total formulas | **38** |
-| COMPUTED_FORMULA | 26 |
+| COMPUTED_FORMULA | 27 |
 | LOOKUP_TABLE | 3 |
 | CONDITIONAL_RULE | 3 |
-| MECHANIC_DEFINITION | 6 |
+| MECHANIC_DEFINITION | 5 |
 | VERIFIED_FROM_CLIENT_CODE | 33 |
 | OBSERVED | 4 |
 | INFERRED | 1 |
 | V0.7 changes | z5 verified (was UNKNOWN), +2 formulas ($0, It) |
+
+## Post-V0.7 Changelog Observation
+
+| Field | Value |
+|---|---|
+| Bundle | `CMg3B3wG` |
+| Entries | 730 |
+| Delta vs V0.7 snapshot | +45 entries |
+| Status | **POST_FREEZE_OBSERVATION** — not part of V0.7 release |
+| Retrieved | 2026-09-29 03:35 |
+| Bundle sha256 | `ff80df0b6d2b1841` |
+
+### Mechanics-Relevant Changes (21 of 45)
+
+| Domain | Count | Examples |
+|---|---|---|
+| EQUIPMENT | 6 | Two-handed ×2 stats, bow→1H+card slot, class-locked quiver |
+| SKILL | 5 | Nekobaku MATK basic, AoE buff, Orb equip |
+| BOT | 4 | Target switching, skill priority, approach-cast |
+| ECONOMY | 3 | Locked item trade/refine, gold market, gold carry |
+| BOSS/SPAWN | 1 | Boss every channel |
+| COMBAT/MONSTER | 1 | Monster damage ↓ / accuracy ↑ |
+| DROP | 1 | Divine Wings 10x rate increase |
+
+### Non-Mechanics (24 of 45)
+- UI/UX: 16 (storage tiles, keybinds, chat persistence, inspect privacy, screen shake)
+- World/Visual: 4 (Aurelia town, NPC redistribution, walk frames, emotes)
+- Bug/Fix: 4 (portal depth, socket disconnect, splash kill, zoom)
+
+**Full detail**: `research/validation/V07_CHANGELOG_IMPACT.md`
 
 ## Gap Register
 | ID | Subsystem | Status |
