@@ -1,7 +1,7 @@
 {
  "_meta": {
   "version": "v0.5",
-  "formula_count": 44,
+  "formula_count": 47,
   "confidence_legend": [
    "VERIFIED_FROM_CLIENT_CODE",
    "OBSERVED",
@@ -21,7 +21,8 @@
    "MECHANIC_DEFINITION": "descriptive rule without computable expression"
   },
   "v07_updates": "3 formulas upgraded/added: z5_exptable verified, +stat_points_per_level, +cumulative_job_points",
-  "v08_phaseA_updates": "6 formulas added: isTwoHanded, twoHandedMultiplier, isBow, cardSlotCount, basicAttackType, orbEquipClasses"
+  "v08_phaseA_updates": "6 formulas added: isTwoHanded, twoHandedMultiplier, isBow, cardSlotCount, basicAttackType, orbEquipClasses",
+  "v08_phaseC_updates": "3 formulas added: matkDamagePierce, nekobakuSkillMultiplier, cooldownFromAspd"
  },
  "formulas": {
   "maxhp": {
@@ -892,6 +893,69 @@
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED_V08",
    "formula_type": "LOOKUP_TABLE"
+  },
+  "matkDamagePierce": {
+   "formula_id": "matkDamagePierce",
+   "name": "MATK Damage Uses Magic Pierce",
+   "scope": "GLOBAL",
+   "inputs": [
+    "damageType",
+    "target"
+   ],
+   "outputs": [
+    "effectivePierce"
+   ],
+   "expression": "mpierce if damageType==\"matk\" else pierce",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/main-CFj0fJNd.js",
+   "source_sha256": "ce5087aca04a2686",
+   "source_symbol": "p ? o.mpierce : o.pierce",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "CONDITIONAL_RULE",
+   "notes": "MATK damage path uses mpierce, ATK path uses pierce. Discovered in Phase C."
+  },
+  "nekobakuSkillMultiplier": {
+   "formula_id": "nekobakuSkillMultiplier",
+   "name": "Nekobaku Skill Damage Multiplier",
+   "scope": "CLASS_NPC",
+   "inputs": [
+    "skill",
+    "level"
+   ],
+   "outputs": [
+    "multiplier"
+   ],
+   "expression": "Y[`${skill}PerLevel`] * level * 100 / 100",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/items-DqMVEwxd.js",
+   "source_sha256": "513e5c8fe1deee3f",
+   "source_symbol": "R(skill, level)",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "COMPUTED_FORMULA",
+   "notes": "Nekobaku skills: Fizz Flask, Tar Flask, Big Kaboom, Catalyst Brew, Nine Lives"
+  },
+  "cooldownFromAspd": {
+   "formula_id": "cooldownFromAspd",
+   "name": "ASPD-Scaled Cooldown",
+   "scope": "GLOBAL",
+   "inputs": [
+    "skill",
+    "aspd"
+   ],
+   "outputs": [
+    "cooldown"
+   ],
+   "expression": "max(120, interval * (1 - min(0.6, max(0, aspd - 150) * 0.015)))",
+   "source_type": "CLIENT_CODE",
+   "source_path": "web-v2/main-CFj0fJNd.js",
+   "source_sha256": "ce5087aca04a2686",
+   "source_symbol": "cooldownFromAspd branch",
+   "confidence": "VERIFIED_FROM_CLIENT_CODE",
+   "validation_status": "EXTRACTED_V08",
+   "formula_type": "COMPUTED_FORMULA",
+   "notes": "Fizz Flask cooldown scales with ASPD. Formula from main bundle."
   }
  }
 }
