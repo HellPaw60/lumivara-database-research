@@ -917,8 +917,8 @@
   },
   "nekobakuSkillMultiplier": {
    "formula_id": "nekobakuSkillMultiplier",
-   "name": "Nekobaku Skill Damage Multiplier",
-   "scope": "CLASS_NPC",
+   "name": "Nekobaku Damage Skill Scaling",
+   "scope": "SKILL_SPECIFIC",
    "inputs": [
     "skill",
     "level"
@@ -926,7 +926,7 @@
    "outputs": [
     "multiplier"
    ],
-   "expression": "Y[`${skill}PerLevel`] * level * 100 / 100",
+   "expression": "skillPerLevel[skill] * skillLevel (linear scaling for Fizz Flask, Tar Flask, Big Kaboom)",
    "source_type": "CLIENT_CODE",
    "source_path": "web-v2/items-DqMVEwxd.js",
    "source_sha256": "513e5c8fe1deee3f",
@@ -934,7 +934,7 @@
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED_V08",
    "formula_type": "COMPUTED_FORMULA",
-   "notes": "Nekobaku skills: Fizz Flask, Tar Flask, Big Kaboom, Catalyst Brew, Nine Lives"
+   "notes": "V0.8 CORRECTION: Only applies to damage skills (Fizz Flask, Tar Flask, Big Kaboom). Buffs (Catalyst Brew) and passives (Nine Lives) have separate mechanics."
   },
   "cooldownFromAspd": {
    "formula_id": "cooldownFromAspd",
@@ -955,7 +955,7 @@
    "confidence": "VERIFIED_FROM_CLIENT_CODE",
    "validation_status": "EXTRACTED_V08",
    "formula_type": "COMPUTED_FORMULA",
-   "notes": "Fizz Flask cooldown scales with ASPD. Formula from main bundle."
+   "notes": "V0.8: Applied only to skills with cooldownFromAspd=true flag (e.g., Fizz Flask). Other skills use fixed base cooldown from skill_cooldown lookup."
   }
  }
 }
