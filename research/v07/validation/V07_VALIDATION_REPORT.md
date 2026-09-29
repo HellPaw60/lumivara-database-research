@@ -3,28 +3,40 @@
 ## Remote Baseline
 | Field | Value |
 |---|---|
-| main | `2c2c26868c4a9abc9a75bf6ee12ed715be86285d` |
-| v0.7-global-mechanics | `2c2c26868c4a9abc9a75bf6ee12ed715be86285d` |
+| main | `e45b23da100bd6338e1f9b39a066f12c1971704f` |
+| v0.7-global-mechanics | `e45b23da100bd6338e1f9b39a066f12c1971704f` |
 | v0.6-mechanics-validation | `82fde9aef4a131d4b2a84b01081fb0d9fca5d4df` |
 | v0.5-global-mechanics | `6131965787a638fe2da0d6c2e1c7c4606fd43730` |
 
-## Changelog Snapshot
+## Changelog Snapshot (V0.7 Release)
 | Field | Value |
 |---|---|
+| Bundle | `CkIS7ST6` |
+| Entries | 688 |
+| Status | V0.7 release snapshot — frozen |
+| html sha256 | `ef8cecea4feef885` |
+
+### Post-V0.7 Changelog Observation (NOT part of V0.7 release)
 | Bundle | `CMg3B3wG` |
 | Entries | 730 |
-| Status | Post-V0.7 cleanup observation — 45 new entries since V3B |
-| html sha256 | `fc9277b4e651b909` |
+| Delta vs V0.7 snapshot | +45 entries |
+| Status | POST_FREEZE_OBSERVATION |
+| Retrieved | 2026-09-29 03:35 |
+| Bundle sha256 | `ff80df0b6d2b1841` |
 
-### Post-V0.7 Observations (not part of V0.7 release data)
+### Post-V0.7 Observations (45 entries, not part of V0.7 release data)
 | Category | Count | Examples |
 |---|---|---|
-| UI/UX | ~25 | Storage rarity tiles, screen shake, zoom, keybinds, inspect privacy |
-| Equipment/Balance | ~8 | Two-handed ×2 stats, bow one-handed + card slot, gear marks |
-| Skills/Balance | ~5 | Nekobaku skill effects/rework, MATK basic, Kensei animations |
-| Drops/Spawns | ~3 | Divine Wings 10x drop rate, boss every channel |
-| Bot/Automation | ~3 | Bot instant next target, approach skill resend |
-| Bug Fixes | ~5 | Portal depth, socket disconnect, splash kill, gold market |
+| Equipment/Balance | 6 | Two-handed ×2 stats, bow one-handed + card slot, class-locked quiver |
+| Skills/Balance | 5 | Nekobaku skill effects/rework, MATK basic, Kensei animations |
+| Bot/Automation | 4 | Bot instant next target, approach skill resend |
+| Economy | 3 | Locked item trade/refine, gold market, gold carry |
+| Boss/Spawn | 1 | Boss every channel |
+| Combat/Monster | 1 | Monster damage ↓ / accuracy ↑ |
+| Drop | 1 | Divine Wings 10x rate increase |
+| UI/UX | 16 | Storage rarity tiles, screen shake, zoom, keybinds, inspect privacy |
+| World/Visual | 4 | Aurelia town redesign, NPC redistribution, walk frames, emotes |
+| Bug/Fix | 4 | Portal depth, socket disconnect, splash kill, zoom disconnect |
 
 ## Historical Progression
 | Version | Bundle | Entries |
@@ -84,36 +96,6 @@
 | OBSERVED | 4 |
 | INFERRED | 1 |
 | V0.7 changes | z5 verified (was UNKNOWN), +2 formulas ($0, It) |
-
-## Post-V0.7 Changelog Observation
-
-| Field | Value |
-|---|---|
-| Bundle | `CMg3B3wG` |
-| Entries | 730 |
-| Delta vs V0.7 snapshot | +45 entries |
-| Status | **POST_FREEZE_OBSERVATION** — not part of V0.7 release |
-| Retrieved | 2026-09-29 03:35 |
-| Bundle sha256 | `ff80df0b6d2b1841` |
-
-### Mechanics-Relevant Changes (21 of 45)
-
-| Domain | Count | Examples |
-|---|---|---|
-| EQUIPMENT | 6 | Two-handed ×2 stats, bow→1H+card slot, class-locked quiver |
-| SKILL | 5 | Nekobaku MATK basic, AoE buff, Orb equip |
-| BOT | 4 | Target switching, skill priority, approach-cast |
-| ECONOMY | 3 | Locked item trade/refine, gold market, gold carry |
-| BOSS/SPAWN | 1 | Boss every channel |
-| COMBAT/MONSTER | 1 | Monster damage ↓ / accuracy ↑ |
-| DROP | 1 | Divine Wings 10x rate increase |
-
-### Non-Mechanics (24 of 45)
-- UI/UX: 16 (storage tiles, keybinds, chat persistence, inspect privacy, screen shake)
-- World/Visual: 4 (Aurelia town, NPC redistribution, walk frames, emotes)
-- Bug/Fix: 4 (portal depth, socket disconnect, splash kill, zoom)
-
-**Full detail**: `research/validation/V07_CHANGELOG_IMPACT.md`
 
 ## Gap Register
 | ID | Subsystem | Status |
