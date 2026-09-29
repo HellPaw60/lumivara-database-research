@@ -1,975 +1,1186 @@
 {
- "_meta": {
-  "version": "v0.8",
-  "formula_count": 47,
-  "confidence_legend": [
-   "VERIFIED_FROM_CLIENT_CODE",
-   "OBSERVED",
-   "INFERRED",
-   "UNKNOWN"
-  ],
-  "scope_legend": [
-   "GLOBAL",
-   "CLASS_SPECIFIC",
-   "SKILL_SPECIFIC",
-   "MONSTER_SPECIFIC"
-  ],
-  "formula_type_legend": {
-   "COMPUTED_FORMULA": "mathematical expression with arithmetic operations",
-   "LOOKUP_TABLE": "fixed values from data tables (skill/status/equipment)",
-   "CONDITIONAL_RULE": "if-then-else logic without arithmetic",
-   "MECHANIC_DEFINITION": "descriptive rule without computable expression"
+  "_meta": {
+    "version": "v0.8",
+    "formula_count": 57,
+    "confidence_legend": [
+      "VERIFIED_FROM_CLIENT_CODE",
+      "OBSERVED",
+      "INFERRED",
+      "UNKNOWN"
+    ],
+    "scope_legend": [
+      "GLOBAL",
+      "CLASS_SPECIFIC",
+      "SKILL_SPECIFIC",
+      "MONSTER_SPECIFIC"
+    ],
+    "formula_type_legend": {
+      "COMPUTED_FORMULA": "mathematical expression with arithmetic operations",
+      "LOOKUP_TABLE": "fixed values from data tables (skill/status/equipment)",
+      "CONDITIONAL_RULE": "if-then-else logic without arithmetic",
+      "MECHANIC_DEFINITION": "descriptive rule without computable expression"
+    },
+    "v07_updates": "3 formulas upgraded/added: z5_exptable verified, +stat_points_per_level, +cumulative_job_points",
+    "v08_phaseA_updates": "6 formulas added: isTwoHanded, twoHandedMultiplier, isBow, cardSlotCount, basicAttackType, orbEquipClasses",
+    "v08_phaseC_updates": "3 formulas added: matkDamagePierce, nekobakuSkillMultiplier, cooldownFromAspd",
+    "confidence_distribution": {
+      "VERIFIED_FROM_CLIENT_CODE": 52,
+      "OBSERVED": 4,
+      "INFERRED": 1
+    },
+    "type_distribution": {
+      "COMPUTED_FORMULA": 33,
+      "CONDITIONAL_RULE": 13,
+      "MECHANIC_DEFINITION": 6,
+      "LOOKUP_TABLE": 5
+    },
+    "current_release": "v0.9",
+    "notes": "V0.8 final formula database. 9 formulas added in Phase A/C.",
+    "v09_phaseC_updates": "10 formulas added: expRewardMultiplier, lootEtcChance, lootRelicBoxChance, lootRefineStoneChance, weightPercent, doubleAttackCheck, statusDamageMultiplier, pierceMitigation, refineSuccessRate, refineMaxLevel"
   },
-  "v07_updates": "3 formulas upgraded/added: z5_exptable verified, +stat_points_per_level, +cumulative_job_points",
-  "v08_phaseA_updates": "6 formulas added: isTwoHanded, twoHandedMultiplier, isBow, cardSlotCount, basicAttackType, orbEquipClasses",
-  "v08_phaseC_updates": "3 formulas added: matkDamagePierce, nekobakuSkillMultiplier, cooldownFromAspd",
-  "confidence_distribution": {
-   "VERIFIED_FROM_CLIENT_CODE": 42,
-   "OBSERVED": 4,
-   "INFERRED": 1
-  },
-  "type_distribution": {
-   "COMPUTED_FORMULA": 30,
-   "CONDITIONAL_RULE": 8,
-   "MECHANIC_DEFINITION": 5,
-   "LOOKUP_TABLE": 4
-  },
-  "current_release": "v0.8",
-  "notes": "V0.8 final formula database. 9 formulas added in Phase A/C."
- },
- "formulas": {
-  "maxhp": {
-   "formula_id": "maxhp",
-   "name": "Max HP",
-   "scope": "GLOBAL",
-   "inputs": [
-    "level",
-    "VIT",
-    "classHP",
-    "equipHP",
-    "maxHpPct"
-   ],
-   "outputs": [
-    "maxHp"
-   ],
-   "expression": "((100 + (Lv-1)*5 + VIT*10) * (1 + classHP) + equipHP) * (1 + maxHpPct)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "fungsi De() offset ~118174",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "maxsp": {
-   "formula_id": "maxsp",
-   "name": "Max SP",
-   "scope": "GLOBAL",
-   "inputs": [
-    "level",
-    "INT",
-    "classSP",
-    "equipSP",
-    "maxSpPct"
-   ],
-   "outputs": [
-    "maxSp"
-   ],
-   "expression": "((20 + (Lv-1) + INT*5) * (1 + classSP) + equipSP) * (1 + maxSpPct)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "fungsi De()",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "atk": {
-   "formula_id": "atk",
-   "name": "Attack",
-   "scope": "GLOBAL",
-   "inputs": [
-    "baseATK",
-    "equipATK",
-    "weaponMult",
-    "atkPct"
-   ],
-   "outputs": [
-    "atk"
-   ],
-   "expression": "(baseATK + equipATK * weaponMult) * (1 + atkPct/100)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "matk": {
-   "formula_id": "matk",
-   "name": "Magic Attack",
-   "scope": "GLOBAL",
-   "inputs": [
-    "baseMATK",
-    "equipMATK",
-    "skillMatkPct",
-    "matkPct"
-   ],
-   "outputs": [
-    "matk"
-   ],
-   "expression": "(baseMATK + equipMATK * (1+skillMatkPct)) * (1 + matkPct/100)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "def": {
-   "formula_id": "def",
-   "name": "Defense",
-   "scope": "GLOBAL",
-   "inputs": [
-    "VIT",
-    "equipDEF",
-    "skillDEF"
-   ],
-   "outputs": [
-    "def"
-   ],
-   "expression": "VIT/5 + equipDEF + skillDEF",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "DEF dikurangkan dari incoming damage (bukan outgoing)",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "mdef": {
-   "formula_id": "mdef",
-   "name": "Magic Defense",
-   "scope": "GLOBAL",
-   "inputs": [
-    "INT",
-    "VIT",
-    "equipMDEF",
-    "skillMDEF"
-   ],
-   "outputs": [
-    "mdef"
-   ],
-   "expression": "INT + VIT/5 + equipMDEF + skillMDEF",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "hit": {
-   "formula_id": "hit",
-   "name": "Hit Rate",
-   "scope": "GLOBAL",
-   "inputs": [
-    "level",
-    "DEX",
-    "LUK",
-    "equipHIT",
-    "hitPct"
-   ],
-   "outputs": [
-    "hit"
-   ],
-   "expression": "(100 + Lv + DEX*2 + LUK/3 + equipHIT) * (1 + hitPct)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "flee": {
-   "formula_id": "flee",
-   "name": "Flee Rate",
-   "scope": "GLOBAL",
-   "inputs": [
-    "level",
-    "AGI",
-    "LUK",
-    "equipFLEE",
-    "fleePct"
-   ],
-   "outputs": [
-    "flee"
-   ],
-   "expression": "(Lv + AGI*2 + LUK/5 + equipFLEE) * (1 + fleePct)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "crit_physical": {
-   "formula_id": "crit_physical",
-   "name": "Physical Crit Chance",
-   "scope": "GLOBAL",
-   "inputs": [
-    "LUK",
-    "level",
-    "equipCRIT",
-    "skillCRIT",
-    "statusCRIT",
-    "weaponType"
-   ],
-   "outputs": [
-    "critical"
-   ],
-   "expression": "min(100, (floor(LUK/3) + (Lv-1)*0.1 + equipCRIT + skillCRIT + statusCRIT) * (isDaggerOrKnife ? 2 : 1))",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "dagger/knife/kunai ×2 (fungsi wi)",
-   "formula_type": "CONDITIONAL_RULE"
-  },
-  "crit_spell": {
-   "formula_id": "crit_spell",
-   "name": "Spell Crit Chance",
-   "scope": "GLOBAL",
-   "inputs": [
-    "LUK",
-    "equipCRIT"
-   ],
-   "outputs": [
-    "spellCritical"
-   ],
-   "expression": "min(100, floor(LUK/3) + equipCRIT)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "cocok changelog: crit เวท = LUK/3 + CRIT dari equipment",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "crit_multiplier": {
-   "formula_id": "crit_multiplier",
-   "name": "Crit Damage Multiplier",
-   "scope": "GLOBAL",
-   "inputs": [
-    "critDamagePct",
-    "equipCritDmg"
-   ],
-   "outputs": [
-    "critMultiplier"
-   ],
-   "expression": "2 * (1 + critDamagePct + equipCritDmg/100)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "base 200%, max teoretis 3.8x dengan fatalsense+zanshin+equip",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "hit_chance_p2m": {
-   "formula_id": "hit_chance_p2m",
-   "name": "Hit Chance Player→Mob",
-   "scope": "GLOBAL",
-   "inputs": [
-    "playerHIT",
-    "mobFLEE"
-   ],
-   "outputs": [
-    "hitChance"
-   ],
-   "expression": "clamp(0.9 + (hit - flee) * 0.005, 0.5, 1.0)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "fungsi qr(); mobFLEE = 100 + 2*mobLevel",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "mob_flee": {
-   "formula_id": "mob_flee",
-   "name": "Mob FLEE",
-   "scope": "MONSTER_SPECIFIC",
-   "inputs": [
-    "mobLevel"
-   ],
-   "outputs": [
-    "mobFlee"
-   ],
-   "expression": "100 + 2 * mobLevel",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "dari tooltip",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "dodge_p": {
-   "formula_id": "dodge_p",
-   "name": "Player Dodge vs Mob",
-   "scope": "GLOBAL",
-   "inputs": [
-    "flee",
-    "level",
-    "gearFlee",
-    "perfectDodge",
-    "mobHitBonus"
-   ],
-   "outputs": [
-    "dodgeChance"
-   ],
-   "expression": "(max(0, flee - level - gearFlee)*0.008 + min(0.2, gearFlee*0.008) + perfectDodge/100) / (1 + mobHitBonus), capped 0.95",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "fungsi _l(); dodgeCap 0.95 player / 0.87 mob",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "basic_damage": {
-   "formula_id": "basic_damage",
-   "name": "Basic Attack Damage",
-   "scope": "GLOBAL",
-   "inputs": [
-    "atk",
-    "basicFactor",
-    "critMultiplier"
-   ],
-   "outputs": [
-    "damage"
-   ],
-   "expression": "round(ATK * basicFactor * (crit ? critMultiplier : 1))",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "fungsi Ml(); basicFactor = 1 + max(0, aspd-170)*0.015",
-   "formula_type": "CONDITIONAL_RULE"
-  },
-  "skill_damage": {
-   "formula_id": "skill_damage",
-   "name": "Skill Damage",
-   "scope": "GLOBAL",
-   "inputs": [
-    "atkOrMatk",
-    "skillMultiplier",
-    "critMultiplier"
-   ],
-   "outputs": [
-    "damage"
-   ],
-   "expression": "round(ATK_or_MATK * multiplier * (crit ? critMultiplier : 1))",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/main-DEXZ0AP0.js",
-   "source_sha256": "3eb80e0d6537d7a2",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "fungsi skillStrike(); skill tidak miss by default",
-   "formula_type": "CONDITIONAL_RULE"
-  },
-  "skill_mult_scaling": {
-   "formula_id": "skill_mult_scaling",
-   "name": "Skill Multiplier per Level",
-   "scope": "SKILL_SPECIFIC",
-   "inputs": [
-    "baseMultiplier",
-    "skillLevel"
-   ],
-   "outputs": [
-    "multiplier"
-   ],
-   "expression": "1 + (baseMulti - 1) * skillLevel / 10",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "level 10 = full multiplier; exceptions: hammerfall, arrowshower (linear)",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "pierce": {
-   "formula_id": "pierce",
-   "name": "Pierce Modifier",
-   "scope": "GLOBAL",
-   "inputs": [
-    "targetLevel",
-    "pierce"
-   ],
-   "outputs": [
-    "damageFactor"
-   ],
-   "expression": "1 - Ca(level) * (1 - clamp(pierce,0,100)/100) where Ca = min(0.3, max(0, (level-20)*0.0025))",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "pierce = PERSENTASE bukan flat; efektivitas turun vs level tinggi",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "incoming_damage": {
-   "formula_id": "incoming_damage",
-   "name": "Mob→Player Damage",
-   "scope": "GLOBAL",
-   "inputs": [
-    "mobDamage",
-    "shieldRefine",
-    "def",
-    "incomingFactor"
-   ],
-   "outputs": [
-    "damage"
-   ],
-   "expression": "max(1, round(mobDamage * (1 - shieldRefine/100)) - round(DEF * incomingFactor))",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "fungsi _l(); DEF dikurangi flat setelah shield",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "status_dmg_mod": {
-   "formula_id": "status_dmg_mod",
-   "name": "Momentum Status Modifier",
-   "scope": "GLOBAL",
-   "inputs": [
-    "momentumStacks",
-    "perStack"
-   ],
-   "outputs": [
-    "damageMultiplier"
-   ],
-   "expression": "1 + momentumStacks * perStackValue",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "hanya basic attack, fungsi O1",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "aspd": {
-   "formula_id": "aspd",
-   "name": "Attack Speed",
-   "scope": "GLOBAL",
-   "inputs": [
-    "classBase",
-    "weaponMod",
-    "shield",
-    "AGI",
-    "DEX",
-    "equipAspd",
-    "aspdPercent"
-   ],
-   "outputs": [
-    "aspd"
-   ],
-   "expression": "softcap(clamp(base + (AGI*0.3 + DEX*0.02)*r + equipAspd, 50, 193)) where r = 1-(base-144)/50; softcap: >180 half effective",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "base per class 145-152; weapon mod -10..+2",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "attack_interval": {
-   "formula_id": "attack_interval",
-   "name": "Attack Interval",
-   "scope": "GLOBAL",
-   "inputs": [
-    "aspd"
-   ],
-   "outputs": [
-    "intervalMs"
-   ],
-   "expression": "round((200 - ASPD) * 20)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "ASPD 148=1040ms, 193=140ms",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "basic_factor": {
-   "formula_id": "basic_factor",
-   "name": "Basic Attack Scaling (high ASPD)",
-   "scope": "GLOBAL",
-   "inputs": [
-    "aspd"
-   ],
-   "outputs": [
-    "basicFactor"
-   ],
-   "expression": "1 + max(0, aspd - 170) * 0.015",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "ASPD 193 = 1.345x basic damage",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "stat_bounds": {
-   "formula_id": "stat_bounds",
-   "name": "Stat Min/Max",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [
-    "minStat",
-    "maxStat"
-   ],
-   "expression": "min=1, max=99 (base stats)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "fungsi W0",
-   "formula_type": "MECHANIC_DEFINITION"
-  },
-  "crit_ratio_observed": {
-   "formula_id": "crit_ratio_observed",
-   "name": "Crit Ratio Observed",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [],
-   "expression": "mean 3.551x overall; per-player 1.925-3.000 (29 paired groups)",
-   "source_type": "RUNTIME",
-   "source_path": "collect/raw-snapshots.json",
-   "confidence": "OBSERVED",
-   "validation_status": "OBSERVED",
-   "notes": "bukan formula — distribusi; konsisten dengan critMultiplier 2*(1+bonus)",
-   "formula_type": "MECHANIC_DEFINITION"
-  },
-  "crit_roll_percast": {
-   "formula_id": "crit_roll_percast",
-   "name": "Crit Roll Per Cast",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [],
-   "expression": "crit roll sekali per cast (multi-hit mewarisi)",
-   "source_type": "RUNTIME",
-   "source_path": "collect/raw-snapshots.json",
-   "confidence": "OBSERVED",
-   "validation_status": "OBSERVED",
-   "notes": "399/399 double-hit events uniform crits",
-   "formula_type": "MECHANIC_DEFINITION"
-  },
-  "jobexp_ratio": {
-   "formula_id": "jobexp_ratio",
-   "name": "Job EXP Ratio",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [],
-   "expression": "jobExp ≈ 50% baseExp (observed pattern)",
-   "source_type": "RUNTIME",
-   "source_path": "collect/raw-snapshots.json",
-   "confidence": "OBSERVED",
-   "validation_status": "OBSERVED",
-   "notes": "",
-   "formula_type": "MECHANIC_DEFINITION"
-  },
-  "miss_outgoing_zero": {
-   "formula_id": "miss_outgoing_zero",
-   "name": "Outgoing Miss Rate (farming)",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [],
-   "expression": "0% pada 2940+ outgoing (farming bias)",
-   "source_type": "RUNTIME",
-   "source_path": "collect/raw-snapshots.json",
-   "confidence": "OBSERVED",
-   "validation_status": "OBSERVED",
-   "notes": "konsisten dengan formula qr: HIT player >> mobFLEE saat farming sesuai level",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "z5_exptable": {
-   "formula_id": "z5_exptable",
-   "name": "Job Points per Level (z5)",
-   "scope": "GLOBAL",
-   "inputs": [
-    "level"
-   ],
-   "outputs": [
-    "jobPoints"
-   ],
-   "expression": "floor(level/5) + 3",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V07",
-   "notes": "V0.7: z5 = floor(Lv/5)+3 = job points per level (NOT EXP). EXP threshold table remains server-side UNKNOWN.",
-   "formula_type": "COMPUTED_FORMULA",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "source_symbol": "F0 (=z5)",
-   "source_offset": 116487
-  },
-  "party_share": {
-   "formula_id": "party_share",
-   "name": "Party EXP Share",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [],
-   "expression": "split merata (string UI) + 2%/member — formula eksak UNKNOWN",
-   "source_type": "UI_STRING",
-   "confidence": "INFERRED",
-   "validation_status": "OBSERVED",
-   "notes": "",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "element_damage": {
-   "formula_id": "element_damage",
-   "name": "Element Damage Multiplier",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [],
-   "expression": "TIDAK ADA — element hanya menentukan status effect (burn/freeze/slow)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "negative finding: tidak ditemukan elementDamage/weakness multiplier di pipeline damage",
-   "formula_type": "MECHANIC_DEFINITION"
-  },
-  "atk_base": {
-   "formula_id": "atk_base",
-   "name": "Base ATK (melee/ranged split)",
-   "scope": "GLOBAL",
-   "inputs": [
-    "STR",
-    "DEX",
-    "LUK",
-    "level",
-    "weaponTemplate"
-   ],
-   "outputs": [
-    "baseATK"
-   ],
-   "expression": "10 + (isRanged ? DEX*2 + floor(STR/5) : STR*2 + floor(DEX/5)) + floor(LUK/10) + (Lv-1)*0.3",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "source_symbol": "De",
-   "source_offset": 118174,
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "isRanged = Ft(template): bow/kunai/flask; melee lainnya",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "matk_base": {
-   "formula_id": "matk_base",
-   "name": "Base MATK",
-   "scope": "GLOBAL",
-   "inputs": [
-    "INT",
-    "DEX",
-    "level"
-   ],
-   "outputs": [
-    "baseMATK"
-   ],
-   "expression": "5 + INT*3 + DEX + (Lv-1)*0.3",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "source_symbol": "De",
-   "source_offset": 118174,
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "sebelum equip/skill bonus",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "skill_cooldown": {
-   "formula_id": "skill_cooldown",
-   "name": "Skill Cooldown",
-   "scope": "SKILL_SPECIFIC",
-   "inputs": [
-    "baseCooldown",
-    "cooldownFromAspd"
-   ],
-   "outputs": [
-    "cooldownMs"
-   ],
-   "expression": "cooldownFromAspd ? cooldownScaledByAspd : baseCooldown (500-30000ms range)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "field cooldown_ms di skill table; cooldownFromAspd flag pada 4+ skill",
-   "formula_type": "LOOKUP_TABLE"
-  },
-  "skill_sp_cost": {
-   "formula_id": "skill_sp_cost",
-   "name": "Skill SP Cost",
-   "scope": "SKILL_SPECIFIC",
-   "inputs": [],
-   "outputs": [
-    "sp"
-   ],
-   "expression": "fixed per skill (2-15 SP range, see skill table)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "field sp_cost di skill table; tidak ada scaling",
-   "formula_type": "LOOKUP_TABLE"
-  },
-  "status_duration": {
-   "formula_id": "status_duration",
-   "name": "Status Effect Duration",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [
-    "durationMs"
-   ],
-   "expression": "fixed per status (see STATUS_DB: poison 12000ms, venom 8000ms, meikyo 45000ms, freeze 6000ms...)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED",
-   "notes": "field duration_ms di status_effects table",
-   "formula_type": "LOOKUP_TABLE"
-  },
-  "stat_points_per_level": {
-   "formula_id": "stat_points_per_level",
-   "name": "Stat Points per Level",
-   "scope": "GLOBAL",
-   "inputs": [
-    "level"
-   ],
-   "outputs": [
-    "statPoints"
-   ],
-   "expression": "floor((level-1)/10) + 2",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "source_symbol": "$0",
-   "source_offset": 116487,
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V07",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "cumulative_job_points": {
-   "formula_id": "cumulative_job_points",
-   "name": "Cumulative Job Points",
-   "scope": "GLOBAL",
-   "inputs": [
-    "level"
-   ],
-   "outputs": [
-    "totalPoints"
-   ],
-   "expression": "Σ floor(t/5)+3 for t=2..level",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-CvFgs761.js",
-   "source_sha256": "b0b0942b556fc813",
-   "source_symbol": "It",
-   "source_offset": 116487,
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V07",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "isTwoHanded": {
-   "formula_id": "isTwoHanded",
-   "name": "Two-Handed Weapon Detection",
-   "scope": "GLOBAL",
-   "inputs": [
-    "item"
-   ],
-   "outputs": [
-    "isTwoHanded"
-   ],
-   "expression": "item.slot===\"sword\" && [\"staff\",\"quarterstaff\",\"dagger_pair\",\"hammer\"].includes(item.template)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-DqMVEwxd.js",
-   "source_sha256": "513e5c8fe1deee3f",
-   "source_symbol": "Ee()",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "CONDITIONAL_RULE"
-  },
-  "twoHandedMultiplier": {
-   "formula_id": "twoHandedMultiplier",
-   "name": "Two-Handed Weapon Stat Multiplier",
-   "scope": "GLOBAL",
-   "inputs": [
-    "isTwoHanded"
-   ],
-   "outputs": [
-    "statMultiplier"
-   ],
-   "expression": "2 if isTwoHanded else 1",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-DqMVEwxd.js",
-   "source_sha256": "513e5c8fe1deee3f",
-   "source_symbol": "Ar=2",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "COMPUTED_FORMULA"
-  },
-  "isBow": {
-   "formula_id": "isBow",
-   "name": "Bow Classification (One-Handed)",
-   "scope": "GLOBAL",
-   "inputs": [
-    "item"
-   ],
-   "outputs": [
-    "isBow"
-   ],
-   "expression": "item.slot===\"sword\" && item.template===\"bow\"",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-DqMVEwxd.js",
-   "source_sha256": "513e5c8fe1deee3f",
-   "source_symbol": "Jn=\"bow\"",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "CONDITIONAL_RULE"
-  },
-  "cardSlotCount": {
-   "formula_id": "cardSlotCount",
-   "name": "Card Slot Count",
-   "scope": "GLOBAL",
-   "inputs": [
-    "item"
-   ],
-   "outputs": [
-    "cardSlots"
-   ],
-   "expression": "0 if isWings(item) else 2 if isTwoHanded(item) else 1",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-DqMVEwxd.js",
-   "source_sha256": "513e5c8fe1deee3f",
-   "source_symbol": "Dt()",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "CONDITIONAL_RULE",
-   "notes": " | V0.8 FIX: Changed from COMPUTED_FORMULA to CONDITIONAL_RULE because it returns discrete values (0,1,2) based on conditions, not arithmetic computation."
-  },
-  "basicAttackType": {
-   "formula_id": "basicAttackType",
-   "name": "Basic Attack Power Type",
-   "scope": "GLOBAL",
-   "inputs": [
-    "item"
-   ],
-   "outputs": [
-    "basicPower"
-   ],
-   "expression": "\"matk\" if item.template==\"flask\" else \"atk\"",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/main-CFj0fJNd.js",
-   "source_sha256": "ce5087aca04a2686",
-   "source_symbol": "Z0()",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "CONDITIONAL_RULE"
-  },
-  "orbEquipClasses": {
-   "formula_id": "orbEquipClasses",
-   "name": "Orb Equippable Classes",
-   "scope": "GLOBAL",
-   "inputs": [],
-   "outputs": [
-    "classes"
-   ],
-   "expression": "[\"mage\", \"nekobaku\"]",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-DqMVEwxd.js",
-   "source_sha256": "513e5c8fe1deee3f",
-   "source_symbol": "Orb.jobs",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "LOOKUP_TABLE"
-  },
-  "matkDamagePierce": {
-   "formula_id": "matkDamagePierce",
-   "name": "MATK Damage Uses Magic Pierce",
-   "scope": "GLOBAL",
-   "inputs": [
-    "damageType",
-    "target"
-   ],
-   "outputs": [
-    "effectivePierce"
-   ],
-   "expression": "mpierce if damageType==\"matk\" else pierce",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/main-CFj0fJNd.js",
-   "source_sha256": "ce5087aca04a2686",
-   "source_symbol": "p ? o.mpierce : o.pierce",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "CONDITIONAL_RULE",
-   "notes": "MATK damage path uses mpierce, ATK path uses pierce. Discovered in Phase C."
-  },
-  "nekobakuSkillMultiplier": {
-   "formula_id": "nekobakuSkillMultiplier",
-   "name": "Nekobaku Damage Skill Scaling",
-   "scope": "SKILL_SPECIFIC",
-   "inputs": [
-    "skill",
-    "level"
-   ],
-   "outputs": [
-    "multiplier"
-   ],
-   "expression": "skillPerLevel[skill] * skillLevel (linear scaling for Fizz Flask, Tar Flask, Big Kaboom)",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/items-DqMVEwxd.js",
-   "source_sha256": "513e5c8fe1deee3f",
-   "source_symbol": "R(skill, level)",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "COMPUTED_FORMULA",
-   "notes": "V0.8 CORRECTION: Only applies to damage skills (Fizz Flask, Tar Flask, Big Kaboom). Buffs (Catalyst Brew) and passives (Nine Lives) have separate mechanics."
-  },
-  "cooldownFromAspd": {
-   "formula_id": "cooldownFromAspd",
-   "name": "ASPD-Scaled Cooldown",
-   "scope": "GLOBAL",
-   "inputs": [
-    "skill",
-    "aspd"
-   ],
-   "outputs": [
-    "cooldown"
-   ],
-   "expression": "max(120, interval * (1 - min(0.6, max(0, aspd - 150) * 0.015)))",
-   "source_type": "CLIENT_CODE",
-   "source_path": "web-v2/main-CFj0fJNd.js",
-   "source_sha256": "ce5087aca04a2686",
-   "source_symbol": "cooldownFromAspd branch",
-   "confidence": "VERIFIED_FROM_CLIENT_CODE",
-   "validation_status": "EXTRACTED_V08",
-   "formula_type": "COMPUTED_FORMULA",
-   "notes": "V0.8: Applied only to skills with cooldownFromAspd=true flag (e.g., Fizz Flask). Other skills use fixed base cooldown from skill_cooldown lookup."
+  "formulas": {
+    "maxhp": {
+      "formula_id": "maxhp",
+      "name": "Max HP",
+      "scope": "GLOBAL",
+      "inputs": [
+        "level",
+        "VIT",
+        "classHP",
+        "equipHP",
+        "maxHpPct"
+      ],
+      "outputs": [
+        "maxHp"
+      ],
+      "expression": "((100 + (Lv-1)*5 + VIT*10) * (1 + classHP) + equipHP) * (1 + maxHpPct)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "fungsi De() offset ~118174",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "maxsp": {
+      "formula_id": "maxsp",
+      "name": "Max SP",
+      "scope": "GLOBAL",
+      "inputs": [
+        "level",
+        "INT",
+        "classSP",
+        "equipSP",
+        "maxSpPct"
+      ],
+      "outputs": [
+        "maxSp"
+      ],
+      "expression": "((20 + (Lv-1) + INT*5) * (1 + classSP) + equipSP) * (1 + maxSpPct)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "fungsi De()",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "atk": {
+      "formula_id": "atk",
+      "name": "Attack",
+      "scope": "GLOBAL",
+      "inputs": [
+        "baseATK",
+        "equipATK",
+        "weaponMult",
+        "atkPct"
+      ],
+      "outputs": [
+        "atk"
+      ],
+      "expression": "(baseATK + equipATK * weaponMult) * (1 + atkPct/100)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "matk": {
+      "formula_id": "matk",
+      "name": "Magic Attack",
+      "scope": "GLOBAL",
+      "inputs": [
+        "baseMATK",
+        "equipMATK",
+        "skillMatkPct",
+        "matkPct"
+      ],
+      "outputs": [
+        "matk"
+      ],
+      "expression": "(baseMATK + equipMATK * (1+skillMatkPct)) * (1 + matkPct/100)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "def": {
+      "formula_id": "def",
+      "name": "Defense",
+      "scope": "GLOBAL",
+      "inputs": [
+        "VIT",
+        "equipDEF",
+        "skillDEF"
+      ],
+      "outputs": [
+        "def"
+      ],
+      "expression": "VIT/5 + equipDEF + skillDEF",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "DEF dikurangkan dari incoming damage (bukan outgoing)",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "mdef": {
+      "formula_id": "mdef",
+      "name": "Magic Defense",
+      "scope": "GLOBAL",
+      "inputs": [
+        "INT",
+        "VIT",
+        "equipMDEF",
+        "skillMDEF"
+      ],
+      "outputs": [
+        "mdef"
+      ],
+      "expression": "INT + VIT/5 + equipMDEF + skillMDEF",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "hit": {
+      "formula_id": "hit",
+      "name": "Hit Rate",
+      "scope": "GLOBAL",
+      "inputs": [
+        "level",
+        "DEX",
+        "LUK",
+        "equipHIT",
+        "hitPct"
+      ],
+      "outputs": [
+        "hit"
+      ],
+      "expression": "(100 + Lv + DEX*2 + LUK/3 + equipHIT) * (1 + hitPct)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "flee": {
+      "formula_id": "flee",
+      "name": "Flee Rate",
+      "scope": "GLOBAL",
+      "inputs": [
+        "level",
+        "AGI",
+        "LUK",
+        "equipFLEE",
+        "fleePct"
+      ],
+      "outputs": [
+        "flee"
+      ],
+      "expression": "(Lv + AGI*2 + LUK/5 + equipFLEE) * (1 + fleePct)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "crit_physical": {
+      "formula_id": "crit_physical",
+      "name": "Physical Crit Chance",
+      "scope": "GLOBAL",
+      "inputs": [
+        "LUK",
+        "level",
+        "equipCRIT",
+        "skillCRIT",
+        "statusCRIT",
+        "weaponType"
+      ],
+      "outputs": [
+        "critical"
+      ],
+      "expression": "min(100, (floor(LUK/3) + (Lv-1)*0.1 + equipCRIT + skillCRIT + statusCRIT) * (isDaggerOrKnife ? 2 : 1))",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "dagger/knife/kunai ×2 (fungsi wi)",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "crit_spell": {
+      "formula_id": "crit_spell",
+      "name": "Spell Crit Chance",
+      "scope": "GLOBAL",
+      "inputs": [
+        "LUK",
+        "equipCRIT"
+      ],
+      "outputs": [
+        "spellCritical"
+      ],
+      "expression": "min(100, floor(LUK/3) + equipCRIT)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "cocok changelog: crit เวท = LUK/3 + CRIT dari equipment",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "crit_multiplier": {
+      "formula_id": "crit_multiplier",
+      "name": "Crit Damage Multiplier",
+      "scope": "GLOBAL",
+      "inputs": [
+        "critDamagePct",
+        "equipCritDmg"
+      ],
+      "outputs": [
+        "critMultiplier"
+      ],
+      "expression": "2 * (1 + critDamagePct + equipCritDmg/100)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "base 200%, max teoretis 3.8x dengan fatalsense+zanshin+equip",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "hit_chance_p2m": {
+      "formula_id": "hit_chance_p2m",
+      "name": "Hit Chance Player→Mob",
+      "scope": "GLOBAL",
+      "inputs": [
+        "playerHIT",
+        "mobFLEE"
+      ],
+      "outputs": [
+        "hitChance"
+      ],
+      "expression": "clamp(0.9 + (hit - flee) * 0.005, 0.5, 1.0)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "fungsi qr(); mobFLEE = 100 + 2*mobLevel",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "mob_flee": {
+      "formula_id": "mob_flee",
+      "name": "Mob FLEE",
+      "scope": "MONSTER_SPECIFIC",
+      "inputs": [
+        "mobLevel"
+      ],
+      "outputs": [
+        "mobFlee"
+      ],
+      "expression": "100 + 2 * mobLevel",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "dari tooltip",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "dodge_p": {
+      "formula_id": "dodge_p",
+      "name": "Player Dodge vs Mob",
+      "scope": "GLOBAL",
+      "inputs": [
+        "flee",
+        "level",
+        "gearFlee",
+        "perfectDodge",
+        "mobHitBonus"
+      ],
+      "outputs": [
+        "dodgeChance"
+      ],
+      "expression": "(max(0, flee - level - gearFlee)*0.008 + min(0.2, gearFlee*0.008) + perfectDodge/100) / (1 + mobHitBonus), capped 0.95",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "fungsi _l(); dodgeCap 0.95 player / 0.87 mob",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "basic_damage": {
+      "formula_id": "basic_damage",
+      "name": "Basic Attack Damage",
+      "scope": "GLOBAL",
+      "inputs": [
+        "atk",
+        "basicFactor",
+        "critMultiplier"
+      ],
+      "outputs": [
+        "damage"
+      ],
+      "expression": "round(ATK * basicFactor * (crit ? critMultiplier : 1))",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "fungsi Ml(); basicFactor = 1 + max(0, aspd-170)*0.015",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "skill_damage": {
+      "formula_id": "skill_damage",
+      "name": "Skill Damage",
+      "scope": "GLOBAL",
+      "inputs": [
+        "atkOrMatk",
+        "skillMultiplier",
+        "critMultiplier"
+      ],
+      "outputs": [
+        "damage"
+      ],
+      "expression": "round(ATK_or_MATK * multiplier * (crit ? critMultiplier : 1))",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-DEXZ0AP0.js",
+      "source_sha256": "3eb80e0d6537d7a2",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "fungsi skillStrike(); skill tidak miss by default",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "skill_mult_scaling": {
+      "formula_id": "skill_mult_scaling",
+      "name": "Skill Multiplier per Level",
+      "scope": "SKILL_SPECIFIC",
+      "inputs": [
+        "baseMultiplier",
+        "skillLevel"
+      ],
+      "outputs": [
+        "multiplier"
+      ],
+      "expression": "1 + (baseMulti - 1) * skillLevel / 10",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "level 10 = full multiplier; exceptions: hammerfall, arrowshower (linear)",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "pierce": {
+      "formula_id": "pierce",
+      "name": "Pierce Modifier",
+      "scope": "GLOBAL",
+      "inputs": [
+        "targetLevel",
+        "pierce"
+      ],
+      "outputs": [
+        "damageFactor"
+      ],
+      "expression": "1 - Ca(level) * (1 - clamp(pierce,0,100)/100) where Ca = min(0.3, max(0, (level-20)*0.0025))",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "pierce = PERSENTASE bukan flat; efektivitas turun vs level tinggi",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "incoming_damage": {
+      "formula_id": "incoming_damage",
+      "name": "Mob→Player Damage",
+      "scope": "GLOBAL",
+      "inputs": [
+        "mobDamage",
+        "shieldRefine",
+        "def",
+        "incomingFactor"
+      ],
+      "outputs": [
+        "damage"
+      ],
+      "expression": "max(1, round(mobDamage * (1 - shieldRefine/100)) - round(DEF * incomingFactor))",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "fungsi _l(); DEF dikurangi flat setelah shield",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "status_dmg_mod": {
+      "formula_id": "status_dmg_mod",
+      "name": "Momentum Status Modifier",
+      "scope": "GLOBAL",
+      "inputs": [
+        "momentumStacks",
+        "perStack"
+      ],
+      "outputs": [
+        "damageMultiplier"
+      ],
+      "expression": "1 + momentumStacks * perStackValue",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "hanya basic attack, fungsi O1",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "aspd": {
+      "formula_id": "aspd",
+      "name": "Attack Speed",
+      "scope": "GLOBAL",
+      "inputs": [
+        "classBase",
+        "weaponMod",
+        "shield",
+        "AGI",
+        "DEX",
+        "equipAspd",
+        "aspdPercent"
+      ],
+      "outputs": [
+        "aspd"
+      ],
+      "expression": "softcap(clamp(base + (AGI*0.3 + DEX*0.02)*r + equipAspd, 50, 193)) where r = 1-(base-144)/50; softcap: >180 half effective",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "base per class 145-152; weapon mod -10..+2",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "attack_interval": {
+      "formula_id": "attack_interval",
+      "name": "Attack Interval",
+      "scope": "GLOBAL",
+      "inputs": [
+        "aspd"
+      ],
+      "outputs": [
+        "intervalMs"
+      ],
+      "expression": "round((200 - ASPD) * 20)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "ASPD 148=1040ms, 193=140ms",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "basic_factor": {
+      "formula_id": "basic_factor",
+      "name": "Basic Attack Scaling (high ASPD)",
+      "scope": "GLOBAL",
+      "inputs": [
+        "aspd"
+      ],
+      "outputs": [
+        "basicFactor"
+      ],
+      "expression": "1 + max(0, aspd - 170) * 0.015",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "ASPD 193 = 1.345x basic damage",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "stat_bounds": {
+      "formula_id": "stat_bounds",
+      "name": "Stat Min/Max",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [
+        "minStat",
+        "maxStat"
+      ],
+      "expression": "min=1, max=99 (base stats)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "fungsi W0",
+      "formula_type": "MECHANIC_DEFINITION"
+    },
+    "crit_ratio_observed": {
+      "formula_id": "crit_ratio_observed",
+      "name": "Crit Ratio Observed",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [],
+      "expression": "mean 3.551x overall; per-player 1.925-3.000 (29 paired groups)",
+      "source_type": "RUNTIME",
+      "source_path": "collect/raw-snapshots.json",
+      "confidence": "OBSERVED",
+      "validation_status": "OBSERVED",
+      "notes": "bukan formula — distribusi; konsisten dengan critMultiplier 2*(1+bonus)",
+      "formula_type": "MECHANIC_DEFINITION"
+    },
+    "crit_roll_percast": {
+      "formula_id": "crit_roll_percast",
+      "name": "Crit Roll Per Cast",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [],
+      "expression": "crit roll sekali per cast (multi-hit mewarisi)",
+      "source_type": "RUNTIME",
+      "source_path": "collect/raw-snapshots.json",
+      "confidence": "OBSERVED",
+      "validation_status": "OBSERVED",
+      "notes": "399/399 double-hit events uniform crits",
+      "formula_type": "MECHANIC_DEFINITION"
+    },
+    "jobexp_ratio": {
+      "formula_id": "jobexp_ratio",
+      "name": "Job EXP Ratio",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [],
+      "expression": "jobExp ≈ 50% baseExp (observed pattern)",
+      "source_type": "RUNTIME",
+      "source_path": "collect/raw-snapshots.json",
+      "confidence": "OBSERVED",
+      "validation_status": "OBSERVED",
+      "notes": "",
+      "formula_type": "MECHANIC_DEFINITION"
+    },
+    "miss_outgoing_zero": {
+      "formula_id": "miss_outgoing_zero",
+      "name": "Outgoing Miss Rate (farming)",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [],
+      "expression": "0% pada 2940+ outgoing (farming bias)",
+      "source_type": "RUNTIME",
+      "source_path": "collect/raw-snapshots.json",
+      "confidence": "OBSERVED",
+      "validation_status": "OBSERVED",
+      "notes": "konsisten dengan formula qr: HIT player >> mobFLEE saat farming sesuai level",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "z5_exptable": {
+      "formula_id": "z5_exptable",
+      "name": "Job Points per Level (z5)",
+      "scope": "GLOBAL",
+      "inputs": [
+        "level"
+      ],
+      "outputs": [
+        "jobPoints"
+      ],
+      "expression": "floor(level/5) + 3",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V07",
+      "notes": "V0.7: z5 = floor(Lv/5)+3 = job points per level (NOT EXP). EXP threshold table remains server-side UNKNOWN.",
+      "formula_type": "COMPUTED_FORMULA",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "source_symbol": "F0 (=z5)",
+      "source_offset": 116487
+    },
+    "party_share": {
+      "formula_id": "party_share",
+      "name": "Party EXP Share",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [],
+      "expression": "split merata (string UI) + 2%/member — formula eksak UNKNOWN",
+      "source_type": "UI_STRING",
+      "confidence": "INFERRED",
+      "validation_status": "OBSERVED",
+      "notes": "",
+      "formula_type": "COMPUTED_FORMULA",
+      "source_path": "UI_STRING"
+    },
+    "element_damage": {
+      "formula_id": "element_damage",
+      "name": "Element Damage Multiplier",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [],
+      "expression": "TIDAK ADA — element hanya menentukan status effect (burn/freeze/slow)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "negative finding: tidak ditemukan elementDamage/weakness multiplier di pipeline damage",
+      "formula_type": "MECHANIC_DEFINITION"
+    },
+    "atk_base": {
+      "formula_id": "atk_base",
+      "name": "Base ATK (melee/ranged split)",
+      "scope": "GLOBAL",
+      "inputs": [
+        "STR",
+        "DEX",
+        "LUK",
+        "level",
+        "weaponTemplate"
+      ],
+      "outputs": [
+        "baseATK"
+      ],
+      "expression": "10 + (isRanged ? DEX*2 + floor(STR/5) : STR*2 + floor(DEX/5)) + floor(LUK/10) + (Lv-1)*0.3",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "isRanged = Ft(template): bow/kunai/flask; melee lainnya",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "matk_base": {
+      "formula_id": "matk_base",
+      "name": "Base MATK",
+      "scope": "GLOBAL",
+      "inputs": [
+        "INT",
+        "DEX",
+        "level"
+      ],
+      "outputs": [
+        "baseMATK"
+      ],
+      "expression": "5 + INT*3 + DEX + (Lv-1)*0.3",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "source_symbol": "De",
+      "source_offset": 118174,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "sebelum equip/skill bonus",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "skill_cooldown": {
+      "formula_id": "skill_cooldown",
+      "name": "Skill Cooldown",
+      "scope": "SKILL_SPECIFIC",
+      "inputs": [
+        "baseCooldown",
+        "cooldownFromAspd"
+      ],
+      "outputs": [
+        "cooldownMs"
+      ],
+      "expression": "cooldownFromAspd ? cooldownScaledByAspd : baseCooldown (500-30000ms range)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "field cooldown_ms di skill table; cooldownFromAspd flag pada 4+ skill",
+      "formula_type": "LOOKUP_TABLE"
+    },
+    "skill_sp_cost": {
+      "formula_id": "skill_sp_cost",
+      "name": "Skill SP Cost",
+      "scope": "SKILL_SPECIFIC",
+      "inputs": [],
+      "outputs": [
+        "sp"
+      ],
+      "expression": "fixed per skill (2-15 SP range, see skill table)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "field sp_cost di skill table; tidak ada scaling",
+      "formula_type": "LOOKUP_TABLE"
+    },
+    "status_duration": {
+      "formula_id": "status_duration",
+      "name": "Status Effect Duration",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [
+        "durationMs"
+      ],
+      "expression": "fixed per status (see STATUS_DB: poison 12000ms, venom 8000ms, meikyo 45000ms, freeze 6000ms...)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED",
+      "notes": "field duration_ms di status_effects table",
+      "formula_type": "LOOKUP_TABLE"
+    },
+    "stat_points_per_level": {
+      "formula_id": "stat_points_per_level",
+      "name": "Stat Points per Level",
+      "scope": "GLOBAL",
+      "inputs": [
+        "level"
+      ],
+      "outputs": [
+        "statPoints"
+      ],
+      "expression": "floor((level-1)/10) + 2",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "source_symbol": "$0",
+      "source_offset": 116487,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V07",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "cumulative_job_points": {
+      "formula_id": "cumulative_job_points",
+      "name": "Cumulative Job Points",
+      "scope": "GLOBAL",
+      "inputs": [
+        "level"
+      ],
+      "outputs": [
+        "totalPoints"
+      ],
+      "expression": "Σ floor(t/5)+3 for t=2..level",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-CvFgs761.js",
+      "source_sha256": "b0b0942b556fc813",
+      "source_symbol": "It",
+      "source_offset": 116487,
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V07",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "isTwoHanded": {
+      "formula_id": "isTwoHanded",
+      "name": "Two-Handed Weapon Detection",
+      "scope": "GLOBAL",
+      "inputs": [
+        "item"
+      ],
+      "outputs": [
+        "isTwoHanded"
+      ],
+      "expression": "item.slot===\"sword\" && [\"staff\",\"quarterstaff\",\"dagger_pair\",\"hammer\"].includes(item.template)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-DqMVEwxd.js",
+      "source_sha256": "513e5c8fe1deee3f",
+      "source_symbol": "Ee()",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "twoHandedMultiplier": {
+      "formula_id": "twoHandedMultiplier",
+      "name": "Two-Handed Weapon Stat Multiplier",
+      "scope": "GLOBAL",
+      "inputs": [
+        "isTwoHanded"
+      ],
+      "outputs": [
+        "statMultiplier"
+      ],
+      "expression": "2 if isTwoHanded else 1",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-DqMVEwxd.js",
+      "source_sha256": "513e5c8fe1deee3f",
+      "source_symbol": "Ar=2",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "isBow": {
+      "formula_id": "isBow",
+      "name": "Bow Classification (One-Handed)",
+      "scope": "GLOBAL",
+      "inputs": [
+        "item"
+      ],
+      "outputs": [
+        "isBow"
+      ],
+      "expression": "item.slot===\"sword\" && item.template===\"bow\"",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-DqMVEwxd.js",
+      "source_sha256": "513e5c8fe1deee3f",
+      "source_symbol": "Jn=\"bow\"",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "cardSlotCount": {
+      "formula_id": "cardSlotCount",
+      "name": "Card Slot Count",
+      "scope": "GLOBAL",
+      "inputs": [
+        "item"
+      ],
+      "outputs": [
+        "cardSlots"
+      ],
+      "expression": "0 if isWings(item) else 2 if isTwoHanded(item) else 1",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-DqMVEwxd.js",
+      "source_sha256": "513e5c8fe1deee3f",
+      "source_symbol": "Dt()",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "CONDITIONAL_RULE",
+      "notes": " | V0.8 FIX: Changed from COMPUTED_FORMULA to CONDITIONAL_RULE because it returns discrete values (0,1,2) based on conditions, not arithmetic computation."
+    },
+    "basicAttackType": {
+      "formula_id": "basicAttackType",
+      "name": "Basic Attack Power Type",
+      "scope": "GLOBAL",
+      "inputs": [
+        "item"
+      ],
+      "outputs": [
+        "basicPower"
+      ],
+      "expression": "\"matk\" if item.template==\"flask\" else \"atk\"",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "Z0()",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "orbEquipClasses": {
+      "formula_id": "orbEquipClasses",
+      "name": "Orb Equippable Classes",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [
+        "classes"
+      ],
+      "expression": "[\"mage\", \"nekobaku\"]",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-DqMVEwxd.js",
+      "source_sha256": "513e5c8fe1deee3f",
+      "source_symbol": "Orb.jobs",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "LOOKUP_TABLE"
+    },
+    "matkDamagePierce": {
+      "formula_id": "matkDamagePierce",
+      "name": "MATK Damage Uses Magic Pierce",
+      "scope": "GLOBAL",
+      "inputs": [
+        "damageType",
+        "target"
+      ],
+      "outputs": [
+        "effectivePierce"
+      ],
+      "expression": "mpierce if damageType==\"matk\" else pierce",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "p ? o.mpierce : o.pierce",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "CONDITIONAL_RULE",
+      "notes": "MATK damage path uses mpierce, ATK path uses pierce. Discovered in Phase C."
+    },
+    "nekobakuSkillMultiplier": {
+      "formula_id": "nekobakuSkillMultiplier",
+      "name": "Nekobaku Damage Skill Scaling",
+      "scope": "SKILL_SPECIFIC",
+      "inputs": [
+        "skill",
+        "level"
+      ],
+      "outputs": [
+        "multiplier"
+      ],
+      "expression": "skillPerLevel[skill] * skillLevel (linear scaling for Fizz Flask, Tar Flask, Big Kaboom)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/items-DqMVEwxd.js",
+      "source_sha256": "513e5c8fe1deee3f",
+      "source_symbol": "R(skill, level)",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "COMPUTED_FORMULA",
+      "notes": "V0.8 CORRECTION: Only applies to damage skills (Fizz Flask, Tar Flask, Big Kaboom). Buffs (Catalyst Brew) and passives (Nine Lives) have separate mechanics."
+    },
+    "cooldownFromAspd": {
+      "formula_id": "cooldownFromAspd",
+      "name": "ASPD-Scaled Cooldown",
+      "scope": "GLOBAL",
+      "inputs": [
+        "skill",
+        "aspd"
+      ],
+      "outputs": [
+        "cooldown"
+      ],
+      "expression": "max(120, interval * (1 - min(0.6, max(0, aspd - 150) * 0.015)))",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "cooldownFromAspd branch",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V08",
+      "formula_type": "COMPUTED_FORMULA",
+      "notes": "V0.8: Applied only to skills with cooldownFromAspd=true flag (e.g., Fizz Flask). Other skills use fixed base cooldown from skill_cooldown lookup."
+    },
+    "expRewardMultiplier": {
+      "formula_id": "expRewardMultiplier",
+      "name": "EXP Reward Multiplier (Event × VIP × Status)",
+      "scope": "GLOBAL",
+      "inputs": [
+        "eventMultiplier",
+        "vipMultiplier",
+        "statusExpBoost"
+      ],
+      "outputs": [
+        "expMultiplier"
+      ],
+      "expression": "eventMultiplier * vipMultiplier * (1 + statusExpBoost)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "qR() * uf(this.statuses, \"expboost\")",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: qR = (Xc(l)?.multiplier ?? 1) * ZR(l). Xc = event lookup, ZR = VIP lookup. uf = status bonus multiplier.",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "lootEtcChance": {
+      "formula_id": "lootEtcChance",
+      "name": "ETC Drop Chance",
+      "scope": "GLOBAL",
+      "inputs": [
+        "baseEtcRate",
+        "lootMultiplier"
+      ],
+      "outputs": [
+        "etcDrop"
+      ],
+      "expression": "Math.random() < baseEtcRate * lootMultiplier",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "Tg.etc * T",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: Tg.etc is base rate, T is loot multiplier (from event/VIP). ETC drop is gS(monster).",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "lootRelicBoxChance": {
+      "formula_id": "lootRelicBoxChance",
+      "name": "Relic Box Drop Chance",
+      "scope": "GLOBAL",
+      "inputs": [
+        "baseRelicBoxRate",
+        "lootMultiplier"
+      ],
+      "outputs": [
+        "relicBoxDrop"
+      ],
+      "expression": "Math.random() < baseRelicBoxRate * lootMultiplier",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "Tg.relicBox * T",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: Tg.relicBox is base rate (0.1 display constant), T is loot multiplier. Display constant ≠ actual drop rate.",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "lootRefineStoneChance": {
+      "formula_id": "lootRefineStoneChance",
+      "name": "Refine Stone Drop Chance",
+      "scope": "GLOBAL",
+      "inputs": [
+        "monsterRefineRate",
+        "lootMultiplier"
+      ],
+      "outputs": [
+        "refineStoneDrop"
+      ],
+      "expression": "Math.random() < I5(monster) * lootMultiplier",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "I5(x) * T",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: I5(monster) is per-monster refine stone rate, T is loot multiplier.",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "weightPercent": {
+      "formula_id": "weightPercent",
+      "name": "Weight Bar Percentage",
+      "scope": "GLOBAL",
+      "inputs": [
+        "currentWeight",
+        "maxWeight"
+      ],
+      "outputs": [
+        "weightPercent"
+      ],
+      "expression": "Math.max(1, Math.min(100, Math.floor(currentWeight / Math.max(1, maxWeight) * 100)))",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "l6()",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: UI-only calculation for weight bar display. Not gameplay formula.",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "doubleAttackCheck": {
+      "formula_id": "doubleAttackCheck",
+      "name": "Double Attack Trigger",
+      "scope": "GLOBAL",
+      "inputs": [
+        "weaponAllowsDouble",
+        "targetAlive",
+        "damageDealt",
+        "doubleAttackChance"
+      ],
+      "outputs": [
+        "doubleAttack"
+      ],
+      "expression": "weaponAllowsDouble && targetAlive && damageDealt > 0 && Math.random() * 100 < doubleAttackChance",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "V4(E) && x.alive && T > 0 && Math.random() * 100 < Ih(this).doubleAttack",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: V4(weapon) checks if weapon allows double attack. Ih(this).doubleAttack is chance from stats.",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "statusDamageMultiplier": {
+      "formula_id": "statusDamageMultiplier",
+      "name": "Status Damage Multiplier (Momentum/Debuff)",
+      "scope": "GLOBAL",
+      "inputs": [
+        "statuses",
+        "targetIsMonster"
+      ],
+      "outputs": [
+        "damageMultiplier"
+      ],
+      "expression": "hA(Dg(statuses, now), targetIsMonster)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "hA(Dg(this.statuses, Date.now()), T.key === \"monster\")",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: Applied to both player→mob (J4) and mob→player (hA) damage. Dg = active status lookup.",
+      "formula_type": "CONDITIONAL_RULE"
+    },
+    "pierceMitigation": {
+      "formula_id": "pierceMitigation",
+      "name": "Pierce Damage Mitigation Factor",
+      "scope": "GLOBAL",
+      "inputs": [
+        "targetLevel",
+        "effectivePierce"
+      ],
+      "outputs": [
+        "damageFactor"
+      ],
+      "expression": "Z4(targetLevel, effectivePierce)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "Z4(c.level, p ? o.mpierce : o.pierce)",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: Z4 is the pierce mitigation function. effectivePierce = mpierce for MATK, pierce for ATK. Damage is multiplied by Z4 result.",
+      "formula_type": "COMPUTED_FORMULA"
+    },
+    "refineSuccessRate": {
+      "formula_id": "refineSuccessRate",
+      "name": "Refine Success Rate (Client Display)",
+      "scope": "GLOBAL",
+      "inputs": [
+        "itemRefineLevel"
+      ],
+      "outputs": [
+        "successRate"
+      ],
+      "expression": "rl(itemRefineLevel) — returns success rate as percentage string",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "rl(c)",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: Client-side display of refine success rate. Server may use different formula. Display only.",
+      "formula_type": "LOOKUP_TABLE"
+    },
+    "refineMaxLevel": {
+      "formula_id": "refineMaxLevel",
+      "name": "Refine Maximum Level",
+      "scope": "GLOBAL",
+      "inputs": [],
+      "outputs": [
+        "maxRefine"
+      ],
+      "expression": "Ll (constant)",
+      "source_type": "CLIENT_CODE",
+      "source_path": "web-v2/main-CFj0fJNd.js",
+      "source_sha256": "ce5087aca04a2686",
+      "source_symbol": "Ll",
+      "confidence": "VERIFIED_FROM_CLIENT_CODE",
+      "validation_status": "EXTRACTED_V09",
+      "notes": "V0.9: Maximum refine level constant. le(c) >= Ll means already at max.",
+      "formula_type": "MECHANIC_DEFINITION"
+    }
   }
- }
 }
