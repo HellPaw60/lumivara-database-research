@@ -9,7 +9,8 @@
   ],
   "generated": "2026-09-28",
   "note": "Post-V0.7 cleanup: duplicates removed, GAP-001 updated",
-  "v08_updates": "5 new gaps added (GAP-012 to GAP-016), GAP-011 marked HIGH PRIORITY"
+  "v08_updates": "5 new gaps added (GAP-012 to GAP-016), GAP-011 marked HIGH PRIORITY",
+  "v08_phaseD_updates": "GAP-015/016 confirmed SERVER_SIDE_ONLY"
  },
  "gaps": [
   {
@@ -186,7 +187,7 @@
    "id": "GAP-015",
    "subsystem": "COMBAT",
    "question": "Monster damage reduction by level",
-   "current_knowledge": "Changelog: \"Monster damage reduced by level, accuracy increased\". Not found in client bundles.",
+   "current_knowledge": "SERVER_SIDE_ONLY: Monster damage reduction by level not found in client bundles. Changelog claims reduction but implementation is server-authoritative.",
    "best_evidence": "changelog entry only",
    "confidence": "UNKNOWN",
    "blocking_dependency": "Server disassembly or large-scale incoming damage measurement",
@@ -198,10 +199,10 @@
    "id": "GAP-016",
    "subsystem": "BOSS",
    "question": "Crowned boss spawn every channel",
-   "current_knowledge": "Changelog: \"Boss spawns every channel, respawns after 1 hour\". Not in client bundles.",
+   "current_knowledge": "SERVER_SIDE_ONLY: Boss spawn every channel not found in client bundles. Changelog claims 1 Crowned boss per channel, 1hr respawn, random nest. All server-authoritative.",
    "best_evidence": "changelog entry only",
    "confidence": "UNKNOWN",
-   "blocking_dependency": "Server disassembly or spawn observation",
+   "blocking_dependency": "Server disassembly or spawn observation across channels",
    "next_verification_method": "Track boss spawn timing across channels",
    "priority": "LOW",
    "status": "OPEN"
