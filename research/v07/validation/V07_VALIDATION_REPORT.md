@@ -11,10 +11,20 @@
 ## Changelog Snapshot
 | Field | Value |
 |---|---|
-| Bundle | `CkIS7ST6` |
-| Entries | 688 |
-| Status | Stable — unchanged across V0.7 start, mid, and final checks |
-| html sha256 | `ef8cecea4feef885` |
+| Bundle | `CMg3B3wG` |
+| Entries | 730 |
+| Status | Post-V0.7 cleanup observation — 45 new entries since V3B |
+| html sha256 | `fc9277b4e651b909` |
+
+### Post-V0.7 Observations (not part of V0.7 release data)
+| Category | Count | Examples |
+|---|---|---|
+| UI/UX | ~25 | Storage rarity tiles, screen shake, zoom, keybinds, inspect privacy |
+| Equipment/Balance | ~8 | Two-handed ×2 stats, bow one-handed + card slot, gear marks |
+| Skills/Balance | ~5 | Nekobaku skill effects/rework, MATK basic, Kensei animations |
+| Drops/Spawns | ~3 | Divine Wings 10x drop rate, boss every channel |
+| Bot/Automation | ~3 | Bot instant next target, approach skill resend |
+| Bug Fixes | ~5 | Portal depth, socket disconnect, splash kill, gold market |
 
 ## Historical Progression
 | Version | Bundle | Entries |
