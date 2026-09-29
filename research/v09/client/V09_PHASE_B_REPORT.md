@@ -1,5 +1,24 @@
 # V0.9 PHASE B REPORT — DATA DOMAIN EXTRACTION
 
+**Status:** Documentation consistency fix only — no new research.
+**Scope:** Quest/Equipment/79-structure/Coverage classification alignment.
+
+---
+
+## Coverage Methodology
+
+No percentages are reported. Where the total population is unknown,
+counts are reported as "X of UNKNOWN total". This applies to
+equipment, quests, NPCs, shops, and any other domain where we
+cannot prove the denominator.
+
+`NOT_FOUND_IN_CLIENT` is a negative-evidence classification: it
+means the data was not found in any of the 6 analyzed client
+bundles. It is **not** evidence that data is server-authoritative
+or that it exists only on the server.
+
+---
+
 ## Quest Data — CORRECTED
 
 | ID | Title | Goal | Reward |
@@ -39,26 +58,28 @@ Previously counted ~30 items. Now counting from v2 JSON files:
 
 ## Domain Classification Summary
 
-| Domain | Status | Coverage |
+| Domain | Status | Notes |
 |---|---|---|
-| Quests | ✓ EXTRACTED | 100% |
-| Skills | ✓ EXTRACTED | 100% |
-| Consumables | ✓ EXTRACTED | 100% |
-| Cards | ✓ EXTRACTED | 100% |
-| Status Effects | ✓ EXTRACTED | 100% |
-| Maps | ✓ EXTRACTED | 100% |
-| Monsters | ⚠️ PARTIAL | Species only, no stats |
-| Equipment | ⚠️ PARTIAL | ~26 items extracted |
-| Formulas | ✓ EXTRACTED | 100% |
-| NPCs | ❌ NOT FOUND | Server-side |
-| Shops | ❌ NOT FOUND | Server-side |
-| Refine | ⚠️ PARTIAL | Client formula only |
-| Fusion | ❌ NOT FOUND | Server-side |
-| Pets | ❌ NOT FOUND | Server-side |
-| Storage | ❌ NOT FOUND | Server-side |
-| Market | ❌ NOT FOUND | Server-side |
-| World Boss | ⚠️ PARTIAL | Spawn metadata |
-| Arena/PvP | ⚠️ PARTIAL | Basic data |
+| Tutorial quests | EXTRACTED | 10 quests, total quest count = UNKNOWN |
+| Full quest database | NOT_FOUND_IN_CLIENT | Tn = tutorial subset only |
+| Skills | EXTRACTED | 64 skills from v2_skills.json |
+| Consumables | EXTRACTED | 80 items from v2_consumables.json |
+| Cards | EXTRACTED | 49 cards from v2_cards.json |
+| Status Effects | EXTRACTED | 42 effects from v2_status_effects.json |
+| Maps | EXTRACTED | 19 maps from v2_maps.json |
+| Monsters | PARTIAL | 40 species, no stats |
+| Equipment | PARTIAL | 26 items, total count = UNKNOWN |
+| Formulas | EXTRACTED | 47 formulas, client-verified |
+| NPCs | NOT_FOUND_IN_CLIENT | No NPC table in bundles |
+| Shops | NOT_FOUND_IN_CLIENT | No shop table in bundles |
+| Refine | PARTIAL | Client formula only |
+| Fusion | NOT_FOUND_IN_CLIENT | No recipe table in bundles |
+| Pets | NOT_FOUND_IN_CLIENT | No pet table in bundles |
+| Storage | NOT_FOUND_IN_CLIENT | No capacity formula in bundles |
+| Market | NOT_FOUND_IN_CLIENT | No listing table in bundles |
+| World Boss | PARTIAL | Spawn metadata only |
+| Arena/PvP | PARTIAL | Basic data only |
+| Party | PARTIAL | Party system data |
 
 ---
 
@@ -127,4 +148,6 @@ Beberapa domain (NPC, Shop, Fusion, Pets, dll) kemungkinan memang server-authori
 
 ---
 
-**Phase B complete.** Records extracted: ~377. Server-side confirmed: 12+ domains.
+**Phase B complete.** Records extracted: ~377 (partial count, unknown total).
+NOT_FOUND_IN_CLIENT domains: 11 (NPC, Shop, Fusion, Pets, Storage, Market,
+Monster stats, Drop rates, Party EXP, EXP threshold, Economy).

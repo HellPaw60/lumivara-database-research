@@ -136,33 +136,37 @@
 
 ---
 
-## Coverage Calculation (Preliminary)
+## Coverage Calculation (NO PERCENTAGES)
 
-| Category | Known | Unknown | Total | Coverage |
-|---|---|---|---|---|
-| Skills | 64 | 0 | 64 | 100% |
-| Items | 80 | ? | ? | ~50%? |
-| Cards | 49 | 0 | 49 | 100% |
-| Status effects | 42 | 0 | 42 | 100% |
-| Maps | 19 | 0 | 19 | 100% |
-| Monsters | 40 | ? | ? | ~30%? |
-| Equipment | ~30 | ? | ? | ~20%? |
-| Formulas | 47 | 0 | 47 | 100% |
-| Quests | 0 | ? | ? | 0% |
-| NPCs | 0 | ? | ? | 0% |
-| Shops | 0 | ? | ? | 0% |
-| Refine | 1 | ? | ? | 10% |
-| Fusion | 0 | ? | ? | 0% |
-| Pets | 0 | ? | ? | 0% |
-| Storage | 0 | ? | ? | 0% |
-| World Boss | 1 | ? | ? | 20% |
-| Arena | 1 | ? | ? | 20% |
-| Party | 1 | ? | ? | 30% |
-| Market | 0 | ? | ? | 0% |
+No coverage percentages are reported because the denominator
+(total data across all domains) cannot be proven. Instead,
+each domain is classified as EXTRACTED, PARTIAL, or
+NOT_FOUND_IN_CLIENT.
 
-**Overall estimated client coverage: ~40-50%**
+| Category | Extracted | Status |
+|---|---|---|
+| Skills | 64 | EXTRACTED (64 of 64) |
+| Consumables | 80 | EXTRACTED (80 of 80) |
+| Cards | 49 | EXTRACTED (49 of 49) |
+| Status effects | 42 | EXTRACTED (42 of 42) |
+| Maps | 19 | EXTRACTED (19 of 19) |
+| Formulas | 47 | EXTRACTED (47 of 47) |
+| Tutorial quests | 10 | PARTIAL (10 of UNKNOWN total) |
+| Equipment | 26 | PARTIAL (26 of UNKNOWN total) |
+| Monsters (species) | 40 | PARTIAL (40 of UNKNOWN total, no stats) |
+| NPCs | 0 | NOT_FOUND_IN_CLIENT |
+| Shops | 0 | NOT_FOUND_IN_CLIENT |
+| Fusion | 0 | NOT_FOUND_IN_CLIENT |
+| Pets | 0 | NOT_FOUND_IN_CLIENT |
+| Storage | 0 | NOT_FOUND_IN_CLIENT |
+| Market | 0 | NOT_FOUND_IN_CLIENT |
 
-This is LOWER than the previous 60-70% estimate because the denominator is now clearer.
+**Overall client coverage = UNKNOWN%** (denominator belum terbukti).
+
+Keterangan:
+- EXTRACTED: Full table ditemukan dan di-parse
+- PARTIAL: Hanya subset yang ditemukan, total populasi = UNKNOWN
+- NOT_FOUND_IN_CLIENT: Tidak ditemukan di 6 bundle yang di-analisis. Bukan bukti bahwa data ada di server.
 
 ---
 
